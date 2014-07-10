@@ -21,7 +21,7 @@
 }
 
 .span {
-    display: block;
+    .display-block;
 }
 
 .grid-generate-columns(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
@@ -29,11 +29,36 @@
 
     .span-@{size} {
         width: (100% / @number-of-columns) * @size;
+        padding: @column-padding-vertical @column-padding-horizontal @column-padding-vertical @column-padding-horizontal;
+        margin: @column-margin-vertical @column-margin-horizontal @column-margin-vertical @column-margin-horizontal;
     }
-
+    
     .offset-@{size} {
         margin-left: (100% / @number-of-columns) * @size;
     }
 }
 
 .grid-generate-columns(@columns);
+
+
+// block align
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+// block display
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
