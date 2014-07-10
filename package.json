@@ -1,0 +1,22 @@
+{
+  "name": "bowtie",
+  "version": "0.0.0",
+  "description": "Simple and elegant CSS framework to make you life easier!",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@git.webvalley.cz:modernentrepreneur/bowtie.git"
+  },
+  "keywords": [
+    "CSS",
+    "LESS",
+    "Framework",
+    "bowtie",
+    "ME"
+  ],
+  "author": "ModernEntrepreneur",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "less": "~1.7.3"
+  }
+}
