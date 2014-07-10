@@ -1,0 +1,39 @@
+/*
+    GRID.less -> grid system, row, span, div
+    VARIABLES:
+
+    @columns
+    @responsive
+    @column-padding-vertical
+    @column-padding-horizontal
+    @column-margin-vertical
+    @column-margin-horizontal
+    @threshold-big
+    @threshold-medium
+    @threshold-small
+    @container-big
+    @container-medium
+    @container-small
+*/
+
+.row {
+    width: 100%;
+}
+
+.span {
+    display: block;
+}
+
+.grid-generate-columns(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
+    .grid-generate-columns(@number-of-columns; @size - 1);
+
+    .span-@{size} {
+        width: (100% / @number-of-columns) * @size;
+    }
+
+    .offset-@{size} {
+        margin-left: (100% / @number-of-columns) * @size;
+    }
+}
+
+.grid-generate-columns(@columns);

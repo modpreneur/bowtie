@@ -1,0 +1,24 @@
+/*
+    SPACING.less -> margin, padding
+    VARIABLES:
+
+    @space-big
+    @space-medium
+    @space-small
+*/
+
+.spacing-generate() {
+    .generate(@type, @size, @orientation, @value) {
+        .@{type}-@{size}-@{orientation} {
+            @{type}-@{orientation}: @value;
+        }
+    }
+
+    .generate(padding, big, top, @space-big);
+    .generate(padding, medium, top, @space-medium);
+
+    // TODO
+}
+
+
+.spacing-generate();
