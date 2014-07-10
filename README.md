@@ -18,6 +18,8 @@ The entire CSS framework consists of individual modules - widgets. You can compi
 
 ### Grid
 
+Grid system.
+
 ### Spacing
 
 ### Variables
