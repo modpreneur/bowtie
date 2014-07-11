@@ -20,6 +20,9 @@ The entire CSS framework consists of individual modules - widgets. You can compi
 
 ### Spacing
 
+Spacing allows you to set classes for margins and paddings.
+All the classes have this pattern: `<type>-<size>-<position>` where type is `padding/margin`, size is `big/medium/small/none`, position is `top/right/bottom/left/vertical/horizontal/all`.
+
 ### Variables
 
 ### Variables Default
