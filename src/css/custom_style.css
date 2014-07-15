@@ -17,8 +17,8 @@
     border-bottom-width: 2px;
     background: rgba(248, 248, 248, 0.58);
     float: left;
-    position: relative; /* does not have to be there*/
-    min-height: 1px;
+    position: relative;  /*does not have to be there*/
+    min-height: 1px;  /*does not have to be there*/
 
 }
 .grid-system-style .row {
