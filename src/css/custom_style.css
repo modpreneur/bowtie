@@ -1,0 +1,41 @@
+* {
+    /* BIG SECRET OF BOOTSTRAP GRID SYSTEM*/
+    box-sizing: border-box;
+}
+.grid-system-style {
+}
+
+.container {
+    padding: 0;
+    margin-left: auto;
+    margin-right:   auto;
+    width: 1200px;
+}
+
+.grid-system-style .row div {
+    border: solid 1px black;
+    border-bottom-width: 2px;
+    background: rgba(248, 248, 248, 0.58);
+    float: left;
+    position: relative; /* does not have to be there*/
+    min-height: 1px;
+
+}
+.grid-system-style .row {
+    margin-top: 10px;
+}
+
+.row {
+    /* Only because of padding of spans */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+/* Is necessary for row to not collapse with other elements*/
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
