@@ -2,7 +2,108 @@
 
 // overwrites and custom variables START
 
+//== Typography
+@font-size-base:                   14px;                           //       ~h5
+@font-size-large:                  ceil((@font-size-base * 1.25)); // ~18px ~h4
+@font-size-small:                  ceil((@font-size-base * 0.85)); // ~12px ~h6
+@font-size-xs:                     percentage(0.65);
+@font-size-sm:                     percentage(0.75);
+@font-size-md:                     percentage(0.85);
 
+@font-size-h1:                     floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:                     floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:                     ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:                     ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:                     @font-size-base;
+@font-size-h6:                     ceil((@font-size-base * 0.85)); // ~12px
 
+@font-padding-none:                0px;
+@font-margin-none:                 0px;
 
-// overwrites and custom variables END
+@font-weight-normal:               500;
+
+//== Typography
+@font-family-sans-serif:           "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:                Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:            Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:                 @font-family-sans-serif;
+
+@line-height-base:                 1.428571429;
+
+//** Text muted color
+@text-muted:                       @gray-light;
+
+// Transformation
+.lowercase                    { text-transform: lowercase; }
+.uppercase                    { text-transform: uppercase; }
+.capitalize                   { text-transform: capitalize; }
+.underline                    { text-decoration: underline; }
+
+h1 {
+  small, .small,.small {
+    line-height: 1;
+    color: @color-dark-grey;
+    font-size: @font-size-xs;
+  }
+}
+
+h2 {
+  small, .small,.small {
+    line-height: 1;
+    color: @color-dark-grey;
+    font-size: @font-size-xs;
+  }
+}
+
+h3 {
+  small, .small,.small {
+    line-height: 1;
+    color: @color-dark-grey;
+    font-size: @font-size-xs;
+  }
+}
+
+h4 {
+  small, .small,.small {
+    line-height: 1;
+    color: @color-dark-grey;
+    font-size: @font-size-sm;
+  }
+}
+
+h5 {
+  small, .small,.small {
+    line-height: 1;
+    color: @color-dark-grey;
+    font-size: @font-size-sm;
+  }
+}
+
+h6 {
+  small, .small,.small {
+    line-height: 1;
+    color: @color-dark-grey;
+    font-size: @font-size-sm;
+  }
+}
+
+small,
+.small {
+  font-size: @font-size-md;
+}
+
+.large {
+  font-size: @font-size-large;
+}
+
+body {
+  font-family:                     @font-family-base;
+  font-size:                       @font-size-base;
+  line-height:                     @line-height-base;
+}
+
+a {
+  text-decoration: none;
+}
+
+  // overwrites and custom variables END
