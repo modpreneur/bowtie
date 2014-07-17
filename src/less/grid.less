@@ -16,10 +16,41 @@
     @container-small
 */
 
-.row {
-    width: 100%;
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
 }
 
+/* !!!! MOST IMPORTANT !!!! */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* ROW */
+.row {
+    width: 100%;
+  &:extend(.clearfix all);
+}
+
+/* SPANS */
 .span {
     .display-block;
 }
@@ -31,14 +62,40 @@
         width: (100% / @number-of-columns) * @size;
         padding: @column-padding-vertical @column-padding-horizontal @column-padding-vertical @column-padding-horizontal;
         margin: @column-margin-vertical @column-margin-horizontal @column-margin-vertical @column-margin-horizontal;
+        float: left;
+        min-height: 1px;
+        position: relative;
     }
     
     .offset-@{size} {
         margin-left: (100% / @number-of-columns) * @size;
     }
 }
-
+// kick the generator
 .grid-generate-columns(@columns);
+
+
+
+/* CONTAINERS */
+.container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  &:extend(.clearfix all);
+}
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @threshold-small) {
+    width: @container-small;
+  }
+  @media (min-width: @threshold-medium) {
+    width: @container-medium;
+  }
+  @media (min-width: @threshold-big) {
+    width: @container-big;
+  }
+}
 
 
 // block align
