@@ -117,12 +117,11 @@
                 .pull-left;
             }
         }
+        // small span keep everywhere, dont use media query
         .span-small-@{size} {
             .span;
-            @media (min-width: @threshold-small) {
-                width: (100% / @number-of-columns) * @size;
-                .pull-left;
-            }
+            .pull-left;
+            width: (100% / @number-of-columns) * @size;
         }
 
         // offsets
