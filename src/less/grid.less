@@ -56,7 +56,6 @@
 
 .container {
     .container-fixed();
-    width: @container-big;
 }
 
 
@@ -69,8 +68,7 @@
 
 /* SPANS */
 .span {
-//    .display-block;
-    .pull-left;
+    .display-block;
     .relative;
     padding: @column-padding-vertical @column-padding-horizontal;
     margin: @column-margin-vertical @column-margin-horizontal;
@@ -93,6 +91,10 @@
         }
     }
 
+    .container {
+        width: @container-big;
+    }
+
     .grid-generate-columns(@number-of-columns);
 }
 // RESPONSIVE layout
@@ -105,18 +107,21 @@
             .span;
             @media (min-width: @threshold-big) {
                 width: (100% / @number-of-columns) * @size;
+                .pull-left;
             }
         }
         .span-medium-@{size} {
             .span;
             @media (min-width: @threshold-medium) {
                 width: (100% / @number-of-columns) * @size;
+                .pull-left;
             }
         }
         .span-small-@{size} {
             .span;
             @media (min-width: @threshold-small) {
                 width: (100% / @number-of-columns) * @size;
+                .pull-left;
             }
         }
 
