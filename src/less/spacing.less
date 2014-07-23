@@ -7,6 +7,8 @@
     @space-small
 */
 
+@import "variables";
+
 .spacing-generate() {
     @types: padding, margin;
     @sizes: none, small, medium, big;
@@ -59,34 +61,3 @@
 }
 
 .spacing-generate();
-
-/* PADDING */
-.no-vertical-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.no-horizontal-padding {
-  padding-left: 0;
-  padding-bottom: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-/* MARGIN */
-
-.no-horizontal-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.no-vertical-margin {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.no-margin {
-  margin: 0;
-}
