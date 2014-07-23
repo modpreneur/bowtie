@@ -1,8 +1,0 @@
-.grid-system-style .row div {
-    border: solid 1px black;
-    border-bottom-width: 2px;
-    background: rgba(248, 248, 248, 0.58);
-}
-.grid-system-style .row {
-    margin-top: 10px;
-}
