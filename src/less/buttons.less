@@ -1,0 +1,50 @@
+// buttons
+@import "variables";
+
+.button {
+    padding: @space-small @space-small * 2;
+    color: white;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    display: inline-block;
+}
+
+a.button:hover {
+    text-decoration: none;
+}
+
+.button-template(@bg-color, @bg-color-hover) {
+    background-color: @bg-color;
+
+    &:hover {
+        background-color: @bg-color-hover;
+    }
+}
+
+.button-primary {
+    .button-template(@color-primary, @color-primary-hover);
+}
+
+.button-secondary {
+    .button-template(@color-secondary, @color-secondary-hover);
+}
+
+.button-tertiary {
+    .button-template(@color-tertiary, @color-tertiary-hover);
+}
+
+.button-success {
+    .button-template(@color-success, @color-success-hover);
+}
+
+.button-danger {
+    .button-template(@color-danger, @color-danger-hover);
+}
+
+.button-info {
+    .button-template(@color-info, @color-info-hover);
+}
+
+.button-warning {
+    .button-template(@color-warning, @color-warning-hover);
+}

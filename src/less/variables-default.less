@@ -1,6 +1,10 @@
 // VARIABLES.less -> default variables for the framework
 
-// colors
+
+//--------------//
+//    COLORS    //
+//--------------//
+
 @color-primary:           #70ba4e;
 @color-secondary:         #f2000c;
 @color-tertiary:          #4f4aba;
@@ -25,12 +29,20 @@
 
 @color-muted-hover:       darken(@text-muted, 15%);
 
-// spacing
+
+//---------------//
+//    SPACING    //
+//---------------//
+
 @space-big: 30px;
 @space-medium: 20px;
 @space-small: 10px;
 
-// grid system
+
+//-------------------//
+//    GRID SYSTEM    //
+//-------------------//
+
 @columns: 12;                           // number of columns
 @responsive: false;                     // generate responsive columns?
 @column-padding-vertical: 0;            // vertical padding for each column
@@ -46,8 +58,11 @@
 @container-medium: 800px;
 @container-small: 400px;
 
-//-----------------------------------------------------------------------------------//
-//Border radius
+
+//---------------//
+//    BORDERS    //
+//---------------//
+
 @border-radius-base:        5px;
 @border-radius-large:       10px;
 @border-radius-small:       3px;
@@ -68,9 +83,11 @@
   }
 }
 
-//-----------------------------------------------------------------------------------//
 
-//Alerts
+//--------------//
+//    ALERTS    //
+//--------------//
+
 @state-success-text:             #5da423;
 @state-success-bg:               #dff0d8;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
@@ -110,17 +127,47 @@
 @alert-danger-text:               @state-danger-text;
 @alert-danger-border:             @state-danger-border;
 
-// Alerts
-.alert {
-  padding: @alert-padding;                      //15px
-  margin-bottom: @line-height-computed;         //20px
-  border: 1px solid transparent;
-  border-radius: @alert-border-radius;          //4px
-  > p,
-  > ul {
-    margin-bottom: 0;
-  }
-  > p + p {
-    margin-top: 5px;
-  }
+
+//------------------//
+//    TYPOGRAPHY    //
+//------------------//
+
+@font-size-base:                   14px;                           //       ~h5
+@font-size-large:                  ceil((@font-size-base * 1.25)); // ~18px ~h4
+@font-size-small:                  ceil((@font-size-base * 0.85)); // ~12px ~h6
+@font-size-xs:                     percentage(0.65);
+@font-size-sm:                     percentage(0.75);
+@font-size-md:                     percentage(0.85);
+
+@font-size-h1:                     floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:                     floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:                     ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:                     ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:                     @font-size-base;
+@font-size-h6:                     ceil((@font-size-base * 0.85)); // ~12px
+
+@font-padding-none:                0px;
+@font-margin-none:                 0px;
+
+@font-weight-normal:               500;
+
+@font-family-sans-serif:           "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:                Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:            Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:                 @font-family-sans-serif;
+
+@line-height-base:                 1.428571429;
+
+//** Text muted color
+@text-muted:                       @gray-light;
+
+
+// WHATEVER  // TODO  ????
+@small:                            1px;
+
+
+body {
+    font-family:                     @font-family-base;
+    font-size:                       @font-size-base;
+    line-height:                     @line-height-base;
 }

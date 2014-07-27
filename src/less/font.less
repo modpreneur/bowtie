@@ -33,6 +33,14 @@
   color: @text-muted;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 a:hover {
   &.primary  		{color: @color-primary-hover}
   &.secondary  		{color: @color-secondary-hover}
@@ -73,4 +81,68 @@ h1,h2,h3,h4,h5,h6 {
   padding: @font-padding-none;
   margin: @font-margin-none;
   font-weight: @font-weight-normal;
+}
+
+// Transformation
+.lowercase                    { text-transform: lowercase; }
+.uppercase                    { text-transform: uppercase; }
+.capitalize                   { text-transform: capitalize; }
+.underline                    { text-decoration: underline; }
+
+// Headings
+h1 {
+    small, .small,.small {
+        line-height: 1;
+        color: @color-dark-grey;
+        font-size: @font-size-xs;
+    }
+}
+
+h2 {
+    small, .small,.small {
+        line-height: 1;
+        color: @color-dark-grey;
+        font-size: @font-size-xs;
+    }
+}
+
+h3 {
+    small, .small,.small {
+        line-height: 1;
+        color: @color-dark-grey;
+        font-size: @font-size-xs;
+    }
+}
+
+h4 {
+    small, .small,.small {
+        line-height: 1;
+        color: @color-dark-grey;
+        font-size: @font-size-sm;
+    }
+}
+
+h5 {
+    small, .small,.small {
+        line-height: 1;
+        color: @color-dark-grey;
+        font-size: @font-size-sm;
+    }
+}
+
+h6 {
+    small, .small,.small {
+        line-height: 1;
+        color: @color-dark-grey;
+        font-size: @font-size-sm;
+    }
+}
+
+small,
+.small {
+    font-size: @font-size-md;
+}
+
+.large {
+    font-size: @font-size-large;
 }
