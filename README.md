@@ -16,6 +16,7 @@ The entire CSS framework consists of individual modules - widgets. You can compi
 - `variables-default` - All the default variables for the framework
 - `alerts` - All the alert messages you ever wanted
 - `buttons` - Nice and clean buttons
+- `navbar` - Navbar
 
 ### Grid
 
@@ -69,3 +70,16 @@ Variables used in this module are:
 
 - `button` - Default class for any button
 - `button-<SLUG>` - Additional class to the default one, `<SLUG>` is one of these: `success`, `info`, `danger`, `warning`, `primary`, `secondary`, `tertiary`
+
+### Navbar
+
+Use nav tag with `navbar` class, use `ul` and `li` for individual items.
+
+#### Variables
+
+Variables used in this module are:
+- `@space-small` - Small space used in padding of the links in navbar
+
+#### Classes
+
+- `navbar` - Main navbar class
