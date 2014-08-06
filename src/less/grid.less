@@ -73,7 +73,7 @@
     padding: @column-padding-vertical @column-padding-horizontal;
     margin: @column-margin-vertical @column-margin-horizontal;
     min-height: 1px;
-    border: 1px solid red;
+//    border: 1px solid red;
 }
 
 // NON RESPONSIVE LAYOUT
@@ -83,6 +83,7 @@
 
         .span-@{size} {
             .span;
+            .pull-left;
             width: (100% / @number-of-columns) * @size;
         }
 
