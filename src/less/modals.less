@@ -1,0 +1,126 @@
+// MODALS.less
+@import "variables";
+
+.modalDialog {
+  position: fixed;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: scroll;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 60%;
+//  max-height: 80%;
+  position: relative;
+  margin: 5% auto;
+  padding: 30px 20px 20px 20px;
+  border-radius: @border-radius-large;
+  /*background: #fff;*/
+  /*background: -moz-linear-gradient(23deg, #fff, #999);*/
+  background:
+    radial-gradient(
+      circle at top left,
+      #d6d6d6,
+      @color-white
+    );
+  background:
+    -moz-radial-gradient(
+      circle at top left,
+      #d6d6d6,
+      @color-white
+    );
+  background:
+    -webkit-radial-gradient(
+      circle at top left,
+      #d6d6d6,
+      @color-white
+    );
+  background:
+    -o-radial-gradient(
+      circle at top left,
+      #d6d6d6,
+      @color-white
+    );
+}
+
+.close {
+  background: none repeat scroll 0% 0% #606061;
+  color: @color-white;
+  line-height: 30px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px @color-black;
+}
+
+.close:hover {
+  background: #00d9ff;
+}
+
+.modal-a {
+  color: @color-black;
+}
+
+.modal-p {
+  color: #757575;
+}
+
+.people-item .people-thumb {
+  max-width: 300px !important;
+}
+
+/*
+EXAMPLE:
+
+<div class="span-4 people-item">
+  <div class="row">
+    <div class="span-8">
+
+      <a href="#Modal_info" class="modal-a">
+        MODAL
+      </a>
+
+      <div id="Modal_info" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <div class="row">
+            <div class="span-8">
+
+              <h2>
+                ...
+              </h2>
+
+              <p class="modal-p">
+                ...
+
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+*/
