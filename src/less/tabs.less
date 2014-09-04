@@ -1,0 +1,86 @@
+// TABS.less -> classes changing fonts
+@import "variables";
+
+.tabs {
+  position: relative;
+  min-height: 300px;
+  clear: both;
+  margin: 30px 0px;
+}
+
+.tab {
+  float: left;
+
+  label {
+    padding: @space-small;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin: 0 15px;
+    position: relative;
+    border-top-left-radius: @border-radius-base;
+    border-top-right-radius: @border-radius-base;
+    left: 30%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  [type=radio] {
+    display: none;
+  }
+}
+
+.content {
+  position: absolute;
+  background: @color-white;
+  top: 29px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 48px;
+  border: 1px solid #ccc;
+  overflow: scroll;
+
+}
+
+[type=radio]:checked ~ label {
+  background: @color-white;
+  border-bottom: 1px solid @color-white;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+/*
+EXAMPLE:
+
+<div class="tabs">
+
+  <div class="tab">
+    <input type="radio" id="tab-1" name="tab-group-1" checked>
+    <label for="tab-1">
+      FIRST TAB
+    </label>
+
+    <div class="content">
+      ...
+    </div>
+  </div>
+
+  <div class="tab">
+    <input type="radio" id="tab-2" name="tab-group-1">
+    <label for="tab-2">
+      SECOND TAB
+    </label>
+
+    <div class="content">
+      ...
+    </div>
+  </div>
+
+</div>
+
+*/
