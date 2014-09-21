@@ -103,17 +103,11 @@
     .grid-generate-columns(@number-of-columns);
     .grid-generate-offset(@number-of-columns);
 }
+
 // RESPONSIVE layout
 .grid-generate-columns-responsive(@number-of-columns) when (@responsive = true) {
     .grid-generate-columns(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
         .grid-generate-columns(@number-of-columns; @size - 1);
-
-        // small span keep everywhere, dont use media query
-        .span-small-@{size} {
-            .span;
-            .pull-left;
-            width: (100% / @number-of-columns) * @size;
-        }
 
         .span-large-@{size} {
             .span;
@@ -121,6 +115,13 @@
 
         .span-medium-@{size} {
             .span;
+        }
+
+        // small span keep everywhere, dont use media query
+        .span-small-@{size} {
+            .span;
+            .pull-left;
+            width: (100% / @number-of-columns) * @size;
         }
     }
 
@@ -142,6 +143,18 @@
     .grid-generate-columns(@number-of-columns);
     .grid-generate-offsets(@number-of-columns);
 
+    @media (min-width: @threshold-medium) {
+        .grid-generate-medium-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
+            .grid-generate-medium-spans(@number-of-columns; @size - 1);
+            // spans
+            .span-medium-@{size} {
+                .pull-left;
+                width: (100% / @number-of-columns) * @size;
+            }
+        }
+        .grid-generate-medium-spans(@number-of-columns);
+    }
+
     @media (min-width: @threshold-big) {
         .grid-generate-large-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
             .grid-generate-large-spans(@number-of-columns; @size - 1);
@@ -154,17 +167,6 @@
         .grid-generate-large-spans(@number-of-columns);
     }
 
-    @media (min-width: @threshold-medium) {
-        .grid-generate-medium-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
-            .grid-generate-medium-spans(@number-of-columns; @size - 1);
-            // spans
-            .span-medium-@{size} {
-                .pull-left;
-                width: (100% / @number-of-columns) * @size;
-            }
-        }
-        .grid-generate-medium-spans(@number-of-columns);
-    }
 
     // container
     .container {
