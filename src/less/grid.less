@@ -109,32 +109,31 @@
     .grid-generate-columns(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
         .grid-generate-columns(@number-of-columns; @size - 1);
 
-        .span-large-@{size} {
-            .span;
-        }
-
-        .span-medium-@{size} {
-            .span;
-        }
-
         // small span keep everywhere, dont use media query
         .span-small-@{size} {
             .span;
             .pull-left;
             width: (100% / @number-of-columns) * @size;
         }
+
+        .span-medium-@{size} {
+            .span;
+        }
+
+        .span-large-@{size} {
+            .span;
+        }
+    }
+
+    // offsets
+    .offset-small-0 {
+        margin-left: 0;
     }
 
     .grid-generate-offsets(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
         .grid-generate-offsets(@number-of-columns; @size - 1);
 
         // offsets
-        .offset-large-@{size} {
-            margin-left: (100% / @number-of-columns) * @size;
-        }
-        .offset-medium-@{size} {
-            margin-left: (100% / @number-of-columns) * @size;
-        }
         .offset-small-@{size} {
             margin-left: (100% / @number-of-columns) * @size;
         }
@@ -144,6 +143,10 @@
     .grid-generate-offsets(@number-of-columns);
 
     @media (min-width: @threshold-medium) {
+        .offset-medium-0 {
+            margin-left: 0;
+        }
+
         .grid-generate-medium-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
             .grid-generate-medium-spans(@number-of-columns; @size - 1);
             // spans
@@ -151,17 +154,29 @@
                 .pull-left;
                 width: (100% / @number-of-columns) * @size;
             }
+
+            .offset-medium-@{size} {
+                margin-left: (100% / @number-of-columns) * @size;
+            }
         }
         .grid-generate-medium-spans(@number-of-columns);
     }
 
     @media (min-width: @threshold-big) {
+        .offset-large-0 {
+            margin-left: 0;
+        }
+
         .grid-generate-large-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
             .grid-generate-large-spans(@number-of-columns; @size - 1);
             // spans
             .span-large-@{size} {
                 .pull-left;
                 width: (100% / @number-of-columns) * @size;
+            }
+
+            .offset-large-@{size} {
+                margin-left: (100% / @number-of-columns) * @size;
             }
         }
         .grid-generate-large-spans(@number-of-columns);
