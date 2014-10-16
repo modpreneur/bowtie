@@ -29,21 +29,21 @@
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
 .clearfix {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 /* !!!! MOST IMPORTANT !!!! */
 * {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 
@@ -62,7 +62,7 @@
 /* ROW */
 .row {
     width: 100%;
-  &:extend(.clearfix all);
+    &:extend(.clearfix all);
 }
 
 
@@ -73,7 +73,7 @@
     padding: @column-padding-vertical @column-padding-horizontal;
     margin: @column-margin-vertical @column-margin-horizontal;
     min-height: 1px;
-//    border: 1px solid red;
+    //    border: 1px solid red;
 }
 
 // NON RESPONSIVE LAYOUT
@@ -103,6 +103,7 @@
     .grid-generate-columns(@number-of-columns);
     .grid-generate-offset(@number-of-columns);
 }
+
 // RESPONSIVE layout
 .grid-generate-columns-responsive(@number-of-columns) when (@responsive = true) {
     .grid-generate-columns(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
@@ -115,25 +116,24 @@
             width: (100% / @number-of-columns) * @size;
         }
 
-        .span-large-@{size} {
-            .span;
-        }
-
         .span-medium-@{size} {
             .span;
         }
+
+        .span-large-@{size} {
+            .span;
+        }
+    }
+
+    // offsets
+    .offset-small-0 {
+        margin-left: 0;
     }
 
     .grid-generate-offsets(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
         .grid-generate-offsets(@number-of-columns; @size - 1);
 
         // offsets
-        .offset-large-@{size} {
-            margin-left: (100% / @number-of-columns) * @size;
-        }
-        .offset-medium-@{size} {
-            margin-left: (100% / @number-of-columns) * @size;
-        }
         .offset-small-@{size} {
             margin-left: (100% / @number-of-columns) * @size;
         }
@@ -142,19 +142,11 @@
     .grid-generate-columns(@number-of-columns);
     .grid-generate-offsets(@number-of-columns);
 
-    @media (min-width: @threshold-big) {
-        .grid-generate-large-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
-            .grid-generate-large-spans(@number-of-columns; @size - 1);
-            // spans
-            .span-large-@{size} {
-                .pull-left;
-                width: (100% / @number-of-columns) * @size;
-            }
-        }
-        .grid-generate-large-spans(@number-of-columns);
-    }
-
     @media (min-width: @threshold-medium) {
+        .offset-medium-0 {
+            margin-left: 0;
+        }
+
         .grid-generate-medium-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
             .grid-generate-medium-spans(@number-of-columns; @size - 1);
             // spans
@@ -162,9 +154,34 @@
                 .pull-left;
                 width: (100% / @number-of-columns) * @size;
             }
+
+            .offset-medium-@{size} {
+                margin-left: (100% / @number-of-columns) * @size;
+            }
         }
         .grid-generate-medium-spans(@number-of-columns);
     }
+
+    @media (min-width: @threshold-big) {
+        .offset-large-0 {
+            margin-left: 0;
+        }
+
+        .grid-generate-large-spans(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
+            .grid-generate-large-spans(@number-of-columns; @size - 1);
+            // spans
+            .span-large-@{size} {
+                .pull-left;
+                width: (100% / @number-of-columns) * @size;
+            }
+
+            .offset-large-@{size} {
+                margin-left: (100% / @number-of-columns) * @size;
+            }
+        }
+        .grid-generate-large-spans(@number-of-columns);
+    }
+
 
     // container
     .container {
