@@ -1,21 +1,30 @@
 // buttons
 @import "variables";
 
+.animate (@animated: all 700ms ease) {
+  -webkit-transition: @animated;
+  -moz-transition: @animated;
+  -ms-transition: @animated;
+  -o-transition: @animated;
+  transition: @animated;
+}
+
 .button {
     padding: @space-small @space-small * 2;
     color: white;
-    border-radius: 0;
-    -webkit-border-radius: 0;
     display: inline-block;
     background-color: @color-dark-grey;
+  .animate();
 
     &:hover {
         background-color: @color-dark-grey-hover;
+      .animate();
     }
 }
 
 a.button:hover {
     text-decoration: none;
+  .animate();
 }
 
 .button-template(@bg-color, @bg-color-hover) {
@@ -54,3 +63,10 @@ a.button:hover {
 .button-warning {
     .button-template(@color-warning, @color-warning-hover);
 }
+
+//EXAMPLES
+/*
+<a href="" class="button button-tertiary radius-small">
+  radius-small
+</a>
+*/
