@@ -56,10 +56,22 @@
 @threshold-big: 1210px;
 @threshold-medium: 810px;
 @threshold-small: 410px;
+
+//@threshold-mini:  240px;
+//@threshold-small-n:  481px;
+//@threshold-medium-n:  768px;
+//@threshold-large-n:  1024px;
+//@threshold-xlarge:  1210px;
 // container sizes for each width size
 @container-big: 1200px;
 @container-medium: 800px;
 @container-small: 400px;
+
+//@container-full: 1200px;
+//@container-medium: 1014px;
+//@container-small: 100%;
+
+
 
 
 //---------------//
@@ -154,12 +166,12 @@
 
 @font-weight-normal:               500;
 
-@font-family-sans-serif:           "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:           "Proxima Nova", sans-serif;
 @font-family-serif:                Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:            Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:                 @font-family-sans-serif;
 
-@line-height-base:                 1.428571429;
+@line-height-base:                 ceil((@font-size-base * 1.618));
 
 //** Text muted color
 @text-muted:                       @gray-light;
@@ -173,6 +185,5 @@ body {
     font-family:                     @font-family-base;
     font-size:                       @font-size-base;
     line-height:                     @line-height-base;
-
-  margin: 0px;
+    margin: 0px;
 }

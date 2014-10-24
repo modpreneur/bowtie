@@ -45,6 +45,7 @@ ul.menu {
 }
 
 nav {
+  .clearfix();
   h1 {
     float: left;
     padding: 20px;
@@ -120,17 +121,13 @@ li {
   ul.menu {
     float: none;
     padding: 0;
+    .clearfix();
   }
 
   /*Make dropdown links appear inline*/
   ul {
     position: static;
     display: none;
-  }
-
-  /*Create vertical spacing*/
-  li {
-    margin-bottom: 1px;
   }
 
   /*Make all menu links full width*/
@@ -169,14 +166,16 @@ li {
 //EXAMPLE
 /*
 <div class="menu">
-    <nav class="clearfix">
+    <nav>
         <a href="#"><h1>
             BOWTIE
         </h1></a>
 
-        <label for="show-menu" class="show-menu"><span class="glyphicon glyphicon-align-justify"></span></label>
+        <label for="show-menu" class="show-menu">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </label>
         <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu" class="menu clearfix">
+        <ul id="menu" class="menu">
             <li>
                 <a href="">Uvod</a>
             </li>

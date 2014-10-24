@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="src/css/custom_style.css"/>
 </head>
 <body>
-
 <div class="menu">
-    <nav class="clearfix">
+    <div class="container">
+    <nav>
         <a href="#"><h1>
             BOWTIE
         </h1></a>
 
         <label for="show-menu" class="show-menu"><span class="glyphicon glyphicon-align-justify"></span></label>
         <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu" class="menu clearfix">
+        <ul id="menu" class="menu">
             <li>
                 <a href="">Uvod</a>
             </li>
@@ -35,39 +35,57 @@
         </ul>
     </nav>
 </div>
-
-<div class="dropdown-main">
-    <label for="show-drop" class="show-drop">
-        DorpDown
-    </label>
-    <input type="checkbox" id="show-drop" role="button">
-    <ul id="dropdown" class="drop clearfix">
-        <li>
-            <a href="">drop1</a>
-        </li>
-        <li>
-            <a href="">drop2</a>
-        </li>
-        <li>
-            <a href="">drop3</a>
-        </li>
-        <li>
-            <a href="">drop4</a>
-        </li>
-    </ul>
 </div>
-
-
 
 <div class="container">
     <div class="row">
         <div class="span-large-12 text-center">
             <div class="dropdown-main">
-                <label for="show-drop2" class="show-drop">
+                <label for="show-drop1" class="show-drop">
                     DorpDown
                 </label>
-                <input type="checkbox" id="show-drop2" role="button">
-                <ul id="dropdown" class="drop clearfix">
+                <input type="checkbox" id="show-drop1" role="button">
+                <ul id="dropdown" class="drop">
+                    <li>
+                        <a href="">drop1</a>
+                    </li>
+                    <li>
+                        <a href="">drop2</a>
+                    </li>
+                    <li>
+                        <a href="">drop3</a>
+                    </li>
+                    <li>
+                        <div class="dropdown-main">
+                            <label for="show-drop2" class="show-drop">
+                                DorpDown
+                            </label>
+                            <input type="checkbox" id="show-drop2" role="button">
+                            <ul id="dropdown" class="drop">
+                                <li>
+                                    <a href="">drop1</a>
+                                </li>
+                                <li>
+                                    <a href="">drop2</a>
+                                </li>
+                                <li>
+                                    <a href="">drop3</a>
+                                </li>
+                                <li>
+                                    <a href="">drop4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dropdown-main">
+                <label for="show-drop3" class="show-drop">
+                    DorpDown
+                </label>
+                <input type="checkbox" id="show-drop3" role="button">
+                <ul id="dropdown" class="drop">
                     <li>
                         <a href="">drop1</a>
                     </li>
@@ -85,70 +103,69 @@
         </div>
     </div>
     <div class="row">
-        <div class="span-large-2">
+        <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button">
                 button
             </a>
         </div>
-            <div class="span-large-2">
+            <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-primary">
                 button-primary
             </a>
             </div>
-                <div class="span-large-2">
+                <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-secondary">
                 button-secondary
             </a>
                 </div>
-                    <div class="span-large-2">
+                    <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-tertiary">
                 button-tertiary
             </a>
                     </div>
-                        <div class="span-large-2">
+                        <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-danger">
                 button-danger
             </a>
                         </div>
-                            <div class="span-large-2">
+                            <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-info">
                 button-info
             </a>
                             </div>
-    </div>
-    <div class="row margin-big-vertical">
-                                <div class="span-large-2">
+
+                                <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-success">
                 button-success
             </a>
                                 </div>
-                                    <div class="span-large-2">
+                                    <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-warning">
                 button-warning
             </a>
                                     </div>
-                                        <div class="span-large-2">
+                                        <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button radius-base">
                 radius-base
             </a>
                                         </div>
-                                            <div class="span-large-2">
+                                            <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-primary radius-circle">
                 radius-circle
             </a>
                                             </div>
-                                                <div class="span-large-2">
+                                                <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-secondary radius-large">
                 radius-large
             </a>
                                                 </div>
-                                                    <div class="span-large-2">
+        <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button button-tertiary radius-small">
                 radius-small
             </a>
-        </div>
-        <div class="row margin-big-horizontal">
-
+            </div>
+    </div>
+    <div class="row margin-big-vertical">
             <div class="span-large-3">
                 <p class="border-primary radius-large">
                     border-primary,radius-large
@@ -171,7 +188,6 @@
             </div>
         </div>
     </div>
-</div>
 
 <div class="container">
     <div class="row">
@@ -597,7 +613,7 @@
 </div>
 
 <div class="tabs">
-<div class="tabs-border clearfix">
+<div class="tabs-border">
     <div class="tab">
         <input type="radio" id="tab-1" name="tab-group-1">
         <label for="tab-1">List 1 <i>&#9660;</i></label>
