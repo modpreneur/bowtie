@@ -1,0 +1,47 @@
+input[type=checkbox] {
+  display:none;
+}
+
+.checkbox-01 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right:10px;
+  line-height:28px;
+}
+
+.checkbox-01:before {
+//  content: "✘";
+  font-family: "icomoon";
+  content: "\f00d";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  background-color: transparent;
+  color: @color-dark-grey;
+  text-align: center;
+  border-radius: 100px;
+  border: solid 2px @color-dark-grey;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+input[type=checkbox]:checked + .checkbox-01:before {
+//  content: '✔';
+  content: '\f00c';
+  background-color: @color-warning;
+  color: #ffffff;
+  border: solid 2px @color-warning;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+//EXAMPLE
+
+/*
+
+<input id="check01" type="checkbox">
+<label class="checkbox-01" for="check01"> Remember me </label>
+
+*/
