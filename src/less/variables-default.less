@@ -187,3 +187,49 @@ body {
     line-height:                     @line-height-base;
     margin: 0px;
 }
+
+.animate (@animated: all 700ms ease) {
+  -webkit-transition: @animated;
+  -moz-transition: @animated;
+  -ms-transition: @animated;
+  -o-transition: @animated;
+  transition: @animated;
+}
+
+@grayscale:                         grayscale(100%);
+@saturate:                          saturate(3);
+@contrast:                          contrast(160%);
+@brightness:                        brightness(0.25);
+@blur:                              blur(3px);
+@invert:                            invert(100%);
+@sepia:                             sepia(100%);
+@huerotate:                         hue-rotate(180deg);
+@opacity:                           opacity(50%);
+
+.grayscale () {
+  -webkit-filter: @grayscale;
+}
+.saturate () {
+  -webkit-filter: @saturate;
+}
+.contrast () {
+  -webkit-filter: @contrast;
+}
+.brightness () {
+  -webkit-filter: @brightness;
+}
+.blur () {
+  -webkit-filter: @blur;
+}
+.invert () {
+  -webkit-filter: @invert;
+}
+.sepia () {
+  -webkit-filter: @sepia;
+}
+.huerotate () {
+  -webkit-filter: @huerotate;
+}
+.opacity () {
+  -webkit-filter: @opacity;
+}
