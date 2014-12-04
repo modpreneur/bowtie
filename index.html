@@ -6,40 +6,1284 @@
     <link rel="stylesheet" href="src/css/style.css"/>
     <link rel="stylesheet" href="src/css/checkbox-font.css"/>
     <link rel="stylesheet" href="src/css/font-awesome.css"/>
+
+    <style>
+        pre {
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            display: block;
+            unicode-bidi: embed;
+            font-family: monospace;
+            white-space: pre;
+        }
+        .example {
+            border: solid 1px #e1e1e8;
+            border-radius: 15px;
+            background-color: #f7f7f9;
+        }
+        ul {
+            margin-top: 0px;
+        }
+        .examples {
+            border-bottom: solid 1px #808080;
+            text-align: center;
+        }
+        .example-heading {
+            font-size: 37px;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="span-large-18">
+
+                    <h2 class="example-heading" id="001">Menu</h2>
+                    <div class="example">
+                        <div class="examples menu-example">
+                            <div class="menu">
+                                    <nav>
+                                        <a href="#"><h1>
+                                            BOWTIE
+                                        </h1></a>
+
+                                        <label for="show-menu1" class="show-menu"><span class="fa fa-bars"></span></label>
+                                        <input type="checkbox" id="show-menu1" role="button">
+                                        <ul id="menu" class="menu">
+                                            <li>
+                                                <a href="">Uvod</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sluzby</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Reference</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tym</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Kontakt</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                            </div>
+                        </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">menu</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;nav&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;&lt;h1&gt;</span>BOWTIE<span class="el">&lt;/h1&gt;&lt;/a&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">show-menu1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">show-menu</span><span class="pr">"</span><span class="el">&gt;
+                    &lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-bars</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;
+                &lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">show-menu1</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;ul</span> <span class="pr">id="</span><span class="ch">menu</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">menu</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Uvod<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Sluzby<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Reference<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Tym<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Kontakt<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="el">&lt;/ul&gt;</span>
+            <span class="el">&lt;/nav&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+</code>
+            </pre>
+                    </div>
+
+            <h2 class="example-heading" id="002">Before and After widget</h2>
+
+            <div class="example">
+                <div class="examples bna-example">
+                    <div class="bna">
+                        <div class="bna-head">
+                            <span class="before">Before</span>
+                            <span class="icon fa fa-retweet"></span>
+                            <span class="after">After</span>
+                        </div>
+                        <div class="bna-content">
+                            <div class="before">
+                                <img src="http://cdn2.socialappspot.com/gfba2/Images/Notifications/2315886-f3fe.jpg" alt="before"/>
+                            </div>
+                            <div class="after">
+                                <img src="http://cdn2.socialappspot.com/gfba2/Images/Notifications/2315886-f3fe.jpg" alt="before"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="bna"&gt;
+        &lt;div class="bna-head"&gt;
+            &lt;span class="before"&gt;Before&lt;/span&gt;
+            &lt;span class="icon fa fa-retweet"&gt;&lt;/span&gt;
+            &lt;span class="after"&gt;After&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bna-content"&gt;
+            &lt;div class="before"&gt;
+                &lt;img src="" alt="before"/&gt;
+            &lt;/div&gt;
+            &lt;div class="after"&gt;
+                &lt;img src="" alt="after"/&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="003">Nav List</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="navbar">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    navlist 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    navlist 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    navlist 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    navlist 4
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="navbar"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;
+                    navlist 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;
+                    navlist 2
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;
+                    navlist 3
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;
+                    navlist 4
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="004">Rating</h2>
+
+            <div class="example">
+                <div class="examples clearfix">
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="rating"&gt;
+        &lt;input type="radio" id="star5" name="rating" value="5" /&gt;&lt;label for="star5"&gt;&lt;/label&gt;
+        &lt;input type="radio" id="star4" name="rating" value="4" /&gt;&lt;label for="star4"&gt;&lt;/label&gt;
+        &lt;input type="radio" id="star3" name="rating" value="3" /&gt;&lt;label for="star3"&gt;&lt;/label&gt;
+        &lt;input type="radio" id="star2" name="rating" value="2" /&gt;&lt;label for="star2"&gt;&lt;/label&gt;
+        &lt;input type="radio" id="star1" name="rating" value="1" /&gt;&lt;label for="star1"&gt;&lt;/label&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="005">Tabs</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="tabs">
+                        <div class="tabs-border">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1">
+                                <label for="tab-1">List 1 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 1 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                            <div class="tab">
+                                <input type="radio" id="tab-2" name="tab-group-1">
+                                <label for="tab-2">List 2 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 2 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                            <div class="tab">
+                                <input type="radio" id="tab-3" name="tab-group-1">
+                                <label for="tab-3">List 3 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 3 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                            <div class="tab">
+                                <input type="radio" id="tab-4" name="tab-group-1">
+                                <label for="tab-4">List 4 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 4 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                            <div class="tab">
+                                <input type="radio" id="tab-5" name="tab-group-1">
+                                <label for="tab-5">List 5 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 5 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                            <div class="tab">
+                                <input type="radio" id="tab-6" name="tab-group-1">
+                                <label for="tab-6">List 6 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 6 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                            <div class="tab">
+                                <input type="radio" id="tab-7" name="tab-group-1">
+                                <label for="tab-7">List 7 <span class="fa fa-caret-down"></span></label>
+                                <div class="tab" id="close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1">
+                                    <label for="tab-close">List 7 <span class="fa fa-caret-up"></span></label>
+                                </div>
+
+                                <div class="content">
+                                    Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="tabs"&gt;
+        &lt;div class="tabs-border"&gt;
+            &lt;div class="tab"&gt;
+                &lt;input type="radio" id="tab-1" name="tab-group-1"&gt;
+                &lt;label for="tab-1"&gt;List 1 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;div class="tab" id="close-tab"&gt;
+                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
+                    &lt;label for="tab-close"&gt;List 1 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="content"&gt;
+                    ...
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="tab"&gt;
+                &lt;input type="radio" id="tab-2" name="tab-group-1"&gt;
+                &lt;label for="tab-2"&gt;List 2 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;div class="tab" id="close-tab"&gt;
+                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
+                    &lt;label for="tab-close"&gt;List 2 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="content"&gt;
+                    ...
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="tab"&gt;
+                &lt;input type="radio" id="tab-3" name="tab-group-1"&gt;
+                &lt;label for="tab-3"&gt;List 3 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;div class="tab" id="close-tab"&gt;
+                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
+                    &lt;label for="tab-close"&gt;List 3 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="content"&gt;
+                    ...
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="tab"&gt;
+                &lt;input type="radio" id="tab-4" name="tab-group-1"&gt;
+                &lt;label for="tab-4"&gt;List 4 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;div class="tab" id="close-tab"&gt;
+                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
+                    &lt;label for="tab-close"&gt;List 4 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class="content"&gt;
+                    ...
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="006">Filter with checkbox</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="filter">
+
+                        <input id="select-type-1" name="radio-set-1" type="checkbox" class="filter-selector-1" />
+                        <label for="select-type-1" class="filter-label-1">
+                            FILTER 1
+                        </label>
+
+                        <input id="select-type-2" name="radio-set-2" type="checkbox" class="filter-selector-2"/>
+                        <label for="select-type-2" class="filter-label-2">
+                            FILTER 2
+                        </label>
+
+                        <input id="select-type-3" name="radio-set-3" type="checkbox" class="filter-selector-3" />
+                        <label for="select-type-3" class="filter-label-3">
+                            FILTER 3
+                        </label>
+
+                        <ul class="filter-items">
+                            <li class="filter-item-1">
+                                <a href="">
+                                    FILTER 1
+                                </a>
+                            </li>
+                            <li class="filter-item-1">
+                                <a href="">
+                                    FILTER 1
+                                </a>
+                            </li>
+                            <li class="filter-item-1">
+                                <a href="">
+                                    FILTER 1
+                                </a>
+                            </li>
+                            <li class="filter-item-2">
+                                <a href="">
+                                    FILTER 2
+                                </a>
+                            </li>
+                            <li class="filter-item-2">
+                                <a href="">
+                                    FILTER 2
+                                </a>
+                            </li>
+                            <li class="filter-item-3">
+                                <a href="">
+                                    FILTER 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="filter"&gt;
+
+        &lt;input id="select-type-1" name="radio-set-1" type="checkbox" class="filter-selector-1" /&gt;
+        &lt;label for="select-type-1" class="filter-label-1"&gt;
+            FILTER 1
+        &lt;/label&gt;
+
+        &lt;input id="select-type-2" name="radio-set-2" type="checkbox" class="filter-selector-2"/&gt;
+        &lt;label for="select-type-2" class="filter-label-2"&gt;
+            FILTER 2
+        &lt;/label&gt;
+
+        &lt;input id="select-type-3" name="radio-set-3" type="checkbox" class="filter-selector-3" /&gt;
+        &lt;label for="select-type-3" class="filter-label-3"&gt;
+            FILTER 3
+        &lt;/label&gt;
+
+        &lt;ul class="filter-items"&gt;
+            &lt;li class="filter-item-1"&gt;
+                &lt;a href=""&gt;
+                    FILTER 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-item-1"&gt;
+                &lt;a href=""&gt;
+                    FILTER 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-item-1"&gt;
+                &lt;a href=""&gt;
+                    FILTER 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-item-2"&gt;
+                &lt;a href=""&gt;
+                    FILTER 2
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-item-2"&gt;
+                &lt;a href=""&gt;
+                    FILTER 2
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-item-3"&gt;
+                &lt;a href=""&gt;
+                    FILTER 3
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="007">Filter with radio</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="filter-radio">
+
+                        <input id="select-type-all" name="radio-set-1" type="radio" class="filter-selector-all" checked="checked" />
+                        <label for="select-type-all" class="filter-radio-label-all">All</label>
+
+                        <input id="select-type-11" name="radio-set-1" type="radio" class="filter-selector-1" />
+                        <label for="select-type-11" class="filter-radio-label-1">FILTER 1</label>
+
+                        <input id="select-type-22" name="radio-set-1" type="radio" class="filter-selector-2" />
+                        <label for="select-type-22" class="filter-radio-label-2">FILTER 2</label>
+
+                        <input id="select-type-33" name="radio-set-1" type="radio" class="filter-selector-3" />
+                        <label for="select-type-33" class="filter-radio-label-3">FILTER 3</label>
+
+                        <ul class="filter-radio-items">
+                            <li class="filter-radio-item-1">
+                                <a href="">
+                                    FILTER 1
+                                </a>
+                            </li>
+                            <li class="filter-radio-item-1">
+                                <a href="">
+                                    FILTER 1
+                                </a>
+                            </li>
+                            <li class="filter-radio-item-1">
+                                <a href="">
+                                    FILTER 1
+                                </a>
+                            </li>
+                            <li class="filter-radio-item-2">
+                                <a href="">
+                                    FILTER 2
+                                </a>
+                            </li>
+                            <li class="filter-radio-item-2">
+                                <a href="">
+                                    FILTER 2
+                                </a>
+                            </li>
+                            <li class="filter-radio-item-3">
+                                <a href="">
+                                    FILTER 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="filter-radio"&gt;
+
+        &lt;input id="select-type-all" name="radio-set-1" type="radio" class="filter-selector-all" checked="checked" /&gt;
+        &lt;label for="select-type-all" class="filter-radio-label-all"&gt;All&lt;/label&gt;
+
+        &lt;input id="select-type-11" name="radio-set-1" type="radio" class="filter-selector-1" /&gt;
+        &lt;label for="select-type-11" class="filter-radio-label-1"&gt;FILTER 1&lt;/label&gt;
+
+        &lt;input id="select-type-22" name="radio-set-1" type="radio" class="filter-selector-2" /&gt;
+        &lt;label for="select-type-22" class="filter-radio-label-2"&gt;FILTER 2&lt;/label&gt;
+
+        &lt;input id="select-type-33" name="radio-set-1" type="radio" class="filter-selector-3" /&gt;
+        &lt;label for="select-type-33" class="filter-radio-label-3"&gt;FILTER 3&lt;/label&gt;
+
+        &lt;ul class="filter-radio-items"&gt;
+            &lt;li class="filter-radio-item-1"&gt;
+                &lt;a href=""&gt;
+                    FILTER 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-radio-item-1"&gt;
+                &lt;a href=""&gt;
+                    FILTER 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-radio-item-1"&gt;
+                &lt;a href=""&gt;
+                    FILTER 1
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-radio-item-2"&gt;
+                &lt;a href=""&gt;
+                    FILTER 2
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-radio-item-2"&gt;
+                &lt;a href=""&gt;
+                    FILTER 2
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="filter-radio-item-3"&gt;
+                &lt;a href=""&gt;
+                    FILTER 3
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="008">iOS checkbox</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="ios-check">
+                        <label>
+                            <input type="checkbox" class="ios-switch" checked />
+                            <div class="input-div"><div class="input-div"></div></div>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" class="ios-switch" />
+                            <div class="input-div"><div class="input-div"></div></div>
+                        </label>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="ios-check"&gt;
+        &lt;label&gt;
+            &lt;input type="checkbox" class="ios-switch" checked /&gt;
+            &lt;div class="input-div"&gt;&lt;div class="input-div"&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" class="ios-switch" /&gt;
+            &lt;div class="input-div"&gt;&lt;div class="input-div"&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="009">Another checkbox</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <input id="check01" type="checkbox">
+                    <label class="checkbox-01" for="check01"> Remember me </label>
+
+                    <input id="check02" type="checkbox" checked>
+                    <label class="checkbox-01" for="check02"> Remember me </label>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;input id="check01" type="checkbox"&gt;
+    &lt;label class="checkbox-01" for="check01"&gt; Remember me &lt;/label&gt;
+
+    &lt;input id="check02" type="checkbox" checked&gt;
+    &lt;label class="checkbox-01" for="check02"&gt; Remember me &lt;/label&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="0010">Dropdown</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="dropdown-main">
+                        <label for="show-drop1" class="show-drop">
+                            DorpDown
+                        </label>
+                        <input type="checkbox" id="show-drop1" role="button">
+                        <ul id="dropdown" class="drop">
+                            <li>
+                                <a href="">drop1</a>
+                            </li>
+                            <li>
+                                <a href="">drop2</a>
+                            </li>
+                            <li>
+                                <a href="">drop3</a>
+                            </li>
+                            <li>
+                                <a href="">drop4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="dropdown-main"&gt;
+        &lt;label for="show-drop1" class="show-drop"&gt;
+            DorpDown
+        &lt;/label&gt;
+        &lt;input type="checkbox" id="show-drop1" role="button"&gt;
+        &lt;ul id="dropdown" class="drop"&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;drop1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;drop2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;drop3&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;drop4&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="0011">TABLE (full scroll)</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="table-scroll-full">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>MAIN 01</th>
+                                <th>MAIN 02</th>
+                                <th>MAIN 03</th>
+                                <th>MAIN 04</th>
+                                <th>MAIN 05</th>
+                                <th>MAIN 06</th>
+                                <th>MAIN 07</th>
+                                <th>MAIN 08</th>
+                                <th>MAIN 09</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>xxx 01</td>
+                                <td>xxx 02</td>
+                                <td>xxx 03</td>
+                                <td>xxx 04</td>
+                                <td>xxx 05</td>
+                                <td>xxx 06</td>
+                                <td>xxx 07</td>
+                                <td>xxx 08</td>
+                                <td>xxx 09</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 11</td>
+                                <td>xxx 12</td>
+                                <td>xxx 13</td>
+                                <td>xxx 14</td>
+                                <td>xxx 15</td>
+                                <td>xxx 16</td>
+                                <td>xxx 17</td>
+                                <td>xxx 18</td>
+                                <td>xxx 19</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 21</td>
+                                <td>xxx 22</td>
+                                <td>xxx 23</td>
+                                <td>xxx 24</td>
+                                <td>xxx 25</td>
+                                <td>xxx 26</td>
+                                <td>xxx 27</td>
+                                <td>xxx 28</td>
+                                <td>xxx 29</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="table-scroll-full"&gt;
+        &lt;table&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;MAIN 01&lt;/th&gt;
+                &lt;th&gt;MAIN 02&lt;/th&gt;
+                &lt;th&gt;MAIN 03&lt;/th&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;xxx 01&lt;/td&gt;
+                &lt;td&gt;xxx 02&lt;/td&gt;
+                &lt;td&gt;xxx 03&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;xxx 11&lt;/td&gt;
+                &lt;td&gt;xxx 12&lt;/td&gt;
+                &lt;td&gt;xxx 13&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;xxx 21&lt;/td&gt;
+                &lt;td&gt;xxx 22&lt;/td&gt;
+                &lt;td&gt;xxx 23&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="0012">TABLE (full height)</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="table-on-height">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>MAIN 01</th>
+                                <th>MAIN 02</th>
+                                <th>MAIN 03</th>
+                                <th>MAIN 04</th>
+                                <th>MAIN 05</th>
+                                <th>MAIN 06</th>
+                                <th>MAIN 07</th>
+                                <th>MAIN 08</th>
+                                <th>MAIN 09</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td data-title="MAIN 01">xxx 01</td>
+                                <td data-title="MAIN 02">xxx 02</td>
+                                <td data-title="MAIN 03">xxx 03</td>
+                                <td data-title="MAIN 04">xxx 04</td>
+                                <td data-title="MAIN 05">xxx 05</td>
+                                <td data-title="MAIN 06">xxx 06</td>
+                                <td data-title="MAIN 07">xxx 07</td>
+                                <td data-title="MAIN 08">xxx 08</td>
+                                <td data-title="MAIN 09">xxx 09</td>
+                            </tr>
+                            <tr>
+                                <td data-title="MAIN 01">xxx 11</td>
+                                <td data-title="MAIN 02">xxx 12</td>
+                                <td data-title="MAIN 03">xxx 13</td>
+                                <td data-title="MAIN 04">xxx 14</td>
+                                <td data-title="MAIN 05">xxx 15</td>
+                                <td data-title="MAIN 06">xxx 16</td>
+                                <td data-title="MAIN 07">xxx 17</td>
+                                <td data-title="MAIN 08">xxx 18</td>
+                                <td data-title="MAIN 09">xxx 19</td>
+                            </tr>
+                            <tr>
+                                <td data-title="MAIN 01">xxx 21</td>
+                                <td data-title="MAIN 02">xxx 22</td>
+                                <td data-title="MAIN 03">xxx 23</td>
+                                <td data-title="MAIN 04">xxx 24</td>
+                                <td data-title="MAIN 05">xxx 25</td>
+                                <td data-title="MAIN 06">xxx 26</td>
+                                <td data-title="MAIN 07">xxx 27</td>
+                                <td data-title="MAIN 08">xxx 28</td>
+                                <td data-title="MAIN 09">xxx 29</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="table-on-height"&gt;
+        &lt;table&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;MAIN 01&lt;/th&gt;
+                &lt;th&gt;MAIN 02&lt;/th&gt;
+                &lt;th&gt;MAIN 03&lt;/th&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td data-title="MAIN 01"&gt;xxx 01&lt;/td&gt;
+                &lt;td data-title="MAIN 02"&gt;xxx 02&lt;/td&gt;
+                &lt;td data-title="MAIN 03"&gt;xxx 03&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-title="MAIN 01"&gt;xxx 11&lt;/td&gt;
+                &lt;td data-title="MAIN 02"&gt;xxx 12&lt;/td&gt;
+                &lt;td data-title="MAIN 03"&gt;xxx 13&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-title="MAIN 01"&gt;xxx 21&lt;/td&gt;
+                &lt;td data-title="MAIN 02"&gt;xxx 22&lt;/td&gt;
+                &lt;td data-title="MAIN 03"&gt;xxx 23&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+            <h2 class="example-heading" id="0013">TABLE (scroll)</h2>
+
+            <div class="example">
+                <div class="examples">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>MAIN 01</th>
+                                <th>MAIN 02</th>
+                                <th>MAIN 03</th>
+                                <th>MAIN 04</th>
+                                <th>MAIN 05</th>
+                                <th>MAIN 06</th>
+                                <th>MAIN 07</th>
+                                <th>MAIN 08</th>
+                                <th>MAIN 09</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>xxx 01</td>
+                                <td>xxx 02</td>
+                                <td>xxx 03</td>
+                                <td>xxx 04</td>
+                                <td>xxx 05</td>
+                                <td>xxx 06</td>
+                                <td>xxx 07</td>
+                                <td>xxx 08</td>
+                                <td>xxx 09</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 11</td>
+                                <td>xxx 12</td>
+                                <td>xxx 13</td>
+                                <td>xxx 14</td>
+                                <td>xxx 15</td>
+                                <td>xxx 16</td>
+                                <td>xxx 17</td>
+                                <td>xxx 18</td>
+                                <td>xxx 19</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 21</td>
+                                <td>xxx 22</td>
+                                <td>xxx 23</td>
+                                <td>xxx 24</td>
+                                <td>xxx 25</td>
+                                <td>xxx 26</td>
+                                <td>xxx 27</td>
+                                <td>xxx 28</td>
+                                <td>xxx 29</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 31</td>
+                                <td>xxx 32</td>
+                                <td>xxx 33</td>
+                                <td>xxx 34</td>
+                                <td>xxx 35</td>
+                                <td>xxx 36</td>
+                                <td>xxx 37</td>
+                                <td>xxx 38</td>
+                                <td>xxx 39</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 41</td>
+                                <td>xxx 42</td>
+                                <td>xxx 43</td>
+                                <td>xxx 44</td>
+                                <td>xxx 45</td>
+                                <td>xxx 46</td>
+                                <td>xxx 47</td>
+                                <td>xxx 48</td>
+                                <td>xxx 49</td>
+                            </tr>
+                            <tr>
+                                <td>xxx 51</td>
+                                <td>xxx 52</td>
+                                <td>xxx 53</td>
+                                <td>xxx 54</td>
+                                <td>xxx 55</td>
+                                <td>xxx 56</td>
+                                <td>xxx 57</td>
+                                <td>xxx 58</td>
+                                <td>xxx 59</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="table-scroll"&gt;
+        &lt;table&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;MAIN 01&lt;/th&gt;
+                &lt;th&gt;MAIN 02&lt;/th&gt;
+                &lt;th&gt;MAIN 03&lt;/th&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;xxx 01&lt;/td&gt;
+                &lt;td&gt;xxx 02&lt;/td&gt;
+                &lt;td&gt;xxx 03&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;xxx 11&lt;/td&gt;
+                &lt;td&gt;xxx 12&lt;/td&gt;
+                &lt;td&gt;xxx 13&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;xxx 21&lt;/td&gt;
+                &lt;td&gt;xxx 22&lt;/td&gt;
+                &lt;td&gt;xxx 23&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+            </div>
+
+                    <h2 class="example-heading" id="0014">TABLE (dropdown)</h2>
+
+                    <div class="example">
+                        <div class="examples">
+                        <table class="responsive-table">
+                            <caption>
+                                HEAD
+                            </caption>
+                            <thead>
+                            <tr>
+                                <th>
+                                    Test1
+                                </th>
+                                <th>
+                                    Test2
+                                </th>
+                                <th>
+                                    Test3
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th tabindex="0" onclick="action">
+                                    TEST1
+                                </th>
+                                <td data-title="xxx1">
+                                    test11
+                                </td>
+                                <td data-title="xxx2">
+                                    test12
+                                </td>
+                            </tr>
+                            <tr>
+                                <th tabindex="0" onclick="action">
+                                    TEST2
+                                </th>
+                                <td data-title="xxx3">
+                                    test21
+                                </td>
+                                <td data-title="xxx4">
+                                    test22
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                            </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;table class="responsive-table"&gt;
+        &lt;caption&gt;
+            HEAD
+        &lt;/caption&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;
+                Test1
+            &lt;/th&gt;
+            &lt;th&gt;
+                Test2
+            &lt;/th&gt;
+            &lt;th&gt;
+                Test3
+            &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th tabindex="0" onclick="action"&gt;
+                TEST1
+            &lt;/th&gt;
+            &lt;td data-title="xxx1"&gt;
+                test11
+            &lt;/td&gt;
+            &lt;td data-title="xxx2"&gt;
+                test12
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th tabindex="0" onclick="action"&gt;
+                TEST2
+            &lt;/th&gt;
+            &lt;td data-title="xxx3"&gt;
+                test21
+            &lt;/td&gt;
+            &lt;td data-title="xxx4"&gt;
+                test22
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+</code>
+            </pre>
+                    </div>
 
 
+                    <h2 class="example-heading" id="0015">Modal</h2>
 
-<div class="menu">
-    <div class="container">
-    <nav>
-        <a href="#"><h1>
-            BOWTIE
-        </h1></a>
+                    <div class="example">
+                        <div class="examples">
+                            <div class="people-item">
+                                <p class="name">
+                                    <a href="#Test_info" class="modal-a">MODAL</a>
 
-        <label for="show-menu" class="show-menu"><span class="glyphicon glyphicon-align-justify"></span></label>
-        <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu" class="menu">
-            <li>
-                <a href="">Uvod</a>
-            </li>
-            <li>
-                <a href="">Sluzby</a>
-            </li>
-            <li>
-                <a href="">Reference</a>
-            </li>
-            <li>
-                <a href="">Tym</a>
-            </li>
-            <li>
-                <a href="">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+                                    <!--MOBILE-->
+                                <div class="small-visited">
+                                    <h2>XXX</h2>
+                                    <p>text mobile</p>
+                                </div>
+
+                                <!--DESKTOP-->
+                                <div id="Test_info" class="modal-dialog small-hidden">
+                                    <a href="#close" title="Close" class="full-width-close"></a>
+                                    <div>
+                                        <h2>XXX</h2>
+                                        <p>text desktop</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="people-item"&gt;
+        &lt;p class="name"&gt;
+            &lt;a href="#Test_info" class="modal-a"&gt;MODAL&lt;/a&gt;
+
+        &lt;!--MOBILE--&gt;
+        &lt;div class="small-visited"&gt;
+            &lt;h2&gt;XXX&lt;/h2&gt;
+            &lt;p&gt;text mobile&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!--DESKTOP--&gt;
+        &lt;div id="Test_info" class="modal-dialog small-hidden"&gt;
+            &lt;a href="#close" title="Close" class="full-width-close"&gt;&lt;/a&gt;
+            &lt;div&gt;
+                &lt;h2&gt;XXX&lt;/h2&gt;
+                &lt;p&gt;text desktop&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+                    </div>
+
+
+                    <h2 class="example-heading" id="0016">Tooltip</h2>
+
+                    <div class="example">
+                        <div class="examples">
+                            <a href="#" class="button button-primary tooltip">
+                                TEXT <span class="tooltip-hover">[?]<div class="tooltip-show">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div></span>
+                            </a>
+                        </div>
+
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;a href="#" class="button button-primary tooltip"&gt;
+        TEXT &lt;span class="tooltip-hover"&gt;[?]&lt;div class="tooltip-show"&gt;
+        On your last purchase, your payment method was stored for your convenience
+    &lt;/div&gt;&lt;/span&gt;
+    &lt;/a&gt;
+</code>
+            </pre>
+                    </div>
+
+                    <h2 class="example-heading" id="0017">Tags</h2>
+
+                    <div class="example">
+                        <div class="examples" style="height: 120px">
+                            <ul class="tags">
+                                <li><a href="#">tag</a></li>
+                                <li><a href="#">tag name</a></li>
+                                <li><a href="#">tag name new</a></li>
+                                <li><a href="#">tag name new name</a></li>
+                            </ul>
+                            <ul class="tags tags-primary">
+                                <li><a href="#">tag</a></li>
+                                <li><a href="#">tag name</a></li>
+                                <li><a href="#">tag name new</a></li>
+                                <li><a href="#">tag name new name</a></li>
+                            </ul>
+                            <ul class="tags tags-secondary">
+                                <li><a href="#">tag</a></li>
+                                <li><a href="#">tag name</a></li>
+                                <li><a href="#">tag name new</a></li>
+                                <li><a href="#">tag name new name</a></li>
+                            </ul>
+                        </div>
+
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;ul class="tags"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name new&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name new name&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="tags tags-primary"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name new&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name new name&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="tags tags-secondary"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name new&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;tag name new name&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+            </pre>
+                    </div>
+
+                    <h2 class="example-heading" id="0018">XXX</h2>
+
+                    <div class="example">
+                        <div class="examples">
+
+                        </div>
+
+            <pre>
+<code class="language-html" data-lang="html">
+
+</code>
+            </pre>
+                    </div>
+
+        </div>
+
+
+        <div class="span-large-6">
+            <div class="side-bar">
+                <ul>
+                    <li><a href="#001">Menu</a></li>
+                    <li><a href="#002">Before & After widget</a></li>
+                    <li><a href="#003">Nav List</a></li>
+                    <li><a href="#004">Rating</a></li>
+                    <li><a href="#005">Tabs</a></li>
+                    <li><a href="#006">Filter with checkbox</a></li>
+                    <li><a href="#007">Filter with rating</a></li>
+                    <li><a href="#008">iOS checkbox</a></li>
+                    <li><a href="#009">Another checkbox</a></li>
+                    <li><a href="#0010">Dropdown</a></li>
+                    <li><a href="#0011">TABLE (full scroll)</a></li>
+                    <li><a href="#0012">TABLE (full height)</a></li>
+                    <li><a href="#0013">TABLE (scroll)</a></li>
+                    <li><a href="#0014">TABLE (dropdown)</a></li>
+                    <li><a href="#0015">Modal</a></li>
+                    <li><a href="#0016">Tooltip</a></li>
+                    <li><a href="#0017">Tags</a></li>
+                    <li><a href="#0018">XXX</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
+
 
 <div class="container-fluid background-danger color-white padding-medium-horizontal">
         <h1>TEST FLUID CONTAINER</h1>
@@ -49,217 +1293,6 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="span-large-8">
-            <div class="bna">
-                <div class="bna-head">
-                    <span class="before">Before</span>
-                    <span class="icon fa fa-retweet"></span>
-                    <span class="after">After</span>
-                </div>
-                <div class="bna-content">
-                    <div class="before">
-                        <img src="http://cdn2.socialappspot.com/gfba2/Images/Notifications/2315886-f3fe.jpg" alt="before"/>
-                    </div>
-                    <div class="after">
-                        <img src="http://cdn2.socialappspot.com/gfba2/Images/Notifications/2315886-f3fe.jpg" alt="before"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span-large-24">
-            <div class="rating">
-                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
-            </div>
-        </div>
-        <div class="span-large-12">
-            <div class="filter">
-
-                <input id="select-type-1" name="radio-set-1" type="checkbox" class="filter-selector-1" />
-                <label for="select-type-1" class="filter-label-1">
-                    FILTER 1
-                </label>
-
-                <input id="select-type-2" name="radio-set-2" type="checkbox" class="filter-selector-2"/>
-                <label for="select-type-2" class="filter-label-2">
-                    FILTER 2
-                </label>
-
-                <input id="select-type-3" name="radio-set-3" type="checkbox" class="filter-selector-3" />
-                <label for="select-type-3" class="filter-label-3">
-                    FILTER 3
-                </label>
-
-                <ul class="filter-items">
-                    <li class="filter-item-1">
-                        <a href="">
-                            FILTER 1
-                        </a>
-                    </li>
-                    <li class="filter-item-1">
-                        <a href="">
-                            FILTER 1
-                        </a>
-                    </li>
-                    <li class="filter-item-1">
-                        <a href="">
-                            FILTER 1
-                        </a>
-                    </li>
-                    <li class="filter-item-2">
-                        <a href="">
-                            FILTER 2
-                        </a>
-                    </li>
-                    <li class="filter-item-2">
-                        <a href="">
-                            FILTER 2
-                        </a>
-                    </li>
-                    <li class="filter-item-3">
-                        <a href="">
-                            FILTER 3
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="span-large-12">
-            <div class="filter-radio">
-
-                <input id="select-type-all" name="radio-set-1" type="radio" class="filter-selector-all" checked="checked" />
-                <label for="select-type-all" class="filter-radio-label-all">All</label>
-
-                <input id="select-type-11" name="radio-set-1" type="radio" class="filter-selector-1" />
-                <label for="select-type-11" class="filter-radio-label-1">FILTER 1</label>
-
-                <input id="select-type-22" name="radio-set-1" type="radio" class="filter-selector-2" />
-                <label for="select-type-22" class="filter-radio-label-2">FILTER 2</label>
-
-                <input id="select-type-33" name="radio-set-1" type="radio" class="filter-selector-3" />
-                <label for="select-type-33" class="filter-radio-label-3">FILTER 3</label>
-
-                <ul class="filter-radio-items">
-                    <li class="filter-radio-item-1">
-                        <a href="">
-                            FILTER 1
-                        </a>
-                    </li>
-                    <li class="filter-radio-item-1">
-                        <a href="">
-                            FILTER 1
-                        </a>
-                    </li>
-                    <li class="filter-radio-item-1">
-                        <a href="">
-                            FILTER 1
-                        </a>
-                    </li>
-                    <li class="filter-radio-item-2">
-                        <a href="">
-                            FILTER 2
-                        </a>
-                    </li>
-                    <li class="filter-radio-item-2">
-                        <a href="">
-                            FILTER 2
-                        </a>
-                    </li>
-                    <li class="filter-radio-item-3">
-                        <a href="">
-                            FILTER 3
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="span-large-12">
-            <ul class="main-ul">
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="span-large-12 text-center">
-            <div class="dropdown-main">
-                <label for="show-drop1" class="show-drop">
-                    DorpDown
-                </label>
-                <input type="checkbox" id="show-drop1" role="button">
-                <ul id="dropdown" class="drop">
-                    <li>
-                        <a href="">drop1</a>
-                    </li>
-                    <li>
-                        <a href="">drop2</a>
-                    </li>
-                    <li>
-                        <a href="">drop3</a>
-                    </li>
-                    <li>
-                        <div class="dropdown-main">
-                            <label for="show-drop2" class="show-drop">
-                                DorpDown
-                            </label>
-                            <input type="checkbox" id="show-drop2" role="button">
-                            <ul id="dropdown" class="drop">
-                                <li>
-                                    <a href="">drop1</a>
-                                </li>
-                                <li>
-                                    <a href="">drop2</a>
-                                </li>
-                                <li>
-                                    <a href="">drop3</a>
-                                </li>
-                                <li>
-                                    <a href="">drop4</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="dropdown-main">
-                <label for="show-drop3" class="show-drop">
-                    DorpDown
-                </label>
-                <input type="checkbox" id="show-drop3" role="button">
-                <ul id="dropdown" class="drop">
-                    <li>
-                        <a href="">drop1</a>
-                    </li>
-                    <li>
-                        <a href="">drop2</a>
-                    </li>
-                    <li>
-                        <a href="">drop3</a>
-                    </li>
-                    <li>
-                        <a href="">drop4</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="row">
         <div class="span-large-2 span-medium-2 span-small-12">
             <a href="" class="button">
@@ -343,34 +1376,6 @@
     </div>
 
 <div class="container">
-    <div class="row">
-        <div class="span-large-12">
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="">
-                            navlist 1
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            navlist 2
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            navlist 3
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            navlist 4
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="row margin-big-top">
 
         <div class="span-large-4 background-primary">
@@ -384,586 +1389,5 @@
         </div>
     </div>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="span-large-12">
-            <div class="ios-check">
-                <label>
-                    <input type="checkbox" class="ios-switch" checked />
-                    <div class="input-div"><div class="input-div"></div></div>
-                </label>
-
-                <label>
-                    <input type="checkbox" class="ios-switch" />
-                    <div class="input-div"><div class="input-div"></div></div>
-                </label>
-            </div>
-
-            <input id="check01" type="checkbox">
-            <label class="checkbox-01" for="check01"> Remember me </label>
-
-            <input id="check02" type="checkbox" checked>
-            <label class="checkbox-01" for="check02"> Remember me </label>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="span-large-12 text-center">
-            <div class="table-on-height">
-            <table>
-                <thead>
-                <tr>
-                    <th>Code</th>
-                    <th>Company</th>
-                    <th>Price</th>
-                    <th>Change</th>
-                    <th>Change %</th>
-                    <th>Open</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>Volume</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td data-title="Code">AAC</td>
-                    <td data-title="Company">AUSTRALIAN.</td>
-                    <td data-title="Price">$1.38</td>
-                    <td data-title="Change">-0.01</td>
-                    <td data-title="Change %">-0.36%</td>
-                    <td data-title="Open">$1.39</td>
-                    <td data-title="High">$1.39</td>
-                    <td data-title="Low">$1.38</td>
-                    <td data-title="Volume">9,395</td>
-                </tr>
-                <tr>
-                    <td data-title="Code">AAC</td>
-                    <td data-title="Company">AUSTRALIAN.</td>
-                    <td data-title="Price">$1.38</td>
-                    <td data-title="Change">-0.01</td>
-                    <td data-title="Change %">-0.36%</td>
-                    <td data-title="Open">$1.39</td>
-                    <td data-title="High">$1.39</td>
-                    <td data-title="Low">$1.38</td>
-                    <td data-title="Volume">9,395</td>
-                </tr>
-                <tr>
-                    <td data-title="Code">AAC</td>
-                    <td data-title="Company">AUSTRALIAN.</td>
-                    <td data-title="Price">$1.38</td>
-                    <td data-title="Change">-0.01</td>
-                    <td data-title="Change %">-0.36%</td>
-                    <td data-title="Open">$1.39</td>
-                    <td data-title="High">$1.39</td>
-                    <td data-title="Low">$1.38</td>
-                    <td data-title="Volume">9,395</td>
-                </tr>
-                </tbody>
-            </table>
-            </div>
-
-
-
-            <div class="table-scroll">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Code</th>
-                        <th>Company</th>
-                        <th>Price</th>
-                        <th>Change</th>
-                        <th>Change %</th>
-                        <th>Open</th>
-                        <th>High</th>
-                        <th>Low</th>
-                        <th>Volume</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td data-title="Code">AAC</td>
-                        <td data-title="Company">AUSTRALIAN.</td>
-                        <td data-title="Price">$1.38</td>
-                        <td data-title="Change">-0.01</td>
-                        <td data-title="Change %">-0.36%</td>
-                        <td data-title="Open">$1.39</td>
-                        <td data-title="High">$1.39</td>
-                        <td data-title="Low">$1.38</td>
-                        <td data-title="Volume">9,395</td>
-                    </tr>
-                    <tr>
-                        <td data-title="Code">AAC</td>
-                        <td data-title="Company">AUSTRALIAN.</td>
-                        <td data-title="Price">$1.38</td>
-                        <td data-title="Change">-0.01</td>
-                        <td data-title="Change %">-0.36%</td>
-                        <td data-title="Open">$1.39</td>
-                        <td data-title="High">$1.39</td>
-                        <td data-title="Low">$1.38</td>
-                        <td data-title="Volume">9,395</td>
-                    </tr>
-                    <tr>
-                        <td data-title="Code">AAC</td>
-                        <td data-title="Company">AUSTRALIAN.</td>
-                        <td data-title="Price">$1.38</td>
-                        <td data-title="Change">-0.01</td>
-                        <td data-title="Change %">-0.36%</td>
-                        <td data-title="Open">$1.39</td>
-                        <td data-title="High">$1.39</td>
-                        <td data-title="Low">$1.38</td>
-                        <td data-title="Volume">9,395</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="table-scroll-full">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Code</th>
-                            <th>Company</th>
-                            <th>Price</th>
-                            <th>Change</th>
-                            <th>Change %</th>
-                            <th>Open</th>
-                            <th>High</th>
-                            <th>Low</th>
-                            <th>Volume</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>AAC</td>
-                            <td>AUSTRALIAN.</td>
-                            <td>$1.38</td>
-                            <td>-0.01</td>
-                            <td>-0.36%</td>
-                            <td>$1.39</td>
-                            <td>$1.39</td>
-                            <td>$1.38</td>
-                            <td>9,395</td>
-                        </tr>
-                        <tr>
-                            <td>AAC</td>
-                            <td>AUSTRALIAN.</td>
-                            <td>$1.38</td>
-                            <td>-0.01</td>
-                            <td>-0.36%</td>
-                            <td>$1.39</td>
-                            <td>$1.39</td>
-                            <td>$1.38</td>
-                            <td>9,395</td>
-                        </tr>
-                        <tr>
-                            <td>AAC</td>
-                            <td>AUSTRALIAN.</td>
-                            <td>$1.38</td>
-                            <td>-0.01</td>
-                            <td>-0.36%</td>
-                            <td>$1.39</td>
-                            <td>$1.39</td>
-                            <td>$1.38</td>
-                            <td>9,395</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-                <table class="responsive-table">
-                    <caption>Top 10 Grossing Animated Films of All Time</caption>
-                    <thead>
-                    <tr>
-                        <th scope="col">Film Title</th>
-                        <th scope="col">Released</th>
-                        <th scope="col">Studio</th>
-                        <th scope="col">Worldwide Gross</th>
-                        <th scope="col">Domestic Gross</th>
-                        <th scope="col">Foreign Gross</th>
-                        <th scope="col">Budget</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Frozen
-                        </th>
-                        <div class="drop-cont">
-                            <td data-title="Released">2013</td>
-                            <td data-title="Studio">Disney</td>
-                            <td data-title="Worldwide Gross" data-type="currency">$1,232,617,000</td>
-                            <td data-title="Domestic Gross" data-type="currency">$400,617,000</td>
-                            <td data-title="Foreign Gross" data-type="currency">$832,000,000</td>
-                            <td data-title="Budget" data-type="currency">$150,000,000</td>
-                        </div>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="1" onclick="action">
-                            Toy Story 3
-                        </th>
-                        <td data-title="Released">2010</td>
-                        <td data-title="Studio">Disney Pixar</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$1,063,171,911</td>
-                        <td data-title="Domestic Gross" data-type="currency">$415,004,880</td>
-                        <td data-title="Foreign Gross" data-type="currency">$648,167,031</td>
-                        <td data-title="Budget" data-type="currency">$200,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="2" onclick="action">
-                            The Lion King
-                        </th>
-                        <td data-title="Released">1994</td>
-                        <td data-title="Studio">Disney</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$987,483,777</td>
-                        <td data-title="Domestic Gross" data-type="currency">$422,783,777</td>
-                        <td data-title="Foreign Gross" data-type="currency">$564,700,000</td>
-                        <td data-title="Budget" data-type="currency">$45,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Despicable Me 2
-                        </th>
-                        <td data-title="Released">2013</td>
-                        <td data-title="Studio">Universal</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$970,761,885</td>
-                        <td data-title="Domestic Gross" data-type="currency">$368,061,265</td>
-                        <td data-title="Foreign Gross" data-type="currency">$602,700,620</td>
-                        <td data-title="Budget" data-type="currency">$76,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Finding Nemo
-                        </th>
-                        <td data-title="Released">2003</td>
-                        <td data-title="Studio">Pixar</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$936,743,261</td>
-                        <td data-title="Domestic Gross" data-type="currency">$380,843,261</td>
-                        <td data-title="Foreign Gross" data-type="currency">$555,900,000</td>
-                        <td data-title="Budget" data-type="currency">$94,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Shrek 2
-                        </th>
-                        <td data-title="Released">2004</td>
-                        <td data-title="Studio">Dreamworks</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$919,838,758</td>
-                        <td data-title="Domestic Gross" data-type="currency">$441,226,247</td>
-                        <td data-title="Foreign Gross" data-type="currency">$478,612,511</td>
-                        <td data-title="Budget" data-type="currency">$150,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Ice Age: Dawn of the Dinosaurs
-                        </th>
-                        <td data-title="Released">2009</td>
-                        <td data-title="Studio">Fox</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$886,686,817</td>
-                        <td data-title="Domestic Gross" data-type="currency">$196,573,705</td>
-                        <td data-title="Foreign Gross" data-type="currency">$690,113,112	</td>
-                        <td data-title="Budget" data-type="currency">$90,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Ice Age: Continental Drift
-                        </th>
-                        <td data-title="Released">2012</td>
-                        <td data-title="Studio">Fox</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$877,244,782</td>
-                        <td data-title="Domestic Gross" data-type="currency">$161,321,843</td>
-                        <td data-title="Foreign Gross" data-type="currency">$715,922,939</td>
-                        <td data-title="Budget" data-type="currency">$95,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Shrek the Third
-                        </th>
-                        <td data-title="Released">2007</td>
-                        <td data-title="Studio">Dreamworks</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$798,958,162</td>
-                        <td data-title="Domestic Gross" data-type="currency">$322,719,944</td>
-                        <td data-title="Foreign Gross" data-type="currency">$476,238,218</td>
-                        <td data-title="Budget" data-type="currency">$160,000,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="dropdown" tabindex="0" onclick="action">
-                            Shrek Forever After
-                        </th>
-                        <td data-title="Released">2010</td>
-                        <td data-title="Studio">Dreamworks</td>
-                        <td data-title="Worldwide Gross" data-type="currency">$752,600,867</td>
-                        <td data-title="Domestic Gross" data-type="currency">$238,736,787</td>
-                        <td data-title="Foreign Gross" data-type="currency">$513,864,080	</td>
-                        <td data-title="Budget" data-type="currency">$165,000,000</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <table class="responsive-table">
-                <caption>
-                    HEAD
-                </caption>
-                <thead>
-                <tr>
-                    <th>
-                        Test1
-                    </th>
-                    <th>
-                        Test2
-                    </th>
-                    <th>
-                        Test3
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th tabindex="0" onclick="action">
-                        TEST1
-                    </th>
-                        <td data-title="xxx1">
-                            test11
-                        </td>
-                        <td data-title="xxx2">
-                            test12
-                        </td>
-                </tr>
-                <tr>
-                    <th tabindex="0" onclick="action">
-                        TEST2
-                    </th>
-                    <td data-title="xxx3">
-                        test21
-                    </td>
-                    <td data-title="xxx4">
-                        test22
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-
-
-
-
-
-        </div>
-    </div>
-</div>
-
-<div class="tabs">
-<div class="tabs-border">
-    <div class="tab">
-        <input type="radio" id="tab-1" name="tab-group-1">
-        <label for="tab-1">List 1 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 1 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-    <div class="tab">
-        <input type="radio" id="tab-2" name="tab-group-1">
-        <label for="tab-2">List 2 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 2 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-    <div class="tab">
-        <input type="radio" id="tab-3" name="tab-group-1">
-        <label for="tab-3">List 3 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 3 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-    <div class="tab">
-        <input type="radio" id="tab-4" name="tab-group-1">
-        <label for="tab-4">List 4 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 4 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-    <div class="tab">
-        <input type="radio" id="tab-5" name="tab-group-1">
-        <label for="tab-5">List 5 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 5 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-    <div class="tab">
-        <input type="radio" id="tab-6" name="tab-group-1">
-        <label for="tab-6">List 6 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 6 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-    <div class="tab">
-        <input type="radio" id="tab-7" name="tab-group-1">
-        <label for="tab-7">List 7 <i>&#9660;</i></label>
-        <div class="tab" id="close-tab">
-            <input type="radio" id="tab-close" name="tab-group-1">
-            <label for="tab-close">List 7 <i>&#9650;</i></label>
-        </div>
-
-        <div class="content">
-            Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.
-        </div>
-    </div>
-
-</div>
-</div>
-
-
-<!--<div class="tabs">-->
-                    <!--<div class="tab">-->
-                        <!--<input type="radio" id="tab-1" name="tab-group-1" checked>-->
-                        <!--<label for="tab-1">Tab jedna</label>-->
-
-                        <!--<div class="content">-->
-                            <!--prvni tab-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="tab">-->
-                        <!--<input type="radio" id="tab-2" name="tab-group-1">-->
-                        <!--<label for="tab-2">Tab dva</label>-->
-
-                        <!--<div class="content">-->
-                            <!--druhy tab-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="tab">-->
-                        <!--<input type="radio" id="tab-3" name="tab-group-1">-->
-                        <!--<label for="tab-3">Tab tri</label>-->
-
-                        <!--<div class="content">-->
-                            <!--treti tab-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="tab">-->
-                        <!--<input type="radio" id="tab-4" name="tab-group-1">-->
-                        <!--<label for="tab-4">Tab ctyri</label>-->
-
-                        <!--<div class="content">-->
-                            <!--ctvrty tab-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="tab">-->
-                        <!--<input type="radio" id="tab-5" name="tab-group-1">-->
-                        <!--<label for="tab-5">Tab pet</label>-->
-
-                        <!--<div class="content">-->
-                            <!--paty tab paty tab paty tab paty tab paty tab paty tab paty tab paty tab paty tab-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                            <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                <!--</div>-->
-
-    <div class="people-item">
-        <div class="row">
-            <div class="span-12">
-                <p class="name">
-                    <a href="#Test_info" class="modal-a">
-                        Name
-                    </a>
-
-                    <!--MOBILE-->
-                <div class="row small-visited">
-                    <div class="span-12">
-                        <p>
-                            text mobile
-                        </p>
-                    </div>
-                </div>
-
-                <!--DESKTOP-->
-                <div id="Test_info" class="modal-dialog small-hidden">
-                    <a href="#close" title="Close" class="full-width-close"></a>
-                    <div>
-                        <div class="row">
-                            <div class="span-12">
-                                <h2 class="black">
-                                    Name
-                                </h2>
-                                <p>
-                                    text desktop modal
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
