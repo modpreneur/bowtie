@@ -6,11 +6,60 @@
     <link rel="stylesheet" href="src/css/style.css"/>
     <link rel="stylesheet" href="src/css/checkbox-font.css"/>
     <link rel="stylesheet" href="src/css/font-awesome.css"/>
+    <style>
+        .side-bar {
+            top: 65px;
+        }
+        ul.sidebar {
+            padding-left: 0;
+        }
+        ul.sidebar li {
+            list-style: none;
+            line-height: 28px;
+        }
+        ul.sidebar a {
+            color: #000000;
+            font-size: 18px;
+
+            -webkit-transition: all 100ms linear;
+            -moz-transition: all 100ms linear;
+            -ms-transition: all 100ms linear;
+            -o-transition: all 100ms linear;
+            transition: all 100ms linear;
+        }
+        ul.sidebar a:hover {
+            text-decoration: none;
+            font-weight: 900;
+
+            -webkit-transition: all 100ms linear;
+            -moz-transition: all 100ms linear;
+            -ms-transition: all 100ms linear;
+            -o-transition: all 100ms linear;
+            transition: all 100ms linear;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="span-large-18">
+        <div class="menu">
+            <div class="container">
+                <nav>
+                    <a href="#"><h1>BOWTIE</h1></a>
+                    <label for="show-menu" class="show-menu">
+                        <span class="fa fa-bars"></span>
+                    </label>
+                    <input type="checkbox" id="show-menu" role="button">
+                    <ul id="menu" class="menu">
+                        <li><a href="#">Uvod</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
                     <h2 class="example-heading" id="001">Menu</h2>
                     <div class="example">
@@ -48,18 +97,18 @@
     <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">menu</span><span class="pr">"</span><span class="el">&gt;</span>
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;nav&gt;</span>
-                <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;&lt;h1&gt;</span>BOWTIE<span class="el">&lt;/h1&gt;&lt;/a&gt;</span>
-                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">show-menu1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">show-menu</span><span class="pr">"</span><span class="el">&gt;
-                    &lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-bars</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;
-                &lt;/label&gt;</span>
-                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">show-menu1</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;&lt;h1&gt;</span>BOWTIE<span class="el">&lt;/h1&gt;<span class="el">&lt;/a&gt;</span></span>
+                <span class="el"><span class="el">&lt;label</span></span> <span class="pr">for="</span><span class="ch">show-menu1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">show-menu</span><span class="pr">"</span><span class="el">&gt;
+                    <span class="el">&lt;span</span></span> <span class="pr">class="</span><span class="ch">fa fa-bars</span><span class="pr">"</span><span class="el">&gt;<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/label&gt;</span></span>
+                <span class="el"><span class="el">&lt;input</span></span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">show-menu1</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span><span class="el">&gt;</span>
                 <span class="el">&lt;ul</span> <span class="pr">id="</span><span class="ch">menu</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">menu</span><span class="pr">"</span><span class="el">&gt;</span>
-                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Uvod<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Sluzby<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Reference<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Tym<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span>&gt;Kontakt<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="el">&lt;/ul&gt;</span>
+                    <span class="el"><span class="el">&lt;li&gt;</span>&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>Uvod<span class="el"><span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span></span>
+                    <span class="el"><span class="el">&lt;li&gt;</span>&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>Sluzby<span class="el"><span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span></span>
+                    <span class="el"><span class="el">&lt;li&gt;</span>&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>Reference<span class="el"><span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span></span>
+                    <span class="el"><span class="el">&lt;li&gt;</span>&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>Tym<span class="el"><span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span></span>
+                    <span class="el"><span class="el">&lt;li&gt;</span>&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>Kontakt<span class="el"><span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span></span>
+                <span class="el"><span class="el">&lt;/ul&gt;</span></span>
             <span class="el">&lt;/nav&gt;</span>
         <span class="el">&lt;/div&gt;</span>
     <span class="el">&lt;/div&gt;</span>
@@ -89,21 +138,21 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="bna"&gt;
-        &lt;div class="bna-head"&gt;
-            &lt;span class="before"&gt;Before&lt;/span&gt;
-            &lt;span class="icon fa fa-retweet"&gt;&lt;/span&gt;
-            &lt;span class="after"&gt;After&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="bna-content"&gt;
-            &lt;div class="before"&gt;
-                &lt;img src="" alt="before"/&gt;
-            &lt;/div&gt;
-            &lt;div class="after"&gt;
-                &lt;img src="" alt="after"/&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">bna</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">bna-head</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">before</span><span class="pr">"</span><span class="el">&gt;</span>Before<span class="el">&lt;/span&gt;</span>
+            <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">icon fa fa-retweet</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span>
+            <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">after</span><span class="pr">"</span><span class="el">&gt;</span>After<span class="el">&lt;/span&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">bna-content</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">before</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;img</span> <span class="pr">src="<span class="ch">#</span>"</span> <span class="pr">alt="</span><span class="ch">before</span><span class="pr">"</span><span class="el">/&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">after</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;img</span> <span class="pr">src="<span class="ch">#</span>"</span> <span class="pr">alt="</span><span class="ch">after</span><span class="pr">"</span><span class="el">/&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -139,30 +188,30 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="navbar"&gt;
-        &lt;ul&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">navbar</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;ul&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     navlist 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     navlist 2
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     navlist 3
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     navlist 4
-                &lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;/ul&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -181,13 +230,13 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="rating"&gt;
-        &lt;input type="radio" id="star5" name="rating" value="5" /&gt;&lt;label for="star5"&gt;&lt;/label&gt;
-        &lt;input type="radio" id="star4" name="rating" value="4" /&gt;&lt;label for="star4"&gt;&lt;/label&gt;
-        &lt;input type="radio" id="star3" name="rating" value="3" /&gt;&lt;label for="star3"&gt;&lt;/label&gt;
-        &lt;input type="radio" id="star2" name="rating" value="2" /&gt;&lt;label for="star2"&gt;&lt;/label&gt;
-        &lt;input type="radio" id="star1" name="rating" value="1" /&gt;&lt;label for="star1"&gt;&lt;/label&gt;
-    &lt;/div&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">rating</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star5</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">5</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star5</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star4</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">4</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star4</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">3</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star3</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">2</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star2</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">1</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star1</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -296,61 +345,61 @@
 
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="tabs"&gt;
-        &lt;div class="tabs-border"&gt;
-            &lt;div class="tab"&gt;
-                &lt;input type="radio" id="tab-1" name="tab-group-1"&gt;
-                &lt;label for="tab-1"&gt;List 1 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;div class="tab" id="close-tab"&gt;
-                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
-                    &lt;label for="tab-close"&gt;List 1 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;/div&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tabs</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tabs-border</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-1</span><span class="pr">"</span><span class="el">&gt;</span>List 1 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-up</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 1 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-down</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
 
-                &lt;div class="content"&gt;
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                     ...
-                &lt;/div&gt;
-            &lt;/div&gt;
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
 
-            &lt;div class="tab"&gt;
-                &lt;input type="radio" id="tab-2" name="tab-group-1"&gt;
-                &lt;label for="tab-2"&gt;List 2 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;div class="tab" id="close-tab"&gt;
-                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
-                    &lt;label for="tab-close"&gt;List 2 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;/div&gt;
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-2</span><span class="pr">"</span><span class="el">&gt;</span>List 2 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-up</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 2 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-down</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
 
-                &lt;div class="content"&gt;
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                     ...
-                &lt;/div&gt;
-            &lt;/div&gt;
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
 
-            &lt;div class="tab"&gt;
-                &lt;input type="radio" id="tab-3" name="tab-group-1"&gt;
-                &lt;label for="tab-3"&gt;List 3 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;div class="tab" id="close-tab"&gt;
-                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
-                    &lt;label for="tab-close"&gt;List 3 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;/div&gt;
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-3</span><span class="pr">"</span><span class="el">&gt;</span>List 3 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-up</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-close</span>" <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 3 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-down</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
 
-                &lt;div class="content"&gt;
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                     ...
-                &lt;/div&gt;
-            &lt;/div&gt;
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
 
-            &lt;div class="tab"&gt;
-                &lt;input type="radio" id="tab-4" name="tab-group-1"&gt;
-                &lt;label for="tab-4"&gt;List 4 &lt;span class="fa fa-caret-up"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;div class="tab" id="close-tab"&gt;
-                    &lt;input type="radio" id="tab-close" name="tab-group-1"&gt;
-                    &lt;label for="tab-close"&gt;List 4 &lt;span class="fa fa-caret-down"&gt;&lt;/span&gt;&lt;/label&gt;
-                &lt;/div&gt;
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-4</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-4</span><span class="pr">"</span><span class="el">&gt;</span>List 4 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-up</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 4 <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-caret-down</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span><span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
 
-                &lt;div class="content"&gt;
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                     ...
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -412,56 +461,56 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="filter"&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">filter</span><span class="pr">"</span><span class="el">&gt;</span>
 
-        &lt;input id="select-type-1" name="radio-set-1" type="checkbox" class="filter-selector-1" /&gt;
-        &lt;label for="select-type-1" class="filter-label-1"&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-1</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-label-1</span><span class="pr">"</span><span class="el">&gt;</span>
             FILTER 1
-        &lt;/label&gt;
+        <span class="el">&lt;/label&gt;</span>
 
-        &lt;input id="select-type-2" name="radio-set-2" type="checkbox" class="filter-selector-2"/&gt;
-        &lt;label for="select-type-2" class="filter-label-2"&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-2</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-2</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-2</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-label-2</span><span class="pr">"</span><span class="el">&gt;</span>
             FILTER 2
-        &lt;/label&gt;
+        <span class="el">&lt;/label&gt;</span>
 
-        &lt;input id="select-type-3" name="radio-set-3" type="checkbox" class="filter-selector-3" /&gt;
-        &lt;label for="select-type-3" class="filter-label-3"&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-3</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-3</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-3</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-label-3</span><span class="pr">"</span><span class="el">&gt;</span>
             FILTER 3
-        &lt;/label&gt;
+        <span class="el">&lt;/label&gt;</span>
 
-        &lt;ul class="filter-items"&gt;
-            &lt;li class="filter-item-1"&gt;
-                &lt;a href=""&gt;
+        <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">filter-items</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>
                     FILTER 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-item-1"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>
                     FILTER 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-item-1"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>
                     FILTER 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-item-2"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>
                     FILTER 2
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-item-2"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>
                     FILTER 2
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-item-3"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-3</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>
                     FILTER 3
-                &lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;/ul&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -520,53 +569,53 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="filter-radio"&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">filter-radio</span><span class="pr">"</span><span class="el">&gt;</span>
 
-        &lt;input id="select-type-all" name="radio-set-1" type="radio" class="filter-selector-all" checked="checked" /&gt;
-        &lt;label for="select-type-all" class="filter-radio-label-all"&gt;All&lt;/label&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-all</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-all</span><span class="pr">"</span> <span class="pr">checked="</span><span class="ch">checked</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-all</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-all</span><span class="pr">"</span><span class="el">&gt;</span>All<span class="el">&lt;/label&gt;</span>
 
-        &lt;input id="select-type-11" name="radio-set-1" type="radio" class="filter-selector-1" /&gt;
-        &lt;label for="select-type-11" class="filter-radio-label-1"&gt;FILTER 1&lt;/label&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-11</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-1</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-11</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-1</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/label&gt;</span>
 
-        &lt;input id="select-type-22" name="radio-set-1" type="radio" class="filter-selector-2" /&gt;
-        &lt;label for="select-type-22" class="filter-radio-label-2"&gt;FILTER 2&lt;/label&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-22</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-2</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-22</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-2</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/label&gt;</span>
 
-        &lt;input id="select-type-33" name="radio-set-1" type="radio" class="filter-selector-3" /&gt;
-        &lt;label for="select-type-33" class="filter-radio-label-3"&gt;FILTER 3&lt;/label&gt;
+        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-33</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-3</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-33</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-3</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 3<span class="el">&lt;/label&gt;</span>
 
-        &lt;ul class="filter-radio-items"&gt;
-            &lt;li class="filter-radio-item-1"&gt;
-                &lt;a href=""&gt;
+        <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">filter-radio-items</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     FILTER 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-radio-item-1"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     FILTER 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-radio-item-1"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     FILTER 1
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-radio-item-2"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     FILTER 2
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-radio-item-2"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     FILTER 2
-                &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class="filter-radio-item-3"&gt;
-                &lt;a href=""&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-3</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>
                     FILTER 3
-                &lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
+                <span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;/ul&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -589,17 +638,17 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="ios-check"&gt;
-        &lt;label&gt;
-            &lt;input type="checkbox" class="ios-switch" checked /&gt;
-            &lt;div class="input-div"&gt;&lt;div class="input-div"&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;/label&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">ios-check</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;label</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">ios-switch</span><span class="pr">"</span> <span class="ch">checked </span><span class="el">/&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/div&gt;</span><span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/label&gt;</span>
 
-        &lt;label&gt;
-            &lt;input type="checkbox" class="ios-switch" /&gt;
-            &lt;div class="input-div"&gt;&lt;div class="input-div"&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;/label&gt;
-    &lt;/div&gt;
+        <span class="el">&lt;label</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">ios-switch</span><span class="pr">"</span> <span class="el">/&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/div&gt;</span><span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -616,11 +665,11 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;input id="check01" type="checkbox"&gt;
-    &lt;label class="checkbox-01" for="check01"&gt; Remember me &lt;/label&gt;
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">check01</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox-01</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">check01</span><span class="pr">"</span><span class="el">&gt;</span> Remember me <span class="el">&lt;/label&gt;</span>
 
-    &lt;input id="check02" type="checkbox" checked&gt;
-    &lt;label class="checkbox-01" for="check02"&gt; Remember me &lt;/label&gt;
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">check02</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="ch">checked</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox-01</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">check02</span><span class="pr">"</span><span class="el">&gt;</span> Remember me <span class="el">&lt;/label&gt;</span>
 </code>
             </pre>
             </div>
@@ -652,26 +701,26 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="dropdown-main"&gt;
-        &lt;label for="show-drop1" class="show-drop"&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">dropdown-main</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">show-drop1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">show-drop</span><span class="pr">"</span><span class="el">&gt;</span>
             DorpDown
-        &lt;/label&gt;
-        &lt;input type="checkbox" id="show-drop1" role="button"&gt;
-        &lt;ul id="dropdown" class="drop"&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;drop1&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;drop2&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;drop3&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;a href=""&gt;drop4&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
+        <span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">show-drop1</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;ul</span> <span class="pr">id="</span><span class="ch">dropdown</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">drop</span>"<span class="el">&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop1<span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop2<span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop3<span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+            <span class="el">&lt;li&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop4<span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;/ul&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -735,38 +784,38 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="table-scroll-full"&gt;
-        &lt;table&gt;
-            &lt;thead&gt;
-            &lt;tr&gt;
-                &lt;th&gt;MAIN 01&lt;/th&gt;
-                &lt;th&gt;MAIN 02&lt;/th&gt;
-                &lt;th&gt;MAIN 03&lt;/th&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-scroll-full</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;table&gt;</span>
+            <span class="el">&lt;thead&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 01<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 02<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 03<span class="el">&lt;/th&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-            &lt;tr&gt;
-                &lt;td&gt;xxx 01&lt;/td&gt;
-                &lt;td&gt;xxx 02&lt;/td&gt;
-                &lt;td&gt;xxx 03&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/thead&gt;</span>
+            <span class="el">&lt;tbody&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 01<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 02<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 03<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;xxx 11&lt;/td&gt;
-                &lt;td&gt;xxx 12&lt;/td&gt;
-                &lt;td&gt;xxx 13&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 11<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 12<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 13<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;xxx 21&lt;/td&gt;
-                &lt;td&gt;xxx 22&lt;/td&gt;
-                &lt;td&gt;xxx 23&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 21<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 22<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 23<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-    &lt;/div&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/tbody&gt;</span>
+        <span class="el">&lt;/table&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -830,38 +879,38 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="table-on-height"&gt;
-        &lt;table&gt;
-            &lt;thead&gt;
-            &lt;tr&gt;
-                &lt;th&gt;MAIN 01&lt;/th&gt;
-                &lt;th&gt;MAIN 02&lt;/th&gt;
-                &lt;th&gt;MAIN 03&lt;/th&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-on-height</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;table&gt;</span>
+            <span class="el">&lt;thead&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 01<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 02<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 03<span class="el">&lt;/th&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-            &lt;tr&gt;
-                &lt;td data-title="MAIN 01"&gt;xxx 01&lt;/td&gt;
-                &lt;td data-title="MAIN 02"&gt;xxx 02&lt;/td&gt;
-                &lt;td data-title="MAIN 03"&gt;xxx 03&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/thead&gt;</span>
+            <span class="el">&lt;tbody&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 01</span><span class="pr">"</span><span class="el">&gt;</span>xxx 01<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 02</span><span class="pr">"</span><span class="el">&gt;</span>xxx 02<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 03</span><span class="pr">"</span><span class="el">&gt;</span>xxx 03<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td data-title="MAIN 01"&gt;xxx 11&lt;/td&gt;
-                &lt;td data-title="MAIN 02"&gt;xxx 12&lt;/td&gt;
-                &lt;td data-title="MAIN 03"&gt;xxx 13&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 01</span><span class="pr">"</span><span class="el">&gt;</span>xxx 11<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 02</span><span class="pr">"</span><span class="el">&gt;</span>xxx 12<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 03</span><span class="pr">"</span><span class="el">&gt;</span>xxx 13<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td data-title="MAIN 01"&gt;xxx 21&lt;/td&gt;
-                &lt;td data-title="MAIN 02"&gt;xxx 22&lt;/td&gt;
-                &lt;td data-title="MAIN 03"&gt;xxx 23&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 01</span><span class="pr">"</span><span class="el">&gt;</span>xxx 21<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 02</span><span class="pr">"</span><span class="el">&gt;</span>xxx 22<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 03</span><span class="pr">"</span><span class="el">&gt;</span>xxx 23<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-    &lt;/div&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/tbody&gt;</span>
+        <span class="el">&lt;/table&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -958,38 +1007,38 @@
                 </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="table-scroll"&gt;
-        &lt;table&gt;
-            &lt;thead&gt;
-            &lt;tr&gt;
-                &lt;th&gt;MAIN 01&lt;/th&gt;
-                &lt;th&gt;MAIN 02&lt;/th&gt;
-                &lt;th&gt;MAIN 03&lt;/th&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-scroll</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;table&gt;</span>
+            <span class="el">&lt;thead&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 01<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 02<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 03<span class="el">&lt;/th&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-            &lt;tr&gt;
-                &lt;td&gt;xxx 01&lt;/td&gt;
-                &lt;td&gt;xxx 02&lt;/td&gt;
-                &lt;td&gt;xxx 03&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/thead&gt;</span>
+            <span class="el">&lt;tbody&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 01<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 02<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 03<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;xxx 11&lt;/td&gt;
-                &lt;td&gt;xxx 12&lt;/td&gt;
-                &lt;td&gt;xxx 13&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 11<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 12<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 13<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;xxx 21&lt;/td&gt;
-                &lt;td&gt;xxx 22&lt;/td&gt;
-                &lt;td&gt;xxx 23&lt;/td&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 21<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 22<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 23<span class="el">&lt;/td&gt;</span>
                 ...
-            &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-    &lt;/div&gt;
+            <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/tbody&gt;</span>
+        <span class="el">&lt;/table&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
             </div>
@@ -1043,48 +1092,48 @@
                             </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;table class="responsive-table"&gt;
-        &lt;caption&gt;
+    <span class="el">&lt;table</span> <span class="pr">class="</span><span class="ch">responsive-table</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;caption&gt;</span>
             HEAD
-        &lt;/caption&gt;
-        &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;
+        <span class="el">&lt;/caption&gt;</span>
+        <span class="el">&lt;thead&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th&gt;</span>
                 Test1
-            &lt;/th&gt;
-            &lt;th&gt;
+            <span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;th&gt;</span>
                 Test2
-            &lt;/th&gt;
-            &lt;th&gt;
+            <span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;th&gt;</span>
                 Test3
-            &lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;th tabindex="0" onclick="action"&gt;
+            <span class="el">&lt;/th&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;/thead&gt;</span>
+        <span class="el">&lt;tbody&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th</span> <span class="pr">tabindex="</span><span class="ch">0</span><span class="pr">"</span> <span class="pr">onclick="</span><span class="ch">action</span><span class="pr">"</span><span class="el">&gt;</span>
                 TEST1
-            &lt;/th&gt;
-            &lt;td data-title="xxx1"&gt;
+            <span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx1</span><span class="pr">"</span><span class="el">&gt;</span>
                 test11
-            &lt;/td&gt;
-            &lt;td data-title="xxx2"&gt;
+            <span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx2</span><span class="pr">"</span><span class="el">&gt;</span>
                 test12
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th tabindex="0" onclick="action"&gt;
+            <span class="el">&lt;/td&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th</span> <span class="pr">tabindex="</span><span class="ch">0</span><span class="pr">"</span> <span class="pr">onclick="</span><span class="ch">action</span><span class="pr">"</span><span class="el">&gt;</span>
                 TEST2
-            &lt;/th&gt;
-            &lt;td data-title="xxx3"&gt;
+            <span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx3</span><span class="pr">"</span><span class="el">&gt;</span>
                 test21
-            &lt;/td&gt;
-            &lt;td data-title="xxx4"&gt;
+            <span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx4</span><span class="pr">"</span><span class="el">&gt;</span>
                 test22
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/tbody&gt;
-    &lt;/table&gt;
+            <span class="el">&lt;/td&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;/tbody&gt;</span>
+    <span class="el">&lt;/table&gt;</span>
 </code>
             </pre>
                     </div>
@@ -1116,25 +1165,25 @@
                         </div>
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="people-item"&gt;
-        &lt;p class="name"&gt;
-            &lt;a href="#Test_info" class="modal-a"&gt;MODAL&lt;/a&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">people-item</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">name</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#Test_info</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">modal-a</span><span class="pr">"</span><span class="el">&gt;</span>MODAL<span class="el">&lt;/a&gt;</span>
 
         &lt;!--MOBILE--&gt;
-        &lt;div class="small-visited"&gt;
-            &lt;h2&gt;XXX&lt;/h2&gt;
-            &lt;p&gt;text mobile&lt;/p&gt;
-        &lt;/div&gt;
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">small-visited</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;h2&gt;</span>XXX<span class="el">&lt;/h2&gt;</span>
+            <span class="el">&lt;p&gt;</span>text mobile<span class="el">&lt;/p&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
 
         &lt;!--DESKTOP--&gt;
-        &lt;div id="Test_info" class="modal-dialog small-hidden"&gt;
-            &lt;a href="#close" title="Close" class="full-width-close"&gt;&lt;/a&gt;
-            &lt;div&gt;
-                &lt;h2&gt;XXX&lt;/h2&gt;
-                &lt;p&gt;text desktop&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+        <span class="el">&lt;div</span> <span class="pr">id="</span><span class="ch">Test_info</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">modal-dialog small-hidden</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#close</span><span class="pr">"</span> <span class="pr">title="</span><span class="ch">Close</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">full-width-close</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;div</span><span class="el">&gt;</span>
+                <span class="el">&lt;h2&gt;</span>XXX<span class="el">&lt;/h2&gt;</span>
+                <span class="el">&lt;p&gt;</span>text desktop<span class="el">&lt;/p&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
                     </div>
@@ -1153,11 +1202,11 @@
 
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;a href="#" class="button button-primary tooltip"&gt;
-        TEXT &lt;span class="tooltip-hover"&gt;[?]&lt;div class="tooltip-show"&gt;
+    <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-primary tooltip</span><span class="pr">"</span><span class="el">&gt;</span>
+        TEXT <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-show</span><span class="pr">"</span><span class="el">&gt;</span>
         On your last purchase, your payment method was stored for your convenience
-    &lt;/div&gt;&lt;/span&gt;
-    &lt;/a&gt;
+    <span class="el">&lt;/div&gt;</span><span class="el">&lt;/span&gt;</span>
+    <span class="el">&lt;/a&gt;</span>
 </code>
             </pre>
                     </div>
@@ -1188,24 +1237,24 @@
 
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;ul class="tags"&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name new&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name new name&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul class="tags tags-primary"&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name new&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name new name&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul class="tags tags-secondary"&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name new&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tag name new name&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+    <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">tags</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name new<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name new name<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+    <span class="el">&lt;ul </span><span class="pr">class="</span><span class="ch">tags tags-primary</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name new<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name new name<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+    <span class="el">&lt;ul </span><span class="pr">class="</span><span class="ch">tags tags-secondary</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name new<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag name new name<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
 </code>
             </pre>
                     </div>
@@ -1229,25 +1278,26 @@
 
         <div class="span-large-6">
             <div class="side-bar">
-                <ul>
-                    <li><a href="#001">Menu</a></li>
-                    <li><a href="#002">Before & After widget</a></li>
-                    <li><a href="#003">Nav List</a></li>
-                    <li><a href="#004">Rating</a></li>
-                    <li><a href="#005">Tabs</a></li>
-                    <li><a href="#006">Filter with checkbox</a></li>
-                    <li><a href="#007">Filter with rating</a></li>
-                    <li><a href="#008">iOS checkbox</a></li>
-                    <li><a href="#009">Another checkbox</a></li>
-                    <li><a href="#0010">Dropdown</a></li>
-                    <li><a href="#0011">TABLE (full scroll)</a></li>
-                    <li><a href="#0012">TABLE (full height)</a></li>
-                    <li><a href="#0013">TABLE (scroll)</a></li>
-                    <li><a href="#0014">TABLE (dropdown)</a></li>
-                    <li><a href="#0015">Modal</a></li>
-                    <li><a href="#0016">Tooltip</a></li>
-                    <li><a href="#0017">Tags</a></li>
-                    <li><a href="#0018">XXX</a></li>
+                <ul class="sidebar" id="top-menu">
+                    <a href="#001"><li>Menu</li></a>
+                    <a href="#002"><li>Before & After widget</li></a>
+                    <a href="#003"><li>Nav List</li></a>
+                    <a href="#004"><li>Rating</li></a>
+                    <a href="#005"><li>Tabs</li></a>
+                    <a href="#006"><li>Filter with checkbox</li></a>
+                    <a href="#007"><li>Filter with radio</li></a>
+                    <a href="#008"><li>iOS checkbox</li></a>
+                    <a href="#009"><li>Another checkbox</li></a>
+                    <a href="#0010"><li>Dropdown</li></a>
+                    <a href="#0011"><li>TABLE (full scroll)</li></a>
+                    <a href="#0012"><li>TABLE (full height)</li></a>
+                    <a href="#0013"><li>TABLE (scroll)</li></a>
+                    <a href="#0014"><li>TABLE (dropdown)</li></a>
+                    <a href="#0015"><li>Modal</li></a>
+                    <a href="#0016"><li>Tooltip</li></a>
+                    <a href="#0017"><li>Tags</li></a>
+                    <a href="#0018"><li>XXX</li></a>
+                    <a href="#"><li>Back to Top</li></a>
                 </ul>
             </div>
         </div>
