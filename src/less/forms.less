@@ -1,0 +1,120 @@
+@import "variables-default";
+
+//input[type=text]:focus, textarea:focus {
+//  box-shadow: 0 0 5px #8DBB04;
+//  border: 1px solid #FFFFFF;
+//}
+
+form {
+  &.form {
+
+    legend {
+      font-size: 32px;
+    }
+    .label {
+
+      display: block;
+      position: relative;
+
+      input {
+        width: 100%;
+        padding-left: 10px;
+        border: 1px solid #9c9c9c;
+        background: #FFF;
+        height: 35px;
+        outline: none;
+        .animate(all 0.30s ease-in-out);
+        &:focus {
+          box-shadow: 0 0 5px @color-primary;
+        }
+
+        &.prefix {
+          padding-left: 22%;
+        }
+
+        &.postfix {
+          padding-right: 10%;
+        }
+      }
+
+      select {
+        width: 100%;
+        padding-left: 10px;
+        border: 1px solid #9c9c9c;
+        background: #FFF;
+        height: 35px;
+        outline: none;
+        cursor: pointer;
+      }
+
+      option {
+        cursor: pointer;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 80px;
+        padding-left: 10px;
+        border: 1px solid #9c9c9c;
+        background: #FFF;
+        outline: none;
+        .animate(all 0.30s ease-in-out);
+        &:focus {
+          box-shadow: 0 0 5px @color-primary;
+        }
+      }
+
+      span.postfix {
+        position: absolute;
+        top: 0;
+        right: 1px;
+        margin-top: 24px;
+        background-color: #9c9c9c;
+        border-left: 1px solid #9c9c9c;
+        padding: 5px 5px 5px 1px;
+      }
+
+      span.prefix {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        margin-top: 24px;
+        background-color: #9c9c9c;
+        border-right: 1px solid #9c9c9c;
+        padding: 5px 1px 5px 5px;
+      }
+    }
+
+    &.form-radius-base {
+      .label {
+        input, textarea {
+          border-radius: 3px;
+          -webkit-border-radius: 3px;
+        }
+        span.postfix,
+        span.prefix {
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+        }
+      }
+    }
+
+    &.form-radius-circle {
+      .label {
+        input {
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+        }
+        textarea {
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+        }
+        span.postfix,
+        span.prefix {
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+        }
+      }
+    }
+  }
+}

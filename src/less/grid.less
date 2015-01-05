@@ -87,6 +87,13 @@
     //    border: 1px solid red;
 }
 
+.span-none-pading {
+  .display-block;
+  .relative;
+  margin: @column-margin-vertical @column-margin-horizontal;
+  min-height: 1px;
+}
+
 // NON RESPONSIVE LAYOUT
 .grid-generate-columns-nonresponsive(@number-of-columns) when (@responsive = false) {
     .grid-generate-columns(@number-of-columns; @size: @number-of-columns) when (@size > 0) {
@@ -96,6 +103,11 @@
             .span;
             .pull-left;
             width: (100% / @number-of-columns) * @size;
+        }
+        .span-none-pading-@{size} {
+          .span-none-pading;
+          .pull-left;
+          width: (100% / @number-of-columns) * @size;
         }
     }
 
@@ -126,14 +138,25 @@
             .pull-left;
             width: (100% / @number-of-columns) * @size;
         }
+      .span-none-pading-small-@{size} {
+        .span-none-pading;
+        .pull-left;
+        width: (100% / @number-of-columns) * @size;
+      }
 
         .span-medium-@{size} {
             .span;
         }
+      .span-none-pading-medium-@{size} {
+        .span-none-pading;
+      }
 
         .span-large-@{size} {
             .span;
         }
+      .span-none-pading-large-@{size} {
+        .span-none-pading;
+      }
 
     }
 
@@ -166,6 +189,10 @@
                 .pull-left;
                 width: (100% / @number-of-columns) * @size;
             }
+          .span-none-pading-medium-@{size} {
+            .pull-left;
+            width: (100% / @number-of-columns) * @size;
+          }
 
             .offset-medium-@{size} {
                 margin-left: (100% / @number-of-columns) * @size;
@@ -186,6 +213,10 @@
                 .pull-left;
                 width: (100% / @number-of-columns) * @size;
             }
+          .span-none-pading-large-@{size} {
+            .pull-left;
+            width: (100% / @number-of-columns) * @size;
+          }
 
             .offset-large-@{size} {
                 margin-left: (100% / @number-of-columns) * @size;

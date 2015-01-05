@@ -196,6 +196,58 @@
     }
 }
 
+.border-white {
+  border: solid @small @color-white;
+  &-bottom {
+    border-bottom: solid @small @color-white;
+  }
+  &-top {
+    border-top: solid @small @color-white;
+  }
+  &-right {
+    border-right: solid @small @color-white;
+  }
+  &-left {
+    border-left: solid @small @color-white;
+  }
+  &-horizontal {
+    border-left: solid @small @color-white;
+    border-right: solid @small @color-white;
+  }
+  &-vertical {
+    border-bottom: solid @small @color-white;
+    border-top: solid @small @color-white;
+  }
+}
+
+.border-black {
+  border: solid @small @color-black;
+  &-bottom {
+    border-bottom: solid @small @color-black;
+  }
+  &-top {
+    border-top: solid @small @color-black;
+  }
+  &-right {
+    border-right: solid @small @color-black;
+  }
+  &-left {
+    border-left: solid @small @color-black;
+  }
+  &-horizontal {
+    border-left: solid @small @color-black;
+    border-right: solid @small @color-black;
+  }
+  &-vertical {
+    border-bottom: solid @small @color-black;
+    border-top: solid @small @color-black;
+  }
+}
+
+.border-none {
+  border: none;
+}
+
 //EXAMPLES
 /*
 <p class="border-primary">

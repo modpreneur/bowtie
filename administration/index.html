@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Letter Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <link rel="stylesheet" href="../src/css/checkbox-font.css"/>
+    <link rel="stylesheet" href="../src/css/font-awesome.css"/>
+
+    <style>
+
+    </style>
+</head>
+<body class="administration">
+<div class="menu">
+    <div class="container-fluid">
+        <nav>
+            <a href="#"><h1>Administration Layout</h1></a>
+            <label for="show-menu1" class="show-menu">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="show-menu1" role="button">
+            <ul id="menu" class="menu-item">
+                <div class="dropdown-main">
+                    <label for="show-drop1" class="show-drop">
+                        Welcome <i class="fa fa-caret-down pull-right"></i>
+                    </label>
+                    <input type="checkbox" id="show-drop1" role="button">
+                    <ul id="dropdown" class="drop dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-cog"></i> Settings</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-toggle-down"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="side-bar">
+    <ul class="sidebar">
+        <a href="index.html"><li>Dashboard</li></a>
+        <a href="form.html"><li>Form</li></a>
+        <li>
+            <div class="dropdown-main-sidebar">
+                <label for="show-drop2" class="show-drop">
+                    UI Elements <i class="fa fa-chevron-down pull-right"></i>
+                </label>
+                <input type="checkbox" id="show-drop2" role="button">
+                <ul id="dropdown" class="drop">
+                    <li>
+                        <a href="elements.html">Elements</a>
+                    </li>
+                    <li>
+                        <a href="#">drop2</a>
+                    </li>
+                    <li>
+                        <a href="#">drop3</a>
+                    </li>
+                    <li>
+                        <a href="#">drop4</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <a href="login-page.html"><li>Log In/Register</li></a>
+    </ul>
+</div>
+<div class="container-fluid container-fluid-with-sidebar">
+    <h1 class="main">Dashboard</h1>
+</div>
+</body>
+</html>

@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="src/css/font-awesome.css"/>
     <style>
         .side-bar {
-            top: 65px;
+            z-index: 9;
+            background: #FFFFFF;
+            padding: 10px 20px;
+            box-shadow: 20px 0px 30px rgb(142, 142, 142);
+            height: 100%;
+            min-width: 230px;
         }
         ul.sidebar {
             padding-left: 0;
@@ -657,10 +662,10 @@
 
             <div class="example">
                 <div class="examples">
-                    <input id="check01" type="checkbox">
+                    <input id="check01" type="checkbox" class="checkbox-none">
                     <label class="checkbox-01" for="check01"> Remember me </label>
 
-                    <input id="check02" type="checkbox" checked>
+                    <input id="check02" type="checkbox" class="checkbox-none" checked>
                     <label class="checkbox-01" for="check02"> Remember me </label>
                 </div>
             <pre>
@@ -1194,7 +1199,7 @@
                     <div class="example">
                         <div class="examples">
                             <a href="#" class="button button-primary tooltip">
-                                TEXT <span class="tooltip-hover">[?]<div class="tooltip-show">
+                                TEXT <span class="tooltip-hover">[?]<div class="tooltip-top">
                                 On your last purchase, your payment method was stored for your convenience
                             </div></span>
                             </a>
@@ -1203,7 +1208,7 @@
             <pre>
 <code class="language-html" data-lang="html">
     <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-primary tooltip</span><span class="pr">"</span><span class="el">&gt;</span>
-        TEXT <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-show</span><span class="pr">"</span><span class="el">&gt;</span>
+        TEXT <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
         On your last purchase, your payment method was stored for your convenience
     <span class="el">&lt;/div&gt;</span><span class="el">&lt;/span&gt;</span>
     <span class="el">&lt;/a&gt;</span>
@@ -1259,23 +1264,145 @@
             </pre>
                     </div>
 
-                    <h2 class="example-heading" id="0018">XXX</h2>
+                    <h2 class="example-heading" id="0018">Slider</h2>
 
                     <div class="example">
                         <div class="examples">
+                            <div class="gallery autoplay items-2">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
 
+                                <div class="secondary-controls">
+                                    <div class="superfluous">
+                                        <nav>
+                                            <a href="#item-1"><img src="http://benschwarz.github.io/gallery-css/images/arrow-left.svg" alt="Left pointing arrow"></a>
+                                            <a href="#item-2"><img src="http://benschwarz.github.io/gallery-css/images/arrow-right.svg" alt="Right pointing arrow"></a>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                                <figure class="item">
+                                    <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10369985_962647757080508_9059219242389181589_n.jpg?oh=d7175fe68f13dd08fcfc079c105991f1&oe=5540E245&__gda__=1426641967_7f412a9c341e7500e6e6055a47e7cbbe" />
+                                </figure>
+
+                                <figure class="item">
+                                    <img src="http://www.comicscenter.net/uploads/images/expos_les_grandes_expositions/smurfs-imps-2008-3.jpg"/>
+                                </figure>
+
+                                <div class="controls">
+                                    <a href="#item-1" class="control-button"><span class="fa fa-circle"></span></a>
+                                    <a href="#item-2" class="control-button"><span class="fa fa-circle"></span></a>
+                                </div>
+                            </div>
                         </div>
+
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="gallery autoplay items-2"&gt;
+        &lt;div id="item-1" class="control-operator"&gt;&lt;/div&gt;
+        &lt;div id="item-2" class="control-operator"&gt;&lt;/div&gt;
+
+        &lt;div class="secondary-controls"&gt;
+            &lt;div class="superfluous"&gt;
+                &lt;nav&gt;
+                    &lt;a href="#item-1"&gt;&lt;img src="http://benschwarz.github.io/gallery-css/images/arrow-left.svg" alt="Left pointing arrow"&gt;&lt;/a&gt;
+                    &lt;a href="#item-2"&gt;&lt;img src="http://benschwarz.github.io/gallery-css/images/arrow-right.svg" alt="Right pointing arrow"&gt;&lt;/a&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;figure class="item"&gt;
+            &lt;img src="" /&gt;
+        &lt;/figure&gt;
+
+        &lt;figure class="item"&gt;
+            &lt;img src=""/&gt;
+        &lt;/figure&gt;
+
+        &lt;div class="controls"&gt;
+            &lt;a href="#item-1" class="control-button"&gt;&lt;span class="fa fa-circle"&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;a href="#item-2" class="control-button"&gt;&lt;span class="fa fa-circle"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+                    </div>
+
+        <h2 class="example-heading" id="0019">Widget box</h2>
+
+        <div class="example">
+            <div class="examples">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Navbar
+                            <small>just simple navbar</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">This is just simple NAVBAR</p>
+                        <hr/>
+                        <div class="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        navlist 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        navlist 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        navlist 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        navlist 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <pre>
+<code class="language-html" data-lang="html">
+    &lt;div class="widget-box"&gt;
+        &lt;div class="widget-header"&gt;
+            &lt;h2&gt;xxx
+                &lt;small&gt;yyy&lt;/small&gt;
+            &lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="widget-body"&gt;
+            &lt;p class="text-muted"&gt;xxx&lt;/p&gt;
+            &lt;hr/&gt;
+            xxx
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+            </pre>
+        </div>
+
+        <h2 class="example-heading" id="0020">XXX</h2>
+
+        <div class="example">
+            <div class="examples">
+
+            </div>
 
             <pre>
 <code class="language-html" data-lang="html">
 
 </code>
             </pre>
-                    </div>
-
         </div>
 
 
+        </div>
         <div class="span-large-6">
             <div class="side-bar">
                 <ul class="sidebar" id="top-menu">
@@ -1296,7 +1423,9 @@
                     <a href="#0015"><li>Modal</li></a>
                     <a href="#0016"><li>Tooltip</li></a>
                     <a href="#0017"><li>Tags</li></a>
-                    <a href="#0018"><li>XXX</li></a>
+                    <a href="#0018"><li>Slider</li></a>
+                    <a href="#0019"><li>Widget box</li></a>
+                    <a href="#0020"><li>XXX</li></a>
                     <a href="#"><li>Back to Top</li></a>
                 </ul>
             </div>
@@ -1407,6 +1536,74 @@
         <div class="span-large-4 background-info">
             background-info
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <form>
+            <div class="row">
+                <div class="span-large-24">
+                    <label>Input Label
+                        <input type="text" placeholder="span-large-24" />
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span-large-8">
+                    <label>Input Label
+                        <input type="text" placeholder="span-large-8" />
+                    </label>
+                </div>
+                <div class="span-large-8">
+                    <label>Input Label
+                        <input type="text" placeholder="span-large-8" />
+                    </label>
+                </div>
+                <div class="span-large-4">
+                    <div class="row">
+                        <label>Input Label</label>
+                        <div class="span-small-18">
+                            <input type="text" placeholder="span-small-18" />
+                        </div>
+                        <div class="span-small-6">
+                            <span class="postfix">.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span-large-24">
+                    <label>Select Box
+                        <select>
+                            <option value="husker">Husker</option>
+                            <option value="starbuck">Starbuck</option>
+                            <option value="hotdog">Hot Dog</option>
+                            <option value="apollo">Apollo</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span-large-12">
+                    <label>Choose Your Favorite</label>
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+                </div>
+                <div class="span-large-12">
+                    <label>Check these out</label>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span-large-24">
+                    <label>Textarea Label
+                        <textarea placeholder="span-large-24"></textarea>
+                    </label>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 </body>

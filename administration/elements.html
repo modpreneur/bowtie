@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Letter Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <link rel="stylesheet" href="../src/css/checkbox-font.css"/>
+    <link rel="stylesheet" href="../src/css/font-awesome.css"/>
+
+    <style>
+
+    </style>
+</head>
+<body class="administration">
+<div class="menu">
+    <div class="container-fluid">
+        <nav>
+            <a href="#"><h1>Administration Layout</h1></a>
+            <label for="show-menu1" class="show-menu">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="show-menu1" role="button">
+            <ul id="menu" class="menu-item">
+                <div class="dropdown-main">
+                    <label for="show-drop1" class="show-drop">
+                        Welcome <i class="fa fa-caret-down pull-right"></i>
+                    </label>
+                    <input type="checkbox" id="show-drop1" role="button">
+                    <ul id="dropdown" class="drop dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-cog"></i> Settings</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-toggle-down"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="side-bar">
+    <ul class="sidebar">
+        <a href="index.html"><li>Dashboard</li></a>
+        <a href="form.html"><li>Form</li></a>
+        <li>
+            <div class="dropdown-main-sidebar">
+                <label for="show-drop2" class="show-drop">
+                    UI Elements <i class="fa fa-chevron-down pull-right"></i>
+                </label>
+                <input type="checkbox" id="show-drop2" role="button">
+                <ul id="dropdown" class="drop">
+                    <li>
+                        <a href="elements.html">Elements</a>
+                    </li>
+                    <li>
+                        <a href="#">drop2</a>
+                    </li>
+                    <li>
+                        <a href="#">drop3</a>
+                    </li>
+                    <li>
+                        <a href="#">drop4</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <a href="login-page.html"><li>Log In/Register</li></a>
+    </ul>
+</div>
+<div class="container-fluid container-fluid-with-sidebar">
+    <h1 class="main">Elements</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span-large-12">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Navbar
+                            <small>just simple navbar</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">This is just simple NAVBAR</p>
+                        <hr/>
+                        <div class="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        navlist 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        navlist 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        navlist 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        navlist 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span-large-12">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Tabs
+                            <small>just simple TABS</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">This is just simple TABS</p>
+                        <hr/>
+                        <div class="tabs-show">
+                            <div class="tabs-border">
+                                <div class="tab">
+                                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                                    <label for="tab-1">List 1 </label>
+                                    <div class="tab" id="close-tab">
+                                        <input type="radio" id="tab-close" name="tab-group-1">
+                                        <label for="tab-close">List 1</label>
+                                    </div>
+
+                                    <div class="content">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <input type="radio" id="tab-2" name="tab-group-1">
+                                    <label for="tab-2">List 2</label>
+                                    <div class="tab" id="close-tab">
+                                        <input type="radio" id="tab-close" name="tab-group-1">
+                                        <label for="tab-close">List 2</label>
+                                    </div>
+
+                                    <div class="content">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <input type="radio" id="tab-3" name="tab-group-1">
+                                    <label for="tab-3">List 3</label>
+                                    <div class="tab" id="close-tab">
+                                        <input type="radio" id="tab-close" name="tab-group-1">
+                                        <label for="tab-close">List 3</label>
+                                    </div>
+
+                                    <div class="content">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <input type="radio" id="tab-4" name="tab-group-1">
+                                    <label for="tab-4">List 4</label>
+                                    <div class="tab" id="close-tab">
+                                        <input type="radio" id="tab-close" name="tab-group-1">
+                                        <label for="tab-close">List 4</span></label>
+                                    </div>
+
+                                    <div class="content">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span-large-8">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Tooltip
+                            <small>just simple tooltip on button or [?]</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">Tooltip on TOP, RIGHT, BOTTOM, LEFT.</p>
+                        <hr/>
+                        <a href="#" class="button button-primary tooltip">
+                            TOP <span class="tooltip-hover">[?]<div class="tooltip-top">
+                            On your last purchase, your payment method was stored for your convenience
+                        </div></span>
+                        </a>
+                        <a href="#" class="button button-secondary tooltip">
+                            RIGHT <span class="tooltip-hover">[?]<div class="tooltip-right">
+                            On your last purchase, your payment method was stored for your convenience
+                        </div></span>
+                        </a>
+                        <a href="#" class="button button-tertiary tooltip">
+                            BOTTOM <span class="tooltip-hover">[?]<div class="tooltip-bottom">
+                            On your last purchase, your payment method was stored for your convenience
+                        </div></span>
+                        </a>
+                        <a href="#" class="button button-info tooltip">
+                            LEFT <span class="tooltip-hover">[?]<div class="tooltip-left">
+                            On your last purchase, your payment method was stored for your convenience
+                        </div></span>
+                        </a>
+                        <a href="#" class="button button-warning tooltip tooltip-hover">
+                            ON BUTTON <div class="tooltip-top">
+                            On your last purchase, your payment method was stored for your convenience
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="span-large-8">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Popover
+                            <small>like Tooltip, but on click</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">......</p>
+                        <hr/>
+                        <div class="popover">
+                            <label for="popover-top" class="button button-primary tooltip-click">
+                                TOP
+                            </label><input type="checkbox" id="popover-top" role="button" class="checkbox-none">
+                            <div class="popover-top">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div>
+                        </div>
+                        <div class="popover">
+                            <label for="popover-right" class="button button-secondary tooltip-click">
+                                RIGHT
+                            </label><input type="checkbox" id="popover-right" role="button" class="checkbox-none">
+                            <div class="popover-right">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div>
+                        </div>
+                        <div class="popover">
+                            <label for="popover-bottom" class="button button-tertiary tooltip-click">
+                                BOTTOM
+                            </label><input type="checkbox" id="popover-bottom" role="button" class="checkbox-none">
+                            <div class="popover-bottom">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div>
+                        </div>
+                        <div class="popover">
+                            <label for="popover-left" class="button button-info tooltip-click">
+                                LEFT
+                            </label><input type="checkbox" id="popover-left" role="button" class="checkbox-none">
+                            <div class="popover-left">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span-large-8">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Tags</h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">Tags like link or just text.</p>
+                        <hr/>
+                        <ul class="tags">
+                            <li><a href="#">tag</a></li>
+                            <li><a href="#" class="disable-tag">Disable tag - just text</a></li>
+                        </ul>
+                        <ul class="tags tags-primary">
+                            <li><a href="#" class="disable-tag">Disable tag - just text</a></li>
+                            <li><a href="#">tag name new name</a></li>
+                        </ul>
+                        <ul class="tags tags-secondary">
+                            <li><a href="#">tag</a></li>
+                            <li><a href="#" class="disable-tag">Disable tag - just text</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span-large-24 bigger-icons">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Application Buttons
+                            <small>Button with icons</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <a class="button button-primary radius-large" href="#">
+                            <i class="fa fa-cog next-row"></i>
+                            Default
+                        </a>
+                        <a class="button button-secondary radius-large" href="#">
+                            <i class="fa fa-pencil-square-o next-row"></i>
+                            Edit
+                        </a>
+                        <a class="button button-tertiary radius-large" href="#">
+                            <i class="fa fa-refresh next-row"></i>
+                            Reload
+                        </a>
+                        <a class="button button-info radius-large" href="#">
+                            <i class="fa fa-undo next-row"></i>
+                            Undo
+                        </a>
+                        <a class="button button-danger" href="#">
+                            <i class="fa fa-envelope next-row"></i>
+                            Mailbox
+                        </a>
+                        <a class="button button-warning" href="#">
+                            <i class="fa fa-trash next-row"></i>
+                            Delete
+                        </a>
+                        <a class="button button-success" href="#">
+                            <i class="fa fa-cloud-upload next-row"></i>
+                            Upload
+                        </a>
+                        <a class="button" href="#">
+                            <i class="fa fa-share next-row"></i>
+                            Share
+                        </a>
+                        <a class="button button-primary radius-small" href="#">
+                            <i class="fa fa-lock next-row"></i>
+                            Lock
+                        </a>
+                        <a class="button button-secondary radius-small" href="#">
+                            <i class="fa fa-floppy-o next-row"></i>
+                            Save
+                        </a>
+                        <a class="button button-tertiary radius-small" href="#">
+                            <i class="fa fa-print next-row"></i>
+                            Print
+                        </a>
+                        <a class="button button-warning radius-small" href="#">
+                            <i class="fa fa-shopping-cart next-row"></i>
+                            Shop
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="span-large-8">
+            <div class="widget-box">
+                <div class="widget-header">
+                    <h2>Default Buttons</h2>
+                </div>
+                <div class="widget-body">
+                    <a class="button button-primary" href="#">
+                        button-primary
+                    </a>
+                    <a class="button button-secondary radius-large" href="#">
+                        button-secondary radius-large
+                    </a>
+                    <a class="button button-tertiary radius-base" href="#">
+                        button-tertiary radius-base
+                    </a>
+                    <a class="button button-info radius-circle" href="#">
+                        button-info radius-circle
+                    </a>
+                    <a class="button button-danger radius-small" href="#">
+                        button-danger radius-small
+                    </a>
+                    <a class="button button-warning" href="#">
+                        button-warning
+                    </a>
+                    <a class="button button-success radius-large" href="#">
+                        button-success radius-large
+                    </a>
+                    <a class="button radius-small" href="#">
+                        radius-small
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="widget-box">
+                <div class="widget-header">
+                    <h2>Button with Icons</h2>
+                </div>
+                <div class="widget-body">
+                    <a class="button" href="#">
+                        Default
+                    </a>
+                    <a class="button button-primary" href="#">
+                        <i class="fa fa-pencil-square-o"></i>
+                        Edit
+                    </a>
+                    <a class="button button-tertiary radius-circle" href="#">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a class="button button-info radius-large" href="#">
+                        <i class="fa fa-undo"></i>
+                        Undo
+                    </a>
+                    <a class="button button-danger radius-small" href="#">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a class="button button-warning radius-large" href="#">
+                        <i class="fa fa-trash"></i>
+                        Delete
+                    </a>
+                    <a class="button button-success radius-large" href="#">
+                        <i class="fa fa-cloud-upload">Upload</i>
+                    </a>
+                    <a class="button radius-large" href="#">
+                        Share <i class="fa fa-share"></i>
+                    </a>
+                    <a class="button button-secondary" href="#">
+                        <i class="fa fa-floppy-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="widget-box">
+                <div class="widget-header">
+                    <h2>Button Sizing</h2>
+                </div>
+                <div class="widget-body">
+                    <a class="button button-primary button-mini" href="#">
+                        Mini
+                    </a>
+                    <a class="button button-secondary button-small" href="#">
+                        Small
+                    </a>
+                    <a class="button button-tertiary button-medium" href="#">
+                        Medium
+                    </a>
+                    <a class="button button-warning button-large" href="#">
+                        Large
+                    </a>
+                    <a class="button button-info" href="#">
+                        Default
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="span-large-8">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Button Dropdown/Disabled & Pagination</h2>
+                    </div>
+                    <div class="widget-body">
+                        <div class="dropdown-main">
+                            <label for="show-drop3" class="show-drop">
+                                <span class="button button-info" href="#">
+                                    DorpDown <i class="fa fa-caret-down"></i>
+                                </span>
+                            </label>
+                            <input type="checkbox" id="show-drop3" role="button">
+                            <ul id="dropdown" class="drop">
+                                <li>
+                                    <a href="#">drop1</a>
+                                </li>
+                                <li>
+                                    <a href="#">drop2</a>
+                                </li>
+                                <li>
+                                    <a href="#">drop3</a>
+                                </li>
+                                <li>
+                                    <a href="#">drop4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr/>
+                        <a class="button button-warning disable" href="#">
+                            Disable
+                        </a>
+                        <hr/>
+                        <ul class="pagination">
+                            <li class="disable"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                        </ul>
+                        <hr/>
+                        <ul class="pager">
+                            <li class="previous">
+                                <a href="#"><i class="fa fa-long-arrow-left"></i> previous</a>
+                            </li>
+
+                            <li class="next">
+                                <a href="#">next <i class="fa fa-long-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span-large-16">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>Table</h2>
+                    </div>
+                    <div class="widget-body">
+                        <div class="table-scroll">
+                            <table style="width: 100%">
+                                <thead>
+                                <tr>
+                                    <th>Domain</th>
+                                    <th>Price</th>
+                                    <th>Clicks</th>
+                                    <th>Update</th>
+                                    <th>Status</th>
+                                    <th>Options</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="#">ace.com</a></td>
+                                    <td>$43</td>
+                                    <td>3,330</td>
+                                    <td>Feb 12</td>
+                                    <td><button class="button button-info button-small">Exporing</button></td>
+                                    <td>
+                                        <a class="button button-success button-small radius-base" href="#"><i class="fa fa-check"></i></a>
+                                        <a class="button button-info button-small radius-base" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="button button-danger button-small radius-base" href="#"><i class="fa fa-trash"></i></a>
+                                        <a class="button button-warning button-small radius-base" href="#"><i class="fa fa-flag"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">bace.com</a></td>
+                                    <td>$143</td>
+                                    <td>4,440</td>
+                                    <td>Mar 14</td>
+                                    <td><button class="button button-success button-small">Registred</button></td>
+                                    <td>
+                                        <a class="button button-success button-small radius-base" href="#"><i class="fa fa-check"></i></a>
+                                        <a class="button button-info button-small radius-base" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="button button-danger button-small radius-base" href="#"><i class="fa fa-trash"></i></a>
+                                        <a class="button button-warning button-small radius-base" href="#"><i class="fa fa-flag"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">cace.com</a></td>
+                                    <td>$243</td>
+                                    <td>5,550</td>
+                                    <td>Apr 16</td>
+                                    <td><button class="button button-info button-small">Exporing</button></td>
+                                    <td>
+                                        <a class="button button-success button-small radius-base" href="#"><i class="fa fa-check"></i></a>
+                                        <a class="button button-info button-small radius-base" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="button button-danger button-small radius-base" href="#"><i class="fa fa-trash"></i></a>
+                                        <a class="button button-warning button-small radius-base" href="#"><i class="fa fa-flag"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">dace.com</a></td>
+                                    <td>$343</td>
+                                    <td>6,660</td>
+                                    <td>Jan 18</td>
+                                    <td><button class="button button-danger button-small">Flagged</button></td>
+                                    <td>
+                                        <a class="button button-success button-small radius-base" href="#"><i class="fa fa-check"></i></a>
+                                        <a class="button button-info button-small radius-base" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="button button-danger button-small radius-base" href="#"><i class="fa fa-trash"></i></a>
+                                        <a class="button button-warning button-small radius-base" href="#"><i class="fa fa-flag"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">eace.com</a></td>
+                                    <td>$443</td>
+                                    <td>7,770</td>
+                                    <td>Jun 20</td>
+                                    <td><button class="button button-info button-small">Exporing</button></td>
+                                    <td>
+                                        <a class="button button-success button-small radius-base" href="#"><i class="fa fa-check"></i></a>
+                                        <a class="button button-info button-small radius-base" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="button button-danger button-small radius-base" href="#"><i class="fa fa-trash"></i></a>
+                                        <a class="button button-warning button-small radius-base" href="#"><i class="fa fa-flag"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">face.com</a></td>
+                                    <td>$543</td>
+                                    <td>8,880</td>
+                                    <td>Dec 22</td>
+                                    <td><button class="button button-info button-small">Exporing</button></td>
+                                    <td>
+                                        <a class="button button-success button-small radius-base" href="#"><i class="fa fa-check"></i></a>
+                                        <a class="button button-info button-small radius-base" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="button button-danger button-small radius-base" href="#"><i class="fa fa-trash"></i></a>
+                                        <a class="button button-warning button-small radius-base" href="#"><i class="fa fa-flag"></i></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span-large-16">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>ICONS Font Awesome
+                            <small><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">See all icons</a></small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><img src="../src/img/fa.png" alt="font awesome" class="img-responsive"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="span-large-8">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h2>xxx
+                            <small>yyy</small>
+                        </h2>
+                    </div>
+                    <div class="widget-body">
+                        <p class="text-muted">xxx</p>
+                        <hr/>
+                        xxx
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

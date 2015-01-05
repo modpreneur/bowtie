@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Letter Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <link rel="stylesheet" href="../src/css/checkbox-font.css"/>
+    <link rel="stylesheet" href="../src/css/font-awesome.css"/>
+
+    <style>
+        body {
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body class="administration" style="background-color: #1d2024;">
+<div class="container-fluid">
+    <div class="row text-center color-white margin-big-vertical">
+        <h1 class="main">Administration Layout</h1>
+        <h2 class="main">&copy; BOWTIE - Log In/Register</h2>
+    </div>
+    <div class="row">
+        <div class="register-main-box login-main-box margin-auto">
+            <div class="login-header text-center border-info-bottom">
+                <span class="color-info">New User Registration</span>
+            </div>
+            <div class="login-body margin-medium-top">
+                <form>
+                    <fieldset>
+                        <label class="clearfix">
+                            Email:
+                        <span class="input-postfix-icon">
+                            <input type="email" class="form-control" placeholder="Email" />
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        </label>
+
+                        <label class="clearfix">
+                            Username:
+                        <span class="input-postfix-icon">
+                            <input type="text" class="form-control" placeholder="Username" />
+                            <i class="fa fa-user"></i>
+                        </span>
+                        </label>
+
+                        <label class="clearfix">
+                            Password:
+                        <span class="input-postfix-icon">
+                            <input type="password" class="form-control" placeholder="Password" />
+                            <i class="fa fa-lock"></i>
+                        </span>
+                        </label>
+
+                        <label class="clearfix">
+                            Repeat Password:
+                        <span class="input-postfix-icon">
+                            <input type="password" class="form-control" placeholder="Repeat Password" />
+                            <i class="fa fa-repeat"></i>
+                        </span>
+                        </label>
+
+                        <div class="clearfix margin-medium-top text-center">
+                            <input id="check01" type="checkbox" class="checkbox-none">
+                            <label class="checkbox-01 btn-log-reg margin-medium-bottom" for="check01"> I accept the User Agreement</label>
+
+                            <a href="#" class="button button-success fa pull-right">
+                                Register <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <button type="reset" value="Reset"class="button fa pull-left"><i class="fa fa-refresh"></i> Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="login-footer background-info">
+                <a href="login-page.html" class="color-white text-center pull-left"><i class="fa fa-arrow-left"></i> Back to LogIn</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
