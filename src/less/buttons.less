@@ -3,7 +3,7 @@
 
 .button {
     padding: @space-small @space-small * 2;
-    color: white;
+    color: @color-white;
     display: inline-block;
     background-color: @color-dark-grey;
   .animate();
@@ -19,12 +19,36 @@ a.button:hover {
   .animate();
 }
 
+.button-mini {
+  padding: 0 4px;
+  line-height: 18px;
+  font-size: 12px;
+}
+.button-small {
+  padding: 1px 5px;
+}
+.button-medium {
+  font-size: 13px;
+  padding: 4px 9px;
+  line-height: 1.39;
+}
+.button-large {
+  line-height: 1.35;
+  padding: 7px 16px;
+}
+
+.button.disable {
+  opacity: 0.5;
+}
+
 .button-template(@bg-color, @bg-color-hover) {
-    background-color: @bg-color;
-    border: 1px solid @bg-color-hover;
+  background-color: @bg-color;
+  border: 1px solid @bg-color;
+  font-weight: 600;
 
     &:hover {
-        background-color: @bg-color-hover;
+      background-color: @bg-color-hover;
+      border: 1px solid @bg-color-hover;
     }
 }
 

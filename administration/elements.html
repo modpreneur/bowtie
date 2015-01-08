@@ -57,7 +57,7 @@
                         <a href="elements.html">Elements</a>
                     </li>
                     <li>
-                        <a href="#">drop2</a>
+                        <a href="grid.html">Grid</a>
                     </li>
                     <li>
                         <a href="#">drop3</a>
@@ -72,9 +72,11 @@
     </ul>
 </div>
 <div class="container-fluid container-fluid-with-sidebar">
-    <h1 class="main">Elements</h1>
     <div class="container-fluid">
         <div class="row">
+            <div class="span-large-24">
+                <h1 class="main">Elements</h1>
+            </div>
             <div class="span-large-12">
                 <div class="widget-box">
                     <div class="widget-header">
@@ -430,16 +432,16 @@
                 </div>
                 <div class="widget-body">
                     <a class="button button-primary button-mini" href="#">
-                        Mini
+                        button-mini
                     </a>
                     <a class="button button-secondary button-small" href="#">
-                        Small
+                        button-small
                     </a>
                     <a class="button button-tertiary button-medium" href="#">
-                        Medium
+                        button-medium
                     </a>
                     <a class="button button-warning button-large" href="#">
-                        Large
+                        button-large
                     </a>
                     <a class="button button-info" href="#">
                         Default
@@ -482,15 +484,17 @@
                             Disable
                         </a>
                         <hr/>
-                        <ul class="pagination">
-                            <li class="disable"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                        </ul>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li class="disable"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </div>
                         <hr/>
                         <ul class="pager">
                             <li class="previous">
@@ -624,14 +628,70 @@
             <div class="span-large-8">
                 <div class="widget-box">
                     <div class="widget-header">
-                        <h2>xxx
-                            <small>yyy</small>
-                        </h2>
+                        <h2>Alerts & Notifications</h2>
                     </div>
                     <div class="widget-body">
-                        <p class="text-muted">xxx</p>
+                        <input id="close-alert-danger" type="radio" class="checkbox-none" />
+                        <div class="alert alert-danger">
+                            <label for="close-alert-danger" class="alert-label"><i class="fa fa-times"></i></label>
+                            <div class="show-alert">
+                                <strong>Danger!</strong> alert
+                            </div>
+                        </div>
+                        <input id="close-alert-warning" type="radio" class="checkbox-none" />
+                        <div class="alert alert-warning">
+                            <label for="close-alert-warning" class="alert-label"><i class="fa fa-times"></i></label>
+                            <div class="show-alert">
+                                <strong>Warning!</strong> alert
+                            </div>
+                        </div>
+                        <input id="close-alert-info" type="radio" class="checkbox-none" />
+                        <div class="alert alert-info">
+                            <label for="close-alert-info" class="alert-label"><i class="fa fa-times"></i></label>
+                            <div class="show-alert">
+                                <strong>Info!</strong> alert
+                            </div>
+                        </div>
+                        <input id="close-alert-success" type="radio" class="checkbox-none" />
+                        <div class="alert alert-success">
+                            <label for="close-alert-success" class="alert-label"><i class="fa fa-times"></i></label>
+                            <div class="show-alert">
+                                <strong>Success!</strong> alert
+                            </div>
+                        </div>
                         <hr/>
-                        xxx
+
+                        <label for="close-notification-danger" class="button button-danger notification-label">DANGER NOTIFICATION</label>
+                        <label for="close-notification-warning" class="button button-warning notification-label">DANGER NOTIFICATION</label>
+
+                        <div class="notification notification-danger">
+                            <input id="close-notification-danger" type="checkbox" class="checkbox-none" />
+                            <div class="show-notification">
+                                AWESOME NOTIFICATION DANGER
+                                <label for="close-notification-danger" class="notification-label notification-label-danger">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </div>
+
+                            <input id="close-notification-warning" type="checkbox" class="checkbox-none" />
+                            <div class="show-notification">
+                                AWESOME NOTIFICATION WARNING
+                                <label for="close-notification-warning" class="notification-label">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--<label for="close-notification-warning" class="button button-warning notification-label">DANGER NOTIFICATION</label>-->
+                        <!--<input id="close-notification-warning" type="checkbox" class="checkbox-non" />-->
+                        <!--<div class="notification notification-warning">-->
+                            <!--<div class="show-notification">-->
+                                <!--AWESOME NOTIFICATION WARNING-->
+                                <!--<label for="close-notification-warning" class="button button-warning notification-label">-->
+                                    <!--<i class="fa fa-times"></i>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>

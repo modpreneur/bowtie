@@ -7,9 +7,9 @@
 }
 
 table {
-  background: white;
+  background: @color-white;
   margin-bottom: 1.25rem;
-  border: solid 1px #dddddd ;
+  border: solid 1px @color-grey ;
   caption {
     background: transparent;
     color: #222222 ;
@@ -42,6 +42,9 @@ table {
   }
   tr.even, tr.alt, tr:nth-of-type(even) {
     background: #f9f9f9 ;
+  }
+  tr:hover {
+    background: @color-grey;
   }
   thead tr th, tfoot tr th, tfoot tr td, tbody tr th, tbody tr td, tr td {
     display: table-cell;

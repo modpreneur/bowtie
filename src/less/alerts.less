@@ -1,7 +1,14 @@
 // Alerts
-
 @import "variables";
 
+input[type=radio]:checked + .alert {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 0;
+  .animate(400ms);
+}
 .alert {
     padding: @alert-padding;                      //15px
     margin-bottom: @line-height-computed;         //20px
@@ -14,6 +21,18 @@
     > p + p {
         margin-top: 5px;
     }
+    position: relative;
+  overflow: hidden;
+  .alert-label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: @alert-padding;
+    padding-right: @alert-padding-right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 //Alerts

@@ -47,15 +47,21 @@ table {
 //    COLORS    //
 //--------------//
 
-@color-primary:           #8DBB04;
-@color-secondary:         #E8960C;
-@color-tertiary:          #560CE8;
-@color-sidebar:           #F8FFE3;
+@color-primary:           #00aeef;
+@color-secondary:         #505050;
+@color-tertiary:          #1F3A93;
 
 @color-info:              #2ba6cb;
 @color-warning:           #FF6600;
 @color-success:           #5da423;
 @color-danger:            #FF0000;
+
+@color-grey:              #DDDDDD;
+@color-grey-light:        #DBDBDB;
+@color-grey-dark:         #676767;
+
+@color-grey-dark-hover:   #303030;
+
 
 @color-dark-grey:         #999999;
 @gray-light:              lighten(#000, 46.7%); // #777
@@ -89,7 +95,7 @@ table {
 //    GRID SYSTEM    //
 //-------------------//
 
-@columns: 12;                           // number of columns
+@columns: 24;                           // number of columns
 @responsive: false;                     // generate responsive columns?
 @column-padding-vertical: 0;            // vertical padding for each column
 @column-padding-horizontal: @space-medium;       // horizontal padding for each column
@@ -168,7 +174,8 @@ table {
 @state-danger-bg:                #f2dede;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
-@alert-padding:                  15px;
+@alert-padding:                  15px 30px 15px 15px;
+@alert-padding-right:            15px;
 @line-height-computed:           20px;
 @alert-border-radius:            4px;
 

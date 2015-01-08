@@ -17,7 +17,7 @@
     font-size: 32px;
     &.main {
       font-size: 38px;
-      margin: 10px 5px;
+      margin: 10px 0px;
     }
   }
   .menu {
@@ -27,8 +27,8 @@
     height: 63px;
     width: 100%;
     border-bottom: solid 1px @text-muted;
-    a {
-      color: #ffffff;
+    h1 {
+      color: @color-white;
     }
     nav {
       position: relative;
@@ -44,24 +44,23 @@
     }
   }
   .side-bar {
-    background: @color-sidebar;
+    background: @color-secondary;
     z-index: 10;
     width: 200px;
     top: 63px;
-    border-right: solid 1px @text-muted;
     ul a li {
       padding-left: 10px;
     }
     li {
       font-size: 18px;
-      border-top: 1px solid #fcfcfc;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 1px solid @color-grey-dark;
+      border-left: solid 4px transparent;
       padding: 10px 10px 10px 0px;
-      color: #585858;
+      color: @color-white;
       &:hover {
-        background-color: #ffffff;
-        color: @color-primary;
-        border-right: solid 2px @color-primary;
+        background-color: @color-grey-dark-hover;
+        color: @color-white;
+        border-left: solid 4px @color-primary;
       }
       li {
         padding: 0px;
@@ -90,77 +89,6 @@
   pointer-events: none;
   cursor: default;
 }
-.button.disable {
-  opacity: 0.6;
-}
-//BUTTONS
-.button-mini {
-  padding: 0 4px;
-  line-height: 18px;
-  font-size: 12px;
-}
-.button-small {
-  padding: 1px 5px;
-}
-.button-medium {
-  font-size: 13px;
-  padding: 4px 9px;
-  line-height: 1.39;
-}
-.button-large {
-  line-height: 1.35;
-  padding: 7px 16px;
-}
-//PAGINATION
-.pagination {
-  display: inline-block;
-  padding-left: 0;
-  border-radius: 4px;
-  > li {
-    display: inline;
-    &.disable a {
-      color: @text-muted;
-    }
-    > a {
-      position: relative;
-      float: left;
-      padding: 6px 12px;
-      text-decoration: none;
-      color: #2283c5;
-      background-color: #fafafa;
-      margin: 0 -1px 0 0;
-      border: solid 1px #e0e8eb;
-    }
-  }
-}
-.pager {
-  padding-left: 0;
-  margin: 20px 0 40px;
-  text-align: center;
-  list-style: none;
-  li {
-    display: inline;
-    > a {
-      display: inline-block;
-      padding: 5px 14px;
-      color: #2283c5;
-      background-color: #fafafa;
-      margin: 0 -1px 0 0;
-      border: solid 1px #e0e8eb;
-    }
-  }
-  .previous > a {
-    float: left;
-  }
-  .next > a {
-    float: right;
-  }
-}
-.pager:before, .pager:after {
-  display: table;
-  content: " ";
-}
-
 //DROP-DOWN on SIDEBAR
 .dropdown-main-sidebar {
   input[type=checkbox]{
@@ -176,7 +104,10 @@
 
     li {
       height: 100%;
-      border-bottom: 1px solid @color-primary;
+      border-bottom: 1px solid @color-white;
+      :last-of-type {
+        border: none !important;
+      }
     }
   }
   ul {
@@ -202,7 +133,7 @@
     a {
       text-align: center;
       line-height: 50px;
-      color: @color-primary;
+      color: @color-white;
       text-decoration: none;
       padding: 10px 50px;
     }
@@ -214,68 +145,4 @@
     cursor: pointer;
     padding-left: 10px;
   }
-}
-
-// LOGIN / REGISTER
-.login-main-box {
-  width: 320px;
-  padding: 16px 36px 36px;
-  background: #f7f7f7;
-  border: solid 3px @color-success;
-  position: relative;
-  .login-header {
-    font-size: 23px;
-  }
-  .login-body {
-    padding-bottom: 50px;
-  }
-  .login-footer {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 50px;
-    width: 100%;
-    a {
-      padding: 13px 5px;
-    }
-  }
-  input[type=text],
-  input[type=email],
-  input[type=password] {
-    width: 100%;
-    height: 35px;
-    padding-right: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  span.input-postfix-icon {
-    position: relative;
-    i {
-      position: absolute;
-      top: 0;
-      right: 5px;
-      font-size: 19px;
-    }
-  }
-  .btn-log-reg {
-    padding-top: 5px;
-  }
-  .checkbox-01 {
-    font-size: 14px;
-    margin-right: 10px;
-    line-height: 22px;
-    &:before {
-      width: 23px;
-      height: 23px;
-    }
-  }
-}
-.button.fa:hover {
-  cursor: pointer;
-}
-.forgot-main-box {
-  border: solid 3px @color-danger;
-}
-.register-main-box {
-  border: solid 3px @color-info;
 }

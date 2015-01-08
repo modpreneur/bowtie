@@ -1,0 +1,52 @@
+input[type=checkbox]:checked + .show-notification {
+    opacity: 1;
+  width: 80%;
+  min-height: 50px;
+  padding: 15px;
+  margin: 10px auto;
+    height: 100%;
+    .animate(opacity 400ms);
+//  display: block;
+}
+.show-notification {
+  min-height: 0;
+  height: 0;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 0;
+  opacity: 0;
+  .animate(opacity 400ms);
+  //  display: none;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background: rgba(50,50,50,0.92);
+}
+
+.notification {
+//  display: none;
+  display: block;
+
+  position: fixed;
+  top: 63px;
+  right: 0;
+  z-index: 0;
+  width: 300px;
+  min-height: 1px;
+}
+
+.notification .show-notification {
+  position: relative;
+  color: @color-white;
+}
+
+.notification .show-notification .notification-label {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  font-size: 16px;
+  padding: 5px;
+}
+.notification .show-notification .notification-label-danger {
+  color: @color-danger;
+}
