@@ -56,6 +56,8 @@ table {
 @color-success:           #5da423;
 @color-danger:            #FF0000;
 
+@color-rememberme:        @color-primary;
+
 @color-grey:              #DDDDDD;
 @color-grey-light:        #DBDBDB;
 @color-grey-dark:         #676767;
@@ -238,10 +240,10 @@ table {
 
 
 body {
-    font-family:                     @font-family-base;
-    font-size:                       @font-size-base;
-    line-height:                     @line-height-base;
-    margin: 0px;
+    font-family:                      @font-family-base;
+    font-size:                        @font-size-base;
+    line-height:                      @line-height-base;
+    margin:                           0px;
 }
 
 .animate (@animated: all 700ms ease) {
@@ -290,6 +292,12 @@ body {
   -webkit-filter: @opacity;
 }
 
+.img-responsive {
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+}
+
 .clearfix {
   &:before,
   &:after {
@@ -300,3 +308,38 @@ body {
     clear: both;
   }
 }
+
+.background-primary {
+  background-color: @color-primary;
+}
+.background-secondary {
+  background-color: @color-secondary;
+}
+.background-tertiary {
+  background-color: @color-tertiary;
+}
+.background-info {
+  background-color: @color-info;
+}
+.background-success {
+  background-color: @color-success;
+}
+.background-danger {
+  background-color: @color-danger;
+}
+.background-warning {
+  background-color: @color-warning;
+}
+.background-white {
+  background-color: @color-white;
+}
+.background-black {
+  background-color: @color-black;
+}
+
+//EXAMPLES
+/*
+<div class="background-primary">
+  background-primary
+</div>
+*/

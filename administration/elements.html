@@ -662,9 +662,11 @@
                         <hr/>
 
                         <label for="close-notification-danger" class="button button-danger notification-label">DANGER NOTIFICATION</label>
-                        <label for="close-notification-warning" class="button button-warning notification-label">DANGER NOTIFICATION</label>
+                        <label for="close-notification-warning" class="button button-warning notification-label">WARNING NOTIFICATION</label>
+                        <label for="close-notification-success" class="button button-success notification-label">SUCCESS NOTIFICATION</label>
+                        <label for="close-notification-info" class="button button-info notification-label">INFO NOTIFICATION</label>
 
-                        <div class="notification notification-danger">
+                        <div class="notification">
                             <input id="close-notification-danger" type="checkbox" class="checkbox-none" />
                             <div class="show-notification">
                                 AWESOME NOTIFICATION DANGER
@@ -676,7 +678,23 @@
                             <input id="close-notification-warning" type="checkbox" class="checkbox-none" />
                             <div class="show-notification">
                                 AWESOME NOTIFICATION WARNING
-                                <label for="close-notification-warning" class="notification-label">
+                                <label for="close-notification-warning" class="notification-label notification-label-warning">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </div>
+
+                            <input id="close-notification-success" type="radio" class="checkbox-none" />
+                            <div class="show-notification-auto">
+                                AWESOME NOTIFICATION SUCCESS
+                                <label for="close-notification-success" class="notification-label notification-label-success">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </div>
+
+                            <input id="close-notification-info" type="radio" class="checkbox-none" />
+                            <div class="show-notification-auto">
+                                AWESOME NOTIFICATION INFO
+                                <label for="close-notification-info" class="notification-label notification-label-info">
                                     <i class="fa fa-times"></i>
                                 </label>
                             </div>

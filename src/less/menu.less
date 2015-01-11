@@ -19,14 +19,10 @@ ul li a:hover + .hidden, .hidden:hover {
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
   text-decoration: none;
-  color: #000;
-//  background: #8dbb04;
-//  padding: 10px 0;
+  color: @color-black;
   display: none;
   cursor: pointer;
   position: relative;
-//  right: 0%;
-//  margin-top: -15px;
 }
 
 /*Hide checkbox*/
@@ -64,17 +60,18 @@ nav {
       float: left;
       padding: 20px;
     }
-  }
-  /*Create a horizontal list with spacing*/
-  li {
-    display:inline-block;
-    float: left;
-    margin-right: 1px;
-  }
+    /*Create a horizontal list with spacing*/
+    li {
+//      display:inline-block;
+      display:block;
+      float: left;
+      margin-right: 1px;
+    }
 
-  /*Hide dropdown links until they are needed*/
-  li ul {
-    display: none;
+    /*Hide dropdown links until they are needed*/
+    li ul {
+      display: none;
+    }
   }
 
   /*Strip the ul of padding and list styling*/
@@ -87,7 +84,6 @@ nav {
 
   /*Hover state for top level links*/
   li:hover a {
-    background: #808080;
     text-decoration: none;
   }
 
@@ -101,8 +97,7 @@ nav {
 
   /*Hover state for dropdown links*/
   li:hover ul a:hover {
-    background: #808080;
-    color: #fff;
+    color: @color-white;
   }
 
   /*Style for menu links*/
@@ -112,9 +107,13 @@ nav {
     height: 50px;
     text-align: center;
     line-height: 50px;
-    color: #fff;
-    background: #2f3036;
+    color: @color-white;
+    background: @color-secondary;
     text-decoration: none;
+
+    &:hover {
+      background: @color-black;
+    }
   }
 
   ul.menu {
@@ -151,10 +150,6 @@ nav {
 
   .menu nav ul li a.active {
     border: none;
-  }
-
-  .menu nav ul li a:hover {
-//    border-top: 1px solid;
   }
 
   .menu .fa-bars {
