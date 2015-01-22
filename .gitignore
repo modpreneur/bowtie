@@ -1,3 +1,4 @@
 .idea
 src/css/style.css
 node_modules
+/vendor/

@@ -1,0 +1,11 @@
+{
+    "name": "me/bowtie",
+    "authors": [
+        {
+            "name": "Hermanik",
+            "email": "hermann@webvalley.cz"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
