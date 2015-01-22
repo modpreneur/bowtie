@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>Sales Letter Framework</title>
-    <link rel="stylesheet" href="src/css/menu.css"/>
+    <!--<link rel="stylesheet" href="src/css/menu.css"/>-->
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <!--<link rel="stylesheet" href="build/bowtie.css"/>-->
+    <link rel="stylesheet" href="http://i.icomoon.io/public/temp/0d76cccba5/UntitledProject2/style.css">
 </head>
 <body>
 
@@ -14,10 +17,10 @@
             </div>
             <div class="head-content">
                 <div class="sub-main-menu">
-                    <label for="show-menu" class="show-menu">
-                        <span class="fa fa-bars"></span>
+                    <label for="show-main-menu" class="show-main-menu">
+                        <span class="fa fa-bars"></span>Menu
                     </label>
-                    <input type="checkbox" id="show-menu">
+                    <input type="checkbox" id="show-main-menu">
                     <ul class="main-menu">
                         <li><a href="#">Menu 1</a></li>
                         <li><a href="#">Menu 2</a></li>
@@ -33,6 +36,7 @@
                             <input type="checkbox" id="notifi-01" class="input-notifi"/>
                             <label class="notifi background-danger" for="notifi-01">X</label>
                             <div class="notifi-show">
+                                <p>Notifi danger</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>
                             </div>
                         </div>
@@ -41,6 +45,7 @@
                             <input type="checkbox" id="notifi-02" class="input-notifi"/>
                             <label class="notifi background-warning" for="notifi-02">Y</label>
                             <div class="notifi-show">
+                                <p>Notifi warning</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>
                             </div>
                         </div>
@@ -49,6 +54,7 @@
                             <input type="checkbox" id="notifi-03" class="input-notifi"/>
                             <label class="notifi background-info" for="notifi-03">Z</label>
                             <div class="notifi-show">
+                                <p>Notifi info</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>
                             </div>
                         </div>
@@ -63,18 +69,11 @@
                         </label>
                         <input type="checkbox" id="show-drop11" class="login-input">
                         <ul class="login-drop">
-                            <li>
-                                <a href="#">drop1</a>
-                            </li>
-                            <li>
-                                <a href="#">drop2</a>
-                            </li>
-                            <li>
-                                <a href="#">drop3</a>
-                            </li>
-                            <li>
-                                <a href="#">drop4</a>
-                            </li>
+                            <li><a href="#">drop1</a></li>
+                            <li><a href="#">drop2</a></li>
+                            <li><a href="#">drop3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">drop4</a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,6 +81,26 @@
         </nav>
     </div>
     <div class="submenu"></div>
+</div>
+
+<div class="side-bar">
+    <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
+    <input type="checkbox" id="show-sidebar">
+    <ul class="sidebar">
+        <li><a href="#">Side 01</a></li>
+        <li><a href="#">Side 02</a></li>
+        <li><a href="#">Side 03</a></li>
+        <li><a href="#">Side 04</a></li>
+        <li><a href="#">Side 05</a></li>
+    </ul>
+</div>
+
+<div class="container-fluid container-with-sidebar">
+    <div class="row">
+        <div class="span-large-24">
+            <h2 class="color-tertiary">AWESOME MENU !!</h2>
+        </div>
+    </div>
 </div>
 
 </body>
