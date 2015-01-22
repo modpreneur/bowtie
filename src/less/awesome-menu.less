@@ -1,0 +1,191 @@
+@import "variables-default";
+@import "variables";
+@import "awesome-grid";
+@import "spacing";
+@import "font";
+@import "font-proxima-nova";
+@import "font-awesome.css";
+
+.menu {
+  height: 46px;
+  background: @color-primary;
+  color: @color-white;
+  border-bottom: solid 1px @color-grey-lighter;
+  padding-left: 20px;
+  padding-right: 20px;
+  .head {
+    display: inline-block;
+    float: left;
+  }
+  .sub-main-menu {
+    display: inline-block;
+    float: left;
+  }
+  .first-menu-log {
+    display: inline-block;
+    float: left;
+  }
+  .notification-centre {
+    display: inline-block;
+    float: left;
+    text-align: right;
+    position: relative;
+    padding-right: 20px;
+  }
+  .submenu {
+    display: none;
+  }
+  .dropdown-login {
+    display: inline-block;
+  }
+  .head-content {
+    display: inline-block;
+    float: right;
+  }
+  .main-menu {
+    padding-right: 20px;
+  }
+
+  .first-menu-log {
+//    float: right;
+    div:last-child {
+      padding-right: 0px;
+    }
+  }
+  a {
+    color: @color-white;
+  }
+  .main-header {
+    background: url("../img/_bowtie.png") no-repeat left top / contain;
+    font-size: 30px;
+    padding: 10px 0px 6px 50px;
+    line-height: 1;
+  }
+  input, .show-menu {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+    text-align: right;
+  }
+  ul.main-menu {
+    li {
+      display: inline-block;
+      line-height: 1;
+      font-size: 13px;
+      font-weight: normal;
+      padding-top: 18px;
+      a {
+        padding: 14px 9px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .notification-centre {
+    text-align: right;
+    position: relative;
+    .input-notifi:checked ~ .notifi-show {
+      display: block;
+    }
+    .notifi-show {
+      display: none;
+      position: absolute;
+      border: solid 1px @color-secondary;
+      color: @color-primary;
+      min-width: 230px;
+      top: 70px;
+      left: 0;
+    }
+    .notification-item {
+      display: inline-block;
+    }
+    label.notifi {
+      line-height: 45px;
+      width: 45px;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .dropdown-login {
+    padding-top: 0px;
+    line-height: 1;
+    font-size: 16px;
+    height: 45px;
+    text-align: right;
+    position: relative;
+
+    label {
+      .user-circle-login {
+        font-size: 40px;
+        padding-top: 3px;
+
+        .fa-user {
+          position: absolute;
+          font-size: 20px;
+          left: 9.5px;
+          top: 12px;
+        }
+      }
+      .name {
+        position: absolute;
+        left: 39px;
+        top: 7px;
+        font-weight: normal;
+      }
+      .surname {
+        text-transform: uppercase;
+      }
+      .fa-caret-down {
+        top: 16px;
+        right: 0px;
+      }
+    }
+
+    label.show-drop {
+      font-weight: 700;
+    }
+
+    ul.login-drop {
+      display: none;
+      position: absolute;
+    }
+    .login-input{
+
+      &:checked ~ .login-drop {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    .submenu {
+      display: block;
+      position: fixed;
+      height: 46px;
+      width: 100%;
+      top: 46px;
+      margin-left: -20px;
+      background-color: #F4F4F4;
+      border-bottom: 1px solid @color-grey-lighter;
+    }
+    .sub-main-menu {
+      position: absolute;
+      top: 45px;
+      right: 20px;
+      padding-right: 0px;
+      width: 75%;
+      z-index: 5;
+
+      ul.main-menu li a {
+        color: #00aeef;
+      }
+    }
+    .main-menu {
+      padding-right: 0px;
+    }
+  }
+}

@@ -1,3 +1,14 @@
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 .widget-box {
   padding: 0;
   -webkit-box-shadow: none;
@@ -35,6 +46,7 @@
     border-top: 0;
     background-color: @color-white;
     padding: 10px;
+    .clearfix();
 
     hr {
       margin-top: 20px;

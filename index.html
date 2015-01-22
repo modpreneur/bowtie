@@ -1268,18 +1268,19 @@
 
                     <div class="example">
                         <div class="examples">
-                            <div class="gallery autoplay items-2">
+                            <div class="gallery autoplay items-3">
                                 <div id="item-1" class="control-operator"></div>
                                 <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
 
-                                <div class="secondary-controls">
-                                    <div class="superfluous">
-                                        <nav>
-                                            <a href="#item-1"><img src="http://benschwarz.github.io/gallery-css/images/arrow-left.svg" alt="Left pointing arrow"></a>
-                                            <a href="#item-2"><img src="http://benschwarz.github.io/gallery-css/images/arrow-right.svg" alt="Right pointing arrow"></a>
-                                        </nav>
-                                    </div>
-                                </div>
+                                <!--<div class="secondary-controls">-->
+                                    <!--<div class="superfluous">-->
+                                        <!--<nav>-->
+                                            <!--<a href="#item-1"><img src="http://benschwarz.github.io/gallery-css/images/arrow-left.svg" alt="Left pointing arrow"></a>-->
+                                            <!--<a href="#item-2"><img src="http://benschwarz.github.io/gallery-css/images/arrow-right.svg" alt="Right pointing arrow"></a>-->
+                                        <!--</nav>-->
+                                    <!--</div>-->
+                                <!--</div>-->
 
                                 <figure class="item">
                                     <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10369985_962647757080508_9059219242389181589_n.jpg?oh=d7175fe68f13dd08fcfc079c105991f1&oe=5540E245&__gda__=1426641967_7f412a9c341e7500e6e6055a47e7cbbe" />
@@ -1289,41 +1290,47 @@
                                     <img src="http://www.comicscenter.net/uploads/images/expos_les_grandes_expositions/smurfs-imps-2008-3.jpg"/>
                                 </figure>
 
+                                <figure class="item">
+                                    <img src="https://scontent-a-fra.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1979741_997529940258956_692330711186220338_n.jpg?oh=ab0e3aa76d74c370be267ca0d2735a4f&oe=5569F1CE"
+                                         alt=""/>
+                                </figure>
+
                                 <div class="controls">
                                     <a href="#item-1" class="control-button"><span class="fa fa-circle"></span></a>
                                     <a href="#item-2" class="control-button"><span class="fa fa-circle"></span></a>
+                                    <a href="#item-3" class="control-button"><span class="fa fa-circle"></span></a>
                                 </div>
                             </div>
                         </div>
 
             <pre>
 <code class="language-html" data-lang="html">
-    &lt;div class="gallery autoplay items-2"&gt;
-        &lt;div id="item-1" class="control-operator"&gt;&lt;/div&gt;
-        &lt;div id="item-2" class="control-operator"&gt;&lt;/div&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">gallery autoplay items-2</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">id="</span><span class="ch">item-1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">control-operator</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">id="</span><span class="ch">item-2</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">control-operator</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/div&gt;</span>
 
-        &lt;div class="secondary-controls"&gt;
-            &lt;div class="superfluous"&gt;
-                &lt;nav&gt;
-                    &lt;a href="#item-1"&gt;&lt;img src="http://benschwarz.github.io/gallery-css/images/arrow-left.svg" alt="Left pointing arrow"&gt;&lt;/a&gt;
-                    &lt;a href="#item-2"&gt;&lt;img src="http://benschwarz.github.io/gallery-css/images/arrow-right.svg" alt="Right pointing arrow"&gt;&lt;/a&gt;
-                &lt;/nav&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">secondary-controls</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">superfluous</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;nav&gt;</span>
+                    <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#item-1</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/a&gt;</span>
+                    <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#item-2</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/a&gt;</span>
+                <span class="el">&lt;/nav&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
 
-        &lt;figure class="item"&gt;
-            &lt;img src="" /&gt;
-        &lt;/figure&gt;
+        <span class="el">&lt;figure</span> <span class="pr">class="</span><span class="ch">item</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;/figure&gt;</span>
 
-        &lt;figure class="item"&gt;
-            &lt;img src=""/&gt;
-        &lt;/figure&gt;
+        <span class="el">&lt;figure</span> <span class="pr">class="</span><span class="ch">item</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;/figure&gt;</span>
 
-        &lt;div class="controls"&gt;
-            &lt;a href="#item-1" class="control-button"&gt;&lt;span class="fa fa-circle"&gt;&lt;/span&gt;&lt;/a&gt;
-            &lt;a href="#item-2" class="control-button"&gt;&lt;span class="fa fa-circle"&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">controls</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">href="</span><span class="ch">#item-1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">control-button</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-circle</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">href="</span><span class="ch">#item-2</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">control-button</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">fa fa-circle</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
                     </div>
@@ -1373,14 +1380,14 @@
 <code class="language-html" data-lang="html">
     &lt;div class="widget-box"&gt;
         &lt;div class="widget-header"&gt;
-            &lt;h2&gt;xxx
-                &lt;small&gt;yyy&lt;/small&gt;
+            &lt;h2&gt;...
+                &lt;small&gt;yy...y&lt;/small&gt;
             &lt;/h2&gt;
         &lt;/div&gt;
         &lt;div class="widget-body"&gt;
-            &lt;p class="text-muted"&gt;xxx&lt;/p&gt;
+            &lt;p class="text-muted"&gt;...&lt;/p&gt;
             &lt;hr/&gt;
-            xxx
+            ...
         &lt;/div&gt;
     &lt;/div&gt;
 </code>

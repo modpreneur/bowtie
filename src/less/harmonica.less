@@ -1,0 +1,47 @@
+.harmonica {
+  display: block;
+  .main-panel {
+    background-color: @color-white;
+    border: 1px solid @color-grey;
+    margin-bottom: 3px;
+
+    input {
+      display: none;
+
+      &:checked ~ .show-harmonica {
+        display: block;
+      }
+      &:checked + label {
+        font-weight: bold;
+
+        i {
+          &:before {
+            content: "\f077";
+          }
+        }
+      }
+    }
+    .show-harmonica {
+      display: none;
+
+      padding: 15px;
+    }
+
+    label {
+      display: block;
+      position: relative;
+
+      color: @color-tertiary;
+      background-color: @color-grey;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 1;
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+        color: @color-tertiary-lighter;
+        background: @color-grey-lighter;
+      }
+    }
+  }
+}

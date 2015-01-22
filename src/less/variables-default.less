@@ -57,6 +57,9 @@ table {
 @color-danger:            #FF0000;
 
 @color-rememberme:        @color-primary;
+@color-primary-lighter:   lighten(@color-primary, 20%);
+@color-grey-lighter:      lighten(@color-grey, 5%);
+@color-tertiary-lighter:  lighten(@color-tertiary, 5%);
 
 @color-grey:              #DDDDDD;
 @color-grey-light:        #DBDBDB;
@@ -335,6 +338,10 @@ body {
 }
 .background-black {
   background-color: @color-black;
+}
+
+.static {
+  position: static !important;
 }
 
 //EXAMPLES

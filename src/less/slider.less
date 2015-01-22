@@ -9,8 +9,8 @@
     }
 
     &:target ~ .controls .control-button {
-      color: white;
-      color: rgba(255, 255, 255, 0.4);
+      color: @color-white;
+      color: fade(@color-white, 40%);
       -webkit-animation: none;
       -o-animation: none;
       animation: none;
@@ -33,6 +33,7 @@
     pointer-events: none;
     opacity: 0;
     text-align: center;
+    width: 100%;
     -webkit-transition: opacity .5s;
     -o-transition: opacity .5s;
     transition: opacity .5s;
@@ -55,19 +56,19 @@
     text-align: center;
     text-decoration: none;
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
     -webkit-transition: color .1s;
     -o-transition: color .1s;
     transition: color .1s;
 
     &:hover {
       color: white;
-      color: rgba(255, 255, 255, 0.8);
+      color: fade(@color-white, 80%);
     }
 
     .fa-circle {
       font-size: 16px;
-      color: #000000;
+      color: @color-black;
       -webkit-transition: font-size .5s;
       -o-transition: font-size .5s;
       transition: font-size .5s;
@@ -109,12 +110,12 @@
       height: 60px;
       width: 60px;
       border-radius: 60px;
-      color: rgba(255, 255, 255, 0.6);
+      color: fade(@color-white, 60%);
       font-size: 3em;
       font-weight: bold;
       text-decoration: none;
       text-align: center;
-      background: rgba(0, 0, 0, 0.1);
+      background: fade(@color-black, 10%);
       transition: all .25s;
 
       &:hover {
@@ -148,57 +149,57 @@
 .gallery .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
 .gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
   color: white;
-  color: rgba(255, 255, 255, 0.8);
+  color: fade(@color-white, 80%);
 }
 
 @-webkit-keyframes controlAnimation-2 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   14.3%, 50% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   64.3%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
 @-o-keyframes controlAnimation-2 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   14.3%, 50% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   64.3%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
 @keyframes controlAnimation-2 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   14.3%, 50% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   64.3%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
@@ -284,51 +285,51 @@
 @-webkit-keyframes controlAnimation-3 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   9.5%, 33.3% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   42.9%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
 @-o-keyframes controlAnimation-3 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   9.5%, 33.3% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   42.9%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
 @keyframes controlAnimation-3 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   9.5%, 33.3% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   42.9%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
@@ -425,51 +426,51 @@
 @-webkit-keyframes controlAnimation-4 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   7.1%, 25% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   32.1%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
 @-o-keyframes controlAnimation-4 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   7.1%, 25% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   32.1%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
 @keyframes controlAnimation-4 {
   0% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 
   7.1%, 25% {
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: fade(@color-white, 80%);
   }
 
   32.1%, 100% {
     color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: fade(@color-white, 40%);
   }
 }
 
