@@ -55,9 +55,8 @@
     color: @color-white;
   }
   .main-header {
-    background: url("../img/_bowtie.png") no-repeat left top / contain;
     font-size: 30px;
-    padding: 10px 0px 6px 50px;
+    padding: 10px 0px 6px 0px;
     line-height: 1;
   }
   input, .show-menu, .login-input {
@@ -259,6 +258,10 @@ input, .show-side {
   display: none;
 }
 
+.notification-centre label.notifi {
+  margin-left: -4px;
+}
+
 @media screen and (max-width: 1024px) {
   .show-sidebar-width, .side-bar .divider {
     display: none !important;
@@ -345,58 +348,7 @@ input, .show-side {
       }
     }
   }
-  .menu.main-menu-notification {
-    .submenu {
-      z-index: -1;
-    }
-    .first-container {
-      margin-top: 45px;
-    }
-    .head {
-      display: block;
-      text-align: center;
-      float: none;
-    }
-    .head-content {
-      position: absolute;
-      top: 44px;
-      left: 0;
-      float: none;
-      display: block;
-      width: 100%;
-    }
-    .show-main-menu {
-      width: auto;
-      float: left;
-      position: relative;
-      top: 0;
-      right: 0;
-      padding-right: 0px;
-      z-index: 5;
-    }
-    .first-menu-log {
-      z-index: 15;
-      float: right;
-    }
-    .main-menu {
-      margin-right: -20px;
-    }
-    .main-header {
-      width: 100%;
-      overflow: visible;
-    }
-    .sub-main-menu {
-      position: relative;
-      top: 0;
-      right: 0;
-      padding-right: 0px;
-      width: 100%;
-      z-index: 5;
-      ul.main-menu li a {
-        color: @color-white;
-      }
-    }
-  }
+
 }
 .divider {
   height: 1px;
@@ -433,6 +385,57 @@ input#sidebar-width:checked ~ .container-with-sidebar {
 }
 
 @media screen and (max-width: 768px) {
+  .first-container {
+    margin-top: 45px;
+  }
+  .menu.main-menu-notification {
+    .submenu {
+      z-index: -1;
+    }
+    .head {
+      display: block;
+      text-align: center;
+      float: none;
+    }
+    .head-content {
+      position: absolute;
+      top: 44px;
+      left: 0;
+      float: none;
+      display: block;
+      width: 100%;
+    }
+    .first-menu-log {
+      z-index: 15;
+      float: right;
+    }
+    .main-menu {
+      margin-right: -20px;
+    }
+    .main-header {
+      width: 100%;
+      overflow: visible;
+    }
+    .sub-main-menu {
+      width: auto;
+      float: left;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding-right: 0px;
+      z-index: 5;
+      ul.main-menu {
+        text-align: left;
+      }
+      ul.main-menu li a {
+        color: @color-white;
+      }
+      ul.main-menu li:hover {
+        border-left: solid 4px @color-primary;
+        border-right: solid 4px transparent;
+      }
+    }
+  }
   .menu .sub-main-menu {
     width: 150px;
     right: 0;
