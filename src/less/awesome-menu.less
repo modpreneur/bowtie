@@ -238,9 +238,12 @@ input, .show-side {
       height: 38px;
       line-height: 36px;
       padding: 0 16px 0 7px;
-      font-size: 13px;
+      font-size: 15px;
       text-decoration: none;
       color: @color-white;
+      .sidebar-link {
+        padding-left: 5px;
+      }
     }
     li {
       padding: 0px;
@@ -257,6 +260,9 @@ input, .show-side {
 }
 
 @media screen and (max-width: 1024px) {
+  .show-sidebar-width, .side-bar .divider {
+    display: none !important;
+  }
   .menu {
     .submenu {
       display: block;
@@ -277,7 +283,7 @@ input, .show-side {
       z-index: 5;
 
       ul.main-menu li a {
-        color: #00aeef;
+        color: @color-primary;
       }
     }
     .main-menu {
@@ -329,6 +335,27 @@ input, .show-side {
   color: white;
   cursor: pointer;
   font-size: 17px;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .menu.only-main-menu {
+    .sub-main-menu {
+      position: relative;
+      top: 0;
+      right: 0;
+      padding-right: 0px;
+      width: 100%;
+      z-index: 5;
+      ul.main-menu li a {
+        color: @color-white;
+      }
+    }
+  }
 }
 input#sidebar-width:checked + .side-bar {
   width: 50px;
@@ -339,6 +366,9 @@ input#sidebar-width:checked + .side-bar {
   li a span.sidebar-link {
     display: none;
   }
+}
+input#sidebar-width:checked ~ .container-with-sidebar {
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -417,6 +447,6 @@ input#sidebar-width:checked + .side-bar {
 }
 @media screen and (min-width: 769px) {
   .menu ul.main-menu li a:hover {
-    border-top: solid 2px @color-white;
+    border-top: solid 4px @color-white;
   }
 }
