@@ -322,6 +322,19 @@ input, .show-side {
   .container-with-sidebar {
     padding: 0;
   }
+  .menu.only-main-menu {
+    .sub-main-menu {
+      position: relative;
+      top: 0;
+      right: 0;
+      padding-right: 0px;
+      width: 100%;
+      z-index: 5;
+      ul.main-menu li a {
+        color: @color-white;
+      }
+    }
+  }
 }
 .divider {
   height: 1px;
@@ -341,20 +354,6 @@ input, .show-side {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-  }
-
-  .menu.only-main-menu {
-    .sub-main-menu {
-      position: relative;
-      top: 0;
-      right: 0;
-      padding-right: 0px;
-      width: 100%;
-      z-index: 5;
-      ul.main-menu li a {
-        color: @color-white;
-      }
-    }
   }
 }
 input#sidebar-width:checked + .side-bar {
