@@ -1,8 +1,6 @@
 .harmonica {
   display: block;
   .main-panel {
-    background-color: @color-white;
-    border: 1px solid @color-grey;
     margin-bottom: 3px;
 
     input {
@@ -25,22 +23,34 @@
       display: none;
 
       padding: 15px;
+      margin-bottom: 9px;
+      margin-top: 9px;
+      background: @color-tertiary;
+      color: @color-white;
+      font-size: 16px;
+      font-weight: 300;
     }
 
     label {
       display: block;
       position: relative;
-
-      color: @color-tertiary;
-      background-color: @color-grey;
-      font-weight: normal;
-      font-size: 13px;
+      border: solid 1px transparent;
+      color: @color-primary;
+      background-color: @color-white;
+      font-size: 17px;
+      font-weight: 600;
       line-height: 1;
       padding: 10px;
       &:hover {
         cursor: pointer;
         color: @color-tertiary-lighter;
-        background: @color-grey-lighter;
+        border: solid 1px @color-tertiary-lighter;
+      }
+      img.text-right,
+      i.text-right,
+      span.text-right {
+        position: absolute;
+        right: 0px;
       }
     }
   }

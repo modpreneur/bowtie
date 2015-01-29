@@ -200,7 +200,7 @@
   right: 0;
 }
 
-input, .show-side {
+.show-side, #show-sidebar {
   display: none;
 }
 
@@ -343,6 +343,21 @@ input, .show-side {
       padding-right: 0px;
       width: 100%;
       z-index: 5;
+      ul.main-menu li a {
+        color: @color-white;
+      }
+    }
+  }
+  .menu.main-menu-notification {
+
+    .sub-main-menu {
+      position: relative;
+      top: 0;
+      right: 0;
+      padding-right: 0px;
+      width: auto;
+      z-index: 5;
+      margin-right: 20px;
       ul.main-menu li a {
         color: @color-white;
       }
@@ -511,6 +526,9 @@ input#sidebar-width:checked ~ .container-with-sidebar {
 }
 @media screen and (min-width: 769px) {
   .menu ul.main-menu li a:hover {
-    border-top: solid 4px @color-white;
+    border-top: solid 4px @color-white;;
+  }
+  .menu.main-menu-notification .submenu {
+    display: none;
   }
 }
