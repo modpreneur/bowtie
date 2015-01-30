@@ -89,6 +89,7 @@ h1,h2,h3,h4,h5,h6 {
   padding: @font-padding-none;
   margin: @font-margin-none;
   font-weight: @font-weight-normal;
+  line-height: @headings-line-height;
 }
 
 // Transformation
@@ -96,6 +97,12 @@ h1,h2,h3,h4,h5,h6 {
 .uppercase                    { text-transform: uppercase; }
 .capitalize                   { text-transform: capitalize; }
 .underline                    { text-decoration: underline; }
+
+// Weight
+.normal                       { font-weight: normal }
+.bold                         { font-weight: bold }
+.lighter                      { font-weight: lighter }
+.italic                       { font-style: italic }
 
 // Headings
 h1 {
@@ -154,3 +161,15 @@ small,
 .large {
     font-size: @font-size-large;
 }
+
+
+@iterations-font-size: 100;
+.loopingClass-font-size (@index-font) when (@index-font > 0) {
+  .font-@{index-font} {
+    font-size: ~"@{index-font}px";
+    line-height: 1.618;
+  }
+  .loopingClass-font-size(@index-font - 1);
+}
+.loopingClass-font-size (0) {}
+.loopingClass-font-size (@iterations-font-size);
