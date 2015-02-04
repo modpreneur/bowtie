@@ -4,12 +4,11 @@
 @import "spacing";
 @import "font";
 @import "font-proxima-nova";
-@import "font-awesome.css";
 
 .breadcrumbs {
   position: relative;
   display: block;
-  padding: 45px 20px 0;
+//  padding: 45px 20px 0;
   background: #ECECEC;
   ul {
     padding: 10px 0;
@@ -23,6 +22,9 @@
         }
       }
     }
+  }
+  &.with-sidebar {
+    padding-left: 220px;
   }
 }
 .menu {
@@ -59,7 +61,7 @@
     display: none;
   }
   .dropdown-login {
-    display: inline-block;
+    display: table;
   }
   .head-content {
     display: inline-block;
@@ -95,10 +97,13 @@
       line-height: 1;
       font-size: 13px;
       font-weight: normal;
-      padding-top: 18px;
+      padding-top: 9px;
       a {
         padding: 14px 9px;
         font-weight: 700;
+        span {
+          vertical-align: super;
+        }
       }
     }
   }
@@ -255,7 +260,7 @@
       border-left: solid 4px @color-primary;
       font-weight: bold;
     }
-    a {
+    a, label {
       display: block;
       height: 38px;
       line-height: 36px;
@@ -269,6 +274,12 @@
     }
     li {
       padding: 0px;
+    }
+    .dropdown-main-sidebar ul.drop li {
+      border-right: solid 4px transparent;
+      &:hover {
+        border-right: solid 4px @color-primary;
+      }
     }
   }
 }
@@ -286,6 +297,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .breadcrumbs {
+    display: none;
+  }
+  .dropdown-main-sidebar ul {
+    width: 150px;
+  }
   .show-sidebar-width, .side-bar .divider {
     display: none !important;
   }
@@ -408,18 +425,62 @@
     transform: scale(1.1);
   }
 }
-input#sidebar-width:checked + .side-bar {
+input#sidebar-width:checked ~ .breadcrumbs {
+  padding-left: 70px;
+}
+input#sidebar-width:checked ~ .side-bar {
   width: 50px;
-  li a {
+  li a, li label {
     text-align: center;
     font-size: 20px;
   }
-  li a span.sidebar-link {
+  li a span.sidebar-link, li label span.sidebar-link {
     display: none;
   }
 }
+input#sidebar-width:checked ~ .side-bar li label i.fa-chevron-down:before {
+  content: "\f054";
+}
 input#sidebar-width:checked ~ .container-with-sidebar {
   padding-left: 50px;
+}
+input#sidebar-width:checked ~ .side-bar .dropdown-main-sidebar input:checked + ul.drop {
+  background-color: @color-secondary;
+  margin-left: 46px;
+  margin-top: -38px;
+  position: absolute;
+  height: auto;
+  li {
+    border-left: none;
+    border-right: 4px solid transparent;
+    height: auto;
+    &:hover {
+      border-right: 4px solid @color-primary;
+    }
+    a {
+
+    }
+  }
+}
+.side-bar li:hover .dropdown-main-sidebar ul.drop li {
+  font-weight: normal;
+  &:hover {
+    font-weight: bold;
+  }
+}
+.dropdown-main-sidebar input[type=checkbox]:checked~#dropdown {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.dropdown-main-sidebar #dropdown {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 @media screen and (max-width: 768px) {

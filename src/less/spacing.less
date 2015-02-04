@@ -41,17 +41,17 @@
             }
 
             .@{type}-@{size}-all {
-                @{type}: @@size;
+                @{type}: @@size !important;
             }
 
             .@{type}-@{size}-vertical {
-                @{type}-top: @@size;
-                @{type}-bottom: @@size;
+                @{type}-top: @@size !important;
+                @{type}-bottom: @@size !important;
             }
 
             .@{type}-@{size}-horizontal {
-                @{type}-left: @@size;
-                @{type}-right: @@size;
+                @{type}-left: @@size !important;
+                @{type}-right: @@size !important;
             }
 
             .position(length(@positions));
@@ -70,49 +70,49 @@
 .iterations-size(100);
 .iterations-size(@n, @i: 5) when (@i =< @n) {
   .margin-@{i} {
-    margin: (@i * 1px);
+    margin: (@i * 1px) !important;
   }
   .margin-top-@{i} {
-    margin-top: (@i * 1px);
+    margin-top: (@i * 1px) !important;
   }
   .margin-right-@{i} {
-    margin-right: (@i * 1px);
+    margin-right: (@i * 1px) !important;
   }
   .margin-bottom-@{i} {
-    margin-bottom: (@i * 1px);
+    margin-bottom: (@i * 1px) !important;
   }
   .margin-left-@{i} {
-    margin-left: (@i * 1px);
+    margin-left: (@i * 1px) !important;
   }
   .margin-negative-@{i} {
-    margin: (-@i * 1px);
+    margin: (-@i * 1px) !important;
   }
   .margin-negative-top-@{i} {
-    margin-top: (-@i * 1px);
+    margin-top: (-@i * 1px) !important;
   }
   .margin-negative-right-@{i} {
-    margin-right: (-@i * 1px);
+    margin-right: (-@i * 1px) !important;
   }
   .margin-negative-bottom-@{i} {
-    margin-bottom: (-@i * 1px);
+    margin-bottom: (-@i * 1px) !important;
   }
   .margin-negative-left-@{i} {
-    margin-left: (-@i * 1px);
+    margin-left: (-@i * 1px) !important;
   }
   .padding-@{i} {
-    padding: (@i * 1px);
+    padding: (@i * 1px) !important;
   }
   .padding-top-@{i} {
-    padding-top: (@i * 1px);
+    padding-top: (@i * 1px) !important;
   }
   .padding-right-@{i} {
-    padding-right: (@i * 1px);
+    padding-right: (@i * 1px) !important;
   }
   .padding-bottom-@{i} {
-    padding-bottom: (@i * 1px);
+    padding-bottom: (@i * 1px) !important;
   }
   .padding-left-@{i} {
-    padding-left: (@i * 1px);
+    padding-left: (@i * 1px) !important;
   }
-  .iterations-size(@n, (@i + 5));
+  .iterations-size(@n, (@i + 5)) !important;
 }

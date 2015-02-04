@@ -4,6 +4,7 @@
     <title>Sales Letter Framework</title>
     <!--<link rel="stylesheet" href="src/css/style.css"/>-->
     <link rel="stylesheet" href="src/css/bowtie.css"/>
+    <link rel="stylesheet" href="src/css/font-awesome.css"/>
 </head>
 <body>
 
@@ -81,7 +82,15 @@
     <div class="submenu"></div>
 </div>
 
-<input type="checkbox" id="sidebar-width">
+<input type="checkbox" class="checkbox-none" id="sidebar-width">
+<div class="breadcrumbs with-sidebar">
+    <ul>
+        <li><a href="">Home /</a></li>
+        <li><a href="">SubHome /</a></li>
+        <li><a href="" class="disable">SubSubHome</a></li>
+    </ul>
+</div>
+
 <div class="side-bar">
     <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
     <input type="checkbox" id="show-sidebar">
@@ -92,6 +101,28 @@
         <li><a href="#"><i class="fa fa-flag-checkered"></i><span class="sidebar-link">Side 04</span></a></li>
         <li><a href="#"><i class="fa fa-fire"></i><span class="sidebar-link">Side 05</span></a></li>
         <li><a href="#"><i class="fa fa-fire-extinguisher"></i><span class="sidebar-link">Side 06</span></a></li>
+        <li>
+            <div class="dropdown-main-sidebar">
+                <label for="show-drop2" class="show-drop">
+                    <i class="fa fa-chevron-down"></i><span class="sidebar-link">Dropdown</span>
+                </label>
+                <input type="checkbox" id="show-drop2" role="button">
+                <ul id="dropdown" class="drop">
+                    <li>
+                        <a href="#">Drop01</a>
+                    </li>
+                    <li>
+                        <a href="">Drop02</a>
+                    </li>
+                    <li>
+                        <a href="#">Drop03</a>
+                    </li>
+                    <li>
+                        <a href="#">Drop04</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
     </ul>
     <span class="divider"></span>
     <label for="sidebar-width" class="show-sidebar-width"><span class="fa fa-search-minus"></span></label>
