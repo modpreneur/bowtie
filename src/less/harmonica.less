@@ -14,6 +14,15 @@
     }
     &:checked + .main-panel label {
       font-weight: bold;
+      background-color: @color-tertiary;
+      -webkit-transition: all 100ms ease;
+      -moz-transition: all 100ms ease;
+      -ms-transition: all 100ms ease;
+      -o-transition: all 100ms ease;
+      transition: all 100ms ease;
+      &:hover {
+        color: @color-white;
+      }
 
       i {
         &:before {

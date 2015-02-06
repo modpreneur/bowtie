@@ -1,0 +1,396 @@
+body {
+    background: #ffffff;
+}
+.button-primary {
+    background: transparent;
+    border: 3px solid #FFF;
+    padding: 11px 58px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.button-primary:hover {
+    border: solid 3px #1F3A93;
+    background-color: #1F3A93;
+    color: #ffffff;
+}
+.button-primary img,
+.button-secondary img {
+    vertical-align: bottom;
+}
+.button-secondary {
+    background: #26b2f1;
+    border: solid 3px #26b2f1;
+    color: #ffffff;
+    padding: 7px 25px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.button-secondary:hover {
+    border: solid 3px #1F3A93;
+    background-color: #1F3A93;
+    color: #ffffff;
+}
+/*SOCIAL*/
+a.social-popout {
+    height: 48px;
+    width: 48px;
+    margin: 10px;
+    float: left;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+a.social-popout img {
+    border-radius: 50%;
+    margin: 8px;
+    width: 100%;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+a.social-popout img:hover {
+    margin: 0px;
+}
+/*END SOCIAL*/
+.section-01 .menu {
+    background: rgba(255, 255, 255, 0.9);
+    height: 92px;
+    border: none;
+}
+.section-01 .menu ul.main-menu li a {
+    color: #1F3A93 !important;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 5px;
+    margin: 0 15px;
+}
+.section-01 .menu ul.main-menu li a.active,
+.section-01 .menu ul.main-menu li a:hover {
+    border-bottom: solid 5px #00aeef;
+    border-top: none;
+}
+.section-01 .menu ul.main-menu li {
+    padding-top: 39px;
+    padding-bottom: 22px;
+}
+.section-01 .menu .head img {
+    margin-top: 16px;
+}
+.section-06 {
+    height: 162px;
+    background-color: #f0f0f0;
+}
+.section-06 p.absolute {
+    color: #00aeef;
+    font-size: 15px;
+    font-weight: 600;
+    bottom: 0;
+    right: 7px;
+}
+.section-06 .clearfix {
+    margin-top: 45px;
+}
+.section-07 {
+    height: 81px;
+    background-color: #1f3a93;
+    padding: 19px 0;
+}
+.section-07 .navbar li a {
+    color: #728de7;
+    font-size: 17px;
+    font-weight: 600;
+}
+.section-07 .navbar li a:hover {
+    color: #ffffff;
+}
+.section-07 .navbar li {
+    color: #728de7;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.homepage .section-02 {
+    background-image: url(../img/section-02-bg.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 105px;
+}
+.homepage .section-02 .jumbotron img.logo-bowtie {
+    margin-top: 61px;
+    margin-bottom: 27px;
+}
+.homepage .section-02 .jumbotron p:first-of-type {
+    color: #B4EAFE;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.4;
+}
+.homepage .section-02 .jumbotron p span.first-text {
+    color: #FFF;
+    font-weight: 700;
+}
+.homepage .section-02 .button-primary {
+    margin-top: 52px;
+    margin-bottom: 170px;
+}
+.homepage .section-02 .second-text {
+    color: #1F3A93;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.homepage .section-02 p {
+    text-align: center;
+}
+.homepage .section-02 p.vector-icons-head {
+    color: #1F3A93;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+.homepage .section-02 p.vector-icons-text {
+    color: #505050;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.homepage .last-text {
+    color: #505050;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 72px;
+}
+.homepage .section-03 {
+    height: 121px;
+}
+.homepage .section-03 p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 50px 0;
+}
+.homepage .section-03 .button-primary {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 66px;
+    margin: 35px 0;
+}
+.homepage .section-04 {
+    background-color: #f0f0f0;
+    padding-bottom: 135px;
+}
+.homepage .section-04 .harmonica p.harmonica-head {
+    color: #1F3A93;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.homepage .section-04 .harmonica .show-harmonica {
+    padding: 18px 120px 38px 18px;
+}
+.homepage .section-05 {
+    margin-top: 96px;
+    margin-bottom: 82px;
+}
+.homepage .section-05 p {
+    color: #1F3A93;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 87px;
+}
+.homepage .section-05 img {
+    width: 236px;
+    height: 158px;
+    background-color: #b3b3b3;
+    margin-bottom: 20px;
+    position: relative;
+}
+.homepage .section-05 img:hover {
+    border: 3px solid #00aeef;
+}
+.homepage .section-05 a:hover:before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 114px;
+    background: url("../img/icon-search.svg") no-repeat;
+    width: 57px;
+    height: 56px;
+    z-index: 1;
+}
+
+.getting-started .section-02 {
+    background-image: url(../img/obdlnk-1-kopie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    min-height: 337px;
+}
+.getting-started .section-02 .jumbotron {
+    padding-top: 88px;
+}
+.getting-started .section-02 span.first-text {
+    color: white;
+    font-size: 41px;
+    font-weight: 700;
+}
+.getting-started .section-02 p {
+    color: #b4eafe;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 29px;
+}
+#wrapper {
+    position: relative;
+}
+.side-bar {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 50px;
+    width: 300px;
+    position: static;
+    background: transparent;
+}
+.side-bar li a {
+    color: #1f3a93;
+    font-size: 20px;
+    font-weight: 600;
+}
+.side-bar li:hover {
+    background-color: #ffffff;
+    color: #1F3A93;
+    border-left: solid 4px #00aeef;
+    font-weight: bold;
+}
+.side-bar li {
+    border: none;
+    border-left: solid 4px transparent;
+}
+.sidebar li.sub-side a {
+    color: #26b2f1;
+    font-size: 14px;
+    padding: 0px 15px;
+    line-height: 22px;
+    height: auto;
+}
+pre {
+    border: solid 3px #e0e0e0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+pre:hover {
+    /*border: solid 3px transparent;*/
+    /*box-shadow: 0 0 10px #00AEEF;*/
+    cursor: text;
+}
+.getting-started .section-item-main h2 {
+    color: #1f3a93;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.getting-started .section-item-main hr {
+    height: 2px;
+    background-color: #d1d1d1;
+    border: none;
+}
+.getting-started .section-item-main p {
+    color: #505050;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.getting-started .section-item-main .section-item h3 {
+    color: #1f3a93;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    border-left: 5px solid #00aeef;
+    padding: 5px 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.getting-started .section-item-main .section-item p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.getting-started .show-harmonica p {
+    color: #ffffff;
+}
+.fix-buttons .button {
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fix-buttons .button-primary {
+    background-color: #00aeef;
+    border: 1px solid #00aeef;
+}
+.fix-buttons .button-primary:hover {
+    background-color: #0089bc;
+    border: 1px solid #0089bc;
+}
+.fix-buttons .button-secondary {
+    background-color: #505050;
+    border: 1px solid #505050;
+}
+.fix-buttons .button-secondary:hover {
+    background-color: #373737;
+    border: 1px solid #373737;
+}
+.fix-buttons .button-mini {
+    padding: 0 4px;
+    line-height: 18px;
+    font-size: 12px;
+}
+.fix-buttons .button-small {
+    padding: 1px 5px;
+}
+.fix-buttons .button-medium {
+    font-size: 13px;
+    padding: 4px 9px;
+    line-height: 1.39;
+}
+.fix-buttons .button-large {
+    line-height: 1.35;
+    padding: 7px 16px;
+}
+.pre {
+    position: relative;
+}
+.copy-text {
+    display: none;
+}
+.copy-box {
+    height: 0;
+}
+.copy-box a.button-copy {
+    font-family: "Proxima Nova",sans-serif;
+    background-color: #00aeef;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.copy-box a.zeroclipboard-is-hover {
+   /*background-color: red;*/
+}

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bowtie</title>
+    <link rel="stylesheet" href="css/bowtie.css"/>
+    <link rel="stylesheet" href="css/custom-style.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+<div class="getting-started">
+<div class="section-01">
+    <div class="menu only-main-menu static">
+        <div class="container">
+            <nav class="row">
+                <div class="head">
+                    <a href="#"><img src="img/logo-head-bowtie.svg" width="161" height="61"></a>
+                </div>
+                <div class="head-content">
+                    <div class="sub-main-menu">
+                        <label for="show-main-menu" class="show-main-menu">
+                            <span class="fa fa-bars"></span>Menu
+                        </label>
+                        <input type="checkbox" id="show-main-menu">
+                        <ul class="main-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="getting-started.html">Getting started</a></li>
+                            <li><a href="features.html" class="active">Features</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="section-02">
+    <div class="container">
+        <div class="row jumbotron">
+            <div class="span-medium-16">
+                <p><span class="first-text">Features</span><br>CSS Framework wich makes your life easier<br>You can make quikly easy website in Pro quality.</p>
+            </div>
+            <div class="span-medium-8 text-right">
+                <img src="img/logo-bowtie.svg" width="155" height="162" class="logo-bowtie">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span-medium-8">
+    <div id="left">
+        <div id="sidebar">
+            <div class="side-bar">
+                <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
+                <input type="checkbox" id="show-sidebar">
+                <ul class="sidebar">
+                    <li><a href="#rating-navigate">Rating</a></li>
+                    <li><a href="#bna-widget-navigate">Before and After Widget</a></li>
+                    <li><a href="#checkbox-navigate">Checkbox</a></li>
+                    <li><a href="#filters-navigate">Filters</a></li>
+                    <li><a href="#harmonica-navigate">Harmonica</a></li>
+                    <li><a href="#timeline-navigate">Timeline</a></li>
+                    <li><a href="#widget-box-navigate">Widget Box</a></li>
+                    <li><a href="#tags-navigate">Tags</a></li>
+                    <li><a href="#-navigate">SIDE</a></li>
+                    <li><a href="#modal-navigate">Modal</a></li>
+                    <li><a href="#">Back to Top</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16">
+    <div class="section-item-main">
+        <h2 id="rating-navigate">Rating</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+            </div>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">rating</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star5</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">5</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star5</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star4</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">4</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star4</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">3</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star3</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">2</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star2</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">star1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">rating</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">1</span><span class="pr">"</span> <span class="el">/&gt;</span><span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">star1</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16 offset-medium-8">
+        <div class="section-item-main">
+            <h2 id="bna-widget-navigate">Before and After Widget</h2>
+            <hr/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+            <div class="section-item">
+                <h3>Example</h3>
+                <div class="bna">
+                    <div class="bna-head">
+                        <span class="before">Before</span>
+                        <span class="icon fa fa-retweet"></span>
+                        <span class="after">After</span>
+                    </div>
+                    <div class="bna-content">
+                        <div class="before">
+                            <img src="http://cdn2.socialappspot.com/gfba2/Images/Notifications/2315886-f3fe.jpg" alt="before"/>
+                        </div>
+                        <div class="after">
+                            <img src="http://cdn2.socialappspot.com/gfba2/Images/Notifications/2315886-f3fe.jpg" alt="before"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-item">
+                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">bna</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">bna-head</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">before</span><span class="pr">"</span><span class="el">&gt;</span>Before<span class="el">&lt;/span&gt;</span>
+        <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">icon fa fa-retweet</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/span&gt;</span>
+        <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">after</span><span class="pr">"</span><span class="el">&gt;</span>After<span class="el">&lt;/span&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">bna-content</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">before</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="<span class="ch">#</span>"</span> <span class="pr">alt="</span><span class="ch">before</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">after</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="<span class="ch">#</span>"</span> <span class="pr">alt="</span><span class="ch">after</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+            </div>
+        </div>
+    </div>
+
+<div class="span-medium-16 offset-medium-8">
+        <div class="section-item-main">
+            <h2 id="checkbox-navigate">Checkbox</h2>
+            <hr/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+            <div class="section-item">
+                <h3>Example</h3>
+                <input id="check01" type="checkbox" class="checkbox-none">
+                <label class="checkbox-01" for="check01"> Remember me </label>
+
+                <input id="check02" type="checkbox" class="checkbox-none" checked>
+                <label class="checkbox-01" for="check02"> Remember me </label>
+            </div>
+            <div class="section-item">
+                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">check01</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span><span class="el">&gt;</span>
+<span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox-01</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">check01</span><span class="pr">"</span><span class="el">&gt;</span> Remember me <span class="el">&lt;/label&gt;</span>
+    <hr/>
+<span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">check02</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="ch">checked</span><span class="el">&gt;</span>
+<span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox-01</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">check02</span><span class="pr">"</span><span class="el">&gt;</span> Remember me <span class="el">&lt;/label&gt;</span>
+</code>
+                            </pre>
+            </div>
+
+            <div class="section-item">
+                <h3>Example <small>iOS 6 checkbox</small></h3>
+                <div class="ios-check">
+                    <label>
+                        <input type="checkbox" class="ios-switch" checked />
+                        <div class="input-div"><div class="input-div"></div></div>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="ios-switch" />
+                        <div class="input-div"><div class="input-div"></div></div>
+                    </label>
+                </div>
+            </div>
+            <div class="section-item">
+                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">ios-check</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span><span class="el">&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">ios-switch</span><span class="pr">"</span> <span class="ch">checked </span><span class="el">/&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/div&gt;</span><span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;label</span><span class="el">&gt;</span>
+        <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">ios-switch</span><span class="pr">"</span> <span class="el">/&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-div</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/div&gt;</span><span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/label&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+            </div>
+        </div>
+    </div>
+
+<div class="span-medium-16 offset-medium-8">
+        <div class="section-item-main">
+            <h2 id="filters-navigate">Filters</h2>
+            <hr/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+            <div class="section-item">
+                <h3>Example <small>with checkbox</small></h3>
+                <div class="filter">
+
+                    <input id="select-type-1" name="radio-set-1" type="checkbox" class="filter-selector-1" />
+                    <label for="select-type-1" class="filter-label-1">
+                        FILTER 1
+                    </label>
+
+                    <input id="select-type-2" name="radio-set-2" type="checkbox" class="filter-selector-2"/>
+                    <label for="select-type-2" class="filter-label-2">
+                        FILTER 2
+                    </label>
+
+                    <input id="select-type-3" name="radio-set-3" type="checkbox" class="filter-selector-3" />
+                    <label for="select-type-3" class="filter-label-3">
+                        FILTER 3
+                    </label>
+
+                    <ul class="filter-items">
+                        <li class="filter-item-1">
+                            <a href="">FILTER 1</a>
+                        </li>
+                        <li class="filter-item-1">
+                            <a href="">FILTER 1</a>
+                        </li>
+                        <li class="filter-item-1">
+                            <a href="">FILTER 1</a>
+                        </li>
+                        <li class="filter-item-2">
+                            <a href="">FILTER 2</a>
+                        </li>
+                        <li class="filter-item-2">
+                            <a href="">FILTER 2</a>
+                        </li>
+                        <li class="filter-item-3">
+                            <a href="">FILTER 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-item">
+                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">filter</span><span class="pr">"</span><span class="el">&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-1</span><span class="pr">"</span> <span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-label-1</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-2</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-2</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-2</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-label-2</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-3</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-3</span><span class="pr">"</span> <span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-3</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-label-3</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 3<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">filter-items</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-item-3</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span><span class="pr">"</span></span><span class="el">&gt;</span>FILTER 3<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+            </div>
+
+            <div class="section-item">
+                <h3>Example <small>with radio</small></h3>
+            </div>
+            <div class="section-item">
+                <h3>&lt;/&gt;</h3>
+                <div class="filter-radio">
+
+                    <input id="select-type-all" name="radio-set-1" type="radio" class="filter-selector-all" checked="checked" />
+                    <label for="select-type-all" class="filter-radio-label-all">All</label>
+
+                    <input id="select-type-11" name="radio-set-1" type="radio" class="filter-selector-1" />
+                    <label for="select-type-11" class="filter-radio-label-1">FILTER 1</label>
+
+                    <input id="select-type-22" name="radio-set-1" type="radio" class="filter-selector-2" />
+                    <label for="select-type-22" class="filter-radio-label-2">FILTER 2</label>
+
+                    <input id="select-type-33" name="radio-set-1" type="radio" class="filter-selector-3" />
+                    <label for="select-type-33" class="filter-radio-label-3">FILTER 3</label>
+
+                    <ul class="filter-radio-items">
+                        <li class="filter-radio-item-1">
+                            <a href="">FILTER 1</a>
+                        </li>
+                        <li class="filter-radio-item-1">
+                            <a href="">FILTER 1</a>
+                        </li>
+                        <li class="filter-radio-item-1">
+                            <a href="">FILTER 1</a>
+                        </li>
+                        <li class="filter-radio-item-2">
+                            <a href="">FILTER 2</a>
+                        </li>
+                        <li class="filter-radio-item-2">
+                            <a href="">FILTER 2</a>
+                        </li>
+                        <li class="filter-radio-item-3">
+                            <a href="">FILTER 3</a>
+                        </li>
+                    </ul>
+                </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">filter-radio</span><span class="pr">"</span><span class="el">&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-all</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-all</span><span class="pr">"</span> <span class="pr">checked="</span><span class="ch">checked</span><span class="pr">"</span> <span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-all</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-all</span><span class="pr">"</span><span class="el">&gt;</span>All<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-11</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-1</span><span class="pr">"</span> <span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-11</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-1</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-22</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-2</span><span class="pr">"</span> <span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-22</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-2</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">select-type-33</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio-set-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-selector-3</span><span class="pr">"</span> <span class="el">/&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">select-type-33</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">filter-radio-label-3</span><span class="pr">"</span><span class="el">&gt;</span>FILTER 3<span class="el">&lt;/label&gt;</span>
+
+    <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">filter-radio-items</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>FILTER 1<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-2</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>FILTER 2<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">filter-radio-item-3</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>FILTER 3<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+            </div>
+        </div>
+    </div>
+
+<div class="span-medium-16 offset-medium-8">
+    <div class="section-item-main">
+        <h2 id="harmonica-navigate">Harmonica</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+            <div class="harmonica">
+                <p class="harmonica-head">Head</p>
+                <input type="radio" id="harmonica-01" name="list" checked/>
+                <div class="main-panel">
+                    <label for="harmonica-01">Harmonica 01</label>
+                    <div class="show-harmonica">
+                        ...01
+                    </div>
+                </div>
+
+                <input type="radio" id="harmonica-02" name="list"/>
+                <div class="main-panel">
+                    <label for="harmonica-02">Harmonica 02</label>
+                    <div class="show-harmonica">
+                        ...02
+                    </div>
+                </div>
+
+                <input type="radio" id="harmonica-03" name="list"/>
+                <div class="main-panel">
+                    <label for="harmonica-03">Harmonica 03</label>
+                    <div class="show-harmonica">
+                        ...03
+                    </div>
+                </div>
+
+                <input type="radio" id="harmonica-04" name="list"/>
+                <div class="main-panel">
+                    <label for="harmonica-04">Harmonica 04</label>
+                    <div class="show-harmonica">
+                        ...04
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                        <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">harmonica</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;p </span><span class="pr">class="</span><span class="ch">harmonica-head</span><span class="pr">"</span><span class="el">&gt;</span>Head<span class="el">&lt;/p&gt;</span>
+
+    <span class="el">&lt;input </span><span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">harmonica-01</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">list</span><span class="pr">"</span> <span class="pr">checked</span><span class="el">/&gt;</span>
+    <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">main-panel</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;label </span><span class="pr">for="</span><span class="ch">harmonica-01</span><span class="pr">"</span><span class="el">&gt;</span>Harmonica 01<span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">show-harmonica</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...01
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+
+    <span class="el">&lt;input </span><span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">harmonica-02</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">list</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">main-panel</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;label </span><span class="pr">for="</span><span class="ch">harmonica-02</span><span class="pr">"</span><span class="el">&gt;</span>Harmonica 02<span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">show-harmonica</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...02
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+
+    <span class="el">&lt;input </span><span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">harmonica-03</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">list</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">main-panel</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;label </span><span class="pr">for="</span><span class="ch">harmonica-03</span><span class="pr">"</span><span class="el">&gt;</span>Harmonica 03<span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">show-harmonica</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...03
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+
+    <span class="el">&lt;input </span><span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">harmonica-04</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">list</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">main-panel</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;label </span><span class="pr">for="</span><span class="ch">harmonica-04</span><span class="pr">"</span><span class="el">&gt;</span>Harmonica 04<span class="el">&lt;/label&gt;</span>
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">show-harmonica</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...04
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                        </pre>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16 offset-medium-8">
+    <div class="section-item-main">
+        <h2 id="timeline-navigate">Timeline</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+            <div class="timeline">
+                <div class="event">
+                    <input type="radio" id="time-01" name="tl-group" checked/>
+                    <label for="time-01">MONTH NUM. 01</label>
+
+                    <div class="content-perspective">
+                        <div class="content-main">
+                            <div class="content-inner">
+                                <p class="padding-none-all margin-none-all">... 11</p>
+                            </div>
+                            <hr/>
+                            <div class="content-inner disable">
+                                <p class="padding-none-all margin-none-all">... 12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+
+                    <input type="radio" id="time-02" name="tl-group"/>
+                    <label for="time-02">MONTH NUM. 02</label>
+
+                    <div class="content-perspective">
+                        <div class="content-main">
+                            <div class="content-inner">
+                                <p class="padding-none-all margin-none-all">... 21</p>
+                            </div>
+                            <hr/>
+                            <div class="content-inner">
+                                <p class="padding-none-all margin-none-all">... 22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                        <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">timeline</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">event</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;input </span><span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">time-01</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tl-group</span><span class="pr">"</span> <span class="pr">checked</span><span class="el">/&gt;</span>
+        <span class="el">&lt;label </span><span class="pr">for="</span><span class="ch">time-01</span>"<span class="el">&gt;</span>MONTH NUM. 01<span class="el">&lt;/label&gt;</span>
+
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-perspective</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-main</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content-inner</span><span class="pr">"</span><span class="el">&gt;</span>
+                    ... 11
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;hr/&gt;</span>
+                <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-inner disable</span><span class="pr">"</span><span class="el">&gt;</span>
+                    ... 12
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+
+    <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">event</span><span class="pr">"</span><span class="el">&gt;</span>
+
+        <span class="el">&lt;input </span><span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">time-02</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tl-group</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;label </span><span class="pr">for="</span><span class="ch">time-02</span><span class="pr">"</span><span class="el">&gt;</span>MONTH NUM. 02<span class="el">&lt;/label&gt;</span>
+
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-perspective</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-main</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-inner</span><span class="pr">"</span><span class="el">&gt;</span>
+                    ... 21
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;hr/&gt;</span>
+                <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">content-inner</span><span class="pr">"</span><span class="el">&gt;</span>
+                    ... 22
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                        </pre>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16 offset-medium-8">
+    <div class="section-item-main">
+        <h2 id="widget-box-navigate">Widget Box</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+            <div class="widget-box">
+                <div class="widget-header">
+                    <h2>...
+                        <small>- ...</small>
+                    </h2>
+                </div>
+                <div class="widget-body">
+                    ...
+                </div>
+            </div>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                        <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">widget-box</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">widget-header</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;h2&gt;</span>...<span class="el">&lt;small&gt;</span>- ...<span class="el">&lt;/small&gt;&lt;/h2&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">widget-body</span><span class="pr">"</span><span class="el">&gt;</span>
+        ...
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                        </pre>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16 offset-medium-8">
+    <div class="section-item-main">
+        <h2 id="tags-navigate">Tags</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+            <ul class="tags">
+                <li><a href="#">tag</a></li>
+                <li><a href="#" class="disable-tag">tag disable</a></li>
+            </ul>
+            <ul class="tags tags-primary">
+                <li><a href="#">tag</a></li>
+                <li><a href="#" class="disable-tag">tag disable</a></li>
+            </ul>
+            <ul class="tags tags-secondary">
+                <li><a href="#">tag</a></li>
+                <li><a href="#" class="disable-tag">tag disable</a></li>
+            </ul>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                        <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">tags</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">" class="</span><span class="ch">disable-tag</span><span class="pr">"</span><span class="el">&gt;</span>tag disable<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="el">&lt;/ul&gt;</span>
+    <hr/>
+<span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">tags tags-primary</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">" class="</span><span class="ch">disable-tag</span><span class="pr">"</span><span class="el">&gt;</span>tag disable<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="el">&lt;/ul&gt;</span>
+    <hr/>
+<span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">tags tags-secondary</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>tag<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="el">&lt;li&gt;&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">" class="</span><span class="ch">disable-tag</span><span class="pr">"</span><span class="el">&gt;</span>tag disable<span class="el">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="el">&lt;/ul&gt;</span>
+</code>
+                        </pre>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16 offset-medium-8">
+    <div class="section-item-main">
+        <h2 id="modal-navigate">Modal</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+            <div class="people-item">
+                <a href="#Test_info" class="modal-a button button-secondary">MODAL</a>
+
+                <!--MOBILE-->
+                <div class="small-visited">
+                    <h2>XXX</h2>
+                    <p>text mobile</p>
+                </div>
+
+                <!--DESKTOP-->
+                <div id="Test_info" class="modal-dialog small-hidden">
+                    <a href="#close" title="Close" class="full-width-close"></a>
+                    <div>
+                        <h2>XXX</h2>
+                        <p>text desktop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">people-item</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#Test_info</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">modal-a button button-secondary</span><span class="pr">"</span><span class="el">&gt;</span>MODAL<span class="el">&lt;/a&gt;</span>
+
+    &lt;!--MOBILE--&gt;
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">small-visited</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;h2&gt;</span>XXX<span class="el">&lt;/h2&gt;</span>
+        <span class="el">&lt;p&gt;</span>text mobile<span class="el">&lt;/p&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+
+    &lt;!--DESKTOP--&gt;
+    <span class="el">&lt;div</span> <span class="pr">id="</span><span class="ch">Test_info</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">modal-dialog small-hidden</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#close</span><span class="pr">"</span> <span class="pr">title="</span><span class="ch">Close</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">full-width-close</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;div</span><span class="el">&gt;</span>
+            <span class="el">&lt;h2&gt;</span>XXX<span class="el">&lt;/h2&gt;</span>
+            <span class="el">&lt;p&gt;</span>text desktop<span class="el">&lt;/p&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="span-medium-16 offset-medium-8">
+    <div class="section-item-main">
+        <h2 id="-navigate">XXX</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+        <div class="section-item">
+            <h3>Example</h3>
+        </div>
+        <div class="section-item">
+            <h3>&lt;/&gt;</h3>
+                        <pre>
+<code class="language-html" data-lang="html">
+
+</code>
+                        </pre>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+</div>
+<div class="clear"></div>
+<div class="section-06">
+    <div class="container">
+        <div class="row">
+            <div class="span-medium-8 text-right clearfix">
+                <img src="img/logo-head-bowtie.svg" width="161" height="61">
+                <p class="absolute">CSS Framework</p>
+            </div>
+            <div class="span-medium-10 offset-medium-6 clearfix">
+                <a class="social-popout" target="_blank" href="#"><img src="img/fb.svg" /></a>
+                <a class="social-popout" target="_blank" href="#"><img src="img/twittr.svg" /></a>
+                <a class="social-popout" target="_blank" href="#"><img src="img/linkdn.svg" /></a>
+                <a class="social-popout" target="_blank" href="#"><img src="img/gplus.svg" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-07">
+    <div class="container">
+        <div class="row">
+            <div class="span-medium-12 span-small-12">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--|-->
+            <div class="span-medium-12 span-small-12 text-right">
+                <div class="navbar">
+                    <ul>
+                        <li>2015 &copy; BowtieCSS.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
+        $(window).scroll(function () {
+            var scroll = $(this).scrollTop();
+            var height = $('#sidebar').height() + 'px';
+            if (scroll < $('#left').offset().top) {
+                $('#sidebar').css({
+                    'position': 'absolute',
+                    'top': '0'
+                });
+            } else if (scroll > length) {
+                $('#sidebar').css({
+                    'position': 'fixed'
+//                    'bottom': '0',
+//                    'top': 'auto'
+                });
+            } else {
+                $('#sidebar').css({
+                    'position': 'fixed',
+                    'top': '0',
+                    'height': height
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

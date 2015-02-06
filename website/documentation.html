@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bowtie</title>
+    <link rel="stylesheet" href="css/bowtie.css"/>
+    <link rel="stylesheet" href="css/custom-style.css"/>
+    <!--<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../src/js/ZeroClipboard.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+    <div class="getting-started">
+        <div class="section-01">
+            <div class="menu only-main-menu static">
+                <div class="container">
+                    <nav class="row">
+                        <div class="head">
+                            <a href="#"><img src="img/logo-head-bowtie.svg" width="161" height="61"></a>
+                        </div>
+                        <div class="head-content">
+                            <div class="sub-main-menu">
+                                <label for="show-main-menu" class="show-main-menu">
+                                    <span class="fa fa-bars"></span>Menu
+                                </label>
+                                <input type="checkbox" id="show-main-menu">
+                                <ul class="main-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="getting-started.html">Getting started</a></li>
+                                    <li><a href="features.html">Features</a></li>
+                                    <li><a href="documentation.html" class="active">Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="section-02">
+            <div class="container">
+                <div class="row jumbotron">
+                    <div class="span-medium-16">
+                        <p><span class="first-text">Documentation</span><br>CSS Framework wich makes your life easier<br>You can make quikly easy website in Pro quality.</p>
+                    </div>
+                    <div class="span-medium-8 text-right">
+                        <img src="img/logo-bowtie.svg" width="155" height="162" class="logo-bowtie">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="span-medium-8">
+                    <div id="left">
+                        <div id="sidebar">
+                            <div class="side-bar">
+                                <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
+                                <input type="checkbox" id="show-sidebar">
+                                <ul class="sidebar">
+                                    <li><a href="#grid-navigate">Grid System</a></li>
+                                    <li><a href="#nav-list-navigate">Nav List</a></li>
+                                    <li><a href="#tabs-navigate">Tabs</a></li>
+                                    <li><a href="#borders-navigate">Borders</a></li>
+                                    <li><a href="#buttons-navigate">Buttons</a></li>
+                                    <li><a href="#dropdown-navigate">Dropdown</a></li>
+                                    <li><a href="#tooltip-navigate">Tooltip</a></li>
+                                    <li><a href="#popover-navigate">Popover</a></li>
+                                    <li><a href="#alerts-navigate">Alerts</a></li>
+                                    <li><a href="#tables-navigate">Tables</a></li>
+                                    <li class="sub-side"><a href="#table-full-scroll-sub-navigate">Full Scroll</a></li>
+                                    <li class="sub-side"><a href="#table-full-height-sub-navigate">Full Height</a></li>
+                                    <li class="sub-side"><a href="#table-scroll-sub-navigate">Scroll</a></li>
+                                    <li class="sub-side"><a href="#table-dropdown-sub-navigate">Dropdown</a></li>
+                                    <li><a href="#pagination-navigate">Pagination & Pager</a></li>
+                                    <li><a href="#-navigate">Side</a></li>
+                                    <li><a href="#">Back to Top</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16">
+                    <div class="section-item-main">
+                        <h2 id="grid-navigate">Grid Systems</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+                        <div class="section-item">
+                            <h3>Example <small>container responzive span</small></h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-24</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+
+                            <h3>Example <small>container-fluid responzive span</small></h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container-fluid</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-24</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+
+                            <div class="row">
+                                <div class="span-xlarge-24 border-primary text-center margin-small-vertical padding-small-vertical">24</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-24</span><span class="pr">"</span><span class="el">&gt;</span>
+    24
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-23 border-primary text-center margin-small-vertical padding-small-vertical">23</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-23</span><span class="pr">"</span><span class="el">&gt;</span>
+    23
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-22 border-primary text-center margin-small-vertical padding-small-vertical">22</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-22</span><span class="pr">"</span><span class="el">&gt;</span>
+    22
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-21 border-primary text-center margin-small-vertical padding-small-vertical">21</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-21</span><span class="pr">"</span><span class="el">&gt;</span>
+    21
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-20 border-primary text-center margin-small-vertical padding-small-vertical">20</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-20</span><span class="pr">"</span><span class="el">&gt;</span>
+    20
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-19 border-primary text-center margin-small-vertical padding-small-vertical">19</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-19</span><span class="pr">"</span><span class="el">&gt;</span>
+    19
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-18 border-primary text-center margin-small-vertical padding-small-vertical">18</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-18</span><span class="pr">"</span><span class="el">&gt;</span>
+    18
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-17 border-primary text-center margin-small-vertical padding-small-vertical">17</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-17</span><span class="pr">"</span><span class="el">&gt;</span>
+    17
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-16 border-primary text-center margin-small-vertical padding-small-vertical">16</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-16</span><span class="pr">"</span><span class="el">&gt;</span>
+    16
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-15 border-primary text-center margin-small-vertical padding-small-vertical">15</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-15</span><span class="pr">"</span><span class="el">&gt;</span>
+    15
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-14 border-primary text-center margin-small-vertical padding-small-vertical">14</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-14</span><span class="pr">"</span><span class="el">&gt;</span>
+    14
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-13 border-primary text-center margin-small-vertical padding-small-vertical">13</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-13</span><span class="pr">"</span><span class="el">&gt;</span>
+    13
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-12 border-primary text-center margin-small-vertical padding-small-vertical">12</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-12</span><span class="pr">"</span><span class="el">&gt;</span>
+    12
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-11 border-primary text-center margin-small-vertical padding-small-vertical">11</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-11</span><span class="pr">"</span><span class="el">&gt;</span>
+    11
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-10 border-primary text-center margin-small-vertical padding-small-vertical">10</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-10</span><span class="pr">"</span><span class="el">&gt;</span>
+    10
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-9 border-primary text-center margin-small-vertical padding-small-vertical">9</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-9</span><span class="pr">"</span><span class="el">&gt;</span>
+    9
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">8</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    8
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-7 border-primary text-center margin-small-vertical padding-small-vertical">7</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-7</span><span class="pr">"</span><span class="el">&gt;</span>
+    7
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-6 border-primary text-center margin-small-vertical padding-small-vertical">6</div>
+                            </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-6</span><span class="pr">"</span><span class="el">&gt;</span>
+    6
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-5 border-primary text-center margin-small-vertical padding-small-vertical">5</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-5</span><span class="pr">"</span><span class="el">&gt;</span>
+    5
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-4 border-primary text-center margin-small-vertical padding-small-vertical">4</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-4</span><span class="pr">"</span><span class="el">&gt;</span>
+    4
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-3 border-primary text-center margin-small-vertical padding-small-vertical">3</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-3</span><span class="pr">"</span><span class="el">&gt;</span>
+    3
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-2 border-primary text-center margin-small-vertical padding-small-vertical">2</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-2</span><span class="pr">"</span><span class="el">&gt;</span>
+    2
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-1 border-primary text-center margin-small-vertical padding-small-vertical">1</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-1</span><span class="pr">"</span><span class="el">&gt;</span>
+    1
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+
+                            <div class="row">
+                                <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
+                                <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
+                                <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-8
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-8
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-8
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-16 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-16</div>
+                                <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-16</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-16
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-8
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-4 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-4</div>
+                                <div class="span-xlarge-16 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-16</div>
+                                <div class="span-xlarge-4 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-4</div>
+                            </div>
+<pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-4</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-4
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-16</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-16
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-4</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-4
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                            <div class="row">
+                                <div class="span-xlarge-24 span-large-20 span-medium-16 span-small-12 span-mini-10 border-primary text-center margin-small-vertical padding-small-vertical">
+                                    span-xlarge-24 | span-large-20 | span-medium-16 | span-small-12 | span-mini-10
+                                </div>
+                            </div>
+                        <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-24 span-large-20 span-medium-16 span-small-12 span-mini-10</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-24 | span-large-20 | span-medium-16 | span-small-12 | span-mini-10
+<span class="el">&lt;/div&gt;</span></code>
+                            </pre>
+                        </div>
+
+                        <div class="section-item">
+                            <h3>Nonresponzive</h3>
+                            <div class="row">
+                                <div class="span-24 border-primary text-center margin-small-vertical padding-small-vertical">
+                                    span-24
+                                </div>
+                            </div>
+
+                            <div class="section-item">
+                                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-24</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container-fluid</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-24</span><span class="pr">"</span><span class="el">&gt;</span>
+            ...
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span></code>
+            </pre>
+                            </div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3>Offsets</h3>
+                            <div class="row">
+                                <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">
+                                    span-xlarge-8
+                                </div>
+                                <div class="span-xlarge-8 offset-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">
+                                    span-xlarge-8 OFFSET-XLARGE-8
+                                </div>
+                            </div>
+
+                            <div class="section-item">
+                                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-8
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8 offset-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
+    span-xlarge-8 offset-xlarge-8
+<span class="el">&lt;/div&gt;</span></code>
+            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="nav-list-navigate">Nav List</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                                <div class="navbar">
+                                    <ul>
+                                        <li><a href="#">navlist 1</a></li>
+                                        <li><a href="#">navlist 2</a></li>
+                                        <li><a href="#">navlist 3</a></li>
+                                        <li><a href="#">navlist 4</a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="navbar">
+                                            <ul>
+                                                <li><a href="#">navlist 1</a></li>
+                                                <li><a href="#">navlist 2</a></li>
+                                                <li><a href="#">navlist 3</a></li>
+                                                <li><a href="#">navlist 4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">navbar</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;ul&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>navlist 1<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>navlist 2<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>navlist 3<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"</span><span class="el">&gt;</span>navlist 4<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span></code>
+            </pre></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="tabs-navigate">Tabs</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                            <div class="tabs-show">
+                                <div class="tabs-border">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+                                        <label for="tab-1">List 1 </label>
+                                        <div class="content">
+                                            ... 01
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2" name="tab-group-1">
+                                        <label for="tab-2">List 2</label>
+                                        <div class="content">
+                                            ... 02
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3" name="tab-group-1">
+                                        <label for="tab-3">List 3</label>
+                                        <div class="content">
+                                            ... 03
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <input type="radio" id="tab-4" name="tab-group-1">
+                                        <label for="tab-4">List 4</label>
+                                        <div class="content">
+                                            ... 04
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tabs</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tabs-border</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-1</span><span class="pr">"</span><span class="el">&gt;</span>List 1<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
+                ... 01
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-2</span><span class="pr">"</span><span class="el">&gt;</span>List 2<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
+                ... 02
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-3</span><span class="pr">"</span><span class="el">&gt;</span>List 3<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
+                ... 03
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-4</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-4</span><span class="pr">"</span><span class="el">&gt;</span>List 4<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
+                ... 04
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="borders-navigate">Borders</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                            <div class="display-inline-block">
+                                <p class="border-primary pull-left margin-right-10">ALL</p>
+                                <p class="border-primary-top pull-left margin-right-10">TOP</p>
+                                <p class="border-primary-bottom pull-left margin-right-10">BOTTOM</p>
+                                <p class="border-primary-left pull-left margin-right-10">LEFT</p>
+                                <p class="border-primary-right pull-left margin-right-10">RIGHT</p>
+                                <p class="border-primary-vertical pull-left margin-right-10">VERTICAL</p>
+                                <p class="border-primary-horizontal pull-left">HORIZONTAL</p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="border-primary">ALL</p>
+                                        <p class="border-primary-top">TOP</p>
+                                        <p class="border-primary-bottom">BOTTOM</p>
+                                        <p class="border-primary-left">LEFT</p>
+                                        <p class="border-primary-right">RIGHT</p>
+                                        <p class="border-primary-vertical">VERTICAL</p>
+                                        <p class="border-primary-horizontal">HORIZONTAL</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary</span><span class="pr">"</span><span class="el">&gt;</span>ALL<span class="el">&lt;/p&gt;</span>
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary-top</span><span class="pr">"</span><span class="el">&gt;</span>TOP<span class="el">&lt;/p&gt;</span>
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary-bottom</span><span class="pr">"</span><span class="el">&gt;</span>BOTTOM<span class="el">&lt;/p&gt;</span>
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary-left</span><span class="pr">"</span><span class="el">&gt;</span>LEFT<span class="el">&lt;/p&gt;</span>
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary-right</span><span class="pr">"</span><span class="el">&gt;</span>RIGHT<span class="el">&lt;/p&gt;</span>
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary-vertical</span><span class="pr">"</span><span class="el">&gt;</span>VERTICAL<span class="el">&lt;/p&gt;</span>
+<span class="el">&lt;p</span> <span class="pr">class="</span><span class="ch">border-primary-horizontal</span><span class="pr">"</span><span class="el">&gt;</span>HORIZONTAL<span class="el">&lt;/p&gt;</span></code>
+            </pre></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="buttons-navigate">Buttons</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item fix-buttons">
+                            <h3>Example <small>default buttons</small></h3>
+                            <a class="button" href="#">Default</a>
+                            <a class="button button-primary" href="#">Button Primary</a>
+                            <a class="button button-secondary" href="#">Button Secondary</a>
+                            <a class="button button-tertiary" href="#">Button Tertiary</a>
+                            <a class="button button-info" href="#">Button Info</a>
+                            <a class="button button-success" href="#">Button Success</a>
+                            <a class="button button-warning" href="#">Button Warning</a>
+                            <a class="button button-danger" href="#">Button Danger</a>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Default<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-primary</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Primary<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-secondary</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Secondary<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-tertiary</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Tertiary<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-info</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Info<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-success</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Success<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-warning</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Warning<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-danger</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Danger<span class="el">&lt;/a&gt;</span></code>
+            </pre>
+                        </div>
+
+                        <div class="section-item fix-buttons">
+                            <h3>Example <small>size</small></h3>
+                            <a class="button button-primary button-mini" href="#">Mini</a>
+                            <a class="button button-secondary button-small" href="#">Small</a>
+                            <a class="button button-tertiary button-medium" href="#">Medium</a>
+                            <a class="button button-info button-large" href="#">Large</a>
+                            <a class="button" href="#">Button</a>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-primary button-mini</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Mini<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-secondary button-small</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Small<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-tertiary button-medium</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Medium<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-info button-large</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Large<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button<span class="el">&lt;/a&gt;</span></code>
+            </pre>
+                        </div>
+
+                        <div class="section-item fix-buttons">
+                            <h3>Example <small>group</small></h3>
+                            <div class="button-group">
+                                <a class="button button-medium button-danger" href="">X</a>
+                                <a class="button button-medium button-warning" href="">Y</a>
+                                <a class="button button-medium button-success" href="">Z</a>
+                                <a class="button button-medium button-info" href="">0</a>
+                            </div>
+                            <div class="button-group">
+                                <a class="button button-primary" href="">X</a>
+                                <a class="button button-primary" href="">Y</a>
+                                <a class="button button-primary" href="">Z</a>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">button-group</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-medium button-danger</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>X<span class="el">&lt;/a&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-medium button-warning</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Y<span class="el">&lt;/a&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-medium button-success</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Z<span class="el">&lt;/a&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-medium button-info</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>0<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">button-group</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-primary</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>X<span class="el">&lt;/a&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-primary</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Y<span class="el">&lt;/a&gt;</span>
+    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-primary</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Z<span class="el">&lt;/a&gt;</span>
+<span class="el">&lt;/div&gt;</span></code>
+            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="dropdown-navigate">Dropdown</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                            <div class="dropdown-main">
+                                <label for="show-drop1" class="show-drop">
+                                    DorpDown
+                                </label>
+                                <input type="checkbox" id="show-drop1" role="button">
+                                <ul id="dropdown" class="drop">
+                                    <li><a href="#">drop1</a></li>
+                                    <li><a href="#">drop2</a></li>
+                                    <li><a href="#">drop3</a></li>
+                                    <li><a href="#">drop4</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown-main margin-small-left">
+                                <label for="show-drop2" class="show-drop">
+                                    <span class="button button-tertiary">DropDown</span>
+                                </label>
+                                <input type="checkbox" id="show-drop2" role="button">
+                                <ul id="dropdown" class="drop">
+                                    <li><a href="#">drop1</a></li>
+                                    <li><a href="#">drop2</a></li>
+                                    <li><a href="#">drop3</a></li>
+                                    <li><a href="#">drop4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">dropdown-main</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">show-drop1</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">show-drop</span><span class="pr">"</span><span class="el">&gt;</span>
+        DorpDown
+    <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">show-drop1</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;ul</span> <span class="pr">id="</span><span class="ch">dropdown</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">drop</span>"<span class="el">&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop1<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop2<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop3<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop4<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">dropdown-main</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">show-drop2</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">show-drop</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">button button-tertiary</span><span class="pr">"</span><span class="el">&gt;</span>DropDown<span class="el">&lt;/span&gt;</span>
+    <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">show-drop2</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;ul</span> <span class="pr">id="</span><span class="ch">dropdown</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">drop</span>"<span class="el">&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop1<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop2<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop3<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop4<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="tooltip-navigate">Tooltip</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                            <span class="tooltip">
+                                TOP <span class="tooltip-hover">[?]
+                                    <div class="tooltip-top">
+                                        On your last purchase, your payment method was stored for your convenience
+                                    </div>
+                                </span>
+                            </span>
+
+                            <span class="tooltip margin-small-horizontal">
+                                RIGHT <span class="tooltip-hover">[?]
+                                    <div class="tooltip-right">
+                                        On your last purchase, your payment method was stored for your convenience
+                                    </div>
+                                </span>
+                            </span>
+
+                            <span class="tooltip">
+                                BOTTOM <span class="tooltip-hover">[?]
+                                    <div class="tooltip-bottom">
+                                        On your last purchase, your payment method was stored for your convenience
+                                    </div>
+                                </span>
+                            </span>
+
+                            <span class="tooltip margin-small-horizontal">
+                                LEFT <span class="tooltip-hover">[?]
+                                    <div class="tooltip-left">
+                                        On your last purchase, your payment method was stored for your convenience
+                                    </div>
+                                </span>
+                            </span>
+
+                            <a href="#" class="button button-danger tooltip tooltip-hover">
+                                TOP on BUTTON <div class="tooltip-top">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div>
+                            </a>
+
+                            <a href="#" class="button button-info tooltip margin-small-horizontal">
+                                TOP at BUTTON <span class="tooltip-hover">[?]<div class="tooltip-top">
+                                On your last purchase, your payment method was stored for your convenience
+                            </div></span>
+                            </a>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+/*TOP tooltip, just text*/
+<span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip</span><span class="pr">"</span><span class="el">&gt;</span>
+    TOP <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
+            On your last purchase, your payment method was stored for your convenience
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/span&gt;</span>
+<span class="el">&lt;/span&gt;</span>
+    <hr/>
+/*RIGHT tooltip, just text*/
+<span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip</span><span class="pr">"</span><span class="el">&gt;</span>
+    RIGHT <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
+            On your last purchase, your payment method was stored for your convenience
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/span&gt;</span>
+<span class="el">&lt;/span&gt;</span>
+    <hr/>
+/*BOTTOM tooltip, just text*/
+<span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip</span><span class="pr">"</span><span class="el">&gt;</span>
+    BOTTOM <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
+            On your last purchase, your payment method was stored for your convenience
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/span&gt;</span>
+<span class="el">&lt;/span&gt;</span>
+    <hr/>
+/*LEFT tooltip, just text*/
+<span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip</span><span class="pr">"</span><span class="el">&gt;</span>
+    LEFT <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
+            On your last purchase, your payment method was stored for your convenience
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/span&gt;</span>
+<span class="el">&lt;/span&gt;</span>
+    <hr/>
+/*TOP tooltip, on button*/
+<span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-danger tooltip tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>
+    TOP on BUTTON <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
+    On your last purchase, your payment method was stored for your convenience
+<span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/a&gt;</span>
+    <hr/>
+/*TOP tooltip, at button*/
+<span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-info tooltip margin-small-horizontal</span><span class="pr">"</span><span class="el">&gt;</span>
+    TOP at BUTTON <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tooltip-hover</span><span class="pr">"</span><span class="el">&gt;</span>[?]<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tooltip-top</span><span class="pr">"</span><span class="el">&gt;</span>
+    On your last purchase, your payment method was stored for your convenience
+<span class="el">&lt;/div&gt;</span><span class="el">&lt;/span&gt;</span>
+<span class="el">&lt;/a&gt;</span>
+</code>
+            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="popover-navigate">Popover</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                            <div class="popover">
+                                <label for="popover-top" class="button tooltip-click">
+                                    TOP
+                                </label><input type="checkbox" id="popover-top" role="button" class="checkbox-none">
+                                <div class="popover-top">
+                                    On your last purchase, your payment method was stored for your convenience
+                                </div>
+                            </div>
+                            <div class="popover">
+                                <label for="popover-right" class="button button-secondary tooltip-click">
+                                    RIGHT
+                                </label><input type="checkbox" id="popover-right" role="button" class="checkbox-none">
+                                <div class="popover-right">
+                                    On your last purchase, your payment method was stored for your convenience
+                                </div>
+                            </div>
+                            <div class="popover">
+                                <label for="popover-bottom" class="button button-tertiary tooltip-click">
+                                    BOTTOM
+                                </label><input type="checkbox" id="popover-bottom" role="button" class="checkbox-none">
+                                <div class="popover-bottom">
+                                    On your last purchase, your payment method was stored for your convenience
+                                </div>
+                            </div>
+                            <div class="popover">
+                                <label for="popover-left" class="button button-info tooltip-click">
+                                    LEFT
+                                </label><input type="checkbox" id="popover-left" role="button" class="checkbox-none">
+                                <div class="popover-left">
+                                    On your last purchase, your payment method was stored for your convenience
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">popover-top</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button tooltip-click</span><span class="pr">"</span><span class="el">&gt;</span>
+        TOP
+    <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">popover-top</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover-top</span><span class="pr">"</span><span class="el">&gt;</span>
+        On your last purchase, your payment method was stored for your convenience
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">popover-right</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-secondary tooltip-click</span><span class="pr">"</span><span class="el">&gt;</span>
+        RIGHT
+    <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">popover-right</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover-right</span><span class="pr">"</span><span class="el">&gt;</span>
+        On your last purchase, your payment method was stored for your convenience
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">popover-bottom</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-tertiary tooltip-click</span><span class="pr">"</span><span class="el">&gt;</span>
+        BOTTOM
+    <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">popover-bottom</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover-bottom</span><span class="pr">"</span><span class="el">&gt;</span>
+        On your last purchase, your payment method was stored for your convenience
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">popover-left</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-info tooltip-click</span><span class="pr">"</span><span class="el">&gt;</span>
+        LEFT
+    <span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">popover-left</span><span class="pr">"</span> <span class="pr">role="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover-left</span><span class="pr">"</span><span class="el">&gt;</span>
+        On your last purchase, your payment method was stored for your convenience
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="alerts-navigate">Alerts</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+                        <div class="section-item">
+                            <h3>Example</h3>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <input id="close-alert-danger" type="radio" class="checkbox-none" />
+                            <div class="alert alert-danger">
+                                <label for="close-alert-danger" class="alert-label"><i class="fa fa-times"></i></label>
+                                <div class="show-alert">
+                                    <strong>Danger!</strong> alert
+                                </div>
+                            </div>
+                            <input id="close-alert-warning" type="radio" class="checkbox-none" />
+                            <div class="alert alert-warning">
+                                <label for="close-alert-warning" class="alert-label"><i class="fa fa-times"></i></label>
+                                <div class="show-alert">
+                                    <strong>Warning!</strong> alert
+                                </div>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">close-alert-danger</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span> <span class="el">/&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">alert alert-danger</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">close-alert-danger</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">alert-label</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">show-alert</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;strong&gt;</span>Danger!<span class="el">&lt;/strong&gt;</span> alert
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">close-alert-warning</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span> <span class="el">/&gt;</span>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">alert alert-warning</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">close-alert-warning</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">alert-label</span><span class="pr">"</span><span class="el">&gt;</span><span class="el">&lt;/label&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">show-alert</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;strong&gt;</span>Warning!<span class="el">&lt;/strong&gt;</span> alert
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="tables-navigate">Tables</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+                        <div class="section-item">
+                            <h3 id="table-full-scroll-sub-navigate">Example <small>full scroll</small></h3>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="table-scroll-full">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>MAIN 01</th>
+                                        <th>MAIN 02</th>
+                                        <th>MAIN 03</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>xxx 01</td>
+                                        <td>xxx 02</td>
+                                        <td>xxx 03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>xxx 11</td>
+                                        <td>xxx 12</td>
+                                        <td>xxx 13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>xxx 21</td>
+                                        <td>xxx 22</td>
+                                        <td>xxx 23</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-scroll-full</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;table&gt;</span>
+        <span class="el">&lt;thead&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th&gt;</span>MAIN 01<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;th&gt;</span>MAIN 02<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;th&gt;</span>MAIN 03<span class="el">&lt;/th&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;/thead&gt;</span>
+        <span class="el">&lt;tbody&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 01<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 02<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 03<span class="el">&lt;/th&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 11<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 12<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 13<span class="el">&lt;/th&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 21<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 22<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 23<span class="el">&lt;/th&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;/tbody&gt;</span>
+    <span class="el">&lt;/table&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                        </div>
+                        <div class="section-item">
+                            <h3 id="table-full-height-sub-navigate">Example <small>full height</small></h3>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="table-on-height">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>MAIN 01</th>
+                                        <th>MAIN 02</th>
+                                        <th>MAIN 03</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td data-title="MAIN 01">xxx 01</td>
+                                        <td data-title="MAIN 02">xxx 02</td>
+                                        <td data-title="MAIN 03">xxx 03</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="MAIN 01">xxx 11</td>
+                                        <td data-title="MAIN 02">xxx 12</td>
+                                        <td data-title="MAIN 03">xxx 13</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="MAIN 01">xxx 21</td>
+                                        <td data-title="MAIN 02">xxx 22</td>
+                                        <td data-title="MAIN 03">xxx 23</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-on-height</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;table&gt;</span>
+            <span class="el">&lt;thead&gt;</span>
+                <span class="el">&lt;tr&gt;</span>
+                    <span class="el">&lt;th&gt;</span>MAIN 01<span class="el">&lt;/th&gt;</span>
+                    <span class="el">&lt;th&gt;</span>MAIN 02<span class="el">&lt;/th&gt;</span>
+                    <span class="el">&lt;th&gt;</span>MAIN 03<span class="el">&lt;/th&gt;</span>
+                    ...
+                <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/thead&gt;</span>
+            <span class="el">&lt;tbody&gt;</span>
+                <span class="el">&lt;tr&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 01</span><span class="pr">"</span><span class="el">&gt;</span>xxx 01<span class="el">&lt;/td&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 02</span><span class="pr">"</span><span class="el">&gt;</span>xxx 02<span class="el">&lt;/td&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 03</span><span class="pr">"</span><span class="el">&gt;</span>xxx 03<span class="el">&lt;/td&gt;</span>
+                    ...
+                <span class="el">&lt;/tr&gt;</span>
+                <span class="el">&lt;tr&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 01</span><span class="pr">"</span><span class="el">&gt;</span>xxx 11<span class="el">&lt;/td&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 02</span><span class="pr">"</span><span class="el">&gt;</span>xxx 12<span class="el">&lt;/td&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 03</span><span class="pr">"</span><span class="el">&gt;</span>xxx 13<span class="el">&lt;/td&gt;</span>
+                    ...
+                <span class="el">&lt;/tr&gt;</span>
+                <span class="el">&lt;tr&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 01</span><span class="pr">"</span><span class="el">&gt;</span>xxx 21<span class="el">&lt;/td&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 02</span><span class="pr">"</span><span class="el">&gt;</span>xxx 22<span class="el">&lt;/td&gt;</span>
+                    <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">MAIN 03</span><span class="pr">"</span><span class="el">&gt;</span>xxx 23<span class="el">&lt;/td&gt;</span>
+                    ...
+                <span class="el">&lt;/tr&gt;</span>
+            <span class="el">&lt;/tbody&gt;</span>
+        <span class="el">&lt;/table&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                        </div>
+                        <div class="section-item">
+                            <h3>Example <small>full</small></h3>
+                        </div>
+                        <div class="section-item">
+                            <h3 id="table-full-sub-navigate">&lt;/&gt;</h3>
+                            <div class="table-scroll">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>MAIN 01</th>
+                                        <th>MAIN 02</th>
+                                        <th>MAIN 03</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>xxx 01</td>
+                                        <td>xxx 02</td>
+                                        <td>xxx 03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>xxx 11</td>
+                                        <td>xxx 12</td>
+                                        <td>xxx 13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>xxx 21</td>
+                                        <td>xxx 22</td>
+                                        <td>xxx 23</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-scroll</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;table&gt;</span>
+        <span class="el">&lt;thead&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 01<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 02<span class="el">&lt;/th&gt;</span>
+                <span class="el">&lt;th&gt;</span>MAIN 03<span class="el">&lt;/th&gt;</span>
+                ...
+            <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;/thead&gt;</span>
+        <span class="el">&lt;tbody&gt;</span>
+            <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 01<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 02<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 03<span class="el">&lt;/td&gt;</span>
+                ...
+            <span class="el">&lt;/tr&gt;</span>
+                <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 11<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 12<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 13<span class="el">&lt;/td&gt;</span>
+                ...
+            <span class="el">&lt;/tr&gt;</span>
+                <span class="el">&lt;tr&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 21<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 22<span class="el">&lt;/td&gt;</span>
+                <span class="el">&lt;td&gt;</span>xxx 23<span class="el">&lt;/td&gt;</span>
+                ...
+            <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;/tbody&gt;</span>
+    <span class="el">&lt;/table&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                        </div>
+                        <div class="section-item">
+                            <h3>Example <small>Dropdown</small></h3>
+                        </div>
+                        <div class="section-item">
+                            <h3 id="table-dropdown-sub-navigate">&lt;/&gt;</h3>
+                            <table class="responsive-table">
+                                <caption>
+                                    HEAD
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th>Test1</th>
+                                    <th>Test2</th>
+                                    <th>Test3</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th tabindex="0" onclick="action">TEST1</th>
+                                    <td data-title="xxx1">test11</td>
+                                    <td data-title="xxx2">test12</td>
+                                </tr>
+                                <tr>
+                                    <th tabindex="0" onclick="action">TEST2</th>
+                                    <td data-title="xxx3">test21</td>
+                                    <td data-title="xxx4">test22</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;table</span> <span class="pr">class="</span><span class="ch">responsive-table</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;caption&gt;</span>HEAD<span class="el">&lt;/caption&gt;</span>
+    <span class="el">&lt;thead&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th&gt;</span>Test1<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;th&gt;</span>Test2<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;th&gt;</span>Test3<span class="el">&lt;/th&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+    <span class="el">&lt;/thead&gt;</span>
+    <span class="el">&lt;tbody&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th</span> <span class="pr">tabindex="</span><span class="ch">0</span><span class="pr">"</span> <span class="pr">onclick="</span><span class="ch">action</span><span class="pr">"</span><span class="el">&gt;</span>TEST1<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx1</span><span class="pr">"</span><span class="el">&gt;</span>test11<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx2</span><span class="pr">"</span><span class="el">&gt;</span>test12<span class="el">&lt;/td&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+        <span class="el">&lt;tr&gt;</span>
+            <span class="el">&lt;th</span> <span class="pr">tabindex="</span><span class="ch">0</span><span class="pr">"</span> <span class="pr">onclick="</span><span class="ch">action</span><span class="pr">"</span><span class="el">&gt;</span>TEST2<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx3</span><span class="pr">"</span><span class="el">&gt;</span>test21<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td</span> <span class="pr">data-title="</span><span class="ch">xxx4</span><span class="pr">"</span><span class="el">&gt;</span>test22<span class="el">&lt;/td&gt;</span>
+        <span class="el">&lt;/tr&gt;</span>
+    <span class="el">&lt;/tbody&gt;</span>
+<span class="el">&lt;/table&gt;</span>
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="pagination-navigate">Pagination & Pager</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+                        <div class="section-item">
+                            <h3>Example <small>Pagination</small></h3>
+                            <div class="text-center">
+                                <ul class="pagination">
+                                    <li class="disable"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">text-center</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">pagination</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">disable</span><span class="pr">"</span><span class="el">&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;&lt;i</span> <span class="pr">class="</span><span class="ch">fa fa-angle-double-left</span><span class="pr">"</span><span class="el">&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/li&gt;</span>
+        <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">active</span><span class="pr">"</span><span class="el">&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>1<span class="el">&lt;/a&gt;
+        &lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>2<span class="el">&lt;/a&gt;
+        &lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>3<span class="el">&lt;/a&gt;
+        &lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>4<span class="el">&lt;/a&gt;
+       &lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>5<span class="el">&lt;/a&gt;
+        &lt;/li&gt;</span>
+        <span class="el">&lt;li&gt;
+            &lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;&lt;i</span> <span class="pr">class="</span><span class="ch">fa fa-angle-double-right</span><span class="pr">"</span><span class="el">&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/li&gt;</span>
+    <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                        </div>
+
+                        <div class="section-item">
+                            <h3>Example <small>Pager</small></h3>
+                            <ul class="pager">
+                                <li class="previous"><a href="#"><i class="fa fa-long-arrow-left"></i> previous</a></li>
+                                <li class="next"><a href="#">next <i class="fa fa-long-arrow-right"></i></a></li>
+                            </ul>
+                    </div>
+                    <div class="section-item">
+                        <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">pager</span><span class="el">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">previous</span><span class="el">"</span><span class="el">&gt;
+        &lt;a</span> <span class="pr">href="</span><span class="ch">#</span>"<span class="el">&gt;&lt;i</span> <span class="pr">class="</span><span class="ch">fa fa-long-arrow-left</span><span class="pr">"</span><span class="el">&gt;&lt;/i&gt;</span> previous<span class="el">&lt;/a&gt;
+    &lt;/li&gt;</span>
+    <span class="el">&lt;li</span> <span class="pr">class="</span><span class="ch">next</span><span class="pr">"</span><span class="el">&gt;
+        &lt;a</span> <span class="pr"> href="</span><span class="ch">#</span>"<span class="el">&gt;</span>next <span class="el">&lt;i</span> <span class="pr">class="</span><span class="ch">fa fa-long-arrow-right</span><span class="pr">"</span><span class="el">&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;</span>
+<span class="el">&lt;/ul&gt;</span>
+</code>
+                            </pre>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="-navigate">XXX</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+                        <div class="section-item">
+                            <h3>Example</h3>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="section-06">
+            <div class="container">
+                <div class="row">
+                    <div class="span-medium-8 text-right clearfix">
+                        <img src="img/logo-head-bowtie.svg" width="161" height="61">
+                        <p class="absolute">CSS Framework</p>
+                    </div>
+                    <div class="span-medium-10 offset-medium-6 clearfix">
+                        <a class="social-popout" target="_blank" href="#"><img src="img/fb.svg" /></a>
+                        <a class="social-popout" target="_blank" href="#"><img src="img/twittr.svg" /></a>
+                        <a class="social-popout" target="_blank" href="#"><img src="img/linkdn.svg" /></a>
+                        <a class="social-popout" target="_blank" href="#"><img src="img/gplus.svg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-07">
+            <div class="container">
+                <div class="row">
+                    <div class="span-medium-12 span-small-12">
+                        <div class="navbar">
+                            <ul>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--|-->
+                    <div class="span-medium-12 span-small-12 text-right">
+                        <div class="navbar">
+                            <ul>
+                                <li>2015 &copy; BowtieCSS.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../src/js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
+        $(window).scroll(function () {
+            var scroll = $(this).scrollTop();
+            var height = $('#sidebar').height() + 'px';
+            if (scroll < $('#left').offset().top) {
+                $('#sidebar').css({
+                    'position': 'absolute',
+                    'top': '0'
+                });
+            } else if (scroll > length) {
+                $('#sidebar').css({
+                    'position': 'fixed'
+//                    'bottom': '0',
+//                    'top': 'auto'
+                });
+            } else {
+                $('#sidebar').css({
+                    'position': 'fixed',
+                    'top': '0',
+                    'height': height
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

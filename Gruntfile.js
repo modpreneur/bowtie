@@ -16,7 +16,8 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    "src/css/bowtie.css": "src/less/core.less"
+                    "src/css/bowtie.css": "src/less/core.less",
+                    "website/css/bowtie.css": "src/less/core.less"
                 }
             },
 
