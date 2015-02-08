@@ -69,10 +69,12 @@
                                     <li><a href="#popover-navigate">Popover</a></li>
                                     <li><a href="#alerts-navigate">Alerts</a></li>
                                     <li><a href="#tables-navigate">Tables</a></li>
-                                    <li class="sub-side"><a href="#table-full-scroll-sub-navigate">Full Scroll</a></li>
-                                    <li class="sub-side"><a href="#table-full-height-sub-navigate">Full Height</a></li>
-                                    <li class="sub-side"><a href="#table-scroll-sub-navigate">Scroll</a></li>
-                                    <li class="sub-side"><a href="#table-dropdown-sub-navigate">Dropdown</a></li>
+                                    <ul class="sub-side-group">
+                                        <li class="sub-side"><a href="#table-full-scroll-sub-navigate">Full Scroll</a></li>
+                                        <li class="sub-side"><a href="#table-full-height-sub-navigate">Full Height</a></li>
+                                        <li class="sub-side"><a href="#table-scroll-sub-navigate">Scroll</a></li>
+                                        <li class="sub-side"><a href="#table-dropdown-sub-navigate">Dropdown</a></li>
+                                    </ul>
                                     <li><a href="#pagination-navigate">Pagination & Pager</a></li>
                                     <li><a href="#-navigate">Side</a></li>
                                     <li><a href="#">Back to Top</a></li>
@@ -1477,6 +1479,103 @@
             }
         });
     });
+</script>
+<style type="text/css">
+    li.active-menu {
+        background-color: #ffffff;
+        color: #1F3A93;
+        border-left: solid 4px #00aeef;
+        font-weight: bold;
+    }
+    ul.sub-side-group {
+        display: none;
+    }
+    li.active-menu + ul.sub-side-group {
+        display: block;
+    }
+
+    /*.sub-side {*/
+        /*display: none;*/
+    /*}*/
+</style>
+<!-- Scroll spy -->
+<script>
+    var scrollSpy = {
+        mainActive: null,
+        subActive: null,
+        getYPositionOfElement : function(domElement){
+            var pos = 0;
+            while (domElement != null){
+                pos += domElement.offsetTop;
+                domElement = domElement.offsetParent;
+            }
+            return pos;
+        },
+        setMainMenu: function(element){
+            if(element === this.mainActive)
+                return;
+            if(this.mainActive !== null){
+                this.mainActive.classList.remove('active-menu');
+                this.mainActive.classList.remove('active-menu');
+            }
+            this.mainActive = element;
+            this.mainActive.classList.add('active-menu');
+        },
+        setSubMenu: function(element){
+            if(element === this.subActive)
+                return;
+            if(this.subActive !== null){
+                this.subActive.classList.remove('active-menu');
+            }
+            this.subActive = element;
+            this.subActive.classList.add('active-menu');
+        }
+    };
+
+    // Get anchors
+    var sidebar = document.getElementsByClassName('sidebar')[0];
+    var aTagsArr = [].slice.call(sidebar.getElementsByTagName('a'));
+
+    scrollSpy.anchors = aTagsArr.map(function(item){
+        var menuItem = {
+            id: item.href.split('#')[1],
+            navDOM: item.parentElement,
+            isSubmenu: item.href.indexOf('sub') > -1
+        };
+        menuItem.sectionDOM = document.getElementById(menuItem.id);
+        menuItem.offset = scrollSpy.getYPositionOfElement(menuItem.sectionDOM);
+        menuItem.groupHeaderDOM = menuItem.isSubmenu ? item.parentElement.parentElement.previousElementSibling : null;
+        return menuItem;
+    });
+
+
+    // scroll event
+    window.addEventListener('scroll', function(e){
+        var view = document.body.scrollTop,
+                correction = 300;
+        var result = scrollSpy.anchors.map(function(item){
+            return item.offset < view + correction  ? item : null;
+        });
+        var last = null,
+                arrLength = result.length;
+        for(var i = 0; i< arrLength; i++){
+            if( result[i] === null ){
+                if(last !== null){
+                    // sub or main ?
+                    if(last.isSubmenu){
+                        scrollSpy.setSubMenu(last.navDOM);
+                        scrollSpy.setMainMenu(last.groupHeaderDOM);
+                    }
+                    else{
+                        scrollSpy.setMainMenu(last.navDOM);
+                    }
+                }
+                break;
+            }
+            last = result[i];
+        }
+    });
+
 </script>
 </body>
 </html>
