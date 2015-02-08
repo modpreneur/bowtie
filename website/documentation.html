@@ -1493,10 +1493,6 @@
     li.active-menu + ul.sub-side-group {
         display: block;
     }
-
-    /*.sub-side {*/
-        /*display: none;*/
-    /*}*/
 </style>
 <!-- Scroll spy -->
 <script>
@@ -1512,6 +1508,7 @@
             return pos;
         },
         setMainMenu: function(element){
+            console.log('main');
             if(element === this.mainActive)
                 return;
             if(this.mainActive !== null){
@@ -1533,7 +1530,7 @@
     };
 
     // Get anchors
-    var sidebar = document.getElementsByClassName('sidebar')[0];
+    var sidebar = document.getElementById('sidebar');
     var aTagsArr = [].slice.call(sidebar.getElementsByTagName('a'));
 
     scrollSpy.anchors = aTagsArr.map(function(item){
@@ -1551,7 +1548,7 @@
 
     // scroll event
     window.addEventListener('scroll', function(e){
-        var view = document.body.scrollTop,
+        var view = document.body.scrollTop + document.documentElement.scrollTop,
                 correction = 300;
         var result = scrollSpy.anchors.map(function(item){
             return item.offset < view + correction  ? item : null;
@@ -1575,6 +1572,7 @@
             last = result[i];
         }
     });
+
 
 </script>
 </body>
