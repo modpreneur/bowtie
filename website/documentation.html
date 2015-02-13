@@ -60,11 +60,33 @@
                                 <input type="checkbox" id="show-sidebar">
                                 <ul class="sidebar">
                                     <li><a href="#grid-navigate">Grid System</a></li>
+                                    <li><a href="#font-navigate">Font</a></li>
+                                    <ul class="sub-side-group">
+                                        <li class="sub-side"><a href="#transformation-sub-navigate">Transformation</a></li>
+                                        <li class="sub-side"><a href="#decoration-sub-navigate">Decoration</a></li>
+                                        <li class="sub-side"><a href="#weight-sub-navigate">Weight</a></li>
+                                        <li class="sub-side"><a href="#font-size-sub-navigate">Font size</a></li>
+                                        <li class="sub-side"><a href="#line-height-sub-navigate">Line height</a></li>
+                                        <li class="sub-side"><a href="#heading-sub-navigate">Heading</a></li>
+                                    </ul>
+                                    <li><a href="#position-list-navigate">Position</a></li>
+                                    <ul class="sub-side-group">
+                                        <li class="sub-side"><a href="#main-position-sub-navigate">Main position</a></li>
+                                        <li class="sub-side"><a href="#float-sub-navigate">Float</a></li>
+                                        <li class="sub-side"><a href="#display-sub-navigate">Display</a></li>
+                                        <li class="sub-side"><a href="#text-align-sub-navigate">Text align</a></li>
+                                    </ul>
+                                    <li><a href="#spacing-navigate">Spacing</a></li>
+                                    <ul class="sub-side-group">
+                                        <li class="sub-side"><a href="#margin-sub-navigate">Margin</a></li>
+                                        <li class="sub-side"><a href="#padding-sub-navigate">Padding</a></li>
+                                    </ul>
                                     <li><a href="#nav-list-navigate">Nav List</a></li>
                                     <li><a href="#tabs-navigate">Tabs</a></li>
                                     <li><a href="#borders-navigate">Borders</a></li>
                                     <li><a href="#buttons-navigate">Buttons</a></li>
                                     <li><a href="#dropdown-navigate">Dropdown</a></li>
+                                    <li><a href="#images-navigate">Images</a></li>
                                     <li><a href="#tooltip-navigate">Tooltip</a></li>
                                     <li><a href="#popover-navigate">Popover</a></li>
                                     <li><a href="#alerts-navigate">Alerts</a></li>
@@ -423,6 +445,25 @@
                         </div>
 
                         <div class="section-item">
+                            <h3>Without padding</h3>
+                            <div class="row">
+                                <div class="span-none-padding-xlarge-24 border-primary margin-small-vertical padding-small-vertical">
+                                    Span without padding
+                                </div>
+                            </div>
+
+                            <div class="section-item">
+                                <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-xlarge-24</span><span class="pr">"</span><span class="el">&gt;</span>
+    ...
+<span class="el">&lt;/div&gt;</span></code>
+            </pre>
+                            </div>
+                        </div>
+
+                        <div class="section-item">
                             <h3>Offsets</h3>
                             <div class="row">
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">
@@ -438,14 +479,489 @@
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
-    span-xlarge-8
+    ...
 <span class="el">&lt;/div&gt;</span>
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8 offset-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
-    span-xlarge-8 offset-xlarge-8
+    ...
 <span class="el">&lt;/div&gt;</span></code>
             </pre>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="font-navigate">Text Font</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3 id="transformation-sub-navigate">Transformation text</h3>
+
+                            <p class="lowercase">Lowercase transform text</p>
+                            <p class="uppercase">Uppercase transform text</p>
+                            <p class="capitalize">Capitalize transform text</p>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="lowercase">Lowercase</p>
+                                        <p class="uppercase">Uppercase</p>
+                                        <p class="capitalize">Capitalize</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="lowercase"&gt;Lowercase&lt;/p&gt;
+&lt;p class="uppercase"&gt;Uppercase&lt;/p&gt;
+&lt;p class="capitalize"&gt;Capitalize&lt;/p></code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="decoration-sub-navigate">Decoration text</h3>
+
+                            <p class="underline">Underline decoration text</p>
+                            <p class="line-through">Line Through decoration text</p>
+                            <p class="overline">Overline decoration text</p>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="underline">Underline </p>
+                                        <p class="line-through">Line Through</p>
+                                        <p class="overline">Overline</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="underline"&gt;Underline&lt;/p&gt;
+&lt;p class="line-through"&gt;Line-Through&lt;/p>
+&lt;p class="overline"&gt;Overline&lt;/p&gt;</code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="weight-sub-navigate">Weight text</h3>
+
+                            <p class="normal">Normal weight text</p>
+                            <p class="bold">Bold weight text</p>
+                            <p class="lighter">Lighter weight text</p>
+                            <p class="italic">Italic weight text</p>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="normal">Normal</p>
+                                        <p class="bold">Bold</p>
+                                        <p class="lighter">Lighter</p>
+                                        <p class="italic">Italic</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="normal"&gt;Normal&lt;/p&gt;
+&lt;p class="bold"&gt;Bold&lt;/p&gt;
+&lt;p class="lighter"&gt;Lighter&lt;/p&gt;
+&lt;p class="italic"&gt;Italic&lt;/p></code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="font-size-sub-navigate">Font size</h3>
+                            <p class="font-bigger">Font size from 1px to 100px</p>
+                            <p class="font-30">- - -</p>
+                            <p class="font-10">Font size 10px text</p>
+                            <p class="font-17">Font size 17px text</p>
+                            <p class="font-21">Font size 21px text</p>
+                            <p class="font-29">Font size 29px text</p>
+                            <p class="font-40">Font size 40px text</p>
+                            <p class="font-30">- - -</p>
+                            <p class="font-smaller">Font size 85% text</p>
+                            <p class="font-bigger">Font size 125% text</p>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="font-10">Font size 10px</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="font-10"&gt;Font size 10px text&lt;/p&gt;
+&lt;p class="font-30"&gt;Font size 30px text&lt;/p&gt;
+...
+&lt;p class="font-70"&gt;Font size 70px text&lt;/p&gt;
+&lt;p class="font-100"&gt;Font size 100px text&lt;/p&gt;
+...
+&lt;p class="font-smaller"&gt;Font size 85% text&lt;/p&gt;
+&lt;p class="font-bigger"&gt;Font size 125% text&lt;/p&gt;</code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="line-height-sub-navigate">Line height</h3>
+                            <p class="font-bigger">Line height from 0.5 to 3</p>
+                            <p class="font-30">- - -</p>
+                            <p class="line-height-05">Line height 0.5</p>
+                            <p class="line-height-1">Line height 1</p>
+                            <p class="line-height-15">Line height 1.5</p>
+                            <p class="line-height-2">Line height 2</p>
+                            <p class="line-height-3">Line height 3</p>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="line-height-1">Line height 1</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="line-height-05"&gt;Line height 0.5&lt;/p&gt;
+&lt;p class="line-height-1"&gt;Line height 1&lt;/p&gt;
+...
+&lt;p class="line-height-2"&gt;Line height 2&lt;/p&gt;
+&lt;p class="line-height-3"&gt;Line height 3&lt;/p&gt;</code>
+            </pre></div>
+                        </div>
+                        <div class="section-item">
+                            <h3 id="heading-sub-navigate">Heading</h3>
+
+                            <div class="not-custom-style">
+                                <h1>Heading H1
+                                    <small>small text h1</small>
+                                </h1>
+                                <h2>Heading H2
+                                    <small>small text h2</small>
+                                </h2>
+                                <h3>Heading H3
+                                    <small>small text h3</small>
+                                </h3>
+                                <h4>Heading H4
+                                    <small>small text h4</small>
+                                </h4>
+                                <h5>Heading H5
+                                    <small>small text h5</small>
+                                </h5>
+                                <h6>Heading H6
+                                    <small>small text h6</small>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <h1>Heading H1
+                                            <small>small text h1</small>
+                                        </h1>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;h1&gt;Heading H1
+    &lt;small&gt;small text h1&lt;/small&gt;
+&lt;/h1&gt;
+    <hr/>
+&lt;h2&gt;Heading H2
+    &lt;small&gt;small text h2&lt;/small&gt;
+&lt;/h2&gt;
+    <hr/>
+&lt;h3&gt;Heading H3
+    &lt;small&gt;small text h3&lt;/small&gt;
+&lt;/h3&gt;
+    <hr/>
+&lt;h4&gt;Heading H4
+    &lt;small&gt;small text h4&lt;/small&gt;
+&lt;/h4&gt;
+    <hr/>
+&lt;h5&gt;Heading H5
+    &lt;small&gt;small text h5&lt;/small&gt;
+&lt;/h5&gt;
+    <hr/>
+&lt;h6&gt;Heading H6
+    &lt;small&gt;small text h6&lt;/small&gt;
+&lt;/h6&gt;</code>
+            </pre></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="position-list-navigate">Position</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3 id="main-position-sub-navigate">Main position</h3>
+                            <div class="relative border-warning">
+                                RELATIVE div
+                                <div class="absolute background-danger color-white" style="top: 0; right: 0;">
+                                    ABSOLUTE div, top 0, right 0
+                                </div>
+                                <div class="relative background-tertiary color-white">
+                                    RELATIVE div
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="relative">RELATIVE</div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;div class="relative border-warning"&gt;
+    RELATIVE div
+    &lt;div class="absolute background-danger color-white" style="top: 0; right: 0;"&gt;
+        ABSOLUTE div, top 0, right 0
+    &lt;/div&gt;
+    &lt;div class="relative background-tertiary color-white"&gt;
+        RELATIVE div
+    &lt;/div&gt;
+&lt;/div&gt;
+    <hr/>
+&lt;div class="relative"&gt;RELATIVE&lt;/div&gt;
+&lt;div class="absolute"&gt;ABSOLUTE&lt;/div&gt;
+&lt;div class="fixed"&gt;FIXED&lt;/div&gt;
+&lt;div class="static"&gt;STATIC&lt;/div&gt;</code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="float-sub-navigate">Float</h3>
+                            <div class="clearfix">
+                                <button class="button button-danger pull-left">Float LEFT</button>
+                                <button class="button button-warning pull-right">Float RIGHT</button>
+                            </div>
+                            <hr/>
+                            <div class="clearfix">
+                                <button class="button button-danger pull-left">Float LEFT</button>
+                                <button class="button button-danger pull-left">Float LEFT</button>
+                                <button class="button button-warning pull-right">Float RIGHT</button>
+                            </div>
+                            <hr/>
+                            <div class="clearfix">
+                                <span class="pull-left border-primary margin-right-10">span float left</span>
+                                <span class="pull-left border-primary margin-right-10">span float left</span>
+                                <span class="pull-left border-primary margin-right-10">span float left</span>
+                            </div>
+                            <hr/>
+                            <div class="clearfix">
+                                <span class="pull-right border-primary margin-left-10">span float right</span>
+                                <span class="pull-right border-primary margin-left-10">span float right</span>
+                                <span class="pull-right border-primary margin-left-10">span float right</span>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <span class="pull-left">span float left</span>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;div class="clearfix"&gt;
+    &lt;button class="button button-danger pull-left"&gt;Float LEFT&lt;/button&gt;
+    &lt;button class="button button-warning pull-right"&gt;Float RIGHT&lt;/button&gt;
+&lt;/div&gt;
+    <hr/>
+&lt;div class="clearfix"&gt;
+    &lt;button class="button button-danger pull-left"&gt;Float LEFT&lt;/button&gt;
+    &lt;button class="button button-danger pull-left"&gt;Float LEFT&lt;/button&gt;
+    &lt;button class="button button-warning pull-right"&gt;Float RIGHT&lt;/button&gt;
+&lt;/div&gt;
+    <hr/>
+&lt;div class="clearfix"&gt;
+    &lt;span class="pull-left border-primary margin-right-10"&gt;span float left&lt;/span&gt;
+    &lt;span class="pull-left border-primary margin-right-10"&gt;span float left&lt;/span&gt;
+    &lt;span class="pull-left border-primary margin-right-10"&gt;span float left&lt;/span&gt;
+&lt;/div&gt;
+    <hr/>
+&lt;div class="clearfix"&gt;
+    &lt;span class="pull-right border-primary margin-left-10"&gt;span float right&lt;/span&gt;
+    &lt;span class="pull-right border-primary margin-left-10"&gt;span float right&lt;/span&gt;
+    &lt;span class="pull-right border-primary margin-left-10"&gt;span float right&lt;/span&gt;
+&lt;/div&gt;</code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="display-sub-navigate">Display</h3>
+                            <p class="display-block border-primary">Display block</p>
+                            <p class="display-block border-primary">Display block</p>
+                            <p class="display-block border-primary">Display block</p>
+                            <hr/>
+                            <p class="display-inline-block border-primary">Display inline block</p>
+                            <p class="display-inline-block border-primary">Display inline block</p>
+                            <p class="display-inline-block border-primary">Display inline block</p>
+                            <hr/>
+                            <p class="display-inline border-primary">Display inline</p>
+                            <p class="display-inline border-primary">Display inline</p>
+                            <p class="display-inline border-primary">Display inline</p>
+
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <p class="display-block">Display block</p>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="display-block"&gt;Display block&lt;/p&gt;
+    <hr/>
+&lt;p class="display-inline-block"&gt;Display inline block&lt;/p&gt;
+    <hr/>
+&lt;p class="display-inline"&gt;Display inline&lt;/p&gt;
+    <hr/>
+&lt;p class="display-none"&gt;Display none&lt;/p&gt;</code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="text-align-sub-navigate">Text align</h3>
+                            <p class="text-left">Text left</p>
+                            <p class="text-center">Text center</p>
+                            <p class="text-right">Text right</p>
+                            <p class="text-justify">Text justify <br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto assumenda aut autem beatae cumque debitis, dolore earum eius enim et eveniet fuga id impedit omnis quasi quidem repellat totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto assumenda aut autem beatae cumque debitis, dolore earum eius enim et eveniet fuga id impedit omnis quasi quidem repellat totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto assumenda aut autem beatae cumque debitis, dolore earum eius enim et eveniet fuga id impedit omnis quasi quidem repellat totam.</p>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;p class="text-left"&gt;LEFTt&lt;/p&gt;
+    <hr/>
+&lt;p class="text-center"&gt;CENTER&lt;/p&gt;
+    <hr/>
+&lt;p class="text-right"&gt;RIGHTt&lt;/p&gt;
+    <hr/>
+&lt;p class="text-justify"&gt;JUSTIFY&lt;/p&gt;</code>
+            </pre></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="spacing-list-navigate">Spacing</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3 id="margin-sub-navigate">Margin</h3>
+                            <div class="margin-auto text-center border-tertiary" style="width: 200px;">Margin auto to center div</div>
+                            <hr/>
+                            <div class="clearfix bold">
+                                <div class="border-danger pull-left margin-right-10">
+                                    <div class="display-inline-block background-primary color-white margin-20">Magin all 20px</div>
+                                </div>
+                                <div class="border-danger pull-left margin-right-10">
+                                    <div class="display-inline-block background-primary color-white margin-top-20">Margin top 20px</div>
+                                </div>
+                                <div class="border-danger pull-left margin-right-10">
+                                    <div class="display-inline-block background-primary color-white margin-right-20">Margin right 20px</div>
+                                </div>
+                                <div class="border-danger pull-left margin-right-10">
+                                    <div class="display-inline-block background-primary color-white margin-bottom-20">Margin bottom 20px</div>
+                                </div>
+                                <div class="border-danger pull-left">
+                                    <div class="display-inline-block background-primary color-white margin-left-20">Margin left 20px</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="margin-10">Margin all 10px</div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;div class="margin-auto"&gt;Margin auto to center&lt;/div&gt;
+<hr/>&lt;div class="margin-5"&gt;Margin all 5px&lt;/div&gt;
+&lt;div class="margin-10"&gt;Margin all 10px&lt;/div&gt;
+&lt;div class="margin-15"&gt;Margin all 15px&lt;/div&gt;
+...
+&lt;div class="margin-90"&gt;Margin all 90px&lt;/div&gt;
+&lt;div class="margin-95"&gt;Margin all 95px&lt;/div&gt;
+&lt;div class="margin-100"&gt;Margin all 100px&lt;/div&gt;
+<hr/>&lt;div class="margin-negative-5"&gt;Margin all -5px&lt;/div&gt;
+&lt;div class="margin-negative-10"&gt;Margin all -10px&lt;/div&gt;
+&lt;div class="margin-negative-15"&gt;Margin all -15px&lt;/div&gt;
+...
+&lt;div class="margin-negative-90"&gt;Margin all -90px&lt;/div&gt;
+&lt;div class="margin-negative-95"&gt;Margin all -95px&lt;/div&gt;
+&lt;div class="margin-negative-100"&gt;Margin all -100px&lt;/div&gt;</code>
+            </pre></div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3 id="padding-sub-navigate">Padding</h3>
+
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="padding-10">Padding all 10px</div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                                <pre>
+<code class="language-html" data-lang="html">
+&lt;div class="padding-5"&gt;padding all 5px&lt;/div&gt;
+&lt;div class="padding-10"&gt;padding all 10px&lt;/div&gt;
+&lt;div class="padding-15"&gt;padding all 15px&lt;/div&gt;
+...
+&lt;div class="padding-90"&gt;padding all 90px&lt;/div&gt;
+&lt;div class="padding-95"&gt;padding all 95px&lt;/div&gt;
+&lt;div class="padding-100"&gt;padding all 100px&lt;/div&gt;</code>
+            </pre></div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -782,6 +1298,139 @@
         <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop3<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
         <span class="el">&lt;li&gt;</span><span class="el">&lt;a</span> <span class="pr">href="<span class="ch">#</span>"&gt;</span>drop4<span class="el">&lt;/a&gt;</span><span class="el">&lt;/li&gt;</span>
     <span class="el">&lt;/ul&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span-medium-16 offset-medium-8">
+                    <div class="section-item-main">
+                        <h2 id="images-navigate">Images</h2>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+
+                        <div class="section-item">
+                            <h3>Example</h3>
+                            <div class="row">
+                                <div class="span-medium-8">
+                                    <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                </div>
+                                <div class="span-medium-8">
+                                    <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                </div>
+                                <div class="span-medium-8">
+                                    <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                </div>
+                            </div>
+                            <div class="row margin-medium-top">
+                                <div class="image-row borders">
+                                    <div class="span-medium-8">
+                                        <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                    </div>
+                                    <div class="span-medium-8">
+                                        <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                    </div>
+                                    <div class="span-medium-8">
+                                        <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-medium-top">
+                                <div class="span-medium-8">
+                                    <div class="image-box radius-large">
+                                        <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt doloribus error eum facere, id iure maxime natus nemo nesciunt, nihil nulla optio quasi quod sint, soluta veritatis voluptas voluptates?
+                                        </p>
+                                        <a class="button display-block" href="">Button</a>
+                                    </div>
+                                </div>
+                                <div class="span-medium-8">
+                                    <div class="image-box">
+                                        <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt doloribus error eum facere, id iure maxime natus nemo nesciunt, nihil nulla optio quasi quod sint, soluta veritatis voluptas voluptates?
+                                        </p>
+                                        <div class="two-buttons">
+                                            <a class="button disable" href="">Disable</a>
+                                            <a class="button" href="">Button</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span-medium-8">
+                                    <div class="image-box">
+                                        <img src="img/devices.jpg" alt="Image responzive" class="img-responsive"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt doloribus error eum facere, id iure maxime natus nemo nesciunt, nihil nulla optio quasi quod sint, soluta veritatis voluptas voluptates?
+                                        </p>
+                                        <div class="two-buttons">
+                                            <a class="button" href="">Button</a>
+                                            <a class="button" href="">Button</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">image-row borders</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img </span><span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    <hr/>
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div </span><span class="pr">class="</span><span class="ch">image-box radius-large</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img </span><span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+            <span class="el">&lt;p&gt;</span>...<span class="el">&lt;/p&gt;</span>
+            <span class="el">&lt;a </span><span class="pr">class="</span><span class="ch">button display-block</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button<span class="el">&lt;/a&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">image-box</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+            <span class="el">&lt;p&gt;</span>...<span class="el">&lt;/p&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">two-buttons</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button disable</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Disable<span class="el">&lt;/a&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button<span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-medium-8</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">image-box</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;img</span> <span class="pr">src="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">alt="</span><span class="ch">...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">img-responsive</span><span class="pr">"</span><span class="el">/&gt;</span>
+            <span class="el">&lt;p&gt;</span>...<span class="el">&lt;/p&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">two-buttons</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;a </span><span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button<span class="el">&lt;/a&gt;</span>
+                <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button<span class="el">&lt;/a&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
 <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
@@ -1179,10 +1828,10 @@
                             </pre>
                         </div>
                         <div class="section-item">
-                            <h3>Example <small>full</small></h3>
+                            <h3>Example <small>scroll</small></h3>
                         </div>
                         <div class="section-item">
-                            <h3 id="table-full-sub-navigate">&lt;/&gt;</h3>
+                            <h3 id="table-scroll-sub-navigate">&lt;/&gt;</h3>
                             <div class="table-scroll">
                                 <table>
                                     <thead>

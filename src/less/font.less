@@ -62,28 +62,6 @@ a:hover {
   &.muted  			{color: @color-muted-hover}
 }
 
-// font align
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-// font size
-.font-smaller {
-    font-size: @font-size-small;
-}
-
-.font-bigger {
-    font-size: @font-size-large;
-}
-
 // Heading
 h1,h2,h3,h4,h5,h6 {
   padding: @font-padding-none;
@@ -92,11 +70,25 @@ h1,h2,h3,h4,h5,h6 {
   line-height: @headings-line-height;
 }
 
+// Text align
+.text-left                    { text-align: left; }
+.text-center                  { text-align: center; }
+.text-right                   { text-align: right; }
+.text-justify                 { text-align: justify; }
+
+// Font size
+.font-smaller                 { font-size: 85%; }
+.font-bigger                  { font-size: 125%; }
+
 // Transformation
 .lowercase                    { text-transform: lowercase; }
 .uppercase                    { text-transform: uppercase; }
 .capitalize                   { text-transform: capitalize; }
+
+// Decoration
 .underline                    { text-decoration: underline; }
+.overline                     { text-decoration: overline; }
+.line-through                 { text-decoration: line-through; }
 
 // Weight
 .normal                       { font-weight: normal }

@@ -65,6 +65,7 @@
   }
   .dropdown-login {
     display: table;
+    display: -moz-inline-box;
   }
   .head-content {
     display: inline-block;
@@ -139,12 +140,18 @@
     }
     label.notifi {
       line-height: 45px;
-      width: 45px;
+      min-width: 45px;
+      padding: 0 10px;
       display: inline-block;
       text-align: center;
       &:hover {
         cursor: pointer;
         opacity: 0.7;
+      }
+      a {
+        display: block;
+        margin: 0 -10px;
+        padding: 0 10px;
       }
     }
   }

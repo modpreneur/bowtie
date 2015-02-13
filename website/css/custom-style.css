@@ -258,7 +258,7 @@ a.social-popout img:hover {
 .side-bar {
     margin-bottom: 0;
     padding-bottom: 0;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 300px;
     position: static;
     background: transparent;
@@ -281,15 +281,22 @@ a.social-popout img:hover {
 .sidebar li.sub-side a {
     color: #26b2f1;
     font-size: 14px;
-    padding: 0px 15px;
+    padding: 0 15px;
     line-height: 22px;
     height: auto;
+}
+.side-bar li a, .side-bar li label {
+    height: 30px;
 }
 pre {
     border: solid 3px #e0e0e0;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 15px;
+
+    overflow: scroll;
+    width: 100%;
+    word-wrap: normal;
 }
 pre:hover {
     /*border: solid 3px transparent;*/
@@ -308,14 +315,6 @@ pre:hover {
     background-color: #d1d1d1;
     border: none;
 }
-.getting-started .section-item-main p {
-    color: #505050;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 .getting-started .section-item-main .section-item h3 {
     color: #1f3a93;
     font-size: 20px;
@@ -325,12 +324,6 @@ pre:hover {
     padding: 5px 10px;
     margin-top: 50px;
     margin-bottom: 20px;
-}
-.getting-started .section-item-main .section-item p {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 15px;
-    margin-bottom: 30px;
 }
 .getting-started .show-harmonica p {
     color: #ffffff;
@@ -393,4 +386,44 @@ pre:hover {
 }
 .copy-box a.zeroclipboard-is-hover {
    /*background-color: red;*/
+}
+.not-custom-style h1, .not-custom-style h2,
+.not-custom-style h3, .not-custom-style h4,
+.not-custom-style h5, .not-custom-style h6 {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
+    border: none !important;
+    color: black !important;
+}
+.not-custom-style h1 {
+    font-size: 32px !important;
+}
+.not-custom-style h2 {
+    font-size: 30px !important;
+}
+.not-custom-style h3 {
+    font-size: 24px !important;
+}
+.not-custom-style h4 {
+    font-size: 18px !important;
+}
+.not-custom-style h5 {
+    font-size: 14px !important;
+}
+.not-custom-style h6 {
+    font-size: 12px !important;
+}
+
+/*RESPONZIVE*/
+@media screen and (min-width: 320px) {
+    .menu.only-main-menu .sub-main-menu label.show-main-menu {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #00aeef;
+        padding: 25px;
+    }
 }
