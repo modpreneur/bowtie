@@ -416,6 +416,41 @@ pre:hover {
     font-size: 12px !important;
 }
 
+.tiecons {
+    font-size: 32px;
+}
+
+.tiecons-box {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 135px;
+    min-height: 170px;
+    margin: 10px 5px 0;
+    padding: 10px;
+    border: solid 1px #00aeef;
+}
+
+.tiecons-box:hover, .tiecons-box-hover {
+    background-color: #00aeef;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tiecons-name {
+    display: block;
+    margin-top: 10px;
+}
+
+.tiecons-box .copy-box a.button-copy {
+    bottom: -1px;
+    top: auto;
+    left: -1px;
+    right: auto;
+    width: 135px;
+}
+
 /*RESPONZIVE*/
 @media screen and (min-width: 320px) {
     .menu.only-main-menu .sub-main-menu label.show-main-menu {

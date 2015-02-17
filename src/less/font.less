@@ -1,46 +1,26 @@
 // FONT.less -> classes changing fonts
 @import "variables";
 
-.color-primary {
-  color: @color-primary;
-}
+.color-primary      {color: @color-primary;}
+.color-secondary    {color: @color-secondary;}
+.color-tertiary     {color: @color-tertiary;}
+.color-info         {color: @color-info;}
+.color-success      {color: @color-success;}
+.color-danger       {color: @color-danger;}
+.color-warning      {color: @color-warning;}
+.color-muted        {color: @text-muted;}
 
-.color-secondary {
-  color: @color-secondary;
-}
+.color-white        {color: @color-white;}
+.color-black        {color: @color-black;}
 
-.color-tertiary {
-  color: @color-tertiary;
-}
-
-.color-info {
-  color: @color-info;
-}
-
-.color-success {
-  color: @color-success;
-}
-
-.color-danger {
-  color: @color-danger;
-}
-
-.color-warning {
-  color: @color-warning;
-}
-
-.color-muted {
-  color: @text-muted;
-}
-
-.color-white {
-  color: @color-white;
-}
-
-.color-black {
-  color: @color-black;
-}
-
+.color-red          {color: @color-red;}
+.color-green        {color: @color-green;}
+.color-blue         {color: @color-blue;}
+.color-yellow       {color: @color-yellow;}
+.color-pink         {color: @color-pink;}
+.color-brown        {color: @color-brown;}
+.color-orange       {color: @color-orange;}
+.color-purple       {color: @color-purple;}
 a {
     text-decoration: none;
 }
@@ -48,7 +28,6 @@ a {
 a:hover {
     text-decoration: none;
 }
-
 a:hover {
   &.primary  		{color: @color-primary-hover}
   &.secondary  		{color: @color-secondary-hover}
@@ -60,6 +39,15 @@ a:hover {
   &.danger  		{color: @color-danger-hover}
 
   &.muted  			{color: @color-muted-hover}
+
+  &.red  			{color: @color-red-hover}
+  &.green  			{color: @color-green-hover}
+  &.blue  			{color: @color-blue-hover}
+  &.yellow  		{color: @color-yellow-hover}
+  &.pink  			{color: @color-pink-hover}
+  &.brown  			{color: @color-brown-hover}
+  &.orange  		{color: @color-orange-hover}
+  &.purple  		{color: @color-purple-hover}
 }
 
 // Heading
@@ -158,7 +146,7 @@ small,
 @iterations-font-size: 100;
 .loopingClass-font-size (@index-font) when (@index-font > 0) {
   .font-@{index-font} {
-    font-size: ~"@{index-font}px";
+    font-size: ~"@{index-font}px" !important;
   }
   .loopingClass-font-size(@index-font - 1);
 }

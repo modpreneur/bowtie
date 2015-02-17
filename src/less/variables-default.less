@@ -62,14 +62,21 @@ table {
 @color-grey:              #DDDDDD;
 @color-grey-light:        #DBDBDB;
 @color-grey-dark:         #676767;
-
 @color-grey-dark-hover:   #303030;
-
-
 @color-dark-grey:         #999999;
 @gray-light:              lighten(#000, 46.7%); // #777
+
 @color-white:             #ffffff;
 @color-black:             #000000;
+
+@color-red:               #FF0000;
+@color-green:             #00FF00;
+@color-blue:              #0000FF;
+@color-yellow:            @color-adonis;
+@color-pink:              #FF66CC;
+@color-brown:             #8A5826;
+@color-orange:            #FF9933;
+@color-purple:            #751975;
 
 // hover
 @color-primary-hover:     darken(@color-primary, 10%);
@@ -86,6 +93,15 @@ table {
 
 @color-muted-hover:       darken(@text-muted, 10%);
 @color-dark-grey-hover:   darken(#999999, 10%);
+
+@color-red-hover:               darken(@color-red, 10%);
+@color-green-hover:             darken(@color-green, 10%);
+@color-blue-hover:              darken(@color-blue, 10%);
+@color-yellow-hover:            darken(@color-yellow, 10%);
+@color-pink-hover:              darken(@color-pink, 10%);
+@color-brown-hover:             darken(@color-brown, 10%);
+@color-orange-hover:            darken(@color-orange, 10%);
+@color-purple-hover:            darken(@color-purple, 10%);
 
 
 //---------------//
@@ -314,39 +330,29 @@ body {
   }
 }
 
-.background-primary {
-  background-color: @color-primary;
-}
-.background-secondary {
-  background-color: @color-secondary;
-}
-.background-tertiary {
-  background-color: @color-tertiary;
-}
-.background-info {
-  background-color: @color-info;
-}
-.background-success {
-  background-color: @color-success;
-}
-.background-danger {
-  background-color: @color-danger;
-}
-.background-warning {
-  background-color: @color-warning;
-}
-.background-white {
-  background-color: @color-white;
-}
-.background-black {
-  background-color: @color-black;
-}
-.background-venus {
-  background-color: @color-venus;
-}
-.background-adonis {
-  background-color: @color-adonis;
-}
+.background-primary       {background-color: @color-primary;}
+.background-secondary     {background-color: @color-secondary;}
+.background-tertiary      {background-color: @color-tertiary;}
+.background-info          {background-color: @color-info;}
+.background-success       {background-color: @color-success;}
+.background-danger        {background-color: @color-danger;}
+.background-warning       {background-color: @color-warning;}
+
+.background-white         {background-color: @color-white;}
+.background-black         {background-color: @color-black;}
+
+.background-venus         {background-color: @color-venus;}
+.background-adonis        {background-color: @color-adonis;}
+
+.background-red           {background-color: @color-red;}
+.background-green         {background-color: @color-green;}
+.background-blue          {background-color: @color-blue;}
+.background-yellow        {background-color: @color-yellow;}
+.background-pink          {background-color: @color-pink;}
+.background-brown         {background-color: @color-brown;}
+.background-orange        {background-color: @color-orange;}
+.background-purple        {background-color: @color-purple;}
+
 
 .static {
   position: static !important;    //need - !important
@@ -361,9 +367,4 @@ body {
   position: relative !important;  //need - !important
 }
 
-//EXAMPLES
-/*
-<div class="background-primary">
-  background-primary
-</div>
-*/
+@import "tiecons";
