@@ -451,6 +451,11 @@ pre:hover {
     width: 135px;
 }
 
+.homepage .harmonica input:checked+.main-panel label span:before {
+    font-family: "bowtie";
+    content: "\e607";
+}
+
 /*RESPONZIVE*/
 @media screen and (min-width: 320px) {
     .menu.only-main-menu .sub-main-menu label.show-main-menu {
