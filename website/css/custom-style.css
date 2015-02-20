@@ -617,15 +617,46 @@ a.social-popout span {
 
     #left {
         position: fixed;
-        top: 28px;
+        top: 68px;
         left: 0;
         width: 100%;
+        z-index: 4;
     }
     #left .side-bar {
         width: 100%;
+        margin-top: 0;
     }
     .side-bar label.show-side {
         background-color: #1F3A93;
+        padding: 12px;
+        font-size: 20px;
+    }
+    .side-bar label.show-side span {
+        font-size: 25px;
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-top: -3px;
+    }
+    .side-bar input#show-sidebar:checked + ul.sidebar {
+        background-color: rgba(0,0,0,0.8);
+        text-align: center;
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .side-bar li a {
+        color: #ffffff;
+    }
+    li.active-menu {
+        background-color: transparent !important;
+    }
+    li.active-menu a {
+        font-weight: bold;
+    }
+    .side-bar li:hover {
+        background-color: transparent;
+    }
+    input#show-main-menu:checked + ul.main-menu {
+        box-shadow: -5px 5px 10px rgba(33, 33, 33, 0.7);
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

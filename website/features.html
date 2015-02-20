@@ -55,7 +55,7 @@
     <div id="left">
         <div id="sidebar">
             <div class="side-bar">
-                <label for="show-sidebar" class="show-side">Menu<span class="tiecons tiecons-menu-normal"></span></label>
+                <label for="show-sidebar" class="show-side">Navigation<span class="tiecons tiecons-menu-normal"></span></label>
                 <input type="checkbox" id="show-sidebar">
                 <ul class="sidebar">
                     <li><a href="#tiecons-navigate">Tiecons</a></li>
@@ -4779,32 +4779,45 @@
 <script>
     $(document).ready(function () {
 
-        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
-        $(window).scroll(function () {
-            if (screen.width > 1024) {
-                var scroll = $(this).scrollTop();
-                var height = $('#sidebar').height() + 'px';
-                if (scroll < $('#left').offset().top) {
-                    $('#sidebar').css({
-                        'position': 'absolute',
-                        'top': '0'
-                    });
-                } else if (scroll > length) {
-                    $('#sidebar').css({
-                        'position': 'fixed'
-    //                    'bottom': '0',
-    //                    'top': 'auto'
-                    });
-                } else {
-                    $('#sidebar').css({
-                        'position': 'fixed',
-                        'top': '0',
-                        'height': height
-                    });
-                }
+//        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
+//        $(window).scroll(function () {
+//            if (screen.width > 1024) {
+//                var scroll = $(this).scrollTop();
+//                var height = $('#sidebar').height() + 'px';
+//                if (scroll < $('#left').offset().top) {
+//                    $('#sidebar').css({
+//                        'position': 'absolute',
+//                        'top': '0'
+//                    });
+//                } else if (scroll > length) {
+//                    $('#sidebar').css({
+//                        'position': 'fixed'
+//                    });
+//                } else {
+//                    $('#sidebar').css({
+//                        'position': 'fixed',
+//                        'top': '0',
+//                        'height': height
+//                    });
+//                }
+//            }
+//        });
+
+    });
+    $(document).ready(function(){
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var color2 = 68 - scroll;
+            if(scroll < 68 && scroll > 0) {
+                $("#left").css({"top": color2});
+            }
+            else if(scroll <= 0) {
+                $("#left").css({"top": 68});
+            }
+            else if (scroll >= 68) {
+                $("#left").css({"top": 0});
             }
         });
-
     });
 </script>
 <!-- Scroll spy -->
