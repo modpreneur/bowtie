@@ -2175,23 +2175,24 @@
             </div>
         </div>
         <div class="clear"></div>
-        <div class="section-06">
-            <div class="container">
-                <div class="row">
-                    <div class="span-medium-8 text-right clearfix">
-                        <img src="img/logo-head-bowtie.svg" width="161" height="61">
-                        <p class="absolute">CSS Framework</p>
-                    </div>
-                    <div class="span-medium-10 offset-medium-6 clearfix">
-                        <a class="social-popout" target="_blank" href="#"><img src="img/fb.svg" /></a>
-                        <a class="social-popout" target="_blank" href="#"><img src="img/twittr.svg" /></a>
-                        <a class="social-popout" target="_blank" href="#"><img src="img/linkdn.svg" /></a>
-                        <a class="social-popout" target="_blank" href="#"><img src="img/gplus.svg" /></a>
+        <footer>
+            <div class="section-06">
+                <div class="container">
+                    <div class="row">
+                        <div class="span-medium-8 text-right clearfix">
+                            <img src="img/logo-head-bowtie.svg" width="161" height="61">
+                            <p class="absolute">CSS Framework</p>
+                        </div>
+                        <div class="span-medium-10 offset-medium-6 clearfix">
+                            <a class="social-popout" target="_blank" href="#"><img src="img/fb.svg" /></a>
+                            <a class="social-popout" target="_blank" href="#"><img src="img/twittr.svg" /></a>
+                            <a class="social-popout" target="_blank" href="#"><img src="img/linkdn.svg" /></a>
+                            <a class="social-popout" target="_blank" href="#"><img src="img/gplus.svg" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section-07">
+            <div class="section-07">
             <div class="container">
                 <div class="row">
                     <div class="span-medium-12 span-small-12">
@@ -2214,35 +2215,71 @@
                 </div>
             </div>
         </div>
+        </footer>
+
     </div>
 </div>
 
 <script src="../src/js/main.js"></script>
 <script>
-    $(document).ready(function () {
-        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
-        $(window).scroll(function () {
-            var scroll = $(this).scrollTop();
-            var height = $('#sidebar').height() + 'px';
-            if (scroll < $('#left').offset().top) {
-                $('#sidebar').css({
-                    'position': 'absolute',
-                    'top': '0'
-                });
-            } else if (scroll > length) {
-                $('#sidebar').css({
-                    'position': 'fixed'
-//                    'bottom': '0',
-//                    'top': 'auto'
-                });
-            } else {
-                $('#sidebar').css({
-                    'position': 'fixed',
-                    'top': '0',
-                    'height': height
-                });
-            }
-        });
+//    $(document).ready(function () {
+//        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
+//        $(window).scroll(function () {
+//            var scroll = $(this).scrollTop();
+//            var height = $('#sidebar').height() + 'px';
+//            if (scroll < $('#left').offset().top) {
+//                $('#sidebar').css({
+//                    'position': 'absolute',
+//                    'top': '0'
+//                });
+//            } else if (scroll > length) {
+//                $('#sidebar').css({
+//                    'position': 'fixed'
+////                    'bottom': '0',
+////                    'top': 'auto'
+//                });
+//            } else {
+//                $('#sidebar').css({
+//                    'position': 'fixed',
+//                    'top': '0',
+//                    'height': height
+//                });
+//            }
+//        });
+//    });
+</script>
+<script>
+     function getYPositionOfElement(domElement){
+        var pos = 0;
+        while (domElement != null){
+            pos += domElement.offsetTop;
+            domElement = domElement.offsetParent;
+        }
+        return pos;
+    }
+
+    var floatMenu = document.getElementById('sidebar');
+    var upperBound = document.getElementById('left');
+     var upperBoundY = getYPositionOfElement(upperBound);
+
+    var lowerBound = document.getElementsByTagName('footer')[0];
+     var lowerboundY = getYPositionOfElement(lowerBound);
+
+     var scrollHeight = document.body.scrollHeight;
+
+    window.addEventListener('scroll', function(e){
+        var view = document.body.scrollTop + document.documentElement.scrollTop;
+        if(view + floatMenu.offsetHeight >= lowerboundY){
+            floatMenu.style.position = 'absolute';
+            floatMenu.style.top = '' + (scrollHeight - (lowerBound.offsetHeight + floatMenu.offsetHeight + upperBoundY)) + 'px';
+        }else if(view >= upperBoundY){
+            floatMenu.style.position = 'fixed';
+            floatMenu.style.top = '0px';
+        } else {
+            floatMenu.style.position = '';
+            floatMenu.style.top = '';
+        }
+
     });
 </script>
 <style type="text/css">
@@ -2273,7 +2310,6 @@
             return pos;
         },
         setMainMenu: function(element){
-            console.log('main');
             if(element === this.mainActive)
                 return;
             if(this.mainActive !== null){
