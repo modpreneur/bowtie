@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bowtie</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bowtie-icons.css"/>
     <link rel="stylesheet" href="css/bowtie.css"/>
     <link rel="stylesheet" href="css/custom-style.css"/>
@@ -57,8 +58,8 @@
                     <div id="left">
                         <div id="sidebar">
                             <div class="side-bar">
-                                <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
                                 <input type="checkbox" id="show-sidebar">
+                                <label for="show-sidebar" class="show-side">Navigation<span class="bowtie bowtie-sipka"></span></label>
                                 <ul class="sidebar">
                                     <li><a href="#grid-navigate">Grid System</a></li>
                                     <li><a href="#font-navigate">Font</a></li>
@@ -2175,24 +2176,30 @@
             </div>
         </div>
         <div class="clear"></div>
-        <footer>
-            <div class="section-06">
-                <div class="container">
-                    <div class="row">
-                        <div class="span-medium-8 text-right clearfix">
-                            <img src="img/logo-head-bowtie.svg" width="161" height="61">
-                            <p class="absolute">CSS Framework</p>
-                        </div>
-                        <div class="span-medium-10 offset-medium-6 clearfix">
-                            <a class="social-popout" target="_blank" href="#"><img src="img/fb.svg" /></a>
-                            <a class="social-popout" target="_blank" href="#"><img src="img/twittr.svg" /></a>
-                            <a class="social-popout" target="_blank" href="#"><img src="img/linkdn.svg" /></a>
-                            <a class="social-popout" target="_blank" href="#"><img src="img/gplus.svg" /></a>
-                        </div>
-                    </div>
+    <div class="section-06">
+        <div class="container">
+            <div class="row">
+                <div class="span-medium-8 text-right clearfix">
+                    <span class="bowtie bowtie-logobowtie font-60 color-tertiary"><span class="absolute">CSS Framework</span></span>
+                </div>
+                <div class="span-medium-10 offset-medium-6 clearfix social-box">
+                    <a class="social-popout" target="_blank" href="#">
+                        <span class="tiecons tiecons-facebook-circle-negative"></span>
+                    </a>
+                    <a class="social-popout" target="_blank" href="#">
+                        <span class="tiecons tiecons-twitter-circle-negative"></span>
+                    </a>
+                    <a class="social-popout" target="_blank" href="#">
+                        <span class="tiecons tiecons-linkedin-circle-negative"></span>
+                    </a>
+                    <a class="social-popout" target="_blank" href="#">
+                        <span class="tiecons tiecons-google-plus-circle-negative"></span>
+                    </a>
                 </div>
             </div>
-            <div class="section-07">
+        </div>
+    </div>
+        <div class="section-07">
             <div class="container">
                 <div class="row">
                     <div class="span-medium-12 span-small-12">
@@ -2215,71 +2222,61 @@
                 </div>
             </div>
         </div>
-        </footer>
-
     </div>
 </div>
 
 <script src="../src/js/main.js"></script>
 <script>
-//    $(document).ready(function () {
-//        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
-//        $(window).scroll(function () {
-//            var scroll = $(this).scrollTop();
-//            var height = $('#sidebar').height() + 'px';
-//            if (scroll < $('#left').offset().top) {
-//                $('#sidebar').css({
-//                    'position': 'absolute',
-//                    'top': '0'
-//                });
-//            } else if (scroll > length) {
-//                $('#sidebar').css({
-//                    'position': 'fixed'
-////                    'bottom': '0',
-////                    'top': 'auto'
-//                });
-//            } else {
-//                $('#sidebar').css({
-//                    'position': 'fixed',
-//                    'top': '0',
-//                    'height': height
-//                });
-//            }
-//        });
-//    });
+    $(".button-copy").mouseenter(function () {
+        $(this).parent().parent().addClass("tiecons-box-hover");
+    }).mouseleave(function () {
+        $(this).parent().parent().removeClass("tiecons-box-hover");
+    });
 </script>
 <script>
-     function getYPositionOfElement(domElement){
-        var pos = 0;
-        while (domElement != null){
-            pos += domElement.offsetTop;
-            domElement = domElement.offsetParent;
-        }
-        return pos;
-    }
+    $(document).ready(function () {
 
-    var floatMenu = document.getElementById('sidebar');
-    var upperBound = document.getElementById('left');
-     var upperBoundY = getYPositionOfElement(upperBound);
+        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
+        $(window).scroll(function () {
+            if (screen.width > 1024) {
+                var scroll = $(this).scrollTop();
+                var height = $('#sidebar').height() + 'px';
+                if (scroll < $('#left').offset().top) {
+                    $('#sidebar').css({
+                        'position': 'absolute',
+                        'top': '0'
+                    });
+                } else if (scroll > length) {
+                    $('#sidebar').css({
+                        'position': 'fixed'
+                    });
+                } else {
+                    $('#sidebar').css({
+                        'position': 'fixed',
+                        'top': '0',
+                        'height': height
+                    });
+                }
+            }
+        });
 
-    var lowerBound = document.getElementsByTagName('footer')[0];
-     var lowerboundY = getYPositionOfElement(lowerBound);
-
-     var scrollHeight = document.body.scrollHeight;
-
-    window.addEventListener('scroll', function(e){
-        var view = document.body.scrollTop + document.documentElement.scrollTop;
-        if(view + floatMenu.offsetHeight >= lowerboundY){
-            floatMenu.style.position = 'absolute';
-            floatMenu.style.top = '' + (scrollHeight - (lowerBound.offsetHeight + floatMenu.offsetHeight + upperBoundY)) + 'px';
-        }else if(view >= upperBoundY){
-            floatMenu.style.position = 'fixed';
-            floatMenu.style.top = '0px';
-        } else {
-            floatMenu.style.position = '';
-            floatMenu.style.top = '';
-        }
-
+    });
+    $(document).ready(function(){
+        $(window).scroll(function() {
+            if (screen.width < 1024) {
+                var scroll = $(window).scrollTop();
+                var color2 = 67 - scroll;
+                if(scroll < 67 && scroll > 0) {
+                    $("#left").css({"top": color2});
+                }
+                else if(scroll <= 0) {
+                    $("#left").css({"top": 67});
+                }
+                else if (scroll >= 67) {
+                    $("#left").css({"top": 0});
+                }
+            }
+        });
     });
 </script>
 <style type="text/css">
@@ -2310,6 +2307,7 @@
             return pos;
         },
         setMainMenu: function(element){
+            console.log('main');
             if(element === this.mainActive)
                 return;
             if(this.mainActive !== null){

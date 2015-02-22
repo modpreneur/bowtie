@@ -382,7 +382,7 @@
       display: none;
       background: @color-secondary;
     }
-    input#show-sidebar:checked + ul.sidebar {
+    input#show-sidebar:checked ~ ul.sidebar {
       display: block;
     }
   }
@@ -583,7 +583,7 @@ input#sidebar-width:checked ~ .side-bar .dropdown-main-sidebar input:checked + u
   .menu .main-menu {
     display: none;
   }
-  input#show-main-menu:checked + ul.main-menu {
+  input#show-main-menu:checked ~ ul.main-menu {
     display: block;
   }
   .menu .sub-main-menu ul.main-menu li a {

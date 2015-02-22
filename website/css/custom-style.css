@@ -440,7 +440,9 @@ pre:hover {
 }
 
 .tiecons-box:hover, .tiecons-box-hover {
-    background-color: #00aeef;
+    /*background-color: #00aeef;*/
+    background-color: #1F3A93;
+    border-color: #1F3A93;
     color: #ffffff;
     font-weight: bold;
 }
@@ -614,10 +616,12 @@ a.social-popout span {
     .homepage .section-05 a:hover:before {
         content: none;
     }
-
+    .section-01 {
+        /*border-bottom: solid 5px #1F3A93;*/
+    }
     #left {
         position: fixed;
-        top: 68px;
+        top: 67px;
         left: 0;
         width: 100%;
         z-index: 4;
@@ -632,16 +636,17 @@ a.social-popout span {
         font-size: 20px;
     }
     .side-bar label.show-side span {
-        font-size: 25px;
+        font-size: 20px;
         vertical-align: middle;
         margin-left: 15px;
         margin-top: -3px;
     }
-    .side-bar input#show-sidebar:checked + ul.sidebar {
-        background-color: rgba(0,0,0,0.8);
+    .side-bar input#show-sidebar:checked ~ ul.sidebar {
+        background-color: #1F3A93;
         text-align: center;
-        max-height: 300px;
+        height: 250px;
         overflow: scroll;
+        border-top: solid 1px #ffffff;
     }
     .side-bar li a {
         color: #ffffff;
@@ -655,8 +660,36 @@ a.social-popout span {
     .side-bar li:hover {
         background-color: transparent;
     }
-    input#show-main-menu:checked + ul.main-menu {
+    input#show-main-menu:checked ~ ul.main-menu {
         box-shadow: -5px 5px 10px rgba(33, 33, 33, 0.7);
+    }
+    input#show-sidebar:checked ~ label span.bowtie-sipka:before {
+        content: "\e607";
+    }
+    .jumbotron {
+        text-align: center;
+    }
+    .jumbotron .text-right {
+        text-align: center;
+    }
+    .jumbotron img {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .getting-started .section-02 .jumbotron {
+        padding-top: 50px;
+    }
+    .getting-started .section-02 p {
+        font-size: 23px;
+    }
+    .getting-started .section-02 span.first-text {
+        font-size: 35px;
+    }
+    .tiecons-box {
+        width: 120px;
+    }
+    .tiecons-box .copy-box a.button-copy {
+        width: 120px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
