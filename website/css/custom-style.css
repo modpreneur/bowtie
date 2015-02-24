@@ -120,9 +120,23 @@ a.social-popout span {
 }
 
 .homepage .section-02 {
-    background-image: url(../img/section-02-bg.jpg);
-    background-repeat: no-repeat;
+    /*background-image: url(../img/section-02-bg.jpg);*/
+    /*background-repeat: no-repeat;*/
     margin-bottom: 105px;
+}
+.homepage .section-02 {
+    background-image: url(../img/head-icons/head-bg-icon-01.png),url(../img/head-icons/head-bg-icon-03.png),url(../img/head-icons/head-bg-icon-04.png),url(../img/head-icons/head-bg-icon-05.png),url(../img/head-icons/head-bg-icon-06.png),url(../img/head-icons/head-bg-icon-07.png),url(../img/head-icons/head-bg-icon-09.png),url(../img/head-icons/head-bg-icon-10.png),url(../img/section-02-bg.jpg);
+    background-position:    30% 10%,
+                            15% 30%,
+                            85% 30%,
+                            5% 10%,
+                            100% 10%,
+                            -100px 30%,
+                            105% 30%,
+                            70% 10%,
+                            left top;
+    background-repeat: no-repeat;
+    background-color: transparent;
 }
 .homepage .section-02 .jumbotron img.logo-bowtie {
     margin-top: 61px;
@@ -193,7 +207,9 @@ a.social-popout span {
     margin: 35px 0;
 }
 .homepage .section-04 {
+    background-image: url("../img/head-icons/bg-FAQ-icons-all.png");
     background-color: #f0f0f0;
+    background-size: contain;
     padding-bottom: 135px;
 }
 .homepage .section-04 .harmonica p.harmonica-head {
@@ -498,7 +514,7 @@ a.social-popout span {
         right: -20px;
         line-height: 1;
         margin: 0;
-        padding: 18px 15px 16px 20px;
+        padding: 18px 15px 17px 20px;
         background-color: #00aeef;
     }
     .section-01 .menu ul.main-menu li a.active, .section-01 .menu ul.main-menu li a:hover {
@@ -619,6 +635,111 @@ a.social-popout span {
     .section-01 {
         /*border-bottom: solid 5px #1F3A93;*/
     }
+    input#show-main-menu:checked ~ ul.main-menu {
+        box-shadow: -5px 5px 10px rgba(33, 33, 33, 0.7);
+    }
+    input#show-sidebar:checked ~ label span.bowtie-sipka:before {
+        content: "\e607";
+    }
+    .jumbotron {
+        text-align: center;
+    }
+    .jumbotron .text-right {
+        text-align: center;
+    }
+    .jumbotron img {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .getting-started .section-02 .jumbotron {
+        padding-top: 50px;
+    }
+    .getting-started .section-02 p {
+        font-size: 23px;
+    }
+    .getting-started .section-02 span.first-text {
+        font-size: 35px;
+    }
+    .getting-started footer .section-07 {
+        height: auto;
+    }
+    .tiecons-box {
+        width: 120px;
+    }
+    .tiecons-box .copy-box a.button-copy {
+        width: 120px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .homepage .section-03 {
+        height: 100px;
+    }
+    .homepage .section-06 {
+        height: 150px;
+    }
+    .section-07 {
+        height: 85px;
+    }
+    .homepage .section-03 .button-primary {
+        margin-top: 30px;
+    }
+
+    .section-01 {
+        height: 68px;
+    }
+    .section-01 .menu .head a span.bowtie {
+        font-size: 45px !important;
+    }
+    .section-01 .menu ul.main-menu li a {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        line-height: 1;
+    }
+    .section-01 .menu ul.main-menu li {
+        padding-top: 28px;
+        padding-bottom: 22px;
+    }
+    .menu.only-main-menu .main-menu {
+        margin-right: 0;
+    }
+    .getting-started .section-02 p {
+        margin-top: 0;
+        font-size: 24px;
+    }
+    .section-02 .jumbotron span.bowtie.bowtie-logoiconbowtie {
+        font-size: 147px !important;
+        line-height: 1.3 !important;
+    }
+    .getting-started .section-02 {
+        min-height: 290px;
+    }
+    .getting-started footer .section-06 {
+        height: 162px;
+    }
+    a.social-popout {
+        margin: 0px 5px 10px;
+    }
+}
+@media screen and (width:768px) {
+    .getting-started .section-02 p {
+        margin-top: 20px;
+    }
+    .section-01 .menu ul.main-menu li {
+        margin: 0;
+        padding: 0;
+    }
+    .section-01 .menu ul.main-menu li a {
+        padding: 20px 0px 20px 20px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    #sidebar {
+        width: 100%;
+    }
     #left {
         position: fixed;
         top: 67px;
@@ -660,49 +781,34 @@ a.social-popout span {
     .side-bar li:hover {
         background-color: transparent;
     }
-    input#show-main-menu:checked ~ ul.main-menu {
-        box-shadow: -5px 5px 10px rgba(33, 33, 33, 0.7);
+}
+@media screen and (min-width: 1024px) {
+    .side-bar ul.sidebar {
+        display: block;
+        background: transparent;
     }
-    input#show-sidebar:checked ~ label span.bowtie-sipka:before {
-        content: "\e607";
-    }
-    .jumbotron {
-        text-align: center;
-    }
-    .jumbotron .text-right {
-        text-align: center;
-    }
-    .jumbotron img {
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
-    .getting-started .section-02 .jumbotron {
-        padding-top: 50px;
-    }
-    .getting-started .section-02 p {
-        font-size: 23px;
-    }
-    .getting-started .section-02 span.first-text {
-        font-size: 35px;
-    }
-    .tiecons-box {
-        width: 120px;
-    }
-    .tiecons-box .copy-box a.button-copy {
-        width: 120px;
+    .side-bar label.show-side {
+        display: none;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .homepage .section-03 {
-        height: 100px;
-    }
-    .homepage .section-06 {
-        height: 150px;
-    }
-    .section-07 {
-        height: 85px;
-    }
-    .homepage .section-03 .button-primary {
-        margin-top: 30px;
+.tiecons-facebook-circle-negative:hover {
+    color: #3b5998;
+}
+.tiecons-twitter-circle-negative:hover {
+    color: #00aced;
+}
+.tiecons-linkedin-circle-negative:hover {
+    color: #007bb6;
+}
+.tiecons-google-plus-circle-negative:hover {
+    color: #dd4b39;
+}
+.section-07 .navbar li:nth-of-type(2n) {
+    border-left: solid 2px;
+    border-right: solid 2px;
+}
+@media screen and (max-width: 1199px) {
+    .homepage .section-02 {
+        background: url(../img/section-02-bg.jpg) no-repeat;
     }
 }
