@@ -2176,7 +2176,7 @@
             </div>
         </div>
     <div class="clear"></div>
-    <footer>
+    <footer id="footer">
         <div class="section-06">
             <div class="container">
                 <div class="row">
@@ -2229,67 +2229,8 @@
 </div>
 
 <script src="../src/js/main.js"></script>
-<script>
-    //    $(document).ready(function () {
-    //        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
-    //        $(window).scroll(function () {
-    //            var scroll = $(this).scrollTop();
-    //            var height = $('#sidebar').height() + 'px';
-    //            if (scroll < $('#left').offset().top) {
-    //                $('#sidebar').css({
-    //                    'position': 'absolute',
-    //                    'top': '0'
-    //                });
-    //            } else if (scroll > length) {
-    //                $('#sidebar').css({
-    //                    'position': 'fixed'
-    ////                    'bottom': '0',
-    ////                    'top': 'auto'
-    //                });
-    //            } else {
-    //                $('#sidebar').css({
-    //                    'position': 'fixed',
-    //                    'top': '0',
-    //                    'height': height
-    //                });
-    //            }
-    //        });
-    //    });
-</script>
-<script>
-    function getYPositionOfElement(domElement){
-        var pos = 0;
-        while (domElement != null){
-            pos += domElement.offsetTop;
-            domElement = domElement.offsetParent;
-        }
-        return pos;
-    }
 
-    var floatMenu = document.getElementById('sidebar');
-    var upperBound = document.getElementById('left');
-    var upperBoundY = getYPositionOfElement(upperBound);
-
-    var lowerBound = document.getElementsByTagName('footer')[0];
-    var lowerboundY = getYPositionOfElement(lowerBound);
-
-    var scrollHeight = document.body.scrollHeight;
-
-    window.addEventListener('scroll', function(e){
-        var view = document.body.scrollTop + document.documentElement.scrollTop;
-        if(view + floatMenu.offsetHeight >= lowerboundY){
-            floatMenu.style.position = 'absolute';
-            floatMenu.style.top = '' + (scrollHeight - (lowerBound.offsetHeight + floatMenu.offsetHeight + upperBoundY)) + 'px';
-        }else if(view >= upperBoundY){
-            floatMenu.style.position = 'fixed';
-            floatMenu.style.top = '0px';
-        } else {
-            floatMenu.style.position = '';
-            floatMenu.style.top = '';
-        }
-
-    });
-</script>
+<!-- Scroll spy -->
 <style type="text/css">
     li.active-menu {
         background-color: #ffffff;
@@ -2304,103 +2245,7 @@
         display: block;
     }
 </style>
-<!-- Scroll spy -->
-<script>
-    var scrollSpy = {
-        mainActive: null,
-        subActive: null,
-        getYPositionOfElement : function(domElement){
-            var pos = 0;
-            while (domElement != null){
-                pos += domElement.offsetTop;
-                domElement = domElement.offsetParent;
-            }
-            return pos;
-        },
-        setMainMenu: function(element){
-            if(element === this.mainActive)
-                return;
-            if(this.mainActive !== null){
-                this.mainActive.classList.remove('active-menu');
-                this.mainActive.classList.remove('active-menu');
-            }
-            this.mainActive = element;
-            this.mainActive.classList.add('active-menu');
-        },
-        setSubMenu: function(element){
-            if(element === this.subActive)
-                return;
-            if(this.subActive !== null){
-                this.subActive.classList.remove('active-menu');
-            }
-            this.subActive = element;
-            this.subActive.classList.add('active-menu');
-        }
-    };
+<script src="../src/js/scrollSpy.js"></script>
 
-    $(document).ready(function(){
-        $(window).scroll(function() {
-            if (screen.width < 1024) {
-                var scroll = $(window).scrollTop();
-                var color2 = 67 - scroll;
-                if(scroll < 67 && scroll > 0) {
-                    $("#left").css({"top": color2});
-                }
-                else if(scroll <= 0) {
-                    $("#left").css({"top": 67});
-                }
-                else if (scroll >= 67) {
-                    $("#left").css({"top": 0});
-                }
-            }
-        });
-    });
-
-    // Get anchors
-    var sidebar = document.getElementById('sidebar');
-    var aTagsArr = [].slice.call(sidebar.getElementsByTagName('a'));
-
-    scrollSpy.anchors = aTagsArr.map(function(item){
-        var menuItem = {
-            id: item.href.split('#')[1],
-            navDOM: item.parentElement,
-            isSubmenu: item.href.indexOf('sub') > -1
-        };
-        menuItem.sectionDOM = document.getElementById(menuItem.id);
-        menuItem.offset = scrollSpy.getYPositionOfElement(menuItem.sectionDOM);
-        menuItem.groupHeaderDOM = menuItem.isSubmenu ? item.parentElement.parentElement.previousElementSibling : null;
-        return menuItem;
-    });
-
-
-    // scroll event
-    window.addEventListener('scroll', function(e){
-        var view = document.body.scrollTop + document.documentElement.scrollTop,
-                correction = 300;
-        var result = scrollSpy.anchors.map(function(item){
-            return item.offset < view + correction  ? item : null;
-        });
-        var last = null,
-                arrLength = result.length;
-        for(var i = 0; i< arrLength; i++){
-            if( result[i] === null ){
-                if(last !== null){
-                    // sub or main ?
-                    if(last.isSubmenu){
-                        scrollSpy.setSubMenu(last.navDOM);
-                        scrollSpy.setMainMenu(last.groupHeaderDOM);
-                    }
-                    else{
-                        scrollSpy.setMainMenu(last.navDOM);
-                    }
-                }
-                break;
-            }
-            last = result[i];
-        }
-    });
-
-
-</script>
 </body>
 </html>
