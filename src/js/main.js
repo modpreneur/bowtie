@@ -22,41 +22,37 @@ function getYPositionOfElement(domElement){
 }
 
 /** Sticky menu **/
-var floatMenu = document.getElementById('sidebar'),
-    upperBound = document.getElementById('left'),
-    lowerBound = document.getElementById('footer');
-var upperBoundY = getYPositionOfElement(upperBound),
-    lowerBoundY = getYPositionOfElement(lowerBound);
+var floatMenu = document.getElementById('left'),
+    topBound = document.getElementById('top-bound'),
+    bottomBound = document.getElementById('footer');
+var topBoundY = getYPositionOfElement(topBound),
+    bottomBoundY = getYPositionOfElement(bottomBound);
 
-window.addEventListener('scroll', function(e){
+var marginCorrection = 40;
+
+function stickyMenuHandler(e){
     var view = document.body.scrollTop + document.documentElement.scrollTop;
-    if(view + floatMenu.offsetHeight + 20 >= lowerBoundY){
-        floatMenu.style.position = 'absolute';
-        floatMenu.style.top = '' + (document.body.scrollHeight - (lowerBound.offsetHeight + floatMenu.offsetHeight + upperBoundY)) + 'px';
-    }else if(view >= upperBoundY){
-        floatMenu.style.position = 'fixed';
-        floatMenu.style.top = '0px';
+    if(window.innerWidth <=1024){
+        // Mobile / tablet - 67 is height of main-menu bar
+        scrollSpy.stop();
+        floatMenu.style.top = view >= 67 ? '0px' : (67-view) + 'px';
     } else {
-        floatMenu.style.position = '';
-        floatMenu.style.top = '';
-    }
-});
-
-/** Responsive menu **/
-$(document).ready(function(){
-    $(window).scroll(function() {
-        if (screen.width < 1024) {
-            var scroll = $(window).scrollTop();
-            var color2 = 67 - scroll;
-            if(scroll < 67 && scroll > 0) {
-                $("#left").css({"top": color2});
-            }
-            else if(scroll <= 0) {
-                $("#left").css({"top": 67});
-            }
-            else if (scroll >= 67) {
-                $("#left").css({"top": 0});
-            }
+        // PC
+        scrollSpy.start();
+        if(view + floatMenu.offsetHeight + 20 >= bottomBoundY){
+            floatMenu.style.position = 'absolute';
+            floatMenu.style.top = '' + (document.body.scrollHeight - (bottomBound.offsetHeight + floatMenu.offsetHeight + topBoundY + marginCorrection)) + 'px';
+            console.log(bottomBound.offsetHeight);
+        }else if(view >= topBoundY){
+            floatMenu.style.position = 'fixed';
+            floatMenu.style.top = '0px';
+        } else {
+            floatMenu.style.position = '';
+            floatMenu.style.top = '';
         }
-    });
-});
+    }
+}
+
+window.addEventListener('scroll', stickyMenuHandler);
+// initialize
+stickyMenuHandler();

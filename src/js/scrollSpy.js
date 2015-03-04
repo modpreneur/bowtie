@@ -1,6 +1,7 @@
 var scrollSpy = {
     mainActive: null,
     subActive: null,
+    running: false,
 
     getYPositionOfElement : function(domElement){
         var pos = 0;
@@ -83,6 +84,13 @@ var scrollSpy = {
         }
     },
 
+    stop: function(){
+        if(this.running) {
+            window.removeEventListener('scroll', this.handleScroll);
+            this.running = false;
+        }
+    },
+
     /**
      * Turn on scrollSpy
      * @param anchors - array of anchor objects
@@ -97,10 +105,14 @@ var scrollSpy = {
      * }
      */
     start: function(anchors){
-        this.anchors = !!anchors ? anchors : this.preLoad();
+        if(this.running){return;}
+        if(!this.anchors) {
+            this.anchors = !!anchors ? anchors : this.preLoad();
+        }
         // attach scroll event
         window.addEventListener('scroll', this.handleScroll);
+        this.running = true;
+        //init
+        this.handleScroll();
     }
 };
-
-scrollSpy.start();
