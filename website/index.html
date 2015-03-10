@@ -71,7 +71,7 @@
                     <p>What else Bowtie does?</p>
                 </div>
                 <div class="span-medium-12 text-left">
-                    <a class="button button-primary" href="#">More features &raquo;</a>
+                    <a class="button button-primary" href="features.html">More features &raquo;</a>
                 </div>
             </div>
         </div>
@@ -197,5 +197,21 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    var allRadios = document.getElementsByName('list');
+    var booRadio;
+    var x = 0;
+    for(x = 0; x < allRadios.length; x++){
+
+        allRadios[x].onclick = function() {
+            if(booRadio == this){
+                this.checked = false;
+                booRadio = null;
+            }else{
+                booRadio = this;
+            }
+        };
+    }
+</script>
 </body>
 </html>

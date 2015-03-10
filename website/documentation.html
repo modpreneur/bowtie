@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/bowtie-icons.css"/>
     <link rel="stylesheet" href="css/bowtie.css"/>
     <link rel="stylesheet" href="css/custom-style.css"/>
-    <!--<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="../src/js/ZeroClipboard.js"></script>
 </head>
@@ -52,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container padding-bottom-50">
             <div class="row">
                 <div class="span-large-8">
                     <div id="top-bound"></div>
@@ -63,6 +62,11 @@
                                 <label for="show-sidebar" class="show-side">Navigation<span class="bowtie bowtie-sipka"></span></label>
                                 <ul class="sidebar">
                                     <li><a href="#grid-navigate">Grid System</a></li>
+                                    <ul class="sub-side-group">
+                                        <li class="sub-side"><a href="#nonresponzive-sub-navigate">Nonresponzive</a></li>
+                                        <li class="sub-side"><a href="#without-padding-sub-navigate">Without padding</a></li>
+                                        <li class="sub-side"><a href="#offsets-sub-navigate">Offsets</a></li>
+                                    </ul>
                                     <li><a href="#font-navigate">Font</a></li>
                                     <ul class="sub-side-group">
                                         <li class="sub-side"><a href="#transformation-sub-navigate">Transformation</a></li>
@@ -89,6 +93,11 @@
                                     <li><a href="#tabs-navigate">Tabs</a></li>
                                     <li><a href="#borders-navigate">Borders</a></li>
                                     <li><a href="#buttons-navigate">Buttons</a></li>
+                                    <ul class="sub-side-group">
+                                        <li class="sub-side"><a href="#default-buttons-sub-navigate">Default</a></li>
+                                        <li class="sub-side"><a href="#size-sub-navigate">Size</a></li>
+                                        <li class="sub-side"><a href="#group-sub-navigate">Group</a></li>
+                                    </ul>
                                     <li><a href="#dropdown-navigate">Dropdown</a></li>
                                     <li><a href="#images-navigate">Images</a></li>
                                     <li><a href="#tooltip-navigate">Tooltip</a></li>
@@ -102,7 +111,8 @@
                                         <li class="sub-side"><a href="#table-dropdown-sub-navigate">Dropdown</a></li>
                                     </ul>
                                     <li><a href="#pagination-navigate">Pagination & Pager</a></li>
-                                    <li><a href="#-navigate">Side</a></li>
+                                    <li><a href="#forms-navigate">Forms</a></li>
+                                    <!--<li><a href="#-navigate">Side</a></li>-->
                                     <li><a href="#">Back to Top</a></li>
                                 </ul>
                             </div>
@@ -418,7 +428,7 @@
                         </div>
 
                         <div class="section-item">
-                            <h3>Nonresponzive</h3>
+                            <h3 id="nonresponzive-sub-navigate">Nonresponzive</h3>
                             <div class="row">
                                 <div class="span-24 border-primary text-center margin-small-vertical padding-small-vertical">
                                     span-24
@@ -449,7 +459,7 @@
                         </div>
 
                         <div class="section-item">
-                            <h3>Without padding</h3>
+                            <h3 id="without-padding-sub-navigate">Without padding</h3>
                             <div class="row">
                                 <div class="span-none-padding-xlarge-24 border-primary margin-small-vertical padding-small-vertical">
                                     Span without padding
@@ -468,7 +478,7 @@
                         </div>
 
                         <div class="section-item">
-                            <h3>Offsets</h3>
+                            <h3 id="offsets-sub-navigate">Offsets</h3>
                             <div class="row">
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">
                                     span-xlarge-8
@@ -1106,6 +1116,31 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="tabs">
+                                            <div class="tabs-border">
+                                                <div class="tab">
+                                                    <input type="radio" id="tab-1" name="tab-group-1">
+                                                    <label for="tab-1">List 1</label>
+                                                    <div class="content">
+                                                        ... 01
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab">
+                                                    <input type="radio" id="tab-2" name="tab-group-1">
+                                                    <label for="tab-2">List 2</label>
+                                                    <div class="content">
+                                                        ... 02
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tabs</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1145,6 +1180,7 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1203,7 +1239,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
 
                         <div class="section-item fix-buttons">
-                            <h3>Example <small>default buttons</small></h3>
+                            <h3 id="default-buttons-sub-navigate">Example <small>default buttons</small></h3>
                             <a class="button" href="#">Default</a>
                             <a class="button button-primary" href="#">Button Primary</a>
                             <a class="button button-secondary" href="#">Button Secondary</a>
@@ -1215,6 +1251,13 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <a class="button button-primary" href="#">Button Primary</a>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Default<span class="el">&lt;/a&gt;</span>
@@ -1226,10 +1269,11 @@
 <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-warning</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Warning<span class="el">&lt;/a&gt;</span>
 <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-danger</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button Danger<span class="el">&lt;/a&gt;</span></code>
             </pre>
+                                </div>
                         </div>
 
                         <div class="section-item fix-buttons">
-                            <h3>Example <small>size</small></h3>
+                            <h3 id="size-sub-navigate">Example <small>size</small></h3>
                             <a class="button button-primary button-mini" href="#">Mini</a>
                             <a class="button button-secondary button-small" href="#">Small</a>
                             <a class="button button-tertiary button-medium" href="#">Medium</a>
@@ -1238,6 +1282,13 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <a class="button button-primary button-mini" href="#">Mini</a>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-primary button-mini</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Mini<span class="el">&lt;/a&gt;</span>
@@ -1246,10 +1297,11 @@
 <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button button-info button-large</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Large<span class="el">&lt;/a&gt;</span>
 <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">button</span><span class="pr">"</span> <span class="pr">href=""</span><span class="el">&gt;</span>Button<span class="el">&lt;/a&gt;</span></code>
             </pre>
+                                </div>
                         </div>
 
                         <div class="section-item fix-buttons">
-                            <h3>Example <small>group</small></h3>
+                            <h3 id="group-sub-navigate">Example <small>group</small></h3>
                             <div class="button-group">
                                 <a class="button button-medium button-danger" href="">
                                     <span class="tiecons tiecons-exclamation-mark-circle-negative"></span>
@@ -1278,6 +1330,20 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="button-group">
+                                            <a class="button button-medium button-primary" href="">
+                                                <span class="tiecons tiecons-view"></span>
+                                            </a>
+                                            <a class="button button-medium button-primary" href="">
+                                                <span class="tiecons tiecons-settings-two-wheels"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">button-group</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1307,6 +1373,7 @@
     <span class="el">&lt;/a&gt;</span>
 <span class="el">&lt;/div&gt;</span></code>
             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1347,6 +1414,22 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="dropdown-main">
+                                            <label for="show-drop1" class="show-drop">
+                                                <span class="button button-tertiary">DropDown</span>
+                                            </label>
+                                            <input type="checkbox" id="show-drop1" role="button">
+                                            <ul id="dropdown" class="drop">
+                                                <li><a href="#">drop1</a></li>
+                                                <li><a href="#">drop2</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">dropdown-main</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1376,6 +1459,7 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1450,6 +1534,22 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="span-medium-8">
+                                            <div class="image-box">
+                                                <img src="" alt="Image" class="img-responsive"/>
+                                                <p>...</p>
+                                                <div class="two-buttons">
+                                                    <a class="button disable" href="">Disable</a>
+                                                    <a class="button" href="">Button</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1509,6 +1609,7 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1567,6 +1668,17 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <a href="#" class="button button-info tooltip margin-small-horizontal">
+                                            TOP at BUTTON <span class="tooltip-hover">[?]<div class="tooltip-top">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi facere laudantium.
+                                        </div></span>
+                                        </a>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 /*TOP tooltip, just text*/
@@ -1620,6 +1732,7 @@
 <span class="el">&lt;/a&gt;</span>
 </code>
             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1667,6 +1780,21 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="popover">
+                                            <label for="popover-top" class="button tooltip-click">
+                                                TOP
+                                            </label>
+                                            <input type="checkbox" id="popover-top" role="button" class="checkbox-none">
+                                            <div class="popover-top">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum doloremque facilis.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">popover</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1710,6 +1838,7 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1757,6 +1886,24 @@
                                     <strong>Info!</strong> alert
                                 </div>
                             </div>
+                            </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <input id="close-alert-danger" type="radio" class="checkbox-none" />
+                                        <div class="alert alert-danger">
+                                            <label for="close-alert-danger" class="alert-label">
+                                                <span class="tiecons tiecons-cross-radius"></span>
+                                            </label>
+                                            <div class="show-alert">
+                                                <strong>Danger!</strong> alert
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">close-alert-danger</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">checkbox-none</span><span class="pr">"</span> <span class="el">/&gt;</span>
@@ -1800,6 +1947,7 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1811,9 +1959,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
                         <div class="section-item">
                             <h3 id="table-full-scroll-sub-navigate">Example <small>full scroll</small></h3>
-                        </div>
-                        <div class="section-item">
-                            <h3>&lt;/&gt;</h3>
                             <div class="table-scroll-full">
                                 <table>
                                     <thead>
@@ -1821,6 +1966,12 @@
                                         <th>MAIN 01</th>
                                         <th>MAIN 02</th>
                                         <th>MAIN 03</th>
+                                        <th>MAIN 04</th>
+                                        <th>MAIN 05</th>
+                                        <th>MAIN 06</th>
+                                        <th>MAIN 07</th>
+                                        <th>MAIN 07</th>
+                                        <th>MAIN 09</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -1828,20 +1979,76 @@
                                         <td>xxx 01</td>
                                         <td>xxx 02</td>
                                         <td>xxx 03</td>
+                                        <td>xxx 04</td>
+                                        <td>xxx 05</td>
+                                        <td>xxx 06</td>
+                                        <td>xxx 07</td>
+                                        <td>xxx 08</td>
+                                        <td>xxx 09</td>
                                     </tr>
                                     <tr>
                                         <td>xxx 11</td>
                                         <td>xxx 12</td>
                                         <td>xxx 13</td>
+                                        <td>xxx 14</td>
+                                        <td>xxx 15</td>
+                                        <td>xxx 16</td>
+                                        <td>xxx 17</td>
+                                        <td>xxx 18</td>
+                                        <td>xxx 19</td>
                                     </tr>
                                     <tr>
                                         <td>xxx 21</td>
                                         <td>xxx 22</td>
                                         <td>xxx 23</td>
+                                        <td>xxx 24</td>
+                                        <td>xxx 25</td>
+                                        <td>xxx 26</td>
+                                        <td>xxx 27</td>
+                                        <td>xxx 28</td>
+                                        <td>xxx 29</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="table-scroll-full">
+                                            <table>
+                                                <thead>
+                                                <tr>
+                                                    <th>MAIN 01</th>
+                                                    <th>MAIN 02</th>
+                                                    <th>MAIN 03</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>xxx 01</td>
+                                                    <td>xxx 02</td>
+                                                    <td>xxx 03</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxx 11</td>
+                                                    <td>xxx 12</td>
+                                                    <td>xxx 13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxx 21</td>
+                                                    <td>xxx 22</td>
+                                                    <td>xxx 23</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-scroll-full</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1855,31 +2062,29 @@
         <span class="el">&lt;/thead&gt;</span>
         <span class="el">&lt;tbody&gt;</span>
         <span class="el">&lt;tr&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 01<span class="el">&lt;/th&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 02<span class="el">&lt;/th&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 03<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 01<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 02<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 03<span class="el">&lt;/td&gt;</span>
         <span class="el">&lt;/tr&gt;</span>
         <span class="el">&lt;tr&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 11<span class="el">&lt;/th&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 12<span class="el">&lt;/th&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 13<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 11<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 12<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 13<span class="el">&lt;/td&gt;</span>
         <span class="el">&lt;/tr&gt;</span>
         <span class="el">&lt;tr&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 21<span class="el">&lt;/th&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 22<span class="el">&lt;/th&gt;</span>
-            <span class="el">&lt;td&gt;</span>xxx 23<span class="el">&lt;/th&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 21<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 22<span class="el">&lt;/td&gt;</span>
+            <span class="el">&lt;td&gt;</span>xxx 23<span class="el">&lt;/td&gt;</span>
         <span class="el">&lt;/tr&gt;</span>
         <span class="el">&lt;/tbody&gt;</span>
     <span class="el">&lt;/table&gt;</span>
 <span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
                         <div class="section-item">
                             <h3 id="table-full-height-sub-navigate">Example <small>full height</small></h3>
-                        </div>
-                        <div class="section-item">
-                            <h3>&lt;/&gt;</h3>
                             <div class="table-on-height">
                                 <table>
                                     <thead>
@@ -1908,6 +2113,16 @@
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
     <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-on-height</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -1944,12 +2159,10 @@
     <span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
                         <div class="section-item">
-                            <h3>Example <small>scroll</small></h3>
-                        </div>
-                        <div class="section-item">
-                            <h3 id="table-scroll-sub-navigate">&lt;/&gt;</h3>
+                            <h3 id="table-scroll-sub-navigate">Example <small>scroll</small></h3>
                             <div class="table-scroll">
                                 <table>
                                     <thead>
@@ -1957,6 +2170,12 @@
                                         <th>MAIN 01</th>
                                         <th>MAIN 02</th>
                                         <th>MAIN 03</th>
+                                        <th>MAIN 04</th>
+                                        <th>MAIN 05</th>
+                                        <th>MAIN 06</th>
+                                        <th>MAIN 07</th>
+                                        <th>MAIN 08</th>
+                                        <th>MAIN 09</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -1964,20 +2183,76 @@
                                         <td>xxx 01</td>
                                         <td>xxx 02</td>
                                         <td>xxx 03</td>
+                                        <td>xxx 04</td>
+                                        <td>xxx 05</td>
+                                        <td>xxx 06</td>
+                                        <td>xxx 07</td>
+                                        <td>xxx 08</td>
+                                        <td>xxx 09</td>
                                     </tr>
                                     <tr>
                                         <td>xxx 11</td>
                                         <td>xxx 12</td>
                                         <td>xxx 13</td>
+                                        <td>xxx 14</td>
+                                        <td>xxx 15</td>
+                                        <td>xxx 16</td>
+                                        <td>xxx 17</td>
+                                        <td>xxx 18</td>
+                                        <td>xxx 19</td>
                                     </tr>
                                     <tr>
                                         <td>xxx 21</td>
                                         <td>xxx 22</td>
                                         <td>xxx 23</td>
+                                        <td>xxx 24</td>
+                                        <td>xxx 25</td>
+                                        <td>xxx 26</td>
+                                        <td>xxx 27</td>
+                                        <td>xxx 28</td>
+                                        <td>xxx 29</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="table-scroll">
+                                            <table>
+                                                <thead>
+                                                <tr>
+                                                    <th>MAIN 01</th>
+                                                    <th>MAIN 02</th>
+                                                    <th>MAIN 03</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>xxx 01</td>
+                                                    <td>xxx 02</td>
+                                                    <td>xxx 03</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxx 11</td>
+                                                    <td>xxx 12</td>
+                                                    <td>xxx 13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxx 21</td>
+                                                    <td>xxx 22</td>
+                                                    <td>xxx 23</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">table-scroll</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -2014,12 +2289,10 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
                         <div class="section-item">
-                            <h3>Example <small>Dropdown</small></h3>
-                        </div>
-                        <div class="section-item">
-                            <h3 id="table-dropdown-sub-navigate">&lt;/&gt;</h3>
+                            <h3 id="table-dropdown-sub-navigate">Example <small>Dropdown</small></h3>
                             <table class="responsive-table">
                                 <caption>
                                     HEAD
@@ -2044,6 +2317,39 @@
                                 </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="section-item">
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <table class="responsive-table">
+                                            <caption>
+                                                HEAD
+                                            </caption>
+                                            <thead>
+                                            <tr>
+                                                <th>Test1</th>
+                                                <th>Test2</th>
+                                                <th>Test3</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th tabindex="0" onclick="action">TEST1</th>
+                                                <td data-title="xxx1">test11</td>
+                                                <td data-title="xxx2">test12</td>
+                                            </tr>
+                                            <tr>
+                                                <th tabindex="0" onclick="action">TEST2</th>
+                                                <td data-title="xxx3">test21</td>
+                                                <td data-title="xxx4">test22</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;table</span> <span class="pr">class="</span><span class="ch">responsive-table</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -2070,6 +2376,7 @@
 <span class="el">&lt;/table&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -2095,6 +2402,23 @@
                         </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="text-center">
+                                            <ul class="pagination">
+                                                <li class="disable"><a href="#"><span class="tiecons tiecons-double-arrow-left"></span></a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#"><span class="tiecons tiecons-double-arrow-right"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">text-center</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -2124,6 +2448,7 @@
 <span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                                </div>
                         </div>
 
                         <div class="section-item">
@@ -2135,6 +2460,16 @@
                     </div>
                     <div class="section-item">
                         <h3>&lt;/&gt;</h3>
+                        <div class="pre">
+                            <div class="copy-box">
+                                <div class="copy-text">
+                                    <ul class="pager">
+                                        <li class="previous"><a href="#"><span class="tiecons tiecons-arrow-normal-long-left"></span> previous</a></li>
+                                        <li class="next"><a href="#">next <span class="tiecons tiecons-arrow-normal-long-right"></span></a></li>
+                                    </ul>
+                                </div>
+                                <a class="button button-copy">Copy</a>
+                            </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;ul</span> <span class="pr">class="</span><span class="ch">pager</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -2147,29 +2482,218 @@
 <span class="el">&lt;/ul&gt;</span>
 </code>
                             </pre>
+                            </div>
                     </div>
                     </div>
                 </div>
 
                 <div class="span-large-16 offset-large-8">
                     <div class="section-item-main">
-                        <h2 id="-navigate">XXX</h2>
+                        <h2 id="forms-navigate">Fomrs</h2>
                         <hr/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>
+                        <p><a href="forms.html" class="font-20 color-warning">Another Forms HERE !!!</a></p>
                         <div class="section-item">
                             <h3>Example</h3>
                         </div>
+                        <div class="row">
+                            <form action="#" method="post" class="main-form primary-form">
+                                <div class="span-large-8">
+                                    <div class="row">
+                                        <label>Celé jméno:</label>
+                                        <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+                                    </div>
+                                    <div class="row">
+                                        <label>Váš e-mail:</label>
+                                        <input type="email" name="email" placeholder="novak@info.cz" class="row">
+                                    </div>
+                                    <div class="row">
+                                        <label>Předmět:</label>
+                                        <input type="text" name="subject" placeholder="neco..." class="row" value="">
+                                    </div>
+                                </div>
+                                <div class="span-large-16">
+                                    <div class="row">
+                                        <label>Nezavazna poptavka...</label>
+                                        <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+                                    </div>
+                                </div>
+                                <div class="span-large-8">
+                                    <div class="form-checkbox">
+                                        <input id="Option" type="checkbox" checked>
+                                        <label class="checkbox" for="Option">Option-1</label>
+                                        <input id="Option1" type="checkbox">
+                                        <label class="checkbox" for="Option1">Option-2</label>
+                                    </div>
+                                    <div class="form-radio">
+                                        <input type="radio" name="radio" value="01" id="radio01" checked>
+                                        <label for="radio01" class="radio">Male</label>
+                                        <input type="radio" name="radio" value="02" id="radio02">
+                                        <label for="radio02" class="radio">Female</label>
+                                    </div>
+                                    <div class="form-select">
+                                        <label class="label">Select Box
+                                            <div class="select-style">
+                                                <select>
+                                                    <option value="select01">Select01</option>
+                                                    <option value="select02">Select02</option>
+                                                    <option value="select03">Select03</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="span-large-16">
+                                    <input type="submit" name="submit" value="Button" class="button button-submit-email">
+                                </div>
+                            </form>
+                        </div>
                         <div class="section-item">
                             <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="row">
+                                            <form action="#" method="post" class="main-form primary-form">
+                                                <div class="span-large-8">
+                                                    <div class="row">
+                                                        <label>Celé jméno:</label>
+                                                        <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label>Váš e-mail:</label>
+                                                        <input type="email" name="email" placeholder="novak@info.cz" class="row">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label>Předmět:</label>
+                                                        <input type="text" name="subject" placeholder="neco..." class="row" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="span-large-16">
+                                                    <div class="row">
+                                                        <label>Nezavazna poptavka...</label>
+                                                        <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="span-large-8">
+                                                    <div class="form-checkbox">
+                                                        <input id="Option" type="checkbox" checked>
+                                                        <label class="checkbox" for="Option">Option-1</label>
+                                                        <input id="Option1" type="checkbox">
+                                                        <label class="checkbox" for="Option1">Option-2</label>
+                                                    </div>
+                                                    <div class="form-radio">
+                                                        <input type="radio" name="radio" value="01" id="radio01" checked>
+                                                        <label for="radio01" class="radio">Male</label>
+                                                        <input type="radio" name="radio" value="02" id="radio02">
+                                                        <label for="radio02" class="radio">Female</label>
+                                                    </div>
+                                                    <div class="form-select">
+                                                        <label class="label">Select Box
+                                                            <div class="select-style">
+                                                                <select>
+                                                                    <option value="select01">Select01</option>
+                                                                    <option value="select02">Select02</option>
+                                                                    <option value="select03">Select03</option>
+                                                                </select>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="span-large-16">
+                                                    <input type="submit" name="submit" value="Button" class="button button-submit-email">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
-
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;form</span> <span class="pr">action="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">method="</span><span class="ch">post</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">main-form primary-form</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-8</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>Celé jméno:<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">name</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Jmeno Prijmeni</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>Váš e-mail:<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">novak@info.cz</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>Předmět:<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">subject</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">neco...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-16</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>Nezavazna poptavka...<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;textarea</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">message</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">message</span><span class="pr">"</span> <span class="pr">cols="</span><span class="ch">30</span><span class="pr">"</span> <span class="pr">rows="</span><span class="ch">8</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Napiste neco....</span><span class="pr">"</span><span class="el">&gt;&lt;/textarea&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-8</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">form-checkbox</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">Option</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">checked</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">Option</span><span class="pr">"</span><span class="el">&gt;</span>Option-1<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">Option1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">Option1</span><span class="pr">"</span><span class="el">&gt;</span>Option-2<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">form-radio</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">01</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">radio01</span><span class="pr">"</span> <span class="pr">checked</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">radio01</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">radio</span><span class="pr">"</span><span class="el">&gt;</span>Male<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">02</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">radio02</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">radio02</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">radio</span><span class="pr">"</span><span class="el">&gt;</span>Female<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">form-select</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Select Box
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">select-style</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;select&gt;</span>
+                            <span class="el">&lt;option</span> <span class="pr">value="</span><span class="ch">select01</span><span class="pr">"</span><span class="el">&gt;</span>Select01<span class="el">&lt;/option&gt;</span>
+                            <span class="el">&lt;option</span> <span class="pr">value="</span><span class="ch">select02</span><span class="pr">"</span><span class="el">&gt;</span>Select02<span class="el">&lt;/option&gt;</span>
+                            <span class="el">&lt;option</span> <span class="pr">value="</span><span class="ch">select03</span><span class="pr">"</span><span class="el">&gt;</span>Select03<span class="el">&lt;/option&gt;</span>
+                        <span class="el">&lt;/select&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-16</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">submit</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">submit</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">Button</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-submit-email</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;/div&gt;</span>
+    <span class="el">&lt;/form&gt;</span>
+<span class="el">&lt;/div&gt;</span>
 </code>
                             </pre>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!--<div class="span-large-16 offset-large-8">-->
+                    <!--<div class="section-item-main">-->
+                        <!--<h2 id="-navigate">XXX</h2>-->
+                        <!--<hr/>-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus pharetra odio, ac fringilla mauris vestibulum sit amet. Proin et libero tellus.</p>-->
+                        <!--<div class="section-item">-->
+                            <!--<h3>Example</h3>-->
+                        <!--</div>-->
+                        <!--<div class="section-item">-->
+                            <!--<h3>&lt;/&gt;</h3>-->
+                            <!--<div class="pre">-->
+                                <!--<div class="copy-box">-->
+                                    <!--<div class="copy-text">-->
+
+                                    <!--</div>-->
+                                    <!--<a class="button button-copy">Copy</a>-->
+                                <!--</div>-->
+                            <!--<pre>-->
+<!--<code class="language-html" data-lang="html">-->
+
+<!--</code>-->
+                            <!--</pre>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
 
 
@@ -2229,8 +2753,8 @@
     </div>
 </div>
 
-<script src="../src/js/scrollSpy.js"></script>
-<script src="../src/js/main.js"></script>
+<script src="js/scrollSpy.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Scroll spy -->
 <style type="text/css">

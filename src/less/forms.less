@@ -6,16 +6,439 @@
 //}
 
 form {
-  &.form {
+  &.main-form {
+    &.primary-form {
+      .form-select .select-style {
+        border: 2px solid @color-primary;
+        select {
+          color: @color-primary;
+        }
+      }
+      label {
+        color: @color-primary;
+        &.checkbox {
+          &:before {
+            background-color: @color-primary;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-primary;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-primary;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-primary;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-primary;
+        border: solid 2px @color-primary;
+        &:hover {
+          color: @color-primary;
+        }
+      }
+    }
+    &.secondary-form {
+      .form-select .select-style {
+        border: 2px solid @color-secondary;
+        select {
+          color: @color-secondary;
+        }
+      }
+      label {
+        color: @color-secondary;
+        &.checkbox {
+          &:before {
+            background-color: @color-secondary;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-secondary;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-secondary;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-secondary;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-secondary;
+        border: solid 2px @color-secondary;
+        &:hover {
+          color: @color-secondary;
+        }
+      }
+    }
+    &.tertiary-form {
+      .form-select .select-style {
+        border: 2px solid @color-tertiary;
+        select {
+          color: @color-tertiary;
+        }
+      }
+      label {
+        color: @color-tertiary;
+        &.checkbox {
+          &:before {
+            background-color: @color-tertiary;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-tertiary;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-tertiary;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-tertiary;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-tertiary;
+        border: solid 2px @color-tertiary;
+        &:hover {
+          color: @color-tertiary;
+        }
+      }
+    }
+    &.info-form {
+      .form-select .select-style {
+        border: 2px solid @color-info;
+        select {
+          color: @color-info;
+        }
+      }
+      label {
+        color: @color-info;
+        &.checkbox {
+          &:before {
+            background-color: @color-info;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-info;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-info;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-info;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-info;
+        border: solid 2px @color-info;
+        &:hover {
+          color: @color-info;
+        }
+      }
+    }
+    &.success-form {
+      .form-select .select-style {
+        border: 2px solid @color-success;
+        select {
+          color: @color-success;
+        }
+      }
+      label {
+        color: @color-success;
+        &.checkbox {
+          &:before {
+            background-color: @color-success;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-success;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-success;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-success;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-success;
+        border: solid 2px @color-success;
+        &:hover {
+          color: @color-success;
+        }
+      }
+    }
+    &.danger-form {
+      .form-select .select-style {
+        border: 2px solid @color-danger;
+        select {
+          color: @color-danger;
+        }
+      }
+      label {
+        color: @color-danger;
+        &.checkbox {
+          &:before {
+            background-color: @color-danger;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-danger;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-danger;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-danger;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-danger;
+        border: solid 2px @color-danger;
+        &:hover {
+          color: @color-danger;
+        }
+      }
+    }
+    &.warning-form {
+      .form-select .select-style {
+        border: 2px solid @color-warning;
+        select {
+          color: @color-warning;
+        }
+      }
+      label {
+        color: @color-warning;
+        &.checkbox {
+          &:before {
+            background-color: @color-warning;
+          }
+        }
+        &.radio {
+          &:before {
+            background-color: @color-warning;
+          }
+        }
+      }
+      input, textarea {
+        border: 2px solid @color-warning;
+        &:focus {
+          box-shadow: 0px 0px 3px @color-warning;
+        }
+      }
+      .button-submit-email {
+        background-color: @color-warning;
+        border: solid 2px @color-warning;
+        &:hover {
+          color: @color-warning;
+        }
+      }
+    }
+    .form-checkbox {
+      margin: 6px 0;
+    }
+    .form-radio {
+      margin: 6px 0;
+    }
+    .form-select {
+      label {
+        margin-left: 2px;
+      }
+      .select-style {
+        padding: 0;
+        margin: 0;
+        border: 2px solid #000000;
+        width: 120px;
+        border-radius: 15px;
+        overflow: hidden;
+        background: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        &:after {
+          font-family: tiecons;
+          content: "\e6e2";
+          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          z-index: -1;
+          position: absolute;
+          top: 3px;
+          right: 11px;
+          font-size: 11px;
+        }
 
+        select {
+          padding: 5px 8px;
+          color: #000000;
+          width: 130%;
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          background-image: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 20px;
+
+          &:focus {
+            outline: none;
+          }
+
+          option {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    label {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      margin-left: 20px;
+      position: relative;
+
+      &.checkbox {
+        cursor: pointer;
+        display: inline-block;
+        white-space: nowrap;
+        margin: 5px 20px 5px 32px;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 23px;
+          height: 23px;
+          border-radius: 6px;
+          position: absolute;
+          left: -30px;
+          bottom: -1px;
+          background-color: #000000;
+          box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+        }
+      }
+      &.radio {
+        cursor: pointer;
+        white-space: nowrap;
+        display: inline-block;
+        margin: 5px 20px 5px 32px;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 23px;
+          height: 23px;
+          border-radius: 6px;
+          position: absolute;
+          left: -30px;
+          bottom: -1px;
+          background-color: #000000;
+          box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+        }
+      }
+    }
+    input[type=checkbox]:checked + label:before {
+      font-family: tiecons;
+      content: "\e68d";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+      font-size: 14px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 24px;
+    }
+    input[type=radio]:checked + label:before {
+      font-family: tiecons;
+      content: "\e644";
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      line-height: 24px;
+    }
+    input, textarea {
+      border: 2px solid #000000;
+      border-radius: 15px;
+      padding: 8px 18px;
+      margin: 3px 0 7px;
+      box-shadow: none;
+      outline: none;
+      .animate(200ms);
+      &:focus {
+        box-shadow: 0px 0px 3px #000000;
+        .animate(200ms);
+      }
+    }
+    input {
+      &:invalid {
+        border-color: red;
+        box-shadow: 0px 0px 2px #F00;
+        color: red;
+      }
+      &[type="radio"],
+      &[type="checkbox"] {
+        display: none !important;
+      }
+    }
+    textarea {
+      min-height: 168px;
+    }
+    input::-webkit-input-placeholder,
+    input:-ms-input-placeholder,
+    textarea::-webkit-input-placeholder,
+    textarea:-ms-input-placeholder {
+      color: #979797;
+      font-family: Calibri;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+    }
+    input:-moz-placeholder,
+    input::-moz-placeholder,
+    textarea:-moz-placeholder,
+    textarea::-moz-placeholder {
+      color: #979797;
+      font-family: Calibri;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      opacity: 1;
+    }
+    .button-submit-email {
+      background-color: #000000;
+      border: solid 2px #000000;
+      border-radius: 15px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 5px 55px;
+      &:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+  }
+
+  &.form {
     legend {
       font-size: 32px;
     }
     .label {
-
       display: block;
       position: relative;
-
       input {
         width: 100%;
         padding-left: 10px;
@@ -27,16 +450,13 @@ form {
         &:focus {
           box-shadow: 0 0 5px @color-primary;
         }
-
         &.prefix {
           padding-left: 22%;
         }
-
         &.postfix {
           padding-right: 10%;
         }
       }
-
       select {
         width: 100%;
         padding-left: 10px;
@@ -46,11 +466,9 @@ form {
         outline: none;
         cursor: pointer;
       }
-
       option {
         cursor: pointer;
       }
-
       textarea {
         width: 100%;
         min-height: 80px;
@@ -63,7 +481,6 @@ form {
           box-shadow: 0 0 5px @color-primary;
         }
       }
-
       span.postfix {
         position: absolute;
         top: 0;
@@ -73,7 +490,6 @@ form {
         border-left: 1px solid @color-grey-dark;
         padding: 5px 5px 5px 1px;
       }
-
       span.prefix {
         position: absolute;
         top: 0px;
@@ -84,7 +500,6 @@ form {
         padding: 5px 1px 5px 5px;
       }
     }
-
     &.form-radius-base {
       .label {
         input, textarea {
@@ -98,7 +513,6 @@ form {
         }
       }
     }
-
     &.form-radius-circle {
       .label {
         input {

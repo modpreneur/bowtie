@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bowtie</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bowtie-icons.css"/>
+    <link rel="stylesheet" href="css/bowtie.css"/>
+    <link rel="stylesheet" href="css/custom-style.css"/>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../src/js/ZeroClipboard.js"></script>
+    <style>
+        .main-form {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+<a href="documentation.html#forms-navigate" class="font-42">BACK TO FORMS</a>
+<div class="row">
+    <form action="#" method="post" class="main-form primary-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-primary font-32 bold uppercase underline">Primary form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form secondary-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-secondary font-32 bold uppercase underline">Secondary form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form tertiary-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-tertiary font-32 bold uppercase underline">Tertiary form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form info-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-info font-32 bold uppercase underline">Info form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form success-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-success font-32 bold uppercase underline">Success form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form warning-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-warning font-32 bold uppercase underline">Warning form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form danger-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-danger font-32 bold uppercase underline">Danger form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <form action="#" method="post" class="main-form">
+        <div class="span-large-24 margin-bottom-15 text-center">
+            <span class="color-black font-32 bold uppercase underline">Default (black) form</span>
+        </div>
+        <div class="span-large-8">
+            <div class="row">
+                <label>Celé jméno:</label>
+                <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+            </div>
+            <div class="row">
+                <label>Váš e-mail:</label>
+                <input type="email" name="email" placeholder="novak@info.cz" class="row">
+            </div>
+            <div class="row">
+                <label>Předmět:</label>
+                <input type="text" name="subject" placeholder="neco..." class="row" value="">
+            </div>
+        </div>
+        <div class="span-large-16">
+            <div class="row">
+                <label>Nezavazna poptavka...</label>
+                <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+            </div>
+        </div>
+        <div class="span-large-8">
+            <div class="form-checkbox">
+                <input id="Option" type="checkbox" checked>
+                <label class="checkbox" for="Option">Neco zaskrtnout</label>
+                <input id="Option1" type="checkbox">
+                <label class="checkbox" for="Option1">Neco zaskrtnout</label>
+            </div>
+            <div class="form-radio">
+                <input type="radio" name="radio" value="01" id="radio01" checked>
+                <label for="radio01" class="radio">Male</label>
+                <input type="radio" name="radio" value="02" id="radio02">
+                <label for="radio02" class="radio">Female</label>
+            </div>
+            <div class="form-select">
+                <label class="label">Select Box
+                    <div class="select-style">
+                        <select>
+                            <option value="select01">Select01</option>
+                            <option value="select02">Select02</option>
+                            <option value="select03">Select03</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="span-large-16">
+            <input type="submit" name="submit" value="Button" class="button button-submit-email">
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
