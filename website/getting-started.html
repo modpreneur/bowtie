@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Bowtie</title>
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bowtie-icons.css"/>
     <link rel="stylesheet" href="css/bowtie.css"/>
     <link rel="stylesheet" href="css/custom-style.css"/>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../src/js/ZeroClipboard.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -49,22 +51,20 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container padding-bottom-50">
         <div class="row">
             <div class="span-large-8">
+                <div id="top-bound"></div>
                 <div id="left">
                     <div id="sidebar">
-                        <input type="checkbox" id="sidebar-width" hidden="">
                         <div class="side-bar">
                             <input type="checkbox" id="show-sidebar">
                             <label for="show-sidebar" class="show-side">Navigation<span class="bowtie bowtie-sipka"></span></label>
                             <ul class="sidebar">
-                                <li><a href="#"><i class="fa fa-fighter-jet"></i><span class="sidebar-link">Side 01</span></a></li>
-                                <li><a href="#"><i class="fa fa-cogs"></i><span class="sidebar-link">Side 02</span></a></li>
-                                <li><a href="#"><i class="fa fa-eye-slash"></i><span class="sidebar-link">Side 03</span></a></li>
-                                <li><a href="#"><i class="fa fa-flag-checkered"></i><span class="sidebar-link">Side 04</span></a></li>
-                                <li><a href="#"><i class="fa fa-fire"></i><span class="sidebar-link">Side 05</span></a></li>
-                                <li><a href="#"><i class="fa fa-fire-extinguisher"></i><span class="sidebar-link">Side 06</span></a></li>
+                                <li><a href="#download-navigate">Download</a></li>
+                                <li><a href="#responsive-navigate">Responsive</a></li>
+                                <li><a href="#noneresponsive-navigate">Noneresponsive</a></li>
+                                <!--<li><a href="#-navigate">Side</a></li>-->
                                 <li><a href="#">Back to Top</a></li>
                             </ul>
                         </div>
@@ -79,18 +79,18 @@
                     <p></p>
 
                     <div class="section-item">
-                        <h3>Download</h3>
+                        <h3 id="download-navigate">Download</h3>
                         <p></p>
                         <a class="button button-secondary" href="#">Download <span class="bowtie bowtie-download"></span></a>
                     </div>
 
                     <div class="section-item">
                         <h3>Installation</h3>
-                        <p></p>
+                        <p>Just DOWNLOAD and CREATE.</p>
                     </div>
 
                     <div class="section-item">
-                        <h3>Responsive</h3>
+                        <h3 id="responsive-navigate">Responsive</h3>
                         <p></p>
                     </div>
                     <div class="section-item">
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="section-item">
-                        <h3>None responsive</h3>
+                        <h3 id="noneresponsive-navigate">None responsive</h3>
                         <p></p>
                     </div>
                     <div class="section-item">
@@ -159,131 +159,58 @@
     </div>
 
 
-    <div class="section-03">
-        <div class="container">
-            <div class="row">
-                <div class="span-medium-24">
-
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="clear"></div>
-    <div class="section-06">
-        <div class="container">
-            <div class="row">
-                <div class="span-medium-8 text-right clearfix">
-                    <span class="bowtie bowtie-logobowtie font-60 color-tertiary"><span class="absolute">CSS Framework</span></span>
-                </div>
-                <div class="span-medium-10 offset-medium-6 clearfix social-box">
-                    <a class="social-popout" target="_blank" href="#">
-                        <span class="tiecons tiecons-facebook-circle-negative"></span>
-                    </a>
-                    <a class="social-popout" target="_blank" href="#">
-                        <span class="tiecons tiecons-twitter-circle-negative"></span>
-                    </a>
-                    <a class="social-popout" target="_blank" href="#">
-                        <span class="tiecons tiecons-linkedin-circle-negative"></span>
-                    </a>
-                    <a class="social-popout" target="_blank" href="#">
-                        <span class="tiecons tiecons-google-plus-circle-negative"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-07">
-        <div class="container">
-            <div class="row">
-                <div class="span-medium-12 span-small-12">
-                    <div class="navbar">
-                        <ul>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+    <footer id="footer">
+        <div class="section-06">
+            <div class="container">
+                <div class="row">
+                    <div class="span-medium-8 text-right clearfix">
+                        <span class="bowtie bowtie-logobowtie font-60 color-tertiary"><span class="absolute">CSS Framework</span></span>
                     </div>
-                </div>
-                <!--|-->
-                <div class="span-medium-12 span-small-12 text-right">
-                    <div class="navbar">
-                        <ul>
-                            <li>2015 &copy; BowtieCSS.com</li>
-                        </ul>
+                    <div class="span-medium-10 offset-medium-6 clearfix social-box">
+                        <a class="social-popout" target="_blank" href="#">
+                            <span class="tiecons tiecons-facebook-circle-negative"></span>
+                        </a>
+                        <a class="social-popout" target="_blank" href="#">
+                            <span class="tiecons tiecons-twitter-circle-negative"></span>
+                        </a>
+                        <a class="social-popout" target="_blank" href="#">
+                            <span class="tiecons tiecons-linkedin-circle-negative"></span>
+                        </a>
+                        <a class="social-popout" target="_blank" href="#">
+                            <span class="tiecons tiecons-google-plus-circle-negative"></span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="section-07">
+            <div class="container">
+                <div class="row">
+                    <div class="span-medium-12">
+                        <div class="navbar">
+                            <ul>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--|-->
+                    <div class="span-medium-12 text-right">
+                        <div class="navbar">
+                            <ul>
+                                <li>2015 &copy; BowtieCSS.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 </div>
-
-<style type="text/css">
-    li.active-menu {
-        background-color: #ffffff;
-        color: #1F3A93;
-        border-left: solid 4px #00aeef;
-        font-weight: bold;
-    }
-    ul.sub-side-group {
-        display: none;
-    }
-    li.active-menu + ul.sub-side-group {
-        display: block;
-    }
-</style>
-<script>
-    $(".button-copy").mouseenter(function () {
-        $(this).parent().parent().addClass("tiecons-box-hover");
-    }).mouseleave(function () {
-        $(this).parent().parent().removeClass("tiecons-box-hover");
-    });
-</script>
-<script>
-    $(document).ready(function () {
-
-        var length = $('#left').height() - $('#sidebar').height() + $('#left').offset().top;
-        $(window).scroll(function () {
-            if (screen.width > 1024) {
-                var scroll = $(this).scrollTop();
-                var height = $('#sidebar').height() + 'px';
-                if (scroll < $('#left').offset().top) {
-                    $('#sidebar').css({
-                        'position': 'absolute',
-                        'top': '0'
-                    });
-                } else if (scroll > length) {
-                    $('#sidebar').css({
-                        'position': 'fixed'
-                    });
-                } else {
-                    $('#sidebar').css({
-                        'position': 'fixed',
-                        'top': '0',
-                        'height': height
-                    });
-                }
-            }
-        });
-
-    });
-    $(document).ready(function(){
-        $(window).scroll(function() {
-            if (screen.width < 1024) {
-                var scroll = $(window).scrollTop();
-                var color2 = 67 - scroll;
-                if(scroll < 67 && scroll > 0) {
-                    $("#left").css({"top": color2});
-                }
-                else if(scroll <= 0) {
-                    $("#left").css({"top": 67});
-                }
-                else if (scroll >= 67) {
-                    $("#left").css({"top": 0});
-                }
-            }
-        });
-    });
-</script>
+<script src="js/scrollSpy.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

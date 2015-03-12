@@ -32,14 +32,14 @@ var marginCorrection = 40;
 
 function stickyMenuHandler(e){
     var view = document.body.scrollTop + document.documentElement.scrollTop;
-    if(window.innerWidth <=1024){
+    if(window.innerWidth < 1024){
         // Mobile / tablet - 67 is height of main-menu bar
         scrollSpy.stop();
         floatMenu.style.top = view >= 67 ? '0px' : (67-view) + 'px';
     } else {
         // PC
         scrollSpy.start();
-        if(view + floatMenu.offsetHeight + 20 >= bottomBoundY){
+        if(view + floatMenu.offsetHeight + 60 >= bottomBoundY){
             floatMenu.style.position = 'absolute';
             floatMenu.style.top = '' + (document.body.scrollHeight - (bottomBound.offsetHeight + floatMenu.offsetHeight + topBoundY + marginCorrection)) + 'px';
             console.log(bottomBound.offsetHeight);
