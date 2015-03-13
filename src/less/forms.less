@@ -753,3 +753,73 @@ form {
     }
   }
 }
+
+
+.form-checkbox {
+  position: relative;
+}
+label.checkbox,
+label.radio {
+  position: relative;
+  color: @color-primary;
+  &.checkbox {
+    &:before {
+      background-color: @color-primary;
+    }
+  }
+  &.radio {
+    &:before {
+      background-color: @color-primary;
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 5px 20px 5px 32px;
+}
+.checkbox:before {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 6px;
+  position: absolute;
+  left: -30px;
+  bottom: -1px;
+  background-color: #000000;
+}
+.radio {
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 5px 20px 5px 32px;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 6px;
+    position: absolute;
+    left: -30px;
+    bottom: -1px;
+    background-color: #000000;
+  }
+}
+input[type=checkbox]:checked + label.checkbox:before {
+  font-family: tiecons;
+  content: "\e68d";
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 23px;
+}
+input[type=radio]:checked + label.radio:before {
+  font-family: tiecons;
+  content: "\e644";
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 23px;
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bowtie.css"/>
     <link rel="stylesheet" href="css/custom-style.css"/>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="../src/js/ZeroClipboard.js"></script>
+    <script src="js/ZeroClipboard.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -129,9 +129,42 @@
                     <div class="section-item-main">
                         <h2 id="grid-navigate">Grid Systems</h2>
                         <hr/>
-                        <p></p>
+                        <div class="table-scroll-full" style="width: 100%;">
+                            <table style="width: 100%;">
+                                <thead>
+                                <tr>
+                                    <th class="text-center"><span class="tiecons tiecons-smartphone" style="vertical-align: middle;"></span> Mini</th>
+                                    <th class="text-center"><span class="tiecons tiecons-smartphone rotate-270" style="vertical-align: middle;"></span> Small</th>
+                                    <th class="text-center"><span class="tiecons tiecons-tablet-negative" style="vertical-align: middle;"></span> Medium</th>
+                                    <th class="text-center"><span class="tiecons tiecons-tablet-negative rotate-270" style="vertical-align: middle;"></span> Large</th>
+                                    <th class="text-center"><span class="tiecons tiecons-display" style="vertical-align: middle;"></span> Xlarge</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center">To <strong>479px</strong></td>
+                                    <td class="text-center">From <strong>480px</strong> To <strong>767px</strong></td>
+                                    <td class="text-center">From <strong>768px</strong> To <strong>1023px</strong></td>
+                                    <td class="text-center">From <strong>1024px</strong> To <strong>1199px</strong></td>
+                                    <td class="text-center">From <strong>1200px</strong></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="section-item">
                             <h3>Example <small>container responzive span</small></h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="container">
+                                        <div class="row">
+                                            <div class="span-xlarge-24">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -142,8 +175,20 @@
     <span class="el">&lt;/div&gt;</span>
 <span class="el">&lt;/div&gt;</span></code>
                             </pre>
+                                </div>
 
                             <h3>Example <small>container-fluid responzive span</small></h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="container-fluid">
+                                        <div class="row">
+                                            <div class="span-xlarge-24">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container-fluid</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -154,229 +199,123 @@
     <span class="el">&lt;/div&gt;</span>
 <span class="el">&lt;/div&gt;</span></code>
                             </pre>
+                                </div>
 
                             <div class="row">
                                 <div class="span-xlarge-24 border-primary text-center margin-small-vertical padding-small-vertical">24</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-24</span><span class="pr">"</span><span class="el">&gt;</span>
-    24
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-23 border-primary text-center margin-small-vertical padding-small-vertical">23</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-23</span><span class="pr">"</span><span class="el">&gt;</span>
-    23
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-22 border-primary text-center margin-small-vertical padding-small-vertical">22</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-22</span><span class="pr">"</span><span class="el">&gt;</span>
-    22
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-21 border-primary text-center margin-small-vertical padding-small-vertical">21</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-21</span><span class="pr">"</span><span class="el">&gt;</span>
-    21
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-20 border-primary text-center margin-small-vertical padding-small-vertical">20</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-20</span><span class="pr">"</span><span class="el">&gt;</span>
-    20
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-19 border-primary text-center margin-small-vertical padding-small-vertical">19</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-19</span><span class="pr">"</span><span class="el">&gt;</span>
-    19
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-18 border-primary text-center margin-small-vertical padding-small-vertical">18</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-18</span><span class="pr">"</span><span class="el">&gt;</span>
-    18
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-17 border-primary text-center margin-small-vertical padding-small-vertical">17</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-17</span><span class="pr">"</span><span class="el">&gt;</span>
-    17
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-16 border-primary text-center margin-small-vertical padding-small-vertical">16</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-16</span><span class="pr">"</span><span class="el">&gt;</span>
-    16
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-15 border-primary text-center margin-small-vertical padding-small-vertical">15</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-15</span><span class="pr">"</span><span class="el">&gt;</span>
-    15
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-14 border-primary text-center margin-small-vertical padding-small-vertical">14</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-14</span><span class="pr">"</span><span class="el">&gt;</span>
-    14
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-13 border-primary text-center margin-small-vertical padding-small-vertical">13</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-13</span><span class="pr">"</span><span class="el">&gt;</span>
-    13
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-12 border-primary text-center margin-small-vertical padding-small-vertical">12</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-12</span><span class="pr">"</span><span class="el">&gt;</span>
-    12
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-11 border-primary text-center margin-small-vertical padding-small-vertical">11</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-11</span><span class="pr">"</span><span class="el">&gt;</span>
-    11
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-10 border-primary text-center margin-small-vertical padding-small-vertical">10</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-10</span><span class="pr">"</span><span class="el">&gt;</span>
-    10
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-9 border-primary text-center margin-small-vertical padding-small-vertical">9</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-9</span><span class="pr">"</span><span class="el">&gt;</span>
-    9
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">8</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
-    8
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-7 border-primary text-center margin-small-vertical padding-small-vertical">7</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-7</span><span class="pr">"</span><span class="el">&gt;</span>
-    7
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-6 border-primary text-center margin-small-vertical padding-small-vertical">6</div>
                             </div>
-                                <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-6</span><span class="pr">"</span><span class="el">&gt;</span>
-    6
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-5 border-primary text-center margin-small-vertical padding-small-vertical">5</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-5</span><span class="pr">"</span><span class="el">&gt;</span>
-    5
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-4 border-primary text-center margin-small-vertical padding-small-vertical">4</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-4</span><span class="pr">"</span><span class="el">&gt;</span>
-    4
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-3 border-primary text-center margin-small-vertical padding-small-vertical">3</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-3</span><span class="pr">"</span><span class="el">&gt;</span>
-    3
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-2 border-primary text-center margin-small-vertical padding-small-vertical">2</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-2</span><span class="pr">"</span><span class="el">&gt;</span>
-    2
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
                             <div class="row">
                                 <div class="span-xlarge-1 border-primary text-center margin-small-vertical padding-small-vertical">1</div>
                             </div>
-                            <pre>
-<code class="language-html" data-lang="html">
-<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-1</span><span class="pr">"</span><span class="el">&gt;</span>
-    1
-<span class="el">&lt;/div&gt;</span></code>
-                            </pre>
+
 
                             <div class="row">
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
                             </div>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="span-xlarge-8">
+                                        span-xlarge-8
+                                    </div>
+                                        <div class="span-xlarge-8">
+                                            span-xlarge-8
+                                        </div>
+                                        <div class="span-xlarge-8">
+                                            span-xlarge-8
+                                        </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -389,10 +328,21 @@
     span-xlarge-8
 <span class="el">&lt;/div&gt;</span></code>
                             </pre>
+                                </div>
                             <div class="row">
                                 <div class="span-xlarge-16 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-16</div>
                                 <div class="span-xlarge-8 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-8</div>
                             </div>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="span-xlarge-16">
+                                        span-xlarge-16
+                                    </div>
+                                        <div class="span-xlarge-8">
+                                            span-xlarge-8
+                                        </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-16</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -402,12 +352,26 @@
     span-xlarge-8
 <span class="el">&lt;/div&gt;</span></code>
                             </pre>
+                                </div>
                             <div class="row">
                                 <div class="span-xlarge-4 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-4</div>
                                 <div class="span-xlarge-16 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-16</div>
                                 <div class="span-xlarge-4 border-primary text-center margin-small-vertical padding-small-vertical">span-xlarge-4</div>
                             </div>
-<pre>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="span-xlarge-4">
+                                        span-xlarge-4
+                                    </div>
+                                        <div class="span-xlarge-16">
+                                            span-xlarge-16
+                                        </div>
+                                        <div class="span-xlarge-4">
+                                            span-xlarge-4
+                                        </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                            <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-4</span><span class="pr">"</span><span class="el">&gt;</span>
     span-xlarge-4
@@ -419,17 +383,26 @@
     span-xlarge-4
 <span class="el">&lt;/div&gt;</span></code>
                             </pre>
+                                </div>
                             <div class="row">
                                 <div class="span-xlarge-24 span-large-20 span-medium-16 span-small-12 span-mini-10 border-primary text-center margin-small-vertical padding-small-vertical">
                                     span-xlarge-24 | span-large-20 | span-medium-16 | span-small-12 | span-mini-10
                                 </div>
                             </div>
-                        <pre>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="span-xlarge-24 span-large-20 span-medium-16 span-small-12 span-mini-10">
+                                        span-xlarge-24 | span-large-20 | span-medium-16 | span-small-12 | span-mini-10
+                                    </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                            <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-24 span-large-20 span-medium-16 span-small-12 span-mini-10</span><span class="pr">"</span><span class="el">&gt;</span>
     span-xlarge-24 | span-large-20 | span-medium-16 | span-small-12 | span-mini-10
 <span class="el">&lt;/div&gt;</span></code>
                             </pre>
+                                </div>
                         </div>
 
                         <div class="section-item">
@@ -442,6 +415,17 @@
 
                             <div class="section-item">
                                 <h3>&lt;/&gt;</h3>
+                                <div class="pre">
+                                    <div class="copy-box">
+                                        <div class="copy-text"><div class="container">
+                                            <div class="row">
+                                                <div class="span-24">
+                                                    ...
+                                                </div>
+                                            </div>
+                                        </div></div>
+                                        <a class="button button-copy">Copy</a>
+                                    </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">container</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -460,6 +444,7 @@
     <span class="el">&lt;/div&gt;</span>
 <span class="el">&lt;/div&gt;</span></code>
             </pre>
+                                    </div>
                             </div>
                         </div>
 
@@ -473,12 +458,20 @@
 
                             <div class="section-item">
                                 <h3>&lt;/&gt;</h3>
+                                <div class="pre">
+                                    <div class="copy-box">
+                                        <div class="copy-text"><div class="span-none-padding-xlarge-24">
+                                            ...
+                                        </div></div>
+                                        <a class="button button-copy">Copy</a>
+                                    </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-xlarge-24</span><span class="pr">"</span><span class="el">&gt;</span>
     ...
 <span class="el">&lt;/div&gt;</span></code>
             </pre>
+                                    </div>
                             </div>
                         </div>
 
@@ -495,6 +488,16 @@
 
                             <div class="section-item">
                                 <h3>&lt;/&gt;</h3>
+                                <div class="pre">
+                                    <div class="copy-box">
+                                        <div class="copy-text"><div class="span-xlarge-8">
+                                            ...
+                                        </div>
+                                            <div class="span-xlarge-8 offset-xlarge-8">
+                                                ...
+                                            </div></div>
+                                        <a class="button button-copy">Copy</a>
+                                    </div>
                             <pre>
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-xlarge-8</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -504,6 +507,7 @@
     ...
 <span class="el">&lt;/div&gt;</span></code>
             </pre>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -1037,10 +1041,10 @@
                             <h3>Example</h3>
                                 <div class="navbar">
                                     <ul>
-                                        <li><a href="#">navlist 1</a></li>
-                                        <li><a href="#">navlist 2</a></li>
-                                        <li><a href="#">navlist 3</a></li>
-                                        <li><a href="#">navlist 4</a></li>
+                                        <li><a>navlist 1</a></li>
+                                        <li><a>navlist 2</a></li>
+                                        <li><a>navlist 3</a></li>
+                                        <li><a>navlist 4</a></li>
                                     </ul>
                                 </div>
                         </div>
@@ -1086,8 +1090,12 @@
                             <div class="tabs-show">
                                 <div class="tabs-border">
                                     <div class="tab">
-                                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+                                        <input type="radio" id="tab-1" name="tab-group-1">
                                         <label for="tab-1">List 1 </label>
+                                        <div class="tab" id="close-tab">
+                                            <input id="tab-close" name="tab-group-1" type="radio">
+                                            <label for="tab-close">List 1</label>
+                                        </div>
                                         <div class="content">
                                             ... 01
                                         </div>
@@ -1096,6 +1104,10 @@
                                     <div class="tab">
                                         <input type="radio" id="tab-2" name="tab-group-1">
                                         <label for="tab-2">List 2</label>
+                                        <div class="tab" id="close-tab">
+                                            <input id="tab-close" name="tab-group-1" type="radio">
+                                            <label for="tab-close">List 2</label>
+                                        </div>
                                         <div class="content">
                                             ... 02
                                         </div>
@@ -1104,6 +1116,10 @@
                                     <div class="tab">
                                         <input type="radio" id="tab-3" name="tab-group-1">
                                         <label for="tab-3">List 3</label>
+                                        <div class="tab" id="close-tab">
+                                            <input id="tab-close" name="tab-group-1" type="radio">
+                                            <label for="tab-close">List 3</label>
+                                        </div>
                                         <div class="content">
                                             ... 03
                                         </div>
@@ -1112,6 +1128,10 @@
                                     <div class="tab">
                                         <input type="radio" id="tab-4" name="tab-group-1">
                                         <label for="tab-4">List 4</label>
+                                        <div class="tab" id="close-tab">
+                                            <input id="tab-close" name="tab-group-1" type="radio">
+                                            <label for="tab-close">List 4</label>
+                                        </div>
                                         <div class="content">
                                             ... 04
                                         </div>
@@ -1129,6 +1149,10 @@
                                                 <div class="tab">
                                                     <input type="radio" id="tab-1" name="tab-group-1">
                                                     <label for="tab-1">List 1</label>
+                                                    <div class="tab" id="close-tab">
+                                                        <input id="tab-close" name="tab-group-1" type="radio">
+                                                        <label for="tab-close">List 1</label>
+                                                    </div>
                                                     <div class="content">
                                                         ... 01
                                                     </div>
@@ -1137,6 +1161,10 @@
                                                 <div class="tab">
                                                     <input type="radio" id="tab-2" name="tab-group-1">
                                                     <label for="tab-2">List 2</label>
+                                                    <div class="tab" id="close-tab">
+                                                        <input id="tab-close" name="tab-group-1" type="radio">
+                                                        <label for="tab-close">List 2</label>
+                                                    </div>
                                                     <div class="content">
                                                         ... 02
                                                     </div>
@@ -1153,6 +1181,10 @@
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-1</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-1</span><span class="pr">"</span><span class="el">&gt;</span>List 1<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 1<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                 ... 01
             <span class="el">&lt;/div&gt;</span>
@@ -1161,6 +1193,10 @@
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-2</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-2</span><span class="pr">"</span><span class="el">&gt;</span>List 2<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 2<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                 ... 02
             <span class="el">&lt;/div&gt;</span>
@@ -1169,6 +1205,10 @@
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-3</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-3</span><span class="pr">"</span><span class="el">&gt;</span>List 3<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 3<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                 ... 03
             <span class="el">&lt;/div&gt;</span>
@@ -1177,6 +1217,10 @@
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">tab-4</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-4</span><span class="pr">"</span><span class="el">&gt;</span>List 4<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">tab</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">close-tab</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">tab-close</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">tab-group-1</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">radio</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label</span> <span class="pr">for="</span><span class="ch">tab-close</span><span class="pr">"</span><span class="el">&gt;</span>List 4<span class="el">&lt;/label&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">content</span><span class="pr">"</span><span class="el">&gt;</span>
                 ... 04
             <span class="el">&lt;/div&gt;</span>
@@ -1397,10 +1441,10 @@
                                 </label>
                                 <input type="checkbox" id="show-drop1" role="button">
                                 <ul id="dropdown" class="drop">
-                                    <li><a href="#">drop1</a></li>
-                                    <li><a href="#">drop2</a></li>
-                                    <li><a href="#">drop3</a></li>
-                                    <li><a href="#">drop4</a></li>
+                                    <li><a>drop1</a></li>
+                                    <li><a>drop2</a></li>
+                                    <li><a>drop3</a></li>
+                                    <li><a>drop4</a></li>
                                 </ul>
                             </div>
 
@@ -1410,10 +1454,10 @@
                                 </label>
                                 <input type="checkbox" id="show-drop2" role="button">
                                 <ul id="dropdown" class="drop">
-                                    <li><a href="#">drop1</a></li>
-                                    <li><a href="#">drop2</a></li>
-                                    <li><a href="#">drop3</a></li>
-                                    <li><a href="#">drop4</a></li>
+                                    <li><a>drop1</a></li>
+                                    <li><a>drop2</a></li>
+                                    <li><a>drop3</a></li>
+                                    <li><a>drop4</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -2504,22 +2548,22 @@
                             <form action="#" method="post" class="main-form primary-form">
                                 <div class="span-large-8">
                                     <div class="row">
-                                        <label>Celé jméno:</label>
-                                        <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
+                                        <label>Name:</label>
+                                        <input type="text" name="name" placeholder="Name" class="row">
                                     </div>
                                     <div class="row">
-                                        <label>Váš e-mail:</label>
-                                        <input type="email" name="email" placeholder="novak@info.cz" class="row">
+                                        <label>Email:</label>
+                                        <input type="email" name="email" placeholder="john@info.com" class="row">
                                     </div>
                                     <div class="row">
-                                        <label>Předmět:</label>
-                                        <input type="text" name="subject" placeholder="neco..." class="row" value="">
+                                        <label>Subject:</label>
+                                        <input type="text" name="subject" placeholder="Subject..." class="row" value="">
                                     </div>
                                 </div>
                                 <div class="span-large-16">
                                     <div class="row">
-                                        <label>Nezavazna poptavka...</label>
-                                        <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
+                                        <label>Text...</label>
+                                        <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Text something...."></textarea>
                                     </div>
                                 </div>
                                 <div class="span-large-8">
@@ -2556,60 +2600,58 @@
                             <h3>&lt;/&gt;</h3>
                             <div class="pre">
                                 <div class="copy-box">
-                                    <div class="copy-text">
-                                        <div class="row">
-                                            <form action="#" method="post" class="main-form primary-form">
-                                                <div class="span-large-8">
-                                                    <div class="row">
-                                                        <label>Celé jméno:</label>
-                                                        <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
-                                                    </div>
-                                                    <div class="row">
-                                                        <label>Váš e-mail:</label>
-                                                        <input type="email" name="email" placeholder="novak@info.cz" class="row">
-                                                    </div>
-                                                    <div class="row">
-                                                        <label>Předmět:</label>
-                                                        <input type="text" name="subject" placeholder="neco..." class="row" value="">
-                                                    </div>
+                                    <div class="copy-text"><div class="row">
+                                        <form action="#" method="post" class="main-form primary-form">
+                                            <div class="span-large-8">
+                                                <div class="row">
+                                                    <label>Celé jméno:</label>
+                                                    <input type="text" name="name" placeholder="Jmeno Prijmeni" class="row">
                                                 </div>
-                                                <div class="span-large-16">
-                                                    <div class="row">
-                                                        <label>Nezavazna poptavka...</label>
-                                                        <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
-                                                    </div>
+                                                <div class="row">
+                                                    <label>Váš e-mail:</label>
+                                                    <input type="email" name="email" placeholder="novak@info.cz" class="row">
                                                 </div>
-                                                <div class="span-large-8">
-                                                    <div class="form-checkbox">
-                                                        <input id="Option" type="checkbox" checked>
-                                                        <label class="checkbox" for="Option">Option-1</label>
-                                                        <input id="Option1" type="checkbox">
-                                                        <label class="checkbox" for="Option1">Option-2</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" name="radio" value="01" id="radio01" checked>
-                                                        <label for="radio01" class="radio">Male</label>
-                                                        <input type="radio" name="radio" value="02" id="radio02">
-                                                        <label for="radio02" class="radio">Female</label>
-                                                    </div>
-                                                    <div class="form-select">
-                                                        <label class="label">Select Box
-                                                            <div class="select-style">
-                                                                <select>
-                                                                    <option value="select01">Select01</option>
-                                                                    <option value="select02">Select02</option>
-                                                                    <option value="select03">Select03</option>
-                                                                </select>
-                                                            </div>
-                                                        </label>
-                                                    </div>
+                                                <div class="row">
+                                                    <label>Předmět:</label>
+                                                    <input type="text" name="subject" placeholder="neco..." class="row" value="#">
                                                 </div>
-                                                <div class="span-large-16">
-                                                    <input type="submit" name="submit" value="Button" class="button button-submit-email">
+                                            </div>
+                                            <div class="span-large-16">
+                                                <div class="row">
+                                                    <label>Nezavazna poptavka...</label>
+                                                    <textarea class="row" name="message" id="message" cols="30" rows="8" placeholder="Napiste neco...."></textarea>
                                                 </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                            </div>
+                                            <div class="span-large-8">
+                                                <div class="form-checkbox">
+                                                    <input id="Option" type="checkbox" checked>
+                                                    <label class="checkbox" for="Option">Option-1</label>
+                                                    <input id="Option1" type="checkbox">
+                                                    <label class="checkbox" for="Option1">Option-2</label>
+                                                </div>
+                                                <div class="form-radio">
+                                                    <input type="radio" name="radio" value="01" id="radio01" checked>
+                                                    <label for="radio01" class="radio">Male</label>
+                                                    <input type="radio" name="radio" value="02" id="radio02">
+                                                    <label for="radio02" class="radio">Female</label>
+                                                </div>
+                                                <div class="form-select">
+                                                    <label class="label">Select Box
+                                                        <div class="select-style">
+                                                            <select>
+                                                                <option value="select01">Select01</option>
+                                                                <option value="select02">Select02</option>
+                                                                <option value="select03">Select03</option>
+                                                            </select>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="span-large-16">
+                                                <input type="submit" name="submit" value="Button" class="button button-submit-email">
+                                            </div>
+                                        </form>
+                                    </div></div>
                                     <a class="button button-copy">Copy</a>
                                 </div>
                             <pre>
@@ -2618,22 +2660,22 @@
     <span class="el">&lt;form</span> <span class="pr">action="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">method="</span><span class="ch">post</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">main-form primary-form</span><span class="pr">"</span><span class="el">&gt;</span>
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-8</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
-                <span class="el">&lt;label&gt;</span>Celé jméno:<span class="el">&lt;/label&gt;</span>
-                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">name</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Jmeno Prijmeni</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>name:<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">name</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Name</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;/div&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
-                <span class="el">&lt;label&gt;</span>Váš e-mail:<span class="el">&lt;/label&gt;</span>
-                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">novak@info.cz</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>Email:<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">john@info.com</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;/div&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
-                <span class="el">&lt;label&gt;</span>Předmět:<span class="el">&lt;/label&gt;</span>
-                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">subject</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">neco...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;label&gt;</span>Subject:<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">subject</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Subject...</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span> <span class="pr">value="</span><span class="ch">#</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;/div&gt;</span>
         <span class="el">&lt;/div&gt;</span>
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-16</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
-                <span class="el">&lt;label&gt;</span>Nezavazna poptavka...<span class="el">&lt;/label&gt;</span>
-                <span class="el">&lt;textarea</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">message</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">message</span><span class="pr">"</span> <span class="pr">cols="</span><span class="ch">30</span><span class="pr">"</span> <span class="pr">rows="</span><span class="ch">8</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Napiste neco....</span><span class="pr">"</span><span class="el">&gt;&lt;/textarea&gt;</span>
+                <span class="el">&lt;label&gt;</span>Text...<span class="el">&lt;/label&gt;</span>
+                <span class="el">&lt;textarea</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">message</span><span class="pr">"</span> <span class="pr">id="</span><span class="ch">message</span><span class="pr">"</span> <span class="pr">cols="</span><span class="ch">30</span><span class="pr">"</span> <span class="pr">rows="</span><span class="ch">8</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Text something....</span><span class="pr">"</span><span class="el">&gt;&lt;/textarea&gt;</span>
             <span class="el">&lt;/div&gt;</span>
         <span class="el">&lt;/div&gt;</span>
         <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-8</span><span class="pr">"</span><span class="el">&gt;</span>
@@ -2697,6 +2739,7 @@
                                     <span>Forgot you password? <a class="color-primary bold" href="">Change it here.</a></span>
                                 </div>
                             </form>
+
                             <h3>&lt;/&gt;</h3>
                             <div class="pre">
                                 <div class="copy-box">
@@ -2987,11 +3030,16 @@
             <div class="container">
                 <div class="row">
                     <div class="span-medium-12">
+                        <!--<div class="navbar">-->
+                            <!--<ul>-->
+                                <!--<li><a href="#">Privacy</a></li>-->
+                                <!--<li><a href="#">Terms</a></li>-->
+                                <!--<li><a href="#">Contact</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
                         <div class="navbar">
                             <ul>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="http://www.modernipodnikatel.cz" target="_blank">Modernipodnikatel.cz</a></li>
                             </ul>
                         </div>
                     </div>

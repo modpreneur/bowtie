@@ -406,6 +406,10 @@ pre:hover {
     position: absolute;
     top: 0;
     right: 0;
+    border: 3px solid #E0E0E0;
+}
+.icons .copy-box a.button-copy {
+    border: none;
 }
 .copy-box a.zeroclipboard-is-hover {
    /*background-color: red;*/
