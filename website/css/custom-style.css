@@ -828,3 +828,26 @@ ul.sub-side-group {
 li.active-menu + ul.sub-side-group {
     display: block;
 }
+
+.generatecss .form-select {
+    height: 65px;
+}
+.generatecss form.main-form .form-select .select-style {
+    margin-left: 0;
+    width: 100%;
+}
+.generatecss form.main-form.select-modules-checkboxes .form-checkbox {
+    padding-bottom: 30px;
+}
+.generatecss form.main-form.select-modules-checkboxes label.checkbox {
+    min-width: 130px;
+}
+.generatecss .form-checkbox div {
+    display: inline;
+}
+
+.generatecss .check-all {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
