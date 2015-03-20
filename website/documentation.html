@@ -116,6 +116,8 @@
                                         <li class="sub-side"><a href="#login-sub-navigate">Login</a></li>
                                         <li class="sub-side"><a href="#reser-pass-sub-navigate">Forgot Password</a></li>
                                         <li class="sub-side"><a href="#registration-sub-navigate">Registration</a></li>
+                                        <li class="sub-side"><a href="#post-pre-fix-sub-navigate">Post/pre - fix</a></li>
+                                        <li class="sub-side"><a href="#inline-form-sub-navigate">Inline form</a></li>
                                     </ul>
                                     <!--<li><a href="#-navigate">Side</a></li>-->
                                     <li><a href="#">Back to Top</a></li>
@@ -2902,7 +2904,7 @@
                                             <label>
                                                 <span class="label">Email:</span>
             <span class="input-postfix-icon">
-                <input type="text" class="form-control" placeholder="Email" />
+                <input type="email" class="form-control" placeholder="Email" />
                 <span class="color-black tiecons tiecons-mail-negative color-black"></span>
             </span>
                                             </label>
@@ -2940,7 +2942,7 @@
     <span class="el">&lt;label&gt;</span>
         <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Email:<span class="el">&lt;/span&gt;</span>
         <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
-            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Email</span><span class="pr">"</span> <span class="el">/&gt;</span>
+            <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Email</span><span class="pr">"</span> <span class="el">/&gt;</span>
             <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">color-black tiecons tiecons-mail-negative color-black</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
         <span class="el">&lt;/span&gt;</span>
     <span class="el">&lt;/label&gt;</span>
@@ -2965,7 +2967,440 @@
 </code>
                             </pre>
                             </div>
+
+
+
+                            <h3 id="post-pre-fix-sub-navigate">Post/Pre - fix</h3>
+                            <div class="row">
+                                <div class="span-large-24">
+                                    <form class="inline-form">
+                                        <div class="row">
+                                            <div class="span-none-padding-large-4">
+                                                <span class="label">Name</span>
+                                            </div>
+                                            <div class="span-none-padding-large-10">
+                    <span class="input-postfix-icon input-prefix-icon">
+                        <a class="clear"><span class="tiecons tiecons-cross-angular"></span></a>
+                        <input type="text" class="form-control" placeholder="Name" />
+                        <span class="color-black tiecons tiecons-user-negative color-black"></span>
+                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-4">
+                                                <span class="label">E-mail</span>
+                                            </div>
+                                            <div class="span-none-padding-large-10">
+                    <span class="input-postfix-icon">
+                        <input type="email" class="form-control" placeholder="E-mail" required/>
+                        <span class="color-black tiecons tiecons-mail-negative color-black"></span>
+                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-14">
+                                                <div class="form-select">
+                                                    <div class="sing-in clearfix text-center">
+                                                        <a href="#" class="button button-login">Sign up <span class="tiecons tiecons-arrow-next-border"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text">
+                                        <div class="row">
+                                            <div class="span-large-24">
+                                                <form class="inline-form">
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-4">
+                                                            <span class="label">Name</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-10">
+                    <span class="input-postfix-icon input-prefix-icon">
+                        <a class="clear"><span class="tiecons tiecons-cross-angular"></span></a>
+                        <input type="text" class="form-control" placeholder="Name" />
+                        <span class="color-black tiecons tiecons-user-negative color-black"></span>
+                    </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-4">
+                                                            <span class="label">E-mail</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-10">
+                    <span class="input-postfix-icon">
+                        <input type="email" class="form-control" placeholder="E-mail" required/>
+                        <span class="color-black tiecons tiecons-mail-negative color-black"></span>
+                    </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-14">
+                                                            <div class="form-select">
+                                                                <div class="sing-in clearfix text-center">
+                                                                    <a href="#" class="button button-login">Sign up <span class="tiecons tiecons-arrow-next-border"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-24</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;form</span> <span class="pr">class="</span><span class="ch">inline-form</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-4</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Name<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-10</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon input-prefix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;a</span> <span class="pr">class="</span><span class="ch">clear</span><span class="pr">"</span><span class="el">&gt;&lt;span</span> <span class="pr">class="</span><span class="ch">tiecons tiecons-cross-angular</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Name</span><span class="pr">"</span> <span class="el">/&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">color-black tiecons tiecons-user-negative color-black</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
+                <span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-4</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>E-mail<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-10</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">E-mail</span><span class="pr">"</span> <span class="pr">required</span><span class="el"> /&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">color-black tiecons tiecons-mail-negative color-black</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
+                <span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-14</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">form-select</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">sing-in clearfix text-center</span><span class="pr">"</span><span class="el">&gt;</span>
+                            <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-login</span><span class="pr">"</span><span class="el">&gt;</span>Sign up <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tiecons tiecons-arrow-next-border</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+                        <span class="el">&lt;/div&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/form&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+</code>
+                            </pre>
+                            </div>
+
+
+                            <h3 id="inline-form-sub-navigate">Inline form</h3>
+                            <div class="row">
+                                <div class="span-large-24">
+                                    <form class="inline-form">
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">Name</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="text" class="form-control" placeholder="Name" />
+                        <span class="color-black tiecons tiecons-user-negative color-black"></span>
+                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">E-mail</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="email" class="form-control" placeholder="E-mail" required/>
+                        <span class="color-black tiecons tiecons-mail-negative color-black"></span>
+                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">Password</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="password" class="form-control" placeholder="Password" />
+                        <span class="tiecons tiecons-lock-negative"></span>
+                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">Password confirmation</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="password" class="form-control" placeholder="Password confirmation" />
+                        <span class="tiecons tiecons-loading"></span>
+                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">Agree TOS</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                                                <div class="input-postfix-icon form-checkbox">
+                                                    <input id="Option0001" type="checkbox">
+                                                    <label class="checkbox" for="Option0001">&nbsp;</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">Birthdate</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                                                <div class="input-postfix-icon">
+                                                    <input id="dobe" name="dob" type="date" class="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
+                                                <span class="label">Select Box</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                                                <div class="input-postfix-icon form-select">
+                                                    <div class="select-style form-control">
+                                                        <select>
+                                                            <option value="select01">Select01</option>
+                                                            <option value="select02">Select02</option>
+                                                            <option value="select03">Select03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-19">
+                                                <div class="form-select">
+                                                    <div class="sing-in clearfix text-center">
+                                                        <a href="#" class="button button-login">Sign up <span class="tiecons tiecons-arrow-next-border"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h3>&lt;/&gt;</h3>
+                            <div class="pre">
+                                <div class="copy-box">
+                                    <div class="copy-text"><div class="row">
+                                            <div class="span-large-24">
+                                                <form class="inline-form">
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">Name</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="text" class="form-control" placeholder="Name" />
+                        <span class="color-black tiecons tiecons-user-negative color-black"></span>
+                    </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">E-mail</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="email" class="form-control" placeholder="E-mail" required/>
+                        <span class="color-black tiecons tiecons-mail-negative color-black"></span>
+                    </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">Password</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="password" class="form-control" placeholder="Password" />
+                        <span class="tiecons tiecons-lock-negative"></span>
+                    </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">Password confirmation</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                    <span class="input-postfix-icon">
+                        <input type="password" class="form-control" placeholder="Password confirmation" />
+                        <span class="tiecons tiecons-loading"></span>
+                    </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">Agree TOS</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                                                            <div class="input-postfix-icon form-checkbox">
+                                                                <input id="Option0001" type="checkbox">
+                                                                <label class="checkbox" for="Option0001">&nbsp;</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">Birthdate</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                                                            <div class="input-postfix-icon">
+                                                                <input id="dobe" name="dob" type="date" class="date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-7">
+                                                            <span class="label">Select Box</span>
+                                                        </div>
+                                                        <div class="span-none-padding-large-12">
+                                                            <div class="input-postfix-icon form-select">
+                                                                <div class="select-style form-control">
+                                                                    <select>
+                                                                        <option value="select01">Select01</option>
+                                                                        <option value="select02">Select02</option>
+                                                                        <option value="select03">Select03</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="span-none-padding-large-19">
+                                                            <div class="form-select">
+                                                                <div class="sing-in clearfix text-center">
+                                                                    <a href="#" class="button button-login">Sign up <span class="tiecons tiecons-arrow-next-border"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div></div>
+                                    <a class="button button-copy">Copy</a>
+                                </div>
+                            <pre>
+<code class="language-html" data-lang="html">
+&lt;div class="row"&gt;
+    &lt;div class="span-large-24"&gt;
+        &lt;form class="inline-form"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;Name&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                &lt;span class="input-postfix-icon"&gt;
+                    &lt;input type="text" class="form-control" placeholder="Name" /&gt;
+                    &lt;span class="color-black tiecons tiecons-user-negative color-black"&gt;&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;E-mail&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                &lt;span class="input-postfix-icon"&gt;
+                    &lt;input type="email" class="form-control" placeholder="E-mail" required/&gt;
+                    &lt;span class="color-black tiecons tiecons-mail-negative color-black"&gt;&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;Password&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                &lt;span class="input-postfix-icon"&gt;
+                    &lt;input type="password" class="form-control" placeholder="Password" /&gt;
+                    &lt;span class="tiecons tiecons-lock-negative"&gt;&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;Password confirmation&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                &lt;span class="input-postfix-icon"&gt;
+                    &lt;input type="password" class="form-control" placeholder="Password confirmation" /&gt;
+                    &lt;span class="tiecons tiecons-loading"&gt;&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;Agree TOS&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                    &lt;div class="input-postfix-icon form-checkbox"&gt;
+                        &lt;input id="Option0001" type="checkbox"&gt;
+                        &lt;label class="checkbox" for="Option0001"&gt;&nbsp;&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;Birthdate&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                    &lt;div class="input-postfix-icon"&gt;
+                        &lt;input id="dobe" name="dob" type="date" class="date"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-7"&gt;
+                    &lt;span class="label"&gt;Select Box&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="span-none-padding-large-12"&gt;
+                    &lt;div class="input-postfix-icon form-select"&gt;
+                        &lt;div class="select-style form-control"&gt;
+                            &lt;select&gt;
+                                &lt;option value="select01"&gt;Select01&lt;/option&gt;
+                                &lt;option value="select02"&gt;Select02&lt;/option&gt;
+                                &lt;option value="select03"&gt;Select03&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="span-none-padding-large-19"&gt;
+                    &lt;div class="form-select"&gt;
+                        &lt;div class="sing-in clearfix text-center"&gt;
+                            &lt;a href="#" class="button button-login"&gt;Sign up &lt;span class="tiecons tiecons-arrow-next-border"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+                            </pre>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -3061,5 +3496,19 @@
 
 <script src="js/scrollSpy.js"></script>
 <script src="js/main.js"></script>
+<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+<script>
+    webshims.setOptions('forms-ext', {types: 'date'});
+    webshims.polyfill('forms forms-ext');
+
+    var range = $('.input-range'),
+            value = $('.range-value');
+
+    value.html(range.attr('value'));
+
+    range.on('input', function(){
+        value.html(this.value);
+    });
+</script>l
 </body>
 </html>
