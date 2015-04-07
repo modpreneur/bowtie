@@ -2973,7 +2973,7 @@
                             <h3 id="post-pre-fix-sub-navigate">Post/Pre - fix</h3>
                             <div class="row">
                                 <div class="span-large-24">
-                                    <form class="inline-form">
+                                    <form class="inline-form-row">
                                         <div class="row">
                                             <div class="span-none-padding-large-4">
                                                 <span class="label">Name</span>
@@ -3016,7 +3016,7 @@
                                     <div class="copy-text">
                                         <div class="row">
                                             <div class="span-large-24">
-                                                <form class="inline-form">
+                                                <form class="inline-form-row">
                                                     <div class="row">
                                                         <div class="span-none-padding-large-4">
                                                             <span class="label">Name</span>
@@ -3059,7 +3059,7 @@
 <code class="language-html" data-lang="html">
 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
     <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-24</span><span class="pr">"</span><span class="el">&gt;</span>
-        <span class="el">&lt;form</span> <span class="pr">class="</span><span class="ch">inline-form</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;form</span> <span class="pr">class="</span><span class="ch">inline-form-row</span><span class="pr">"</span><span class="el">&gt;</span>
             <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
                 <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-4</span><span class="pr">"</span><span class="el">&gt;</span>
                     <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Name<span class="el">&lt;/span&gt;</span>
@@ -3103,7 +3103,7 @@
                             <h3 id="inline-form-sub-navigate">Inline form</h3>
                             <div class="row">
                                 <div class="span-large-24">
-                                    <form class="inline-form">
+                                    <form class="inline-form-row">
                                         <div class="row">
                                             <div class="span-none-padding-large-7">
                                                 <span class="label">Name</span>
@@ -3171,6 +3171,16 @@
                                         </div>
                                         <div class="row">
                                             <div class="span-none-padding-large-7">
+                                                <span class="label">Birthdate with time</span>
+                                            </div>
+                                            <div class="span-none-padding-large-12">
+                                                <div class="input-postfix-icon">
+                                                    <input id="dobe" name="dob" type="datetime-local" class="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="span-none-padding-large-7">
                                                 <span class="label">Select Box</span>
                                             </div>
                                             <div class="span-none-padding-large-12">
@@ -3202,7 +3212,7 @@
                                 <div class="copy-box">
                                     <div class="copy-text"><div class="row">
                                             <div class="span-large-24">
-                                                <form class="inline-form">
+                                                <form class="inline-form-row">
                                                     <div class="row">
                                                         <div class="span-none-padding-large-7">
                                                             <span class="label">Name</span>
@@ -3300,102 +3310,125 @@
                                 </div>
                             <pre>
 <code class="language-html" data-lang="html">
-&lt;div class="row"&gt;
-    &lt;div class="span-large-24"&gt;
-        &lt;form class="inline-form"&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;Name&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                &lt;span class="input-postfix-icon"&gt;
-                    &lt;input type="text" class="form-control" placeholder="Name" /&gt;
-                    &lt;span class="color-black tiecons tiecons-user-negative color-black"&gt;&lt;/span&gt;
-                &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;E-mail&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                &lt;span class="input-postfix-icon"&gt;
-                    &lt;input type="email" class="form-control" placeholder="E-mail" required/&gt;
-                    &lt;span class="color-black tiecons tiecons-mail-negative color-black"&gt;&lt;/span&gt;
-                &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;Password&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                &lt;span class="input-postfix-icon"&gt;
-                    &lt;input type="password" class="form-control" placeholder="Password" /&gt;
-                    &lt;span class="tiecons tiecons-lock-negative"&gt;&lt;/span&gt;
-                &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;Password confirmation&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                &lt;span class="input-postfix-icon"&gt;
-                    &lt;input type="password" class="form-control" placeholder="Password confirmation" /&gt;
-                    &lt;span class="tiecons tiecons-loading"&gt;&lt;/span&gt;
-                &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;Agree TOS&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                    &lt;div class="input-postfix-icon form-checkbox"&gt;
-                        &lt;input id="Option0001" type="checkbox"&gt;
-                        &lt;label class="checkbox" for="Option0001"&gt;&nbsp;&lt;/label&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;Birthdate&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                    &lt;div class="input-postfix-icon"&gt;
-                        &lt;input id="dobe" name="dob" type="date" class="date"&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-7"&gt;
-                    &lt;span class="label"&gt;Select Box&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class="span-none-padding-large-12"&gt;
-                    &lt;div class="input-postfix-icon form-select"&gt;
-                        &lt;div class="select-style form-control"&gt;
-                            &lt;select&gt;
-                                &lt;option value="select01"&gt;Select01&lt;/option&gt;
-                                &lt;option value="select02"&gt;Select02&lt;/option&gt;
-                                &lt;option value="select03"&gt;Select03&lt;/option&gt;
-                            &lt;/select&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="span-none-padding-large-19"&gt;
-                    &lt;div class="form-select"&gt;
-                        &lt;div class="sing-in clearfix text-center"&gt;
-                            &lt;a href="#" class="button button-login"&gt;Sign up &lt;span class="tiecons tiecons-arrow-next-border"&gt;&lt;/span&gt;&lt;/a&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+<span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-large-24</span><span class="pr">"</span><span class="el">&gt;</span>
+        <span class="el">&lt;form</span> <span class="pr">class="</span><span class="ch">inline-form-row</span><span class="pr">"</span><span class="el">&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Name<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">text</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Name</span><span class="pr">"</span> <span class="el">/&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">color-black tiecons tiecons-user-negative color-black</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
+                <span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>E-mail<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">email</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">E-mail</span><span class="pr">"</span> <span class="pr">required </span><span class="el">/&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">color-black tiecons tiecons-mail-negative color-black</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
+                <span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>
+Password<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">password</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Password</span><span class="pr">"</span> <span class="el">/&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tiecons tiecons-lock-negative</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
+                <span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Password confirmation<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;input</span> <span class="pr">type="</span><span class="ch">password</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">form-control</span><span class="pr">"</span> <span class="pr">placeholder="</span><span class="ch">Password confirmation</span><span class="pr">"</span> <span class="el">/&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tiecons tiecons-loading</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;</span>
+                <span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Agree TOS<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-postfix-icon form-checkbox</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">Option0001</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">checkbox</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;label</span> <span class="pr">class="</span><span class="ch">checkbox</span><span class="pr">"</span> <span class="pr">for="</span><span class="ch">Option0001</span><span class="pr">"</span><span class="el">&gt;</span>&nbsp;<span class="el">&lt;/label&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Birthdate<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">dobe</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">dob</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">date</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">date</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Birthdate with time<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-postfix-icon</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;input</span> <span class="pr">id="</span><span class="ch">dobe</span><span class="pr">"</span> <span class="pr">name="</span><span class="ch">dob</span><span class="pr">"</span> <span class="pr">type="</span><span class="ch">datetime-local</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">date</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-7</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">label</span><span class="pr">"</span><span class="el">&gt;</span>Select Box<span class="el">&lt;/span&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-12</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">input-postfix-icon form-select</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">select-style form-control</span><span class="pr">"</span><span class="el">&gt;</span>
+                            <span class="el">&lt;select&gt;</span>
+                                <span class="el">&lt;option</span> <span class="pr">value="</span><span class="ch">select01</span><span class="pr">"</span><span class="el">&gt;</span>Select01<span class="el">&lt;/option&gt;</span>
+                                <span class="el">&lt;option</span> <span class="pr">value="</span><span class="ch">select02</span><span class="pr">"</span><span class="el">&gt;</span>Select02<span class="el">&lt;/option&gt;</span>
+                                <span class="el">&lt;option</span> <span class="pr">value="</span><span class="ch">select03</span><span class="pr">"</span><span class="el">&gt;</span>Select03<span class="el">&lt;/option&gt;</span>
+                            <span class="el">&lt;/select&gt;</span>
+                        <span class="el">&lt;/div&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">row</span><span class="pr">"</span><span class="el">&gt;</span>
+                <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">span-none-padding-large-19</span><span class="pr">"</span><span class="el">&gt;</span>
+                    <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">form-select</span><span class="pr">"</span><span class="el">&gt;</span>
+                        <span class="el">&lt;div</span> <span class="pr">class="</span><span class="ch">sing-in clearfix text-center</span><span class="pr">"</span><span class="el">&gt;</span>
+                            <span class="el">&lt;a</span> <span class="pr">href="</span><span class="ch">#</span><span class="pr">"</span> <span class="pr">class="</span><span class="ch">button button-login</span><span class="pr">"</span><span class="el">&gt;</span>Sign up <span class="el">&lt;span</span> <span class="pr">class="</span><span class="ch">tiecons tiecons-arrow-next-border</span><span class="pr">"</span><span class="el">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+                        <span class="el">&lt;/div&gt;</span>
+                    <span class="el">&lt;/div&gt;</span>
+                <span class="el">&lt;/div&gt;</span>
+            <span class="el">&lt;/div&gt;</span>
+        <span class="el">&lt;/form&gt;</span>
+    <span class="el">&lt;/div&gt;</span>
+<span class="el">&lt;/div&gt;</span>
+    !!! Must be for input - date !!!
+&lt;script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    webshims.setOptions('forms-ext', {types: 'date'});
+    webshims.polyfill('forms forms-ext');
+    var range = $('.input-range'),
+            value = $('.range-value');
+    value.html(range.attr('value'));
+    range.on('input', function(){
+        value.html(this.value);
+    });
+&lt;/script&gt;
 </code>
                             </pre>
                             </div>
@@ -3509,6 +3542,6 @@
     range.on('input', function(){
         value.html(this.value);
     });
-</script>l
+</script>
 </body>
 </html>
