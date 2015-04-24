@@ -828,7 +828,6 @@ ul.sub-side-group {
 li.active-menu + ul.sub-side-group {
     display: block;
 }
-
 .generatecss .form-select {
     height: 65px;
 }
@@ -845,7 +844,6 @@ li.active-menu + ul.sub-side-group {
 .generatecss .form-checkbox div {
     display: inline;
 }
-
 .generatecss .check-all {
     position: absolute;
     bottom: 0;
