@@ -791,7 +791,7 @@
       display: block;
     }
   }
-  input[type="submit"] {
+  &>input[type="submit"].button-administration {
     background-color: @admin-success;
     border: solid 1px @admin-success;
     border-radius: 4px;
@@ -837,6 +837,9 @@
       font-weight: 700;
       line-height: 41px;
       padding: 0px 18px;
+      &:hover {
+        color: #ffffff;
+      }
 
       &.peace-of-news {
         color: #ffffff;
@@ -1026,7 +1029,36 @@
     left: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .administration-body {
+    .one-class {
+      float: right !important;
+      display: block !important;
+      position: relative !important;
+      padding: 0px;
+      margin: 0px;
+      min-height: 1px;
+      width: 29.1667%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .one-class {
+    float: left !important;
+    width: 37.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .one-class {
+    float: left !important;
+    width: 33.3333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .one-class {
 
+  }
+}
 
 .animation-bounce {
   -webkit-animation: bounce 4s ease-out infinite;
