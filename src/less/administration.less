@@ -487,12 +487,20 @@
         width: 0;
         visibility: hidden;
         .animated();
+        -webkit-transition-delay: 500ms;
+        -moz-transition-delay: 500ms;
+        -o-transition-delay: 500ms;
+        transition-delay: 500ms;
       }
       &:hover span.hover-text {
         .animated();
         width: 180px;
         left: 27px;
         visibility: visible;
+        -webkit-transition-delay: 500ms;
+        -moz-transition-delay: 500ms;
+        -o-transition-delay: 500ms;
+        transition-delay: 500ms;
       }
     }
   }
@@ -501,7 +509,7 @@
     background-color: #fff;
     border: 1px solid #e8e9ea;
     border-radius: 4px;
-    margin-top: 30px;
+    margin-top: 15px;
     overflow: scroll;
     form {
       .grid_header {
