@@ -471,22 +471,28 @@
         z-index: 10;
       }
       span.hover-text {
-        display: none;
-      }
-      &:hover span.hover-text {
         position: absolute;
         top: 9px;
         display: inline-block;
-        left: 27px;
         background-color: rgb(95, 17, 124);
         color: rgb(255, 255, 255);
         padding: 5px 5px 5px 27px;
-        width: 180px;
         height: 25px;
         border-radius: 18px;
         z-index: 5;
         line-height: 16px;
         font-size: 15px;
+
+        left: 0;
+        width: 0;
+        visibility: hidden;
+        .animated();
+      }
+      &:hover span.hover-text {
+        .animated();
+        width: 180px;
+        left: 27px;
+        visibility: visible;
       }
     }
   }
