@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'nectie';
-	src:url('../fonts/nectie.eot?-v1ftl2');
-	src:url('../fonts/nectie.eot?#iefix-v1ftl2') format('embedded-opentype'),
-		url('../fonts/nectie.woff?-v1ftl2') format('woff'),
-		url('../fonts/nectie.ttf?-v1ftl2') format('truetype'),
-		url('../fonts/nectie.svg?-v1ftl2#nectie') format('svg');
+	font-family: 'necktie';
+	src:url('../fonts/necktie.eot?-v1ftl2');
+	src:url('../fonts/necktie.eot?#iefix-v1ftl2') format('embedded-opentype'),
+		url('../fonts/necktie.woff?-v1ftl2') format('woff'),
+		url('../fonts/necktie.ttf?-v1ftl2') format('truetype'),
+		url('../fonts/necktie.svg?-v1ftl2#necktie') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-.nectie {
-	font-family: 'nectie';
+.necktie {
+	font-family: 'necktie';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
