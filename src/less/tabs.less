@@ -1,139 +1,327 @@
-@-webkit-keyframes content-opacity {
-  from {opacity: 0;}
-  to {opacity: 1;}
+// TABS.less
+@import "variables";
+
+.tabs {
+  position: relative;
+  min-height: 1px; /* This part sucks */
+  clear: both;
+//  margin: 25px 0 60px 0;
 }
-@-moz-keyframes content-opacity {
-  from {opacity: 0;}
-    to {opacity: 1;}
+
+.tabs-border {
+  .clearfix();
 }
-@-o-keyframes content-opacity {
-  from {opacity: 0;}
-    to {opacity: 1;}
+
+.tab {
+  float: left;
 }
-@keyframes content-opacity {
-  from {opacity: 0;}
-    to {opacity: 1;}
+.tab label {
+  background: #FFFFFF;
+  padding: 10px;
+  cursor: pointer;
+  width: 90px;
+  text-align: center;
+  display: block;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+  border-bottom: none;
 }
-.tabs-wrapper {
-  font-size: 0;
-  input[type=radio] {
-    display:none;
+.tab label i {
+  font-style: normal;
+  font-size: 10px;
+  color: #aaa;
+}
+.tab [type=radio] {
+  display: none;
+}
+.tabs .content {
+  position: absolute;
+  top: 40px;
+  opacity: 0;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 0px 20px;
+  border: 1px solid #ccc;
+  height: 0;
+  overflow: scroll;
+
+}
+[type=radio]:checked ~ label {
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+  opacity: 1;
+  min-height: 150px;
+  padding: 20px;
+}
+
+#close-tab {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+#close-tab label {
+  background: white;
+//  border-bottom: 1px solid white;
+}
+
+[type=radio]:checked ~ label ~ #close-tab {
+  z-index: 3;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width: 809px) {
+  .tabs {
+    position: relative;
+    min-height: 150px;
+    clear: both;
+    margin: 25px 0 60px 0;
+    border-bottom: solid 1px #ccc;
   }
-  label {
-    transition:background 0.4s ease, height 0.2s linear;
-    display:inline-block;
+  .tab {
+    float: none;
+    left: -1px;
+  }
+  .tab label {
+    background: #FFFFFF;
+    padding: 10px;
     cursor: pointer;
-    color:#000000;
-    text-align:center;
-    padding:10px 20px;
-    border:solid 1px #cccccc;
-    border-bottom:none;
-    font-size: @font-size-base;
-    background:#ffffff;
-    margin-right:-1px;
-  }
-  label:last-of-type {
-    border-bottom:none;
-  }
-  .tab-body {
-    position:absolute;
-    top:-9999px;
-    opacity:0;
-    padding:10px;
-  }
-  .tab-body-wrapper {
-    font-size: @font-size-base;
-    border:solid 1px #cccccc;
-    border-bottom-right-radius:3px;
-    border-bottom-left-radius:3px;
-    -webkit-animation-delay:0.2s;
-    -webkit-animation-duration:1.5s;
-    -webkit-animation-name:show;
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-delay:0.2s;
-    -moz-animation-duration:1.5s;
-    -moz-animation-name:show;
-    -moz-animation-fill-mode:forwards;
-    -o-animation-delay:0.2s;
-    -o-animation-duration:1.5s;
-    -o-animation-name:show;
-    -o-animation-fill-mode:forwards;
-    animation-delay:0.2s;
-    animation-duration:1.5s;
-    animation-name:show;
-    animation-fill-mode:forwards;
-  }
-}
-#tab1:checked + label,
-#tab2:checked + label,
-#tab3:checked + label,
-#tab4:checked + label,
-#tab5:checked + label,
-#tab6:checked + label,
-#tab7:checked + label,
-#tab8:checked + label,
-#tab9:checked + label,
-#tab10:checked + label,
-#tab11:checked + label,
-#tab12:checked + label,
-#tab13:checked + label,
-#tab14:checked + label,
-#tab15:checked + label,
-#tab16:checked + label,
-#tab17:checked + label,
-#tab18:checked + label,
-#tab19:checked + label,
-#tab20:checked + label {
-  border-top: 2px solid @color-primary;
-  position: relative;
-  top: 1px;
-}
-#tab1:checked ~ .tab-body-wrapper #tab-body-1,
-#tab2:checked ~ .tab-body-wrapper #tab-body-2,
-#tab3:checked ~ .tab-body-wrapper #tab-body-3,
-#tab4:checked ~ .tab-body-wrapper #tab-body-4,
-#tab5:checked ~ .tab-body-wrapper #tab-body-5,
-#tab6:checked ~ .tab-body-wrapper #tab-body-6,
-#tab7:checked ~ .tab-body-wrapper #tab-body-7,
-#tab8:checked ~ .tab-body-wrapper #tab-body-8,
-#tab9:checked ~ .tab-body-wrapper #tab-body-9,
-#tab10:checked ~ .tab-body-wrapper #tab-body-10,
-#tab11:checked ~ .tab-body-wrapper #tab-body-11,
-#tab12:checked ~ .tab-body-wrapper #tab-body-12,
-#tab13:checked ~ .tab-body-wrapper #tab-body-13,
-#tab14:checked ~ .tab-body-wrapper #tab-body-14,
-#tab15:checked ~ .tab-body-wrapper #tab-body-15,
-#tab16:checked ~ .tab-body-wrapper #tab-body-16,
-#tab17:checked ~ .tab-body-wrapper #tab-body-17,
-#tab18:checked ~ .tab-body-wrapper #tab-body-18,
-#tab19:checked ~ .tab-body-wrapper #tab-body-19,
-#tab20:checked ~ .tab-body-wrapper #tab-body-20 {
-  position: relative;
-  top: 0;
-  -webkit-animation-delay: 0.2s;
-  -webkit-animation-duration: 0.8s;
-  -webkit-animation-name: content-opacity;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-delay: 0.2s;
-  -moz-animation-duration: 0.8s;
-  -moz-animation-name: content-opacity;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-delay: 0.2s;
-  -o-animation-duration: 0.8s;
-  -o-animation-name: content-opacity;
-  -o-animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-  animation-duration: 0.8s;
-  animation-name: content-opacity;
-  animation-fill-mode: forwards;
-}
-@media screen and (max-width: 768px) {
-  .tabs-wrapper label {
     width: 100%;
+    text-align: center;
     display: block;
-    margin-top: 1px;
+//    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: inherit;
+    left: 1px;
+    border-right: none;
   }
-  .tabs-wrapper {
-     margin: 0;
-   }
+  #close-tab {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    display: block;
+    width: 100%;
+  }
+  #close-tab label {
+    background: white;
+    border-bottom: 1px solid white;
+    display: block;
+  }
+  .tabs .content {
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    height: 0;
+    overflow: scroll;
+  }
+
+  [type=radio]:checked ~ label ~ .content {
+    height: ~"calc(100% - 40px)";
+    left: -1px;
+  }
 }
+
+@media screen and (min-width: 810px) {
+  .tabs-border {
+    border-bottom: 1px solid #cccccc;
+    padding-left: 30px;
+  }
+}
+
+.tabs-show {
+  position: relative;
+  min-height: 1px; /* This part sucks */
+//  height: 200px;
+  clear: both;
+  //  margin: 25px 0 60px 0;
+
+
+.tabs-border {
+  .clearfix();
+}
+
+.tab {
+  float: left;
+}
+.tab label {
+  background: #FFFFFF;
+  padding: 9px;
+  cursor: pointer;
+  width: 90px;
+  text-align: center;
+  display: block;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+  border-bottom: none;
+}
+.tab label i {
+  font-style: normal;
+  font-size: 10px;
+  color: #aaa;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 40px;
+  opacity: 0;
+//  left: -1px;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 0px 20px;
+  border: 1px solid #ccc;
+  height: 0;
+  overflow: scroll;
+}
+[type=radio]:checked ~ label {
+  z-index: 4;
+  border-top: 2px solid @color-primary;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+  opacity: 1;
+  min-height: 150px;
+  padding: 20px;
+}
+
+#close-tab {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+#close-tab label {
+  background: white;
+  //  border-bottom: 1px solid white;
+}
+
+[type=radio]:checked ~ label ~ #close-tab {
+  z-index: 3;
+}
+}
+
+/*Responsive Styles*/
+@media screen and (max-width: 809px) {
+  .tabs-show {
+    position: relative;
+    min-height: 150px;
+    clear: both;
+    margin: 25px 0 60px 0;
+    border-bottom: solid 1px #ccc;
+
+  .tab {
+    float: none;
+  }
+  .tab label {
+    background: #FFFFFF;
+    padding: 9px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: block;
+    //    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: inherit;
+    left: 1px;
+    border-right: none;
+  }
+  .tabs-border {
+    border-right: 1px solid rgb(204, 204, 204);
+  }
+  #close-tab {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    display: block;
+    width: 100%;
+  }
+  #close-tab label {
+    background: white;
+    border-bottom: 1px solid white;
+    display: block;
+  }
+  .content {
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    height: 0;
+    overflow: scroll;
+  }
+
+  [type=radio]:checked ~ label ~ .content {
+    height: ~"calc(100% - 40px)";
+  }
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .tabs-show {
+    .tabs-border {
+      border-bottom: 1px solid #cccccc;
+      padding-left: 0px;
+    }
+  }
+}
+
+//EXAMLE
+/*
+<div class="tabs">
+  <div class="tabs-border">
+
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-group-1">
+      <label for="tab-1">
+        List 1 <i>&#9660;</i>
+      </label>
+      <div class="tab" id="close-tab">
+        <input type="radio" id="tab-close" name="tab-group-1">
+        <label for="tab-close">
+          List 1 <i>&#9650;</i>
+        </label>
+      </div>
+      <div class="content">
+        ...
+    </div>
+    </div>
+
+  <div class="tab">
+    <input type="radio" id="tab-2" name="tab-group-1">
+    <label for="tab-2">
+      List 2 <i>&#9660;</i>
+    </label>
+    <div class="tab" id="close-tab">
+    <input type="radio" id="tab-close" name="tab-group-1">
+    <label for="tab-close">
+      List 2 <i>&#9650;</i>
+    </label>
+    </div>
+    <div class="content">
+    ...
+    </div>
+  </div>
+
+  </div>
+</div>
+*/
