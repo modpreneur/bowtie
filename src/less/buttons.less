@@ -8,6 +8,7 @@
     text-align: center;
     background-color: @color-dark-grey;
     border: solid 1px @color-dark-grey;
+  border-radius: 4px;
   .animate();
 
     &:hover {
@@ -45,13 +46,14 @@ a.button:hover {
 }
 
 .button-template(@bg-color, @bg-color-hover) {
-  background-color: @bg-color;
-  border: 1px solid @bg-color;
+  background-color: @bg-color !important;
+  border: 1px solid @bg-color !important;
+  color: #ffffff !important;
   font-weight: 600;
 
     &:hover {
-      background-color: @bg-color-hover;
-      border: 1px solid @bg-color-hover;
+      background-color: @bg-color-hover !important;
+      border: 1px solid @bg-color-hover !important;
     }
 }
 
