@@ -121,7 +121,11 @@
   }
 
   .container {
-    max-width: @container-big;
+    width: @container-big;
+  }
+  .section {
+      margin: 0 auto;
+      min-width: @container-big;
   }
 
   .grid-generate-columns(@number-of-columns);

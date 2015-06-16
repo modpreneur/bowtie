@@ -91,12 +91,24 @@
 <!--</div>-->
 
 <div class="side-bar">
+    <!--<div class="dropdown-login">-->
+        <!--<a class="show-drop">-->
+            <!--<span class="tiecons tiecons-circle-normal user-circle-login"><span class="tiecons tiecons-user-negative"></span></span>-->
+            <!--<span class="name">name</span>-->
+            <!--<span class="surname">surname</span>-->
+        <!--</a>-->
+    <!--</div>-->
     <div class="dropdown-login">
-        <a class="show-drop">
+        <label class="show-drop" for="dropdown-login">
             <span class="tiecons tiecons-circle-normal user-circle-login"><span class="tiecons tiecons-user-negative"></span></span>
-            <span class="name">name</span>
-            <span class="surname">surname</span>
-        </a>
+            <span class="username">hermi</span>
+        </label>
+        <input type="checkbox" id="dropdown-login" class="display-none"/>
+        <ul class="show-drop-login">
+            <li><a href="">Profile</a></li>
+            <li><a href="">Change Password</a></li>
+            <li><a href="">Log out</a></li>
+        </ul>
     </div>
 
     <!--<div class="dropdown-login">-->
@@ -162,156 +174,165 @@
         </div>
     </div>
 </div>
+    <div class="navigation-box row margin-top-20 padding-left-20">
+        <a class="new-entry" href="">
+            <span class="tiecons tiecons-plus-radius-large"></span>
+            <span class="hover-text">Create a new entry</span>
+        </a>
+    </div>
 <div class="row">
     <div class="span-medium-24">
-        <div class="grid">
-            <form id="grid_f6602230f6b8989e4e63ad8556e32aec" action="/admin/user/" method="post">
-                <div class="grid_header">
-                    <a class="button button-primary-admin" href=""><span class="tiecons tiecons-plus-radius-base"></span>Create a new entry</a>
-                </div>
-                <div class="grid_body">
-                    <table>
-                        <tr class="grid-row-titles">
-                            <th class=""><a class="order" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_order]=username|asc" title="Order by Nick">Nick</a></th>
-                            <th class=""><a class="order" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_order]=email|asc" title="Order by Email">Email</a></th>
-                            <th class=""><a class="order" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_order]=userFullName|asc" title="Order by Full name">Full name</a></th>
-                            <th class=" last-column">Actions</th>
-                        </tr>
+        <div class="wrapper-grid">
+            <input type="checkbox" class="display-none" id="show-filters" />
+            <label for="show-filters" class="show-filters"><span class="tiecons tiecons-pin-left-negative"></span></label>
 
-                        <tr class="grid-row-filters">
-                            <th class=""><span class="grid-filter-input">
-    <span class="grid-filter-operator">
-    <select name="grid_f6602230f6b8989e4e63ad8556e32aec[username][operator]" onchange="grid_f6602230f6b8989e4e63ad8556e32aec_switchOperator(this, 'grid_f6602230f6b8989e4e63ad8556e32aec__username__query__');">
-        <option value="eq">eq</option>
-        <option value="neq">neq</option>
-        <option value="lt">lt</option>
-        <option value="lte">lte</option>
-        <option value="gt">gt</option>
-        <option value="gte">gte</option>
-        <option value="btw">btw</option>
-        <option value="btwe">btwe</option>
-        <option value="like" selected="selected">like</option>
-        <option value="nlike">nlike</option>
-        <option value="rlike">rlike</option>
-        <option value="llike">llike</option>
-        <option value="slike">slike</option>
-        <option value="nslike">nslike</option>
-        <option value="rslike">rslike</option>
-        <option value="lslike">lslike</option>
-        <option value="isNull">isNull</option>
-        <option value="isNotNull">isNotNull</option>
-    </select>
-</span>
+            <div class="grid">
+                <form id="grid_f6602230f6b8989e4e63ad8556e32aec" action="/admin/user/" method="post">
+                    <div class="grid_header"></div>
+                    <div class="grid_body">
+                        <table>
+                            <tr class="grid-row-titles">
+                                <th class=""><a class="order" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_order]=username|asc" title="Order by Nick">Nick</a></th>
+                                <th class=""><a class="order" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_order]=email|asc" title="Order by Email">Email</a></th>
+                                <th class=""><a class="order" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_order]=userFullName|asc" title="Order by Full name">Full name</a></th>
+                                <th class=" last-column">Actions</th>
+                            </tr>
 
-    <span class="grid-filter-input-query">
-        <input type="text" value="" class="grid-filter-input-query-from" name="grid_f6602230f6b8989e4e63ad8556e32aec[username][from]" id="grid_f6602230f6b8989e4e63ad8556e32aec__username__query__from" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);"  />
-        <input type="text" value="" class="grid-filter-input-query-to" name="grid_f6602230f6b8989e4e63ad8556e32aec[username][to]" id="grid_f6602230f6b8989e4e63ad8556e32aec__username__query__to" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+                            <tr class="grid-row-filters">
+                                <th class=""><span class="grid-filter-input">
+        <span class="grid-filter-operator">
+        <select name="grid_f6602230f6b8989e4e63ad8556e32aec[username][operator]" onchange="grid_f6602230f6b8989e4e63ad8556e32aec_switchOperator(this, 'grid_f6602230f6b8989e4e63ad8556e32aec__username__query__');">
+            <option value="eq">eq</option>
+            <option value="neq">neq</option>
+            <option value="lt">lt</option>
+            <option value="lte">lte</option>
+            <option value="gt">gt</option>
+            <option value="gte">gte</option>
+            <option value="btw">btw</option>
+            <option value="btwe">btwe</option>
+            <option value="like" selected="selected">like</option>
+            <option value="nlike">nlike</option>
+            <option value="rlike">rlike</option>
+            <option value="llike">llike</option>
+            <option value="slike">slike</option>
+            <option value="nslike">nslike</option>
+            <option value="rslike">rslike</option>
+            <option value="lslike">lslike</option>
+            <option value="isNull">isNull</option>
+            <option value="isNotNull">isNotNull</option>
+        </select>
     </span>
-</span>
-                            </th>
-                            <th class=""><span class="grid-filter-input">
-    <span class="grid-filter-operator">
-    <select name="grid_f6602230f6b8989e4e63ad8556e32aec[email][operator]" onchange="grid_f6602230f6b8989e4e63ad8556e32aec_switchOperator(this, 'grid_f6602230f6b8989e4e63ad8556e32aec__email__query__');">
-        <option value="eq">eq</option>
-        <option value="neq">neq</option>
-        <option value="lt">lt</option>
-        <option value="lte">lte</option>
-        <option value="gt">gt</option>
-        <option value="gte">gte</option>
-        <option value="btw">btw</option>
-        <option value="btwe">btwe</option>
-        <option value="like" selected="selected">like</option>
-        <option value="nlike">nlike</option>
-        <option value="rlike">rlike</option>
-        <option value="llike">llike</option>
-        <option value="slike">slike</option>
-        <option value="nslike">nslike</option>
-        <option value="rslike">rslike</option>
-        <option value="lslike">lslike</option>
-        <option value="isNull">isNull</option>
-        <option value="isNotNull">isNotNull</option>
-    </select>
-</span>
 
-    <span class="grid-filter-input-query">
-        <input type="text" value="" class="grid-filter-input-query-from" name="grid_f6602230f6b8989e4e63ad8556e32aec[email][from]" id="grid_f6602230f6b8989e4e63ad8556e32aec__email__query__from" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);"  />
-        <input type="text" value="" class="grid-filter-input-query-to" name="grid_f6602230f6b8989e4e63ad8556e32aec[email][to]" id="grid_f6602230f6b8989e4e63ad8556e32aec__email__query__to" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+        <span class="grid-filter-input-query">
+            <input type="text" value="" class="grid-filter-input-query-from" name="grid_f6602230f6b8989e4e63ad8556e32aec[username][from]" id="grid_f6602230f6b8989e4e63ad8556e32aec__username__query__from" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);"  />
+            <input type="text" value="" class="grid-filter-input-query-to" name="grid_f6602230f6b8989e4e63ad8556e32aec[username][to]" id="grid_f6602230f6b8989e4e63ad8556e32aec__username__query__to" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+        </span>
     </span>
-</span>
-                            </th>
-                            <th class=""><span class="grid-filter-input">
-    <span class="grid-filter-operator">
-    <select name="grid_f6602230f6b8989e4e63ad8556e32aec[userFullName][operator]" onchange="grid_f6602230f6b8989e4e63ad8556e32aec_switchOperator(this, 'grid_f6602230f6b8989e4e63ad8556e32aec__userFullName__query__');">
-        <option value="eq">eq</option>
-        <option value="neq">neq</option>
-        <option value="lt">lt</option>
-        <option value="lte">lte</option>
-        <option value="gt">gt</option>
-        <option value="gte">gte</option>
-        <option value="btw">btw</option>
-        <option value="btwe">btwe</option>
-        <option value="like" selected="selected">like</option>
-        <option value="nlike">nlike</option>
-        <option value="rlike">rlike</option>
-        <option value="llike">llike</option>
-        <option value="slike">slike</option>
-        <option value="nslike">nslike</option>
-        <option value="rslike">rslike</option>
-        <option value="lslike">lslike</option>
-        <option value="isNull">isNull</option>
-        <option value="isNotNull">isNotNull</option>
-    </select>
-</span>
-
-    <span class="grid-filter-input-query">
-        <input type="text" value="" class="grid-filter-input-query-from" name="grid_f6602230f6b8989e4e63ad8556e32aec[userFullName][from]" id="grid_f6602230f6b8989e4e63ad8556e32aec__userFullName__query__from" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);"  />
-        <input type="text" value="" class="grid-filter-input-query-to" name="grid_f6602230f6b8989e4e63ad8556e32aec[userFullName][to]" id="grid_f6602230f6b8989e4e63ad8556e32aec__userFullName__query__to" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+                                </th>
+                                <th class=""><span class="grid-filter-input">
+        <span class="grid-filter-operator">
+        <select name="grid_f6602230f6b8989e4e63ad8556e32aec[email][operator]" onchange="grid_f6602230f6b8989e4e63ad8556e32aec_switchOperator(this, 'grid_f6602230f6b8989e4e63ad8556e32aec__email__query__');">
+            <option value="eq">eq</option>
+            <option value="neq">neq</option>
+            <option value="lt">lt</option>
+            <option value="lte">lte</option>
+            <option value="gt">gt</option>
+            <option value="gte">gte</option>
+            <option value="btw">btw</option>
+            <option value="btwe">btwe</option>
+            <option value="like" selected="selected">like</option>
+            <option value="nlike">nlike</option>
+            <option value="rlike">rlike</option>
+            <option value="llike">llike</option>
+            <option value="slike">slike</option>
+            <option value="nslike">nslike</option>
+            <option value="rslike">rslike</option>
+            <option value="lslike">lslike</option>
+            <option value="isNull">isNull</option>
+            <option value="isNotNull">isNotNull</option>
+        </select>
     </span>
-</span>
-                            </th>
-                            <th class=" last-column">    <a class="grid-reset" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_reset]=">Reset</a>
-                            </th>
-                        </tr>
 
-                        <tr class="grid-row-cells even"><td class="grid-column-username">martin</td><td class="grid-column-email">a@a.cz</td><td class="grid-column-userFullName">        Martin&nbsp;        Kolek&nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/1/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/1/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/1/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">aho</td><td class="grid-column-email">klkds@aa.cy</td><td class="grid-column-userFullName">        aaass2s&nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/2/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/2/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/2/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">test</td><td class="grid-column-email">test@test.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/3/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/3/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/3/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">admin</td><td class="grid-column-email">admin@admin.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/4/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/4/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/4/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">user</td><td class="grid-column-email">user@user.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/5/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/5/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/5/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">necktie</td><td class="grid-column-email">necktie@necktei.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/8/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/8/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/8/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">jensoft</td><td class="grid-column-email">jensoft@jensoft.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/9/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/9/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/9/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">expiresVideo</td><td class="grid-column-email">expiresVideo@expiresVideo.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/10/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/10/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/10/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">lifetime</td><td class="grid-column-email">lifetime@lifetime.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/11/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/11/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/11/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">today</td><td class="grid-column-email">today@today.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/12/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/12/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/12/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">bundle</td><td class="grid-column-email">bundle@bundle.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/13/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/13/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/13/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">video</td><td class="grid-column-email">video@video.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/14/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/14/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/14/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">expiresBundle</td><td class="grid-column-email">expiresBundle@expiresBundle.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/15/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/15/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/15/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">softwareBundle</td><td class="grid-column-email">softwareBundle@softwareBundle.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/16/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/16/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/16/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">userTest</td><td class="grid-column-email">userTest@userTest.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/17/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/17/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/17/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">fisa</td><td class="grid-column-email">fisa@awesome.com</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/18/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/18/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/18/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">abcda</td><td class="grid-column-email">a@aa.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/19/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/19/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/19/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username">adminTest</td><td class="grid-column-email">adminTest@adminTest.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/20/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/20/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/20/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells even"><td class="grid-column-username">noAccess</td><td class="grid-column-email">noAccess@a.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/21/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/21/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/21/product-access/" target="_self">Access</a></li></ul></td>    </tr>
-                        <tr class="grid-row-cells odd"><td class="grid-column-username last-row">kolek</td><td class="grid-column-email last-row">kolek@webvalley.cz</td><td class="grid-column-userFullName last-row">        KEYSER&nbsp;        SOZE&nbsp;</td><td class="grid-column-__actions last-column last-row"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/22/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/22/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/22/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+        <span class="grid-filter-input-query">
+            <input type="text" value="" class="grid-filter-input-query-from" name="grid_f6602230f6b8989e4e63ad8556e32aec[email][from]" id="grid_f6602230f6b8989e4e63ad8556e32aec__email__query__from" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);"  />
+            <input type="text" value="" class="grid-filter-input-query-to" name="grid_f6602230f6b8989e4e63ad8556e32aec[email][to]" id="grid_f6602230f6b8989e4e63ad8556e32aec__email__query__to" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+        </span>
+    </span>
+                                </th>
+                                <th class=""><span class="grid-filter-input">
+        <span class="grid-filter-operator">
+        <select name="grid_f6602230f6b8989e4e63ad8556e32aec[userFullName][operator]" onchange="grid_f6602230f6b8989e4e63ad8556e32aec_switchOperator(this, 'grid_f6602230f6b8989e4e63ad8556e32aec__userFullName__query__');">
+            <option value="eq">eq</option>
+            <option value="neq">neq</option>
+            <option value="lt">lt</option>
+            <option value="lte">lte</option>
+            <option value="gt">gt</option>
+            <option value="gte">gte</option>
+            <option value="btw">btw</option>
+            <option value="btwe">btwe</option>
+            <option value="like" selected="selected">like</option>
+            <option value="nlike">nlike</option>
+            <option value="rlike">rlike</option>
+            <option value="llike">llike</option>
+            <option value="slike">slike</option>
+            <option value="nslike">nslike</option>
+            <option value="rslike">rslike</option>
+            <option value="lslike">lslike</option>
+            <option value="isNull">isNull</option>
+            <option value="isNotNull">isNotNull</option>
+        </select>
+    </span>
 
-                    </table>
-                </div>
-                <div class="grid_footer">
-                    <div class="pager">
-                        33 Results,
+        <span class="grid-filter-input-query">
+            <input type="text" value="" class="grid-filter-input-query-from" name="grid_f6602230f6b8989e4e63ad8556e32aec[userFullName][from]" id="grid_f6602230f6b8989e4e63ad8556e32aec__userFullName__query__from" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);"  />
+            <input type="text" value="" class="grid-filter-input-query-to" name="grid_f6602230f6b8989e4e63ad8556e32aec[userFullName][to]" id="grid_f6602230f6b8989e4e63ad8556e32aec__userFullName__query__to" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+        </span>
+    </span>
+                                </th>
+                                <th class=" last-column">    <a class="grid-reset" href="/admin/user/?grid_f6602230f6b8989e4e63ad8556e32aec[_reset]=">Reset</a>
+                                </th>
+                            </tr>
 
-                        Page
-                        <input type="button" class="prev" disabled="disabled" value="<" onclick="return grid_f6602230f6b8989e4e63ad8556e32aec_previousPage();"/><input type="text" class="current" value="1" size="2" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_enterPage(event, parseInt(this.value)-1);"/><input type="button" value=">" class="next"  onclick="return grid_f6602230f6b8989e4e63ad8556e32aec_nextPage();"/> of 2
-                        , Display
-                        <select onchange="return grid_f6602230f6b8989e4e63ad8556e32aec_resultsPerPage(this.value);">
-                            <option value="20" selected="selected">20</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                        </select> Items per page
+                            <tr class="grid-row-cells even"><td class="grid-column-username">martin</td><td class="grid-column-email">a@a.cz</td><td class="grid-column-userFullName">        Martin&nbsp;        Kolek&nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/1/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/1/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/1/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">aho</td><td class="grid-column-email">klkds@aa.cy</td><td class="grid-column-userFullName">        aaass2s&nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/2/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/2/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/2/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">test</td><td class="grid-column-email">test@test.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/3/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/3/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/3/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">admin</td><td class="grid-column-email">admin@admin.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/4/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/4/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/4/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">user</td><td class="grid-column-email">user@user.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/5/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/5/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/5/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">necktie</td><td class="grid-column-email">necktie@necktei.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/8/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/8/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/8/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">jensoft</td><td class="grid-column-email">jensoft@jensoft.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/9/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/9/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/9/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">expiresVideo</td><td class="grid-column-email">expiresVideo@expiresVideo.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/10/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/10/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/10/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">lifetime</td><td class="grid-column-email">lifetime@lifetime.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/11/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/11/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/11/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">today</td><td class="grid-column-email">today@today.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/12/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/12/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/12/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">bundle</td><td class="grid-column-email">bundle@bundle.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/13/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/13/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/13/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">video</td><td class="grid-column-email">video@video.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/14/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/14/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/14/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">expiresBundle</td><td class="grid-column-email">expiresBundle@expiresBundle.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/15/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/15/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/15/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">softwareBundle</td><td class="grid-column-email">softwareBundle@softwareBundle.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/16/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/16/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/16/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">userTest</td><td class="grid-column-email">userTest@userTest.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/17/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/17/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/17/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">fisa</td><td class="grid-column-email">fisa@awesome.com</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/18/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/18/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/18/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">abcda</td><td class="grid-column-email">a@aa.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/19/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/19/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/19/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username">adminTest</td><td class="grid-column-email">adminTest@adminTest.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/20/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/20/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/20/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells even"><td class="grid-column-username">noAccess</td><td class="grid-column-email">noAccess@a.cz</td><td class="grid-column-userFullName">        &nbsp;        &nbsp;</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/21/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/21/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/21/product-access/" target="_self">Access</a></li></ul></td>    </tr>
+                            <tr class="grid-row-cells odd"><td class="grid-column-username last-row">kolek</td><td class="grid-column-email last-row">kolek@webvalley.cz</td><td class="grid-column-userFullName last-row">        KEYSER&nbsp;        SOZE&nbsp;</td><td class="grid-column-__actions last-column last-row"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/22/show" target="_self">View</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/22/edit" target="_self">Edit</a></li><li><a href="http://necktie.sandbox.modpreneur.com/admin/user/22/product-access/" target="_self">Access</a></li></ul></td>    </tr>
 
+                        </table>
                     </div>
-                </div>
-            </form>
+                    <div class="grid_footer">
+                        <div class="pager">
+                            33 Results,
+
+                            Page
+                            <input type="button" class="prev" disabled="disabled" value="<" onclick="return grid_f6602230f6b8989e4e63ad8556e32aec_previousPage();"/><input type="text" class="current" value="1" size="2" onkeypress="return grid_f6602230f6b8989e4e63ad8556e32aec_enterPage(event, parseInt(this.value)-1);"/><input type="button" value=">" class="next"  onclick="return grid_f6602230f6b8989e4e63ad8556e32aec_nextPage();"/> of 2
+                            , Display
+                            <select onchange="return grid_f6602230f6b8989e4e63ad8556e32aec_resultsPerPage(this.value);">
+                                <option value="20" selected="selected">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> Items per page
+
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
