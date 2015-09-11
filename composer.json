@@ -6,6 +6,6 @@
             "email": "hermann@webvalley.cz"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "require": {}
 }
