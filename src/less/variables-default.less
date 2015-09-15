@@ -15,17 +15,12 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
-body {
-  line-height: 1;
 }
 ol, ul {
   list-style: none;
@@ -51,10 +46,13 @@ table {
 @color-secondary:         #505050;
 @color-tertiary:          #1F3A93;
 
-@color-info:              #2ba6cb;
 @color-warning:           #FF6600;
+@color-info:              #2ba6cb;
 @color-success:           #5da423;
 @color-danger:            #FF0000;
+
+@color-adonis:            #edcf53;
+@color-venus:             #4fadd7;
 
 @color-rememberme:        @color-primary;
 @color-primary-lighter:   lighten(@color-primary, 20%);
@@ -64,14 +62,21 @@ table {
 @color-grey:              #DDDDDD;
 @color-grey-light:        #DBDBDB;
 @color-grey-dark:         #676767;
-
 @color-grey-dark-hover:   #303030;
-
-
 @color-dark-grey:         #999999;
 @gray-light:              lighten(#000, 46.7%); // #777
+
 @color-white:             #ffffff;
 @color-black:             #000000;
+
+@color-red:               #FF0000;
+@color-green:             #00FF00;
+@color-blue:              #0000FF;
+@color-yellow:            @color-adonis;
+@color-pink:              #FF66CC;
+@color-brown:             #8A5826;
+@color-orange:            #FF9933;
+@color-purple:            #751975;
 
 // hover
 @color-primary-hover:     darken(@color-primary, 10%);
@@ -83,8 +88,20 @@ table {
 @color-success-hover:     darken(@color-success, 10%);
 @color-danger-hover:      darken(@color-danger, 10%);
 
+@color-venus-hover:       darken(@color-venus, 10%);
+@color-adonis-hover:      darken(@color-adonis, 10%);
+
 @color-muted-hover:       darken(@text-muted, 10%);
 @color-dark-grey-hover:   darken(#999999, 10%);
+
+@color-red-hover:               darken(@color-red, 10%);
+@color-green-hover:             darken(@color-green, 10%);
+@color-blue-hover:              darken(@color-blue, 10%);
+@color-yellow-hover:            darken(@color-yellow, 10%);
+@color-pink-hover:              darken(@color-pink, 10%);
+@color-brown-hover:             darken(@color-brown, 10%);
+@color-orange-hover:            darken(@color-orange, 10%);
+@color-purple-hover:            darken(@color-purple, 10%);
 
 
 //---------------//
@@ -103,7 +120,7 @@ table {
 @columns: 24;                           // number of columns
 @responsive: false;                     // generate responsive columns?
 @column-padding-vertical: 0;            // vertical padding for each column
-@column-padding-horizontal: @space-medium;       // horizontal padding for each column
+@column-padding-horizontal: 20px;       // horizontal padding for each column
 @column-margin-vertical: 0px;           // vertical margin for each column
 @column-margin-horizontal: 0px;         // horizontal margin for each column
 // thresholds for screen sizes
@@ -227,18 +244,18 @@ table {
 
 @font-weight-normal:               500;
 
-@font-family-sans-serif:           "Proxima Nova", sans-serif;
+//@font-family-sans-serif:           "Proxima Nova", sans-serif;
+@font-family-sans-serif:           "Arial", sans-serif;
 @font-family-serif:                Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:            Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:                 @font-family-sans-serif;
 
-@line-height-base:                 ceil((@font-size-base * 1.618));
+@headings-line-height:             1.1;
+@line-height-base:                 1.618;
 
 //** Text muted color
 @text-muted:                       @gray-light;
 
-
-// WHATEVER  // TODO  ????
 @small:                            1px;
 
 
@@ -246,7 +263,7 @@ body {
     font-family:                      @font-family-base;
     font-size:                        @font-size-base;
     line-height:                      @line-height-base;
-    margin:                           0px;
+    margin:                           0;
 }
 
 .animate (@animated: all 700ms ease) {
@@ -269,34 +286,61 @@ body {
 
 .grayscale () {
   -webkit-filter: @grayscale;
+  -moz-filter: @grayscale;
+  -o-filter: @grayscale;
+  filter: @grayscale;
 }
 .saturate () {
   -webkit-filter: @saturate;
+  -moz-filter: @saturate;
+  -o-filter: @saturate;
+  filter: @saturate;
 }
 .contrast () {
   -webkit-filter: @contrast;
+  -moz-filter: @contrast;
+  -o-filter: @contrast;
+  filter: @contrast;
 }
 .brightness () {
   -webkit-filter: @brightness;
+  -moz-filter: @brightness;
+  -o-filter: @brightness;
+  filter: @brightness;
 }
 .blur () {
   -webkit-filter: @blur;
+  -moz-filter: @blur;
+  -o-filter: @blur;
+  filter: @blur;
 }
 .invert () {
   -webkit-filter: @invert;
+  -moz-filter: @invert;
+  -o-filter: @invert;
+  filter: @invert;
 }
 .sepia () {
   -webkit-filter: @sepia;
+  -moz-filter: @sepia;
+  -o-filter: @sepia;
+  filter: @sepia;
 }
 .huerotate () {
   -webkit-filter: @huerotate;
+  -moz-filter: @huerotate;
+  -o-filter: @huerotate;
+  filter: @huerotate;
 }
 .opacity () {
   -webkit-filter: @opacity;
+  -moz-filter: @opacity;
+  -o-filter: @opacity;
+  filter: @opacity;
 }
 
 .img-responsive {
-  max-width: 100% !important;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -312,41 +356,41 @@ body {
   }
 }
 
-.background-primary {
-  background-color: @color-primary;
-}
-.background-secondary {
-  background-color: @color-secondary;
-}
-.background-tertiary {
-  background-color: @color-tertiary;
-}
-.background-info {
-  background-color: @color-info;
-}
-.background-success {
-  background-color: @color-success;
-}
-.background-danger {
-  background-color: @color-danger;
-}
-.background-warning {
-  background-color: @color-warning;
-}
-.background-white {
-  background-color: @color-white;
-}
-.background-black {
-  background-color: @color-black;
-}
+.background-primary       {background-color: @color-primary !important;}
+.background-secondary     {background-color: @color-secondary !important;}
+.background-tertiary      {background-color: @color-tertiary !important;}
+.background-info          {background-color: @color-info !important;}
+.background-success       {background-color: @color-success !important;}
+.background-danger        {background-color: @color-danger !important;}
+.background-warning       {background-color: @color-warning !important;}
 
-.static {
-  position: static !important;
-}
+.background-white         {background-color: @color-white !important;}
+.background-black         {background-color: @color-black !important;}
 
-//EXAMPLES
-/*
-<div class="background-primary">
-  background-primary
-</div>
-*/
+.background-venus         {background-color: @color-venus !important;}
+.background-adonis        {background-color: @color-adonis !important;}
+
+.background-red           {background-color: @color-red !important;}
+.background-green         {background-color: @color-green !important;}
+.background-blue          {background-color: @color-blue !important;}
+.background-yellow        {background-color: @color-yellow !important;}
+.background-pink          {background-color: @color-pink !important;}
+.background-brown         {background-color: @color-brown !important;}
+.background-orange        {background-color: @color-orange !important;}
+.background-purple        {background-color: @color-purple !important;}
+
+
+.static {position: static !important;}
+.fixed {position: fixed !important;}
+.absolute {position: absolute !important;}
+.relative {position: relative !important;}
+
+.nomark,
+label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

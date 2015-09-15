@@ -5,6 +5,7 @@
     width: 100%;
     padding-top: @space-small;
     padding-bottom: @space-small;
+    font-size: 0; //must be, eliminate gap between li
 }
 
 .navbar ul {
@@ -15,9 +16,11 @@
 
 .navbar ul li {
     display: inline;
+    white-space: pre;
 }
 
 .navbar ul li a {
+  font-size: @font-size-base;
     padding: @space-small @space-small * 2;
   color: @color-secondary;
 }

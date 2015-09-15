@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Necktie administration</title>
+    <link rel="stylesheet" href="../src/css/bowtie.css"/>
+    <link rel="stylesheet" href="css/necktie-icons.css"/>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body class="administration-body">
+
+<!--<div class="menu fixed">-->
+<!--<div class="container-fluid">-->
+<!--<nav class="row">-->
+<!--<div class="head">-->
+<!--<a href="#"><h1 class="main-header">BOWTIE</h1></a>-->
+<!--</div>-->
+<!--<div class="head-content">-->
+<!--<div class="sub-main-menu">-->
+<!--<label for="show-main-menu" class="show-main-menu">-->
+<!--<span class="fa fa-bars"></span>Menu-->
+<!--</label>-->
+<!--<input type="checkbox" id="show-main-menu">-->
+<!--<ul class="main-menu">-->
+<!--<li><a href="#">Menu 1</a></li>-->
+<!--<li><a href="#">Menu 2</a></li>-->
+<!--<li><a href="#">Menu 3</a></li>-->
+<!--<li><a href="#">Menu 4</a></li>-->
+<!--<li><a href="#">Menu 5</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<!--<div class="first-menu-log">-->
+<!--<div class="notification-centre">-->
+<!--<div class="notification-item">-->
+<!--<input type="checkbox" id="notifi-01" class="input-notifi"/>-->
+<!--<label class="notifi background-danger" for="notifi-01">-->
+<!--<a href="">X</a>-->
+<!--</label>-->
+<!--</div>-->
+
+<!--<div class="notification-item">-->
+<!--<input type="checkbox" id="notifi-02" class="input-notifi"/>-->
+<!--<label class="notifi background-warning" for="notifi-02">Y</label>-->
+<!--<div class="notifi-show">-->
+<!--<p>Notifi warning</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="notification-item">-->
+<!--<input type="checkbox" id="notifi-03" class="input-notifi"/>-->
+<!--<label class="notifi background-info" for="notifi-03">Z</label>-->
+<!--<div class="notifi-show">-->
+<!--<p>Notifi info</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="dropdown-login">-->
+<!--<label for="show-drop11" class="show-drop">-->
+<!--<span class="fa fa-circle-thin user-circle-login"><span class="fa fa-user"></span></span>-->
+<!--<span class="name">name</span>-->
+<!--<span class="surname">surname</span>-->
+<!--<span class="fa fa-caret-down"></span>-->
+<!--</label>-->
+<!--<input type="checkbox" id="show-drop11" class="login-input">-->
+<!--<ul class="login-drop">-->
+<!--<li><a href="#">drop1</a></li>-->
+<!--<li><a href="#">drop2</a></li>-->
+<!--<li><a href="#">drop3</a></li>-->
+<!--<li class="divider"></li>-->
+<!--<li><a href="#">drop4</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</nav>-->
+<!--</div>-->
+<!--<div class="submenu"></div>-->
+<!--</div>-->
+
+<input type="checkbox" class="checkbox-none" id="sidebar-width">
+<!--<div class="breadcrumbs with-sidebar fixed-menu">-->
+<!--<ul>-->
+<!--<li><a href="">Home /</a></li>-->
+<!--<li><a href="">SubHome /</a></li>-->
+<!--<li><a href="" class="disable">SubSubHome</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<div class="side-bar">
+    <div class="dropdown-login">
+        <a class="show-drop">
+            <span class="tiecons tiecons-circle-normal user-circle-login"><span class="tiecons tiecons-user-negative"></span></span>
+            <span class="name">name</span>
+            <span class="surname">surname</span>
+        </a>
+    </div>
+
+    <!--<div class="dropdown-login">-->
+    <!--<label for="show-drop11" class="show-drop">-->
+    <!--<span class="fa fa-circle-thin user-circle-login"><span class="fa fa-user"></span></span>-->
+    <!--<span class="name">name</span>-->
+    <!--<span class="surname">surname</span>-->
+    <!--&lt;!&ndash;<span class="fa fa-caret-down"></span>&ndash;&gt;-->
+    <!--</label>-->
+    <!--<input type="checkbox" id="show-drop11" class="login-input checkbox-none">-->
+    <!--<ul class="login-drop">-->
+    <!--<li><a href="#">drop1</a></li>-->
+    <!--<li><a href="#">drop2</a></li>-->
+    <!--<li><a href="#">drop3</a></li>-->
+    <!--<li class="divider"></li>-->
+    <!--<li><a href="#">drop4</a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <!--<a href="#"><h1 class="main-header">Neckie gold administration</h1></a>-->
+    <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
+    <input type="checkbox" id="show-sidebar">
+    <ul class="sidebar">
+        <li><a href="new-administration-dash.html"><i class="tiecons tiecons-display"></i><span class="sidebar-link">Dashboard</span></a></li>
+        <li><a href="new-administration-products.html"><i class="tiecons tiecons-page-list"></i><span class="sidebar-link">Products</span></a></li>
+        <li><a href="new-administration-client.html"><i class="tiecons tiecons-bookmark-3"></i><span class="sidebar-link">Clients</span></a></li>
+        <li><a href="new-administration-user-list.html"><i class="tiecons tiecons-user-negative"></i><span class="sidebar-link">Users</span></a></li>
+        <li><a href="new-administration-invoice.html"><i class="tiecons tiecons-dollar"></i><span class="sidebar-link">Invoice</span></a></li>
+        <li><a href="new-administration-ipn-logs.html"><i class="tiecons tiecons-power-button-circle-negative"></i><span class="sidebar-link">IPN logs</span></a></li>
+        <li class="active"><a href="new-administration-notification.html"><i class="tiecons tiecons-bulb-clear-negative"></i><span class="sidebar-link">Notification</span></a></li>
+        <li><a href="new-administration-error-log.html"><i class="tiecons tiecons-exclamation-mark-triangle-negative"></i><span class="sidebar-link">Error logs</span></a></li>
+        <input type="checkbox" id="show-drop2" role="button" class="checkbox-none">
+        <li class="li-dropdown">
+            <div class="dropdown-main-sidebar">
+                <label for="show-drop2" class="show-drop">
+                    <i class="tiecons tiecons-double-arrow-down"></i><span class="sidebar-link">Dropdown</span>
+                </label>
+                <ul id="dropdown" class="drop">
+                    <li><a href="">User01</a></li>
+                    <li><a href="">User02</a></li>
+                    <li><a href="">User03</a></li>
+                    <li><a href="">User04</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!--<label for="sidebar-width" class="show-sidebar-width"><span class="tiecons tiecons-arrow-bold-long-left"></span></label>-->
+    <!--<span class="necktie necktielogo4"></span>-->
+    <a href="new-administration-dash.html" class="necktie necktielogo3"></a>
+    <!--<span class="necktie necktielogo2"></span>-->
+    <!--<span class="necktie necktielogo1"></span>-->
+</div>
+
+<div class="container-fluid container-with-sidebar">
+    <div class="row">
+        <div class="head-content">
+            <h2 class="content-header">Notificaton</h2>
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="">Necktie</a></li>
+                    <li><a href="">Notificaton</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span-medium-24">
+            <div class="wrapper-grid">
+                <input type="checkbox" class="display-none" id="show-filters" />
+                <label for="show-filters" class="show-filters"><span class="tiecons tiecons-pin-left-negative"></span></label>
+        <div class="grid">
+        <form id="grid_a0b76a032a7150b4519349eb8626a047" action="/admin/notification/" method="post">
+        <div class="grid_header"></div>
+        <div class="grid_body">
+        <table>
+        <tr class="grid-row-titles">
+            <th class=""><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=dateTime|asc" title="Order by Date">Date</a><div class="sort_down"></div></th>
+            <th class=""><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=entity|asc" title="Order by Entity name">Entity name</a></th>
+            <th class=""><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=url|asc" title="Order by URL">URL</a></th>
+            <th class=""><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=type|asc" title="Order by Type">Type</a></th>
+            <th class=""><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=client|asc" title="Order by Client">Client</a></th>
+            <th class=""><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=error|asc" title="Order by Error">Error</a></th>
+            <th class="align-right"><a class="order" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_order]=entityId|asc" title="Order by Entity ID">Entity ID</a></th>
+            <th class=" last-column">Actions</th>
+        </tr>
+
+        <tr class="grid-row-filters">
+            <th class="">    <span class="grid-filter-input">
+        <span class="grid-filter-operator">
+            <select name="grid_a0b76a032a7150b4519349eb8626a047[dateTime][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__dateTime__query__');">
+                <option value="eq" selected="selected">eq</option>
+                <option value="neq">neq</option>
+                <option value="lt">lt</option>
+                <option value="lte">lte</option>
+                <option value="gt">gt</option>
+                <option value="gte">gte</option>
+                <option value="btw">btw</option>
+                <option value="btwe">btwe</option>
+                <option value="isNull">isNull</option>
+                <option value="isNotNull">isNotNull</option>
+            </select>
+        </span>
+
+        <span class="grid-filter-input-query" style="width: 150px; float: left">
+            <input type="datetime-local" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[dateTime][from]" id="grid_a0b76a032a7150b4519349eb8626a047__dateTime__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+            <input type="datetime-local" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[dateTime][to]" id="grid_a0b76a032a7150b4519349eb8626a047__dateTime__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+        </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_a0b76a032a7150b4519349eb8626a047[entity][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__entity__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[entity][from]" id="grid_a0b76a032a7150b4519349eb8626a047__entity__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[entity][to]" id="grid_a0b76a032a7150b4519349eb8626a047__entity__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_a0b76a032a7150b4519349eb8626a047[url][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__url__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[url][from]" id="grid_a0b76a032a7150b4519349eb8626a047__url__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[url][to]" id="grid_a0b76a032a7150b4519349eb8626a047__url__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_a0b76a032a7150b4519349eb8626a047[type][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__type__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[type][from]" id="grid_a0b76a032a7150b4519349eb8626a047__type__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[type][to]" id="grid_a0b76a032a7150b4519349eb8626a047__type__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_a0b76a032a7150b4519349eb8626a047[client][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__client__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[client][from]" id="grid_a0b76a032a7150b4519349eb8626a047__client__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[client][to]" id="grid_a0b76a032a7150b4519349eb8626a047__client__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_a0b76a032a7150b4519349eb8626a047[error][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__error__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[error][from]" id="grid_a0b76a032a7150b4519349eb8626a047__error__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[error][to]" id="grid_a0b76a032a7150b4519349eb8626a047__error__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class="" style="width:30px;"></th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_a0b76a032a7150b4519349eb8626a047[entityId][operator]" onchange="grid_a0b76a032a7150b4519349eb8626a047_switchOperator(this, 'grid_a0b76a032a7150b4519349eb8626a047__entityId__query__');">
+        <option value="eq" selected="selected">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_a0b76a032a7150b4519349eb8626a047[entityId][from]" id="grid_a0b76a032a7150b4519349eb8626a047__entityId__query__from" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_a0b76a032a7150b4519349eb8626a047[entityId][to]" id="grid_a0b76a032a7150b4519349eb8626a047__entityId__query__to" onkeypress="return grid_a0b76a032a7150b4519349eb8626a047_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=" last-column">    <a class="grid-reset" href="/admin/notification/?grid_a0b76a032a7150b4519349eb8626a047[_reset]=">Reset</a>
+            </th>
+        </tr>
+
+        <tr class="grid-row-cells even"><td class="grid-column-dateTime">03/26/2015  20:13:10</td><td class="grid-column-entity">User</td><td class="grid-column-url">http://community.sandbox.modpreneur.com/notify/user</td><td class="grid-column-type">PUT</td><td class="grid-column-client"><a href="/admin/client/7/show"> community </a></td><td class="grid-column-error"><a href="/admin/error/1314/show" style="color: red"> PUT: URL: http://community.sandbox.modpreneur.com/notify/user returns error: Client error response [url] http://community.sandbox.modpreneur.com/notify/user [status code] 404 [reason phrase] Not Found. </a></td>
+                </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-dateTime">03/26/2015  20:13:09</td><td class="grid-column-entity">User</td><td class="grid-column-url">http://necktie.sandbox.modpreneur.com/test/user</td><td class="grid-column-type">PUT</td><td class="grid-column-client"><a href="/admin/client/5/show"> Comunity </a></td><td class="grid-column-error"><a href="/admin/error/1312/show" style="color: red"> PUT: URL: http://necktie.sandbox.modpreneur.com/test/user returns error: Client error response [url] http://necktie.sandbox.modpreneur.com/test/user [status code] 404 [reason phrase] Not Found. </a></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-dateTime">03/26/2015  20:13:09</td><td class="grid-column-entity">User</td><td class="grid-column-url">http://localhost:50020/notify/user</td><td class="grid-column-type">PUT</td><td class="grid-column-client"><a href="/admin/client/6/show"> Smart Startups </a></td><td class="grid-column-error"><a href="/admin/error/1313/show" style="color: red"> PUT: URL: http://localhost:50020/notify/user returns error: Client error response [url] http://localhost:50020/notify/user [status code] 404 [reason phrase] Not Found. </a></td><td class="grid-column-entityId align-right">1</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/notification/fixed/148" target="_self">Set fixed</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-dateTime">03/26/2015  20:13:08</td><td class="grid-column-entity">User</td><td class="grid-column-url">http://website-contractor.sandbox.modpreneur.com/notify/user</td><td class="grid-column-type">PUT</td><td class="grid-column-client"><a href="/admin/client/4/show"> WebsiteContractor </a></td><td class="grid-column-error"><a href="/admin/error/1310/show" style="color: red"> PUT: URL: http://website-contractor.sandbox.modpreneur.com/notify/user returns error: Client error response [url] http://website-contractor.sandbox.modpreneur.com/notify/user [status code] 404 [reason phrase] Not Found. </a></td><td class="grid-column-entityId align-right">1</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/notification/fixed/146" target="_self">Set fixed</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-dateTime">03/26/2015  20:13:07</td><td class="grid-column-entity">User</td><td class="grid-column-url">http://blog.sandbox.modpreneur.com/notify/user</td><td class="grid-column-type">PUT</td><td class="grid-column-client"><a href="/admin/client/3/show"> Blog </a></td><td class="grid-column-error"><a href="/admin/error/1309/show" style="color: red"> PUT: URL: http://blog.sandbox.modpreneur.com/notify/user returns error: Client error response [url] http://blog.sandbox.modpreneur.com/notify/user [status code] 404 [reason phrase] Not Found. </a></td><td class="grid-column-entityId align-right">1</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/notification/fixed/145" target="_self">Set fixed</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-dateTime">03/26/2015  20:13:06</td><td class="grid-column-entity">User</td><td class="grid-column-url">http://sandbox.modpreneur.com/~kol01/test.php/user</td><td class="grid-column-type">PUT</td><td class="grid-column-client"><a href="/admin/client/1/show"> client </a></td><td class="grid-column-error"><a href="/admin/error/1308/show" style="color: red"> PUT: URL: http://sandbox.modpreneur.com/~kol01/test.php/user returns error: Client error response [url] http://sandbox.modpreneur.com/~kol01/test.php/user [status code] 405 [reason phrase] Not Allowed. </a></td><td class="grid-column-entityId align-right">1</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/notification/fixed/143" target="_self">Set fixed</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-dateTime">03/10/2015  13:02:26</td><td class="grid-column-entity">ProductAccess</td><td class="grid-column-url">http://api.clickandcoach.sandbox.modpreneur.com/notify/product-access</td><td class="grid-column-type">POST</td><td class="grid-column-client"><a href="/admin/client/2/show"> ClickAndCoach </a></td><td class="grid-column-error"><a href="/admin/error/926/show" style="color: red"> POST: URL: http://api.clickandcoach.sandbox.modpreneur.com/notify/product-access returns error: Client error response [url] http://api.clickandcoach.sandbox.modpreneur.com/notify/product-access [status code] 404 [reason phrase] Not Found. </a></td><td class="grid-column-entityId align-right">79</td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/notification/fixed/118" target="_self">Set fixed</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-dateTime last-row">03/10/2015  12:51:20</td><td class="grid-column-entity last-row">ProductAccess</td><td class="grid-column-url last-row">http://api.clickandcoach.sandbox.modpreneur.com/notify/product-access</td><td class="grid-column-type last-row">POST</td><td class="grid-column-client last-row"><a href="/admin/client/2/show"> ClickAndCoach </a></td><td class="grid-column-error last-row"><a href="/admin/error/918/show" style="color: red"> POST: URL: http://api.clickandcoach.sandbox.modpreneur.com/notify/product-access returns error: Client error response [url] http://api.clickandcoach.sandbox.modpreneur.com/notify/product-access [status code] 404 [reason phrase] Not Found. </a></td><td class="grid-column-entityId align-right last-row">78</td><td class="grid-column-__actions last-column last-row"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/notification/fixed/117" target="_self">Set fixed</a></li></ul></td>    </tr>
+
+        </table>
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container-fluid container-with-sidebar">
+            <input type="checkbox" class="checkbox-none" id="quick-add"/>
+            <label for="quick-add" class="quick-add"><span class="tiecons tiecons-plus-angular"></span> Quick add</label>
+            <ul class="show-quick-add">
+                <li><a><span class="tiecons tiecons-dollar"></span> Add Invoice</a></li>
+                <li><a><span class="tiecons tiecons-bookmark-3"></span> Add Clients</a></li>
+                <li><a><span class="tiecons tiecons-page-list"></span> Add Products</a></li>
+                <li><a><span class="tiecons tiecons-user-negative"></span> Add User</a></li>
+            </ul>
+        <span class="quick-add">
+            <ul class="show-quick-add-hover">
+                <li><a><span class="tiecons tiecons-dollar"></span> Add Invoice</a></li>
+                <li><a><span class="tiecons tiecons-bookmark-3"></span> Add Clients</a></li>
+                <li><a><span class="tiecons tiecons-page-list"></span> Add Products</a></li>
+                <li><a><span class="tiecons tiecons-user-negative"></span> Add User</a></li>
+            </ul>
+            <span class="tiecons tiecons-plus-angular"></span> Quick add (hover)
+        </span>
+            <a class="footer-notification peace-of-news" href=""><span class="tiecons tiecons-bulb-negative"><span class="number-of-news">2</span></span> Notification</a>
+            <!--<a class="footer-notification peace-of-news" href=""><span class="tiecons tiecons-bulb-negative animation-bounce"><span class="number-of-news">2</span></span> Notification</a>-->
+            <a class="footer-notification" href=""><span class="tiecons tiecons-exclamation-mark-triangle-negative"></span> Error logs</a>
+            <a class="footer-notification" href=""><span class="tiecons tiecons-dollar"></span> Invoice</a>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+    <script>
+        webshims.setOptions('forms-ext', {types: 'date'});
+        webshims.polyfill('forms forms-ext');
+    </script>
+</body>
+</html>

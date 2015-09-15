@@ -1,11 +1,10 @@
 // CORE.less -> core, main file, imports in the correct order
 
 // font-Proxima Nova
-@import "font-proxima-nova";
-// font awesome
-@import "font-awesome.css";
+//@import "font-proxima-nova";
 // default variable set
 @import "variables-default";
+@import "tiecons";
 // custom variables
 @import "variables";
 // grid system
@@ -14,14 +13,8 @@
 @import "awesome-grid";
 // spacing - padding, margin
 @import "spacing";
-// font manipulation
-@import "font";
 // alerts
 @import "alerts";
-// borders
-@import "borders";
-// buttons
-@import "buttons";
 // navbar
 @import "navbar";
 // tabs
@@ -50,18 +43,20 @@
 @import "pre-code";
 // Tooltip
 @import "tooltip";
-// Tooltip
+// Tags
 @import "tags";
 // Slider
 @import "slider";
 // Popover
 @import "popover";
+// Images
+@import "images";
 //Administration
 //*************************
 // Main less for administration
-@import "administration";
+//@import "administration";
 // menu
-@import "awesome-menu";
+//@import "awesome-menu";
 // Log In / Register
 @import "login-page";
 // Pagination
@@ -76,3 +71,12 @@
 @import "timeline";
 // List - Harmonica
 @import "harmonica";
+
+//@import "new-administration";
+
+// borders
+@import "borders";
+// buttons
+@import "buttons";
+// font manipulation
+@import "font";

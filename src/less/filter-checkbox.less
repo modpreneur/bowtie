@@ -1,9 +1,41 @@
 // how much FILTERS ITEM
 @iterations: 30;
 
+.filter input:checked ~ .filter-items .filter-item-1,
+.filter input:checked ~ .filter-items .filter-item-2,
+.filter input:checked ~ .filter-items .filter-item-3,
+.filter input:checked ~ .filter-items .filter-item-4,
+.filter input:checked ~ .filter-items .filter-item-5,
+.filter input:checked ~ .filter-items .filter-item-6,
+.filter input:checked ~ .filter-items .filter-item-7,
+.filter input:checked ~ .filter-items .filter-item-8,
+.filter input:checked ~ .filter-items .filter-item-9,
+.filter input:checked ~ .filter-items .filter-item-10,
+.filter input:checked ~ .filter-items .filter-item-11,
+.filter input:checked ~ .filter-items .filter-item-12,
+.filter input:checked ~ .filter-items .filter-item-13,
+.filter input:checked ~ .filter-items .filter-item-14,
+.filter input:checked ~ .filter-items .filter-item-15,
+.filter input:checked ~ .filter-items .filter-item-16,
+.filter input:checked ~ .filter-items .filter-item-17,
+.filter input:checked ~ .filter-items .filter-item-18,
+.filter input:checked ~ .filter-items .filter-item-19,
+.filter input:checked ~ .filter-items .filter-item-20,
+.filter input:checked ~ .filter-items .filter-item-21,
+.filter input:checked ~ .filter-items .filter-item-22,
+.filter input:checked ~ .filter-items .filter-item-23,
+.filter input:checked ~ .filter-items .filter-item-24,
+.filter input:checked ~ .filter-items .filter-item-25,
+.filter input:checked ~ .filter-items .filter-item-26,
+.filter input:checked ~ .filter-items .filter-item-27,
+.filter input:checked ~ .filter-items .filter-item-28,
+.filter input:checked ~ .filter-items .filter-item-29,
+.filter input:checked ~ .filter-items .filter-item-30 {
+  display: none
+}
 .loopingClass (@index) when (@index > 0) {
   &.filter-selector-@{index}:checked ~ .filter-items .filter-item-@{index} {
-    display: none;
+    display: block;
   }
   .loopingClass(@index - 1);
 }
@@ -12,12 +44,13 @@
 // main less
 .filter {
   padding-bottom: 20px;
+  padding-left: 20px;
   input {
-    display: inline-block;
+//    display: inline-block;
   }
   label {
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 20px;
   }
   .filter-items {
     li {

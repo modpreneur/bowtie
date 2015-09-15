@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Necktie administration</title>
+    <link rel="stylesheet" href="../src/css/bowtie.css"/>
+    <link rel="stylesheet" href="css/necktie-icons.css"/>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body class="administration-body">
+
+<!--<div class="menu fixed">-->
+<!--<div class="container-fluid">-->
+<!--<nav class="row">-->
+<!--<div class="head">-->
+<!--<a href="#"><h1 class="main-header">BOWTIE</h1></a>-->
+<!--</div>-->
+<!--<div class="head-content">-->
+<!--<div class="sub-main-menu">-->
+<!--<label for="show-main-menu" class="show-main-menu">-->
+<!--<span class="fa fa-bars"></span>Menu-->
+<!--</label>-->
+<!--<input type="checkbox" id="show-main-menu">-->
+<!--<ul class="main-menu">-->
+<!--<li><a href="#">Menu 1</a></li>-->
+<!--<li><a href="#">Menu 2</a></li>-->
+<!--<li><a href="#">Menu 3</a></li>-->
+<!--<li><a href="#">Menu 4</a></li>-->
+<!--<li><a href="#">Menu 5</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<!--<div class="first-menu-log">-->
+<!--<div class="notification-centre">-->
+<!--<div class="notification-item">-->
+<!--<input type="checkbox" id="notifi-01" class="input-notifi"/>-->
+<!--<label class="notifi background-danger" for="notifi-01">-->
+<!--<a href="">X</a>-->
+<!--</label>-->
+<!--</div>-->
+
+<!--<div class="notification-item">-->
+<!--<input type="checkbox" id="notifi-02" class="input-notifi"/>-->
+<!--<label class="notifi background-warning" for="notifi-02">Y</label>-->
+<!--<div class="notifi-show">-->
+<!--<p>Notifi warning</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="notification-item">-->
+<!--<input type="checkbox" id="notifi-03" class="input-notifi"/>-->
+<!--<label class="notifi background-info" for="notifi-03">Z</label>-->
+<!--<div class="notifi-show">-->
+<!--<p>Notifi info</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="dropdown-login">-->
+<!--<label for="show-drop11" class="show-drop">-->
+<!--<span class="fa fa-circle-thin user-circle-login"><span class="fa fa-user"></span></span>-->
+<!--<span class="name">name</span>-->
+<!--<span class="surname">surname</span>-->
+<!--<span class="fa fa-caret-down"></span>-->
+<!--</label>-->
+<!--<input type="checkbox" id="show-drop11" class="login-input">-->
+<!--<ul class="login-drop">-->
+<!--<li><a href="#">drop1</a></li>-->
+<!--<li><a href="#">drop2</a></li>-->
+<!--<li><a href="#">drop3</a></li>-->
+<!--<li class="divider"></li>-->
+<!--<li><a href="#">drop4</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</nav>-->
+<!--</div>-->
+<!--<div class="submenu"></div>-->
+<!--</div>-->
+
+<input type="checkbox" class="checkbox-none" id="sidebar-width">
+<!--<div class="breadcrumbs with-sidebar fixed-menu">-->
+<!--<ul>-->
+<!--<li><a href="">Home /</a></li>-->
+<!--<li><a href="">SubHome /</a></li>-->
+<!--<li><a href="" class="disable">SubSubHome</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<div class="side-bar">
+    <div class="dropdown-login">
+        <a class="show-drop">
+            <span class="tiecons tiecons-circle-normal user-circle-login"><span class="tiecons tiecons-user-negative"></span></span>
+            <span class="name">name</span>
+            <span class="surname">surname</span>
+        </a>
+    </div>
+
+    <!--<div class="dropdown-login">-->
+    <!--<label for="show-drop11" class="show-drop">-->
+    <!--<span class="fa fa-circle-thin user-circle-login"><span class="fa fa-user"></span></span>-->
+    <!--<span class="name">name</span>-->
+    <!--<span class="surname">surname</span>-->
+    <!--&lt;!&ndash;<span class="fa fa-caret-down"></span>&ndash;&gt;-->
+    <!--</label>-->
+    <!--<input type="checkbox" id="show-drop11" class="login-input checkbox-none">-->
+    <!--<ul class="login-drop">-->
+    <!--<li><a href="#">drop1</a></li>-->
+    <!--<li><a href="#">drop2</a></li>-->
+    <!--<li><a href="#">drop3</a></li>-->
+    <!--<li class="divider"></li>-->
+    <!--<li><a href="#">drop4</a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <!--<a href="#"><h1 class="main-header">Neckie gold administration</h1></a>-->
+    <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
+    <input type="checkbox" id="show-sidebar">
+    <ul class="sidebar">
+        <li><a href="new-administration-dash.html"><i class="tiecons tiecons-display"></i><span class="sidebar-link">Dashboard</span></a></li>
+        <li><a href="new-administration-products.html"><i class="tiecons tiecons-page-list"></i><span class="sidebar-link">Products</span></a></li>
+        <li><a href="new-administration-client.html"><i class="tiecons tiecons-bookmark-3"></i><span class="sidebar-link">Clients</span></a></li>
+        <li><a href="new-administration-user-list.html"><i class="tiecons tiecons-user-negative"></i><span class="sidebar-link">Users</span></a></li>
+        <li><a href="new-administration-invoice.html"><i class="tiecons tiecons-dollar"></i><span class="sidebar-link">Invoice</span></a></li>
+        <li class="active"><a href="new-administration-ipn-logs.html"><i class="tiecons tiecons-power-button-circle-negative"></i><span class="sidebar-link">IPN logs</span></a></li>
+        <li><a href="new-administration-notification.html"><i class="tiecons tiecons-bulb-clear-negative"></i><span class="sidebar-link">Notification</span></a></li>
+        <li><a href="new-administration-error-log.html"><i class="tiecons tiecons-exclamation-mark-triangle-negative"></i><span class="sidebar-link">Error logs</span></a></li>
+        <input type="checkbox" id="show-drop2" role="button" class="checkbox-none">
+        <li class="li-dropdown">
+            <div class="dropdown-main-sidebar">
+                <label for="show-drop2" class="show-drop">
+                    <i class="tiecons tiecons-double-arrow-down"></i><span class="sidebar-link">Dropdown</span>
+                </label>
+                <ul id="dropdown" class="drop">
+                    <li><a href="">User01</a></li>
+                    <li><a href="">User02</a></li>
+                    <li><a href="">User03</a></li>
+                    <li><a href="">User04</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!--<label for="sidebar-width" class="show-sidebar-width"><span class="tiecons tiecons-arrow-bold-long-left"></span></label>-->
+    <!--<span class="necktie necktielogo4"></span>-->
+    <a href="new-administration-dash.html" class="necktie necktielogo3"></a>
+    <!--<span class="necktie necktielogo2"></span>-->
+    <!--<span class="necktie necktielogo1"></span>-->
+</div>
+
+<div class="container-fluid container-with-sidebar">
+    <div class="row">
+        <div class="head-content">
+            <h2 class="content-header">IPN logs</h2>
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="">Necktie</a></li>
+                    <li><a href="">IPN logs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span-medium-24">
+            <div class="wrapper-grid">
+                <input type="checkbox" class="display-none" id="show-filters" />
+                <label for="show-filters" class="show-filters"><span class="tiecons tiecons-pin-left-negative"></span></label>
+        <div class="grid">
+        <form id="grid_fe24838ea8c1204f1a43b5f9f05f0a31" action="/admin/ipn/" method="post">
+        <div class="grid_header"></div>
+        <div class="grid_body">
+        <table>
+        <tr class="grid-row-titles">
+            <th class=""><a class="order" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_order]=receiveAt|asc" title="Order by Receive">Receive</a><div class="sort_down"></div></th>
+            <th class=""><a class="order" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_order]=receipt|asc" title="Order by Receipt">Receipt</a></th>
+            <th class="align-right"><a class="order" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_order]=attempt|asc" title="Order by Attempt">Attempt</a></th>
+            <th class=""><a class="order" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_order]=invoice|asc" title="Order by Invoice">Invoice</a></th>
+            <th class=""><a class="order" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_order]=error|asc" title="Order by Error">Error</a></th>
+            <th class=""><a class="order" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_order]=notification|asc" title="Order by Notification">Notification</a></th>
+            <th class=" last-column">Actions</th>
+        </tr>
+
+        <tr class="grid-row-filters">
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[receiveAt][operator]" onchange="grid_fe24838ea8c1204f1a43b5f9f05f0a31_switchOperator(this, 'grid_fe24838ea8c1204f1a43b5f9f05f0a31__receiveAt__query__');">
+        <option value="eq" selected="selected">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="datetime-local" value="" class="grid-filter-input-query-from" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[receiveAt][from]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__receiveAt__query__from" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);"  />
+        <input type="datetime-local" value="" class="grid-filter-input-query-to" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[receiveAt][to]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__receiveAt__query__to" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[receipt][operator]" onchange="grid_fe24838ea8c1204f1a43b5f9f05f0a31_switchOperator(this, 'grid_fe24838ea8c1204f1a43b5f9f05f0a31__receipt__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[receipt][from]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__receipt__query__from" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[receipt][to]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__receipt__query__to" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[attempt][operator]" onchange="grid_fe24838ea8c1204f1a43b5f9f05f0a31_switchOperator(this, 'grid_fe24838ea8c1204f1a43b5f9f05f0a31__attempt__query__');">
+        <option value="eq" selected="selected">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[attempt][from]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__attempt__query__from" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[attempt][to]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__attempt__query__to" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[invoice][operator]" onchange="grid_fe24838ea8c1204f1a43b5f9f05f0a31_switchOperator(this, 'grid_fe24838ea8c1204f1a43b5f9f05f0a31__invoice__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[invoice][from]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__invoice__query__from" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[invoice][to]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__invoice__query__to" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[error][operator]" onchange="grid_fe24838ea8c1204f1a43b5f9f05f0a31_switchOperator(this, 'grid_fe24838ea8c1204f1a43b5f9f05f0a31__error__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[error][from]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__error__query__from" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[error][to]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__error__query__to" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=""><span class="grid-filter-input">
+    <span class="grid-filter-operator">
+    <select name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[notification][operator]" onchange="grid_fe24838ea8c1204f1a43b5f9f05f0a31_switchOperator(this, 'grid_fe24838ea8c1204f1a43b5f9f05f0a31__notification__query__');">
+        <option value="eq">eq</option>
+        <option value="neq">neq</option>
+        <option value="lt">lt</option>
+        <option value="lte">lte</option>
+        <option value="gt">gt</option>
+        <option value="gte">gte</option>
+        <option value="btw">btw</option>
+        <option value="btwe">btwe</option>
+        <option value="like" selected="selected">like</option>
+        <option value="nlike">nlike</option>
+        <option value="rlike">rlike</option>
+        <option value="llike">llike</option>
+        <option value="slike">slike</option>
+        <option value="nslike">nslike</option>
+        <option value="rslike">rslike</option>
+        <option value="lslike">lslike</option>
+        <option value="isNull">isNull</option>
+        <option value="isNotNull">isNotNull</option>
+    </select>
+</span>
+
+    <span class="grid-filter-input-query">
+        <input type="text" value="" class="grid-filter-input-query-from" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[notification][from]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__notification__query__from" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);"  />
+        <input type="text" value="" class="grid-filter-input-query-to" name="grid_fe24838ea8c1204f1a43b5f9f05f0a31[notification][to]" id="grid_fe24838ea8c1204f1a43b5f9f05f0a31__notification__query__to" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_submitForm(event, this.form);" style="display: none;" disabled="disabled" />
+    </span>
+</span>
+            </th>
+            <th class=" last-column">    <a class="grid-reset" href="/admin/ipn/?grid_fe24838ea8c1204f1a43b5f9f05f0a31[_reset]=">Reset</a>
+            </th>
+        </tr>
+
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">03/26/2015  20:13:06</td><td class="grid-column-receipt">8T5WVEWD</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/8/show"> 2015-03-26 12:11:46 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/370/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">03/26/2015  18:38:15</td><td class="grid-column-receipt">YG5WVE7Q</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/7/show"> 2015-03-26 10:36:14 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/369/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">03/13/2015  14:21:40</td><td class="grid-column-receipt">4862VEF9</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/6/show"> 2015-03-13 06:20:32 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/368/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">03/12/2015  14:01:36</td><td class="grid-column-receipt">********</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/367/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">03/12/2015  13:46:53</td><td class="grid-column-receipt">********</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/979/show"> 03/12/2015  13:46:53 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/366">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/366/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">03/12/2015  13:18:36</td><td class="grid-column-receipt">TB22VECM</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/5/show"> 2015-03-12 05:10:20 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/365/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">03/10/2015  18:35:49</td><td class="grid-column-receipt">FSZ5QG9E</td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/4/show"> 2015-03-10 10:34:40 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/364/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">03/10/2015  13:02:26</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/363/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">03/10/2015  12:51:20</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/2/show"> 2015-03-10 04:50:05 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/362/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">03/10/2015  12:28:57</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/915/show"> 03/10/2015  12:28:57 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/361">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/361/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">03/09/2015  16:35:29</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">1</td><td class="grid-column-invoice"><a href="/admin/invoice/1/show"> 2015-03-09 08:31:49 </a></td><td class="grid-column-error"></td><td class="grid-column-notification"></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/360/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">02/21/2015  09:14:10</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">72</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/756/show"> 02/21/2015  09:14:10 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/359">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/359/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">02/21/2015  08:11:40</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">71</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/755/show"> 02/21/2015  08:11:40 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/358">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/358/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">02/21/2015  07:08:02</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">70</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/754/show"> 02/21/2015  07:08:02 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/357">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/357/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">02/21/2015  06:04:27</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">69</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/753/show"> 02/21/2015  06:04:27 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/356">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/356/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">02/21/2015  05:01:17</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">68</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/752/show"> 02/21/2015  05:01:17 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/355">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/355/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">02/21/2015  03:59:30</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">67</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/751/show"> 02/21/2015  03:59:30 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/354">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/354/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt">02/21/2015  02:54:00</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">66</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/750/show"> 02/21/2015  02:54:00 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/353">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/353/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells even"><td class="grid-column-receiveAt">02/21/2015  01:50:51</td><td class="grid-column-receipt"></td><td class="grid-column-attempt align-right">65</td><td class="grid-column-invoice"></td><td class="grid-column-error"><a class="color-danger" href="/admin/error/749/show"> 02/21/2015  01:50:51 </a></td><td class="grid-column-notification"><a class="button notification-button" href="/admin/ipn/ipn/352">show</a></td><td class="grid-column-__actions last-column"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/352/show" target="_self">view</a></li></ul></td>    </tr>
+        <tr class="grid-row-cells odd"><td class="grid-column-receiveAt last-row">02/21/2015  00:47:56</td><td class="grid-column-receipt last-row"></td><td class="grid-column-attempt align-right last-row">64</td><td class="grid-column-invoice last-row"></td><td class="grid-column-error last-row"><a class="color-danger" href="/admin/error/748/show"> 02/21/2015  00:47:56 </a></td><td class="grid-column-notification last-row"><a class="button notification-button" href="/admin/ipn/ipn/351">show</a></td><td class="grid-column-__actions last-column last-row"><ul class="grid-row-actions"><li><a href="http://necktie.sandbox.modpreneur.com/admin/ipn/351/show" target="_self">view</a></li></ul></td>    </tr>
+
+        </table>
+        </div>
+        <div class="grid_footer">
+            <div class="pager">
+                370 Results,
+
+                Page
+                <input type="button" class="prev" disabled="disabled" value="<" onclick="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_previousPage();"/><input type="text" class="current" value="1" size="2" onkeypress="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_enterPage(event, parseInt(this.value)-1);"/><input type="button" value=">" class="next"  onclick="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_nextPage();"/> of 19
+                , Display
+                <select onchange="return grid_fe24838ea8c1204f1a43b5f9f05f0a31_resultsPerPage(this.value);">
+                    <option value="20" selected="selected">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> Items per page
+
+            </div>
+            </div></form></div></div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container-fluid container-with-sidebar">
+            <input type="checkbox" class="checkbox-none" id="quick-add"/>
+            <label for="quick-add" class="quick-add"><span class="tiecons tiecons-plus-angular"></span> Quick add</label>
+            <ul class="show-quick-add">
+                <li><a><span class="tiecons tiecons-dollar"></span> Add Invoice</a></li>
+                <li><a><span class="tiecons tiecons-bookmark-3"></span> Add Clients</a></li>
+                <li><a><span class="tiecons tiecons-page-list"></span> Add Products</a></li>
+                <li><a><span class="tiecons tiecons-user-negative"></span> Add User</a></li>
+            </ul>
+        <span class="quick-add">
+            <ul class="show-quick-add-hover">
+                <li><a><span class="tiecons tiecons-dollar"></span> Add Invoice</a></li>
+                <li><a><span class="tiecons tiecons-bookmark-3"></span> Add Clients</a></li>
+                <li><a><span class="tiecons tiecons-page-list"></span> Add Products</a></li>
+                <li><a><span class="tiecons tiecons-user-negative"></span> Add User</a></li>
+            </ul>
+            <span class="tiecons tiecons-plus-angular"></span> Quick add (hover)
+        </span>
+            <a class="footer-notification peace-of-news" href=""><span class="tiecons tiecons-bulb-negative"><span class="number-of-news">2</span></span> Notification</a>
+            <!--<a class="footer-notification peace-of-news" href=""><span class="tiecons tiecons-bulb-negative animation-bounce"><span class="number-of-news">2</span></span> Notification</a>-->
+            <a class="footer-notification" href=""><span class="tiecons tiecons-exclamation-mark-triangle-negative"></span> Error logs</a>
+            <a class="footer-notification" href=""><span class="tiecons tiecons-dollar"></span> Invoice</a>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+    <script>
+        webshims.setOptions('forms-ext', {types: 'date'});
+        webshims.polyfill('forms forms-ext');
+    </script>
+</body>
+</html>

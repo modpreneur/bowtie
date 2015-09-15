@@ -1,109 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Sales Letter Framework</title>
-    <!--<link rel="stylesheet" href="src/css/style.css"/>-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
     <link rel="stylesheet" href="src/css/bowtie.css"/>
 </head>
 <body>
-
-<div class="menu static">
-    <div class="container-fluid">
-        <nav class="row">
-            <div class="head">
-                <a href="#"><h1 class="main-header">BOWTIE</h1></a>
-            </div>
-            <div class="head-content">
-                <div class="sub-main-menu">
-                    <label for="show-main-menu" class="show-main-menu">
-                        <span class="fa fa-bars"></span>Menu
-                    </label>
-                    <input type="checkbox" id="show-main-menu">
-                    <ul class="main-menu">
-                        <li><a href="#">Menu 1</a></li>
-                        <li><a href="#">Menu 2</a></li>
-                        <li><a href="#">Menu 3</a></li>
-                        <li><a href="#">Menu 4</a></li>
-                        <li><a href="#">Menu 5</a></li>
-                    </ul>
-                </div>
-
-                <div class="first-menu-log">
-                    <div class="notification-centre">
-                        <div class="notification-item">
-                            <input type="checkbox" id="notifi-01" class="input-notifi"/>
-                            <label class="notifi background-danger" for="notifi-01">X</label>
-                            <div class="notifi-show">
-                                <p>Notifi danger</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>
-                            </div>
-                        </div>
-
-                        <div class="notification-item">
-                            <input type="checkbox" id="notifi-02" class="input-notifi"/>
-                            <label class="notifi background-warning" for="notifi-02">Y</label>
-                            <div class="notifi-show">
-                                <p>Notifi warning</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>
-                            </div>
-                        </div>
-
-                        <div class="notification-item">
-                            <input type="checkbox" id="notifi-03" class="input-notifi"/>
-                            <label class="notifi background-info" for="notifi-03">Z</label>
-                            <div class="notifi-show">
-                                <p>Notifi info</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dicta doloremque doloribus ex molestiae placeat voluptatum. A ab cum deserunt enim est, id minus nobis quod sunt suscipit, vitae.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown-login">
-                        <label for="show-drop11" class="show-drop">
-                            <span class="fa fa-circle-thin user-circle-login"><span class="fa fa-user"></span></span>
-                            <span class="name">name</span>
-                            <span class="surname">surname</span>
-                            <span class="fa fa-caret-down"></span>
-                        </label>
-                        <input type="checkbox" id="show-drop11" class="login-input">
-                        <ul class="login-drop">
-                            <li><a href="#">drop1</a></li>
-                            <li><a href="#">drop2</a></li>
-                            <li><a href="#">drop3</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">drop4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="submenu"></div>
-</div>
-
-<input type="checkbox" id="sidebar-width">
-<div class="side-bar">
-    <label for="show-sidebar" class="show-side"><span class="fa fa-bars"></span>Menu</label>
-    <input type="checkbox" id="show-sidebar">
-    <ul class="sidebar">
-        <li><a href="#"><i class="fa fa-fighter-jet"></i><span class="sidebar-link">Side 01</span></a></li>
-        <li><a href="#"><i class="fa fa-cogs"></i><span class="sidebar-link">Side 02</span></a></li>
-        <li><a href="#"><i class="fa fa-eye-slash"></i><span class="sidebar-link">Side 03</span></a></li>
-        <li><a href="#"><i class="fa fa-flag-checkered"></i><span class="sidebar-link">Side 04</span></a></li>
-        <li><a href="#"><i class="fa fa-fire"></i><span class="sidebar-link">Side 05</span></a></li>
-        <li><a href="#"><i class="fa fa-fire-extinguisher"></i><span class="sidebar-link">Side 06</span></a></li>
-    </ul>
-    <span class="divider"></span>
-    <label for="sidebar-width" class="show-sidebar-width"><span class="fa fa-search-minus"></span></label>
-</div>
-
-<div class="container-fluid container-with-sidebar">
+<div class="container">
     <div class="row">
-        <div class="span-large-24">
-            <h2 class="color-tertiary">AWESOME MENU !!</h2>
+        <br/>
+        <div class="span-medium-24">
+            <div class="tabs-wrapper">
+                <input type="radio" name="tab" id="tab1" class="tab-head" checked/>
+                <label for="tab1">One</label>
+                <input type="radio" name="tab" id="tab2" class="tab-head" />
+                <label for="tab2">Two</label>
+                <input type="radio" name="tab" id="tab3" class="tab-head" />
+                <label for="tab3">Three</label>
+                <input type="radio" name="tab" id="tab4" class="tab-head" />
+                <label for="tab4">Four</label>
+
+                <div class="tab-body-wrapper">
+                    <div id="tab-body-1" class="tab-body">
+                        <h1>Tab 1 heading</h1>
+                        <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi consequatur culpa dolorum error exercitationem explicabo facere molestias nam nulla numquam obcaecati odit, perspiciatis, quaerat quibusdam recusandae reprehenderit repudiandae voluptatibus?</p>
+                        <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi consequatur culpa dolorum error exercitationem explicabo facere molestias nam nulla numquam obcaecati odit, perspiciatis, quaerat quibusdam recusandae reprehenderit repudiandae voluptatibus?</p>
+                    </div>
+                    <div id="tab-body-2" class="tab-body">
+                        <h1>Tab 2 heading</h1>
+                        <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone.</p>
+                        <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola corned beef flank hamburger aute chicken id t-bone.</p>
+                    </div>
+                    <div id="tab-body-3" class="tab-body">
+                        <h1>Tab 3 heading</h1>
+                        <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short ribs pancetta boudin. Occaecat mollit in laboris ham hock bresaola</p>
+                    </div>
+                    <div id="tab-body-4" class="tab-body">
+                        <h1>Tab 4 heading</h1>
+                        <p>Bacon ipsum dolor sit amet pastrami dolor tri-tip, magna tongue ullamco occaecat velit shoulder sunt elit. Non cillum turkey short loin beef ribs. Anim qui shankle short rib.</p>
+                    </div>
+                </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit porro delectus hic excepturi deserunt illum perferendis est non placeat maxime. Et facere distinctio doloribus voluptas inventore quod laboriosam commodi quam.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span-medium-24">
+            <div class="tabs">
+              <div class="tabs-border">
+
+                <div class="tab">
+                  <input type="radio" id="tab-1" name="tab-group-1">
+                  <label for="tab-1">
+                    List 1 <i>&#9660;</i>
+                  </label>
+                  <div class="tab" id="close-tab">
+                    <input type="radio" id="tab-close" name="tab-group-1">
+                    <label for="tab-close">
+                      List 1 <i>&#9650;</i>
+                    </label>
+                  </div>
+                  <div class="content">
+                    ...
+                </div>
+                </div>
+
+              <div class="tab">
+                <input type="radio" id="tab-2" name="tab-group-1">
+                <label for="tab-2">
+                  List 2 <i>&#9660;</i>
+                </label>
+                <div class="tab" id="close-tab">
+                <input type="radio" id="tab-close" name="tab-group-1">
+                <label for="tab-close">
+                  List 2 <i>&#9650;</i>
+                </label>
+                </div>
+                <div class="content">
+                ...
+                </div>
+              </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span-medium-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at earum ex hic, iste laudantium libero natus nesciunt, placeat repudiandae rerum, voluptatem! Ab amet assumenda distinctio libero necessitatibus, recusandae tempore!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span-mini-24 display-none-mini display-block-mini">
+            <h1>MINI</h1>
+        </div>
+        <div class="span-small-24 display-none-small display-block-small">
+            <h1>SMALL</h1>
+        </div>
+        <div class="span-medium-24 display-none-medium display-block-medium">
+            <h1>MEDIUM</h1>
+        </div>
+        <div class="span-large-24 display-none-large display-block-large">
+            <h1>LARGE</h1>
+        </div>
+        <div class="span-xlarge-24 display-none-xlarge display-block-xlarge">
+            <h1>XLARGE</h1>
+        </div>
+        <div class="span-medium-24">
+            <input class="button button-primary" type="button" disabled="disabled" value="Disabled Button" />
         </div>
     </div>
 </div>
-
 </body>
 </html>
