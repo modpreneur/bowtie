@@ -416,3 +416,41 @@
     display: block !important;
   }
 }
+
+.visible-large-block, .visible-large-inline, .visible-large-inline-block,
+.visible-xlarge-block, .visible-xlarge-inline, .visible-xlarge-inline-block,
+.visible-medium-block, .visible-medium-inline, .visible-medium-inline-block,
+.visible-small-block, .visible-small-inline, .visible-small-inline-block,
+.visible-xsmall-block, .visible-xsmall-inline, .visible-xsmall-inline-block {
+  display: none !important;
+}
+//XLARGE
+@media (min-width: @brackpoint-xlarge) {
+  .visible-large-block {
+    display: block !important;
+  }
+}
+//LARGE
+@media (min-width: @brackpoint-large) and (max-width: @brackpoint-xlarge) {
+  .visible-large-block {
+    display: block !important;
+  }
+}
+//MEDIUM
+@media (min-width: @brackpoint-medium) and (max-width: @brackpoint-large) {
+  .visible-large-block {
+    display: block !important;
+  }
+}
+//SMALL
+@media (min-width: @brackpoint-small) and (max-width: @brackpoint-medium) {
+  .visible-large-block {
+    display: block !important;
+  }
+}
+//MINI
+@media (max-width: @brackpoint-small) {
+  .visible-large-block {
+      display: block !important;
+  }
+}
