@@ -1,41 +1,40 @@
-// Navbar module
-@import "variables";
-
 .navbar {
-    width: 100%;
-    padding-top: @space-small;
-    padding-bottom: @space-small;
-}
-
-.navbar ul {
-    margin: 0;
+  width: 100%;
+  .navbar-items {
+    font-size: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
-}
-
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li a {
+  }
+  .navbar-item {
+    display: inline-block;
+    font-size: @font-size-base;
+    text-align: center;
+  }
+  .navbar-link {
     padding: @space-small @space-small * 2;
-  color: @color-secondary;
+    color: @color-secondary;
+    display: block;
+  }
+  @media (max-width: 1023px) {
+    .medium {
+      .navbar-item {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .small {
+      .navbar-item {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 479px) {
+    .mini {
+      .navbar-item {
+        display: block;
+      }
+    }
+  }
 }
-
-//EXAMPLE
-/*
-<div class="navbar">
-  <ul>
-      <li>
-        <a href="">
-          navlist 1
-        </a>
-      </li>
-      <li>
-        <a href="">
-          navlist 2
-        </a>
-      </li>
-    </ul>
-  </div>
-*/

@@ -1,33 +1,34 @@
 .harmonica {
   display: block;
+  .input-control {
+    display: none;
+    &:checked {
+      + .main-panel {
+        .harmonica-label {
+          font-weight: bold;
+        }
+        .show-harmonica {
+          display: block;
+        }
+      }
+    }
+    //&:checked + .harmonica-label {
+    //  i {
+    //    &:before {
+    //      content: "\f077";
+    //    }
+    //  }
+    //}
+  }
   .main-panel {
     background-color: @color-white;
     border: 1px solid @color-grey;
     margin-bottom: 3px;
-
-    input {
-      display: none;
-
-      &:checked ~ .show-harmonica {
-        display: block;
-      }
-      &:checked + label {
-        font-weight: bold;
-
-        i {
-          &:before {
-            content: "\f077";
-          }
-        }
-      }
-    }
     .show-harmonica {
       display: none;
-
       padding: 15px;
     }
-
-    label {
+    .harmonica-label {
       display: block;
       position: relative;
 

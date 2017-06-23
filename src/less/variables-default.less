@@ -1,48 +1,3 @@
-// VARIABLES.less -> default variables for the framework
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 //--------------//
 //    COLORS    //
 //--------------//
@@ -91,7 +46,7 @@ table {
 //    SPACING    //
 //---------------//
 
-@space-big: 30px;
+@space-large: 30px;
 @space-medium: 20px;
 @space-small: 10px;
 
@@ -100,48 +55,33 @@ table {
 //    GRID SYSTEM    //
 //-------------------//
 
-@columns: 24;                           // number of columns
+@columns: 12;                           // number of columns
 @responsive: false;                     // generate responsive columns?
 @column-padding-vertical: 0;            // vertical padding for each column
 @column-padding-horizontal: @space-medium;       // horizontal padding for each column
 @column-margin-vertical: 0px;           // vertical margin for each column
 @column-margin-horizontal: 0px;         // horizontal margin for each column
-// thresholds for screen sizes
-//@threshold-big: 1210px;
-//@threshold-medium: 810px;
-//@threshold-small: 410px;
 
+// thresholds for screen sizes
 @brackpoint-mini: 320px;
 @brackpoint-small: 480px;
 @brackpoint-medium: 768px;
 @brackpoint-large: 1024px;
 @brackpoint-xlarge: 1200px;
 
-//@threshold-mini:  240px;
-//@threshold-small-n:  481px;
-//@threshold-medium-n:  768px;
-//@threshold-large-n:  1024px;
-//@threshold-xlarge:  1210px;
 // container sizes for each width size
 @container-big: 1200px;
 @container-medium: 800px;
 @container-small: 400px;
 
-//@container-full: 1200px;
-//@container-medium: 1014px;
-//@container-small: 100%;
-
-
-
-
 //---------------//
 //    BORDERS    //
 //---------------//
-
 @border-radius-base:        5px;
 @border-radius-large:       10px;
 @border-radius-small:       3px;
 @border-radius-circle:      1000px;
+
 //etc.
 .radius {
   &-base {
@@ -158,11 +98,9 @@ table {
   }
 }
 
-
 //--------------//
 //    ALERTS    //
 //--------------//
-
 @state-success-text:             #5da423;
 @state-success-bg:               #dff0d8;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
@@ -227,7 +165,8 @@ table {
 
 @font-weight-normal:               500;
 
-@font-family-sans-serif:           "Proxima Nova", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+@font-family-sans-serif:           "Roboto", sans-serif;
 @font-family-serif:                Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:            Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:                 @font-family-sans-serif;
@@ -237,16 +176,13 @@ table {
 //** Text muted color
 @text-muted:                       @gray-light;
 
-
-// WHATEVER  // TODO  ????
+// WHATEVER  //
 @small:                            1px;
-
 
 body {
     font-family:                      @font-family-base;
     font-size:                        @font-size-base;
-    line-height:                      @line-height-base;
-    margin:                           0px;
+    line-height:                      1.618;
 }
 
 .animate (@animated: all 700ms ease) {
@@ -296,7 +232,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100% !important;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -304,49 +240,10 @@ body {
 .clearfix {
   &:before,
   &:after {
-    content: " "; // 1
-    display: table; // 2
+    content: " ";
+    display: table;
   }
   &:after {
     clear: both;
   }
 }
-
-.background-primary {
-  background-color: @color-primary;
-}
-.background-secondary {
-  background-color: @color-secondary;
-}
-.background-tertiary {
-  background-color: @color-tertiary;
-}
-.background-info {
-  background-color: @color-info;
-}
-.background-success {
-  background-color: @color-success;
-}
-.background-danger {
-  background-color: @color-danger;
-}
-.background-warning {
-  background-color: @color-warning;
-}
-.background-white {
-  background-color: @color-white;
-}
-.background-black {
-  background-color: @color-black;
-}
-
-.static {
-  position: static !important;
-}
-
-//EXAMPLES
-/*
-<div class="background-primary">
-  background-primary
-</div>
-*/

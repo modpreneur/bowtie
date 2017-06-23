@@ -1,156 +1,81 @@
 // FONT.less -> classes changing fonts
-@import "variables";
+//@import "variables";
 
-.color-primary {
-  color: @color-primary;
-}
+.background-primary       { background-color: @color-primary; }
+.background-secondary     { background-color: @color-secondary; }
+.background-tertiary      { background-color: @color-tertiary; }
+.background-info          { background-color: @color-info; }
+.background-success       { background-color: @color-success; }
+.background-danger        { background-color: @color-danger; }
+.background-warning       { background-color: @color-warning; }
+.background-white         { background-color: @color-white; }
+.background-black         { background-color: @color-black; }
 
-.color-secondary {
-  color: @color-secondary;
-}
+.color-primary            { color: @color-primary; }
+.color-secondary          { color: @color-secondary; }
+.color-tertiary           { color: @color-tertiary; }
+.color-info               { color: @color-info; }
+.color-success            { color: @color-success; }
+.color-danger             { color: @color-danger; }
+.color-warning            { color: @color-warning; }
+.color-muted              { color: @text-muted; }
+.color-white              { color: @color-white; }
+.color-black              { color: @color-black; }
 
-.color-tertiary {
-  color: @color-tertiary;
-}
-
-.color-info {
-  color: @color-info;
-}
-
-.color-success {
-  color: @color-success;
-}
-
-.color-danger {
-  color: @color-danger;
-}
-
-.color-warning {
-  color: @color-warning;
-}
-
-.color-muted {
-  color: @text-muted;
-}
-
-.color-white {
-  color: @color-white;
-}
-
-.color-black {
-  color: @color-black;
-}
-
-a {
-    text-decoration: none;
-}
-
+a                         { text-decoration: none; }
+a:hover                   { text-decoration: none; }
 a:hover {
-    text-decoration: none;
-}
-
-a:hover {
-  &.primary  		{color: @color-primary-hover}
-  &.secondary  		{color: @color-secondary-hover}
-  &.tertiary  		{color: @color-tertiary-hover}
-
-  &.info  			{color: @color-info-hover}
-  &.success  		{color: @color-success-hover}
-  &.warning  		{color: @color-warning-hover}
-  &.danger  		{color: @color-danger-hover}
-
-  &.muted  			{color: @color-muted-hover}
+  &.primary  		      {color: @color-primary-hover}
+  &.secondary  		      {color: @color-secondary-hover}
+  &.tertiary  		      {color: @color-tertiary-hover}
+  &.info  			      {color: @color-info-hover}
+  &.success  		      {color: @color-success-hover}
+  &.warning  		      {color: @color-warning-hover}
+  &.danger  		      {color: @color-danger-hover}
+  &.muted  			      {color: @color-muted-hover}
 }
 
 // font align
-.text-left {
-    text-align: left;
+.text-left                { text-align: left; }
+.text-center              { text-align: center; }
+.text-right               { text-align: right; }
+.text-justify {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 
-.text-center {
-    text-align: center;
-}
+// Transformation
+.text-lowercase           { text-transform: lowercase; }
+.text-uppercase           { text-transform: uppercase; }
+.text-capitalize          { text-transform: capitalize; }
+.text-underline           { text-decoration: underline; }
 
-.text-right {
-    text-align: right;
-}
-
-// font size
-.font-smaller {
-    font-size: @font-size-small;
-}
-
-.font-bigger {
-    font-size: @font-size-large;
-}
+.text-italic              { font-style: italic; }
+.text-lighter             { font-weight: lighter; }
+.text-bold                { font-weight: bold; }
+.text-normal              { font-weight: normal; }
 
 // Heading
 h1,h2,h3,h4,h5,h6 {
   padding: @font-padding-none;
   margin: @font-margin-none;
   font-weight: @font-weight-normal;
+  line-height: 1.1;
+  small {
+    color: @color-dark-grey;
+    font-size: 65%;
+    font-size: 0.65em;
+  }
 }
-
-// Transformation
-.lowercase                    { text-transform: lowercase; }
-.uppercase                    { text-transform: uppercase; }
-.capitalize                   { text-transform: capitalize; }
-.underline                    { text-decoration: underline; }
 
 // Headings
-h1 {
-    small, .small,.small {
-        line-height: 1;
-        color: @color-dark-grey;
-        font-size: @font-size-xs;
-    }
-}
-
-h2 {
-    small, .small,.small {
-        line-height: 1;
-        color: @color-dark-grey;
-        font-size: @font-size-xs;
-    }
-}
-
-h3 {
-    small, .small,.small {
-        line-height: 1;
-        color: @color-dark-grey;
-        font-size: @font-size-xs;
-    }
-}
-
-h4 {
-    small, .small,.small {
-        line-height: 1;
-        color: @color-dark-grey;
-        font-size: @font-size-sm;
-    }
-}
-
-h5 {
-    small, .small,.small {
-        line-height: 1;
-        color: @color-dark-grey;
-        font-size: @font-size-sm;
-    }
-}
-
-h6 {
-    small, .small,.small {
-        line-height: 1;
-        color: @color-dark-grey;
-        font-size: @font-size-sm;
-    }
-}
-
-small,
-.small {
-    font-size: @font-size-md;
-}
-
-.large {
-    font-size: @font-size-large;
-}
+h1                        { font-size: @font-size-h1; }
+h2                        { font-size: @font-size-h2; }
+h3                        { font-size: @font-size-h3; }
+h4                        { font-size: @font-size-h4; }
+h5                        { font-size: @font-size-h5; }
+h6                        { font-size: @font-size-h6; }

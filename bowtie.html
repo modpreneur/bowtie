@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Bowtie 2.0.0</title>
+    <link rel="stylesheet" href="src/css/bowtie-2.0.0.css">
+    <style>
+        .main-header {
+            position: relative;
+            z-index: 1;
+            background: #000;
+        }
+        .main-header a {
+            color: #fff;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body class="grid-sticky-footer grid-navigation-body grid-sidebar">
+<input id="input-main-menu" type="checkbox" hidden>
+<header class="main-header">
+    <div class="container">
+        <div class="grid">
+            <h1 class="grid-logo main-logo"><a href="">BOWTIE</a></h1>
+            <nav class="grid-navigation main-navigation">
+                <label for="input-main-menu" class="label-main-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="grid-navigation-content grid-space-between">
+                    <li class="list-item"><a href="index.html" class="item">Home</a></li>
+                    <li class="list-item"><a href="grid-flex.html" class="item">Grid</a></li>
+                    <li class="list-item"><a href="sidebar.html" class="item">Theme</a></li>
+                    <li class="list-item"><a href="centering.html" class="item">Center</a></li>
+                    <li class="list-item"><a href="video.html" class="item">Video</a></li>
+                    <li class="list-item"><a href="slider.html" class="item">Slider full</a></li>
+                    <li class="list-item"><a href="slider-1.html" class="item">Slider jumbotron</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main-page">
+    <section class="font-less">
+        <div class="container">
+            <div class="row">
+                <div class="grid-auto">
+                    <h1>BowtieCSS 2.0.0 <small>documentation</small></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <h2>text-left <small>paragraph</small></h2>
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aut excepturi quam quia quis tempore voluptatibus. A beatae, dolorum et in iusto laudantium neque sit tenetur. Dolor, similique soluta.</p>
+                    <h3>text-lowercase <small>link</small></h3>
+                    <a href="" class="text-lowercase">click</a>
+                </div>
+                <div class="grid-auto">
+                    <h2>text-right <small>paragraph</small></h2>
+                    <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aut excepturi quam quia quis tempore voluptatibus. A beatae, dolorum et in iusto laudantium neque sit tenetur. Dolor, similique soluta.</p>
+                    <h3>text-uppercase <small>link</small></h3>
+                    <a href="" class="text-uppercase">click</a>
+                </div>
+                <div class="grid-auto">
+                    <h2>text-center <small>paragraph</small></h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aut excepturi quam quia quis tempore voluptatibus. A beatae, dolorum et in iusto laudantium neque sit tenetur. Dolor, similique soluta.</p>
+                    <h3>text-capitalize <small>link</small></h3>
+                    <a href="" class="text-capitalize">click</a>
+                </div>
+                <div class="grid-auto">
+                    <h2>text-justify <small>paragraph</small></h2>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aut excepturi quam quia quis tempore voluptatibus. A beatae, dolorum et in iusto laudantium neque sit tenetur. Dolor, similique soluta.</p>
+                    <h3>text-underline <small>link</small></h3>
+                    <a href="" class="text-underline">click</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <h1>Heading H1
+                        <small>small text h1</small>
+                    </h1>
+                    <h2>Heading H2
+                        <small>small text h2</small>
+                    </h2>
+                    <h3>Heading H3
+                        <small>small text h3</small>
+                    </h3>
+                    <h4>Heading H4
+                        <small>small text h4</small>
+                    </h4>
+                    <h5>Heading H5
+                        <small>small text h5</small>
+                    </h5>
+                    <h6>Heading H6
+                        <small>small text h6</small>
+                    </h6>
+                </div>
+                <div class="grid-auto">
+                    <p class="color-primary">Color primary</p>
+                    <p class="color-secondary">Color secondary</p>
+                    <p class="color-tertiary">Color tertiary</p>
+                </div>
+                <div class="grid-auto">
+                    <p class="color-info">Color info</p>
+                    <p class="color-success">Color success</p>
+                    <p class="color-warning">Color warning</p>
+                    <p class="color-danger">Color danger</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <div class="position-relative border-warning">
+                        RELATIVE div
+                        <div class="position-absolute background-danger color-white" style="top: 0; right: 0;">
+                            ABSOLUTE div, top 0, right 0
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-auto">
+                    <div class="clearfix">
+                        <button class="button button-danger pull-left">Float LEFT</button>
+                        <button class="button button-danger pull-left">Float LEFT</button>
+                        <button class="button button-warning pull-right">Float RIGHT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <div class="clearfix bold">
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white margin-large-all">Magin all large</div>
+                        </div>
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white margin-large-top">Margin top large</div>
+                        </div>
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white margin-medium-top">Margin top medium</div>
+                        </div>
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white margin-small-top">Margin top small</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-auto">
+                    <div class="clearfix bold">
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white padding-large-all">Padding all large</div>
+                        </div>
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white padding-large-top">Padding top large</div>
+                        </div>
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white padding-medium-top">Padding top medium</div>
+                        </div>
+                        <div class="border-danger pull-left">
+                            <div class="display-inline-block background-primary color-white padding-small-top">Padding top small</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <nav class="navbar">
+                        <ul class="navbar-items">
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 1</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 2</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 3</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid-auto">
+                    <nav class="navbar">
+                        <ul class="navbar-items medium">
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 1</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 2</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 3</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <nav class="navbar">
+                        <ul class="navbar-items small">
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 1</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 2</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 3</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid-auto">
+                    <nav class="navbar">
+                        <ul class="navbar-items mini">
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 1</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 2</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 3</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="#">navlist 4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <div class="tabs-wrapper">
+                        <input type="radio" id="tab1" name="tabs" class="tab-head" checked="">
+                        <label for="tab1">One</label>
+                        <input type="radio" id="tab2" name="tabs" class="tab-head">
+                        <label for="tab2">Two</label>
+                        <input type="radio" id="tab3" name="tabs" class="tab-head">
+                        <label for="tab3">Three</label>
+                        <input type="radio" id="tab4" name="tabs" class="tab-head">
+                        <label for="tab4">Four</label>
+                        <input type="radio" id="tab5" name="tabs" class="tab-head">
+                        <label for="tab5">Five</label>
+
+                        <div class="tab-body-wrapper">
+                            <div id="tab-body-1" class="tab-body">
+                                <p>... 01</p>
+                            </div>
+                            <div id="tab-body-2" class="tab-body">
+                                <p>... 02</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, architecto culpa dicta dolore incidunt ipsa, itaque magni minus, mollitia nihil obcaecati omnis placeat quos recusandae repellendus sunt ullam vel voluptas.</p>
+                            </div>
+                            <div id="tab-body-3" class="tab-body">
+                                <p>... 03</p>
+                            </div>
+                            <div id="tab-body-4" class="tab-body">
+                                <p>... 04</p>
+                            </div>
+                            <div id="tab-body-5" class="tab-body">
+                                <p>... 05</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-auto">
+                    <p class="border-primary pull-left margin-small-right">ALL</p>
+                    <p class="border-primary-top pull-left margin-small-right">TOP</p>
+                    <p class="border-primary-bottom pull-left margin-small-right">BOTTOM</p>
+                    <p class="border-primary-left pull-left margin-small-right">LEFT</p>
+                    <p class="border-primary-right pull-left margin-small-right">RIGHT</p>
+                    <p class="border-primary-vertical pull-left margin-small-right">VERTICAL</p>
+                    <p class="border-primary-horizontal pull-left margin-small-right">HORIZONTAL</p>
+                    <p class="border-primary border-none-left pull-left">ALL except LEFT</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <a class="button">Default</a>
+                    <a class="button button-primary">Button Primary</a>
+                    <a class="button button-secondary">Button Secondary</a>
+                    <a class="button button-tertiary">Button Tertiary</a>
+                    <a class="button button-info">Button Info</a>
+                    <a class="button button-success">Button Success</a>
+                    <a class="button button-warning">Button Warning</a>
+                    <a class="button button-danger">Button Danger</a>
+                    <hr>
+                    <input class="button button-primary" type="button" disabled="disabled" value="Disabled Input">
+                    <a class="button disable">Disabled Button</a>
+                </div>
+                <div class="grid-auto">
+                    <div class="button-group">
+                        <a class="button button-medium button-danger">
+                            1
+                        </a>
+                        <a class="button button-medium button-warning">
+                            2
+                        </a>
+                        <a class="button button-medium button-success">
+                            3
+                        </a>
+                        <a class="button button-medium button-info">
+                            4
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <div class="video-wrapper">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/V362KwNrgjU?ecver=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="grid-auto">
+                    <input type="checkbox" id="modal-01" hidden class="modal-input">
+                    <label for="modal-01" class="modal-label button button-primary">Modal</label>
+                    <div class="modal-wrapper">
+                        <label for="modal-01" class="modal-close-full-width"></label>
+                        <div class="modal-content">
+                            <label for="modal-01" class="modal-close">x</label>
+                            <div class="row">
+                                <div class="grid-auto">
+                                    <h2>Modal</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores commodi consequatur distinctio ducimus eos est fuga hic inventore, labore laboriosam minima molestias, nam neque qui rerum saepe veritatis voluptas?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row grid-padding-none">
+                        <input type="checkbox" id="modal-02" hidden class="modal-input">
+                        <label for="modal-02" class="modal-label button button-primary">Modal video</label>
+                        <div class="modal-wrapper">
+                            <label for="modal-02" class="modal-close-full-width"></label>
+                            <div class="modal-content full-screen">
+                                <label for="modal-02" class="modal-close">x</label>
+                                <div class="row">
+                                    <div class="grid-auto">
+                                        <div class="video-wrapper">
+                                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/V362KwNrgjU?ecver=1" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-auto">
+                    <div class="harmonica">
+                        <p class="harmonica-head">Head</p>
+
+                        <input type="radio" id="harmonica-01" name="list" class="input-control" checked/>
+                        <div class="main-panel">
+                            <label for="harmonica-01" class="harmonica-label">Harmonica 01</label>
+                            <div class="show-harmonica">
+                                ...01
+                            </div>
+                        </div>
+
+                        <input type="radio" id="harmonica-02" name="list" class="input-control"/>
+                        <div class="main-panel">
+                            <label for="harmonica-02" class="harmonica-label">Harmonica 02</label>
+                            <div class="show-harmonica">
+                                ...02
+                            </div>
+                        </div>
+
+                        <input type="radio" id="harmonica-03" name="list" class="input-control"/>
+                        <div class="main-panel">
+                            <label for="harmonica-03" class="harmonica-label">Harmonica 03</label>
+                            <div class="show-harmonica">
+                                ...03
+                            </div>
+                        </div>
+
+                        <input type="radio" id="harmonica-04" name="list" class="input-control"/>
+                        <div class="main-panel">
+                            <label for="harmonica-04" class="harmonica-label">Harmonica 04</label>
+                            <div class="show-harmonica">
+                                ...04
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row display-block">
+                <div class="grid-auto">
+
+                    <div class="css-slider-wrapper">
+                        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+                        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+                        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+                        <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+
+                        <div class="slider-pagination">
+                            <label for="slider_1" class="page1"></label>
+                            <label for="slider_2" class="page2"></label>
+                            <label for="slider_3" class="page3"></label>
+                            <label for="slider_4" class="page4"></label>
+                        </div>
+
+                        <div class="next control">
+                            <label for="slider_1" class="numb1">></label>
+                            <label for="slider_2" class="numb2">></label>
+                            <label for="slider_3" class="numb3">></label>
+                            <label for="slider_4" class="numb4">></label>
+                        </div>
+                        <div class="previous control">
+                            <label for="slider_1" class="numb1"><</label>
+                            <label for="slider_2" class="numb2"><</label>
+                            <label for="slider_3" class="numb3"><</label>
+                            <label for="slider_4" class="numb4"><</label>
+                        </div>
+
+                        <div class="slider slide1">
+                            <div>
+                                <h2>Css Based slider</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam atque beatae blanditiis doloribus expedita incidunt, laudantium magnam magni modi omnis quam quo recusandae reiciendis soluta suscipit temporibus unde voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="slider slide2">
+                            <div>
+                                <h2>CSS Slider without use of any javascript</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate dolore dolores esse fugit id impedit ipsum itaque libero, magnam necessitatibus neque, obcaecati optio quidem suscipit, ullam veniam voluptatum?</p>
+                            </div>
+                        </div>
+                        <div class="slider slide3">
+                            <div>
+                                <h2>Full screen animation slider</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque, cupiditate delectus deserunt eaque earum eligendi eum impedit, incidunt laboriosam maiores, maxime placeat recusandae reiciendis rem similique sit sunt voluptate?</p>
+                            </div>
+                        </div>
+                        <div class="slider slide4">
+                            <div>
+                                <h2>css3 slider</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur dolores eum eveniet expedita iusto magni nam, nobis possimus tempora. Ab cupiditate eaque est excepturi expedita explicabo iusto soluta ullam!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

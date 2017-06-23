@@ -4,8 +4,35 @@
     <title>Sales Letter Framework</title>
     <!--<link rel="stylesheet" href="src/css/style.css"/>-->
     <link rel="stylesheet" href="src/css/bowtie.css"/>
+    <style>
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+          border: 0;
+          padding: 0;
+        }
+        .test {
+            max-width: 500px;
+            margin: 50px auto;
+        }
+        .test input {
+            display: inline-block;
+        }
+        .test input, .test button {
+            padding: 10px 20px;
+            border: solid 1px #00F;
+            background: red;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="test">
+    <button>AHOJ</button>
+    <input type="submit" value="AHOJ">
+    <input type="text" placeholder="AHOJ">
+</div>
 
 <div class="menu static">
     <div class="container-fluid">

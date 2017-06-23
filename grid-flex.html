@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Flex responsive grid</title>
+    <link rel="stylesheet" href="src/css/bowtie-2.0.0.css">
+    <style>
+        .main-header, .main-footer {
+            background-color: rgba(0, 174, 239, .1);
+            color: #1F3A93;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .main-footer {
+            margin-top: 20px;
+        }
+        .grid-aside {
+            border-right: solid 2px rgba(0, 174, 239, .1);
+            color: #1F3A93;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .grid-aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        .grid-aside a {
+            color: #1F3A93;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 5px;
+        }
+        @media (max-width: 767px) {
+            .main-header .grid-navigation-content {
+                background-color: rgb(0, 174, 239);
+            }
+        }
+        .main-header {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(0, 174, 239, .1);
+        }
+        .main-header a {
+            color: #1F3A93;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .main-logo a {
+            font-size: 36px;
+        }
+        xmp {
+            background: hsl(220, 80%, 90%);
+            padding: 10px;
+        }
+        .headline-h2 {
+            font-size: 30px;
+            color: #1f3a93;
+            font-weight: 700;
+            line-height: 20px;
+            border-left: 5px solid #00aeef;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .headline-h2 small {
+            display: block;
+            margin-top: 5px;
+        }
+        .no-border {
+
+        }
+        .row-border .grid,
+        .row-border .grid-auto {
+            border: solid 1px #1f3a93;
+        }
+    </style>
+</head>
+
+<body class="grid-sticky-footer grid-navigation-body grid-sidebar">
+<input id="input-main-menu" type="checkbox" hidden>
+<header class="main-header">
+    <div class="container">
+        <div class="grid">
+            <h1 class="grid-logo main-logo"><a href="">BOWTIE</a></h1>
+            <nav class="grid-navigation main-navigation">
+                <label for="input-main-menu" class="label-main-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="grid-navigation-content grid-space-between">
+                    <li class="list-item"><a href="index.html" class="item">Home</a></li>
+                    <li class="list-item"><a href="grid-flex.html" class="item">Grid</a></li>
+                    <li class="list-item"><a href="sidebar.html" class="item">Theme</a></li>
+                    <li class="list-item"><a href="centering.html" class="item">Center</a></li>
+                    <li class="list-item"><a href="video.html" class="item">Video</a></li>
+                    <li class="list-item"><a href="slider.html" class="item">Slider full</a></li>
+                    <li class="list-item"><a href="slider-1.html" class="item">Slider jumbotron</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">xlarge-12 large-8 medium-4 small-8 mini-24
+                <small>1200px - &infin; 50% | 1024px - 1199px 33.3% | 768px - 1023px 16.6% | 480px - 767px 33.3% | 0 - 479px 100%</small>
+            </h2>
+        </div>
+    </div>
+    <div class="row row-border">
+        <div class="grid xlarge-12 large-8 medium-4 small-8 mini-24">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid xlarge-12 large-8 medium-4 small-8 mini-24">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+        <div class="grid xlarge-12 large-8 medium-4 small-8 mini-24">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur consequatur deleniti earum libero nam quaerat voluptate. Ad autem cupiditate explicabo, fuga incidunt magnam pariatur quae quam quas? Officiis, similique?
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row">
+        <div class="grid xlarge-12 large-8 medium-4 small-8 mini-24">...</div>
+        <div class="grid xlarge-12 large-8 medium-4 small-8 mini-24">...</div>
+        <div class="grid xlarge-12 large-8 medium-4 small-8 mini-24">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">grid-auto</h2>
+        </div>
+    </div>
+    <div class="row row-border">
+        <div class="grid-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row">
+        <div class="grid-auto">...</div>
+        <div class="grid-auto">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">medium-8 | offset-medium-4</h2>
+        </div>
+    </div>
+    <div class="row row-border">
+        <div class="grid medium-8 offset-medium-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid medium-8 offset-medium-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row">
+        <div class="grid medium-8 offset-medium-4">...</div>
+        <div class="grid medium-8 offset-medium-4">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-top | mini-12</h2>
+        </div>
+    </div>
+    <div class="row grid-top row-border">
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-top">
+        <div class="grid mini-12">...</div>
+        <div class="grid mini-12">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-bottom | mini-12</h2>
+        </div>
+    </div>
+    <div class="row grid-bottom row-border">
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-bottom">
+        <div class="grid mini-12">...</div>
+        <div class="grid mini-12">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-baseline | mini-12</h2>
+        </div>
+    </div>
+    <div class="row grid-baseline row-border">
+        <div class="grid mini-12">
+            <h3>Lorem ipsum</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-baseline">
+        <div class="grid mini-12">...</div>
+        <div class="grid mini-12">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-middle | mini-12</h2>
+        </div>
+    </div>
+    <div class="row grid-middle row-border">
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid mini-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-middle">
+        <div class="grid mini-12">...</div>
+        <div class="grid mini-12">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-center | small-8</h2>
+        </div>
+    </div>
+    <div class="row row-border grid-center">
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid cumque dignissimos distinctio dolores dolorum, error facilis laborum laudantium magni modi nostrum omnis, placeat porro quasi quis rerum tempora ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta enim ex magnam nulla quam, quidem repellendus. Corporis ducimus hic illo in laboriosam magni nostrum perspiciatis praesentium, provident rerum tempora.
+        </div>
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa labore nihil odio placeat! Animi culpa deleniti numquam quam soluta? Aperiam consequuntur enim ex in, porro quos tempore vitae voluptas.
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-center">
+        <div class="grid small-8">...</div>
+        <div class="grid small-8">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-space-around | small-8</h2>
+        </div>
+    </div>
+    <div class="row row-border grid-space-around">
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid cumque dignissimos distinctio dolores dolorum, error facilis laborum laudantium magni modi nostrum omnis, placeat porro quasi quis rerum tempora ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta enim ex magnam nulla quam, quidem repellendus. Corporis ducimus hic illo in laboriosam magni nostrum perspiciatis praesentium, provident rerum tempora.
+        </div>
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa labore nihil odio placeat! Animi culpa deleniti numquam quam soluta? Aperiam consequuntur enim ex in, porro quos tempore vitae voluptas.
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-space-around">
+        <div class="grid small-8">...</div>
+        <div class="grid small-8">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-space-between | small-8</h2>
+        </div>
+    </div>
+    <div class="row row-border grid-space-between">
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid cumque dignissimos distinctio dolores dolorum, error facilis laborum laudantium magni modi nostrum omnis, placeat porro quasi quis rerum tempora ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta enim ex magnam nulla quam, quidem repellendus. Corporis ducimus hic illo in laboriosam magni nostrum perspiciatis praesentium, provident rerum tempora.
+        </div>
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa labore nihil odio placeat! Animi culpa deleniti numquam quam soluta? Aperiam consequuntur enim ex in, porro quos tempore vitae voluptas.
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-space-between">
+        <div class="grid small-8">...</div>
+        <div class="grid small-8">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-left | small-8</h2>
+        </div>
+    </div>
+    <div class="row row-border grid-left">
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid cumque dignissimos distinctio dolores dolorum, error facilis laborum laudantium magni modi nostrum omnis, placeat porro quasi quis rerum tempora ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta enim ex magnam nulla quam, quidem repellendus. Corporis ducimus hic illo in laboriosam magni nostrum perspiciatis praesentium, provident rerum tempora.
+        </div>
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa labore nihil odio placeat! Animi culpa deleniti numquam quam soluta? Aperiam consequuntur enim ex in, porro quos tempore vitae voluptas.
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-left">
+        <div class="grid small-8">...</div>
+        <div class="grid small-8">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">row - grid-right | small-8</h2>
+        </div>
+    </div>
+    <div class="row row-border grid-right">
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid cumque dignissimos distinctio dolores dolorum, error facilis laborum laudantium magni modi nostrum omnis, placeat porro quasi quis rerum tempora ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta enim ex magnam nulla quam, quidem repellendus. Corporis ducimus hic illo in laboriosam magni nostrum perspiciatis praesentium, provident rerum tempora.
+        </div>
+        <div class="grid small-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa labore nihil odio placeat! Animi culpa deleniti numquam quam soluta? Aperiam consequuntur enim ex in, porro quos tempore vitae voluptas.
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-right">
+        <div class="grid small-8">...</div>
+        <div class="grid small-8">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">grid-auto | grid-padding-none</h2>
+        </div>
+    </div>
+    <div class="row row-border grid-padding-none">
+        <div class="grid-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container">
+    <div class="row grid-padding-none">
+        <div class="grid-auto">...</div>
+        <div class="grid-auto">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row grid-padding-none">
+        <div class="grid grid-alone no-border">
+            <h2 class="headline-h2">container-fluid | grid-auto</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row row-border">
+        <div class="grid-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est harum itaque nam nostrum. Accusantium, adipisci corporis, eaque eligendi eos expedita illo iusto, maxime molestias possimus rem sit suscipit vel.
+        </div>
+        <div class="grid-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda corporis est expedita harum neque odio quam quidem quos sapiente soluta veniam, voluptatum? Animi ducimus laborum odio similique sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi inventore nesciunt reprehenderit. Ad at culpa, hic molestiae nobis quis voluptates. Beatae deleniti ipsa mollitia nisi obcaecati placeat quia recusandae rerum!
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row grid-padding-none">
+        <div class="grid-auto">
+<xmp><div class="container-fluid">
+    <div class="row">
+        <div class="grid-auto">...</div>
+        <div class="grid-auto">...</div>
+    </div>
+</div></xmp>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+    <div class="container">
+        <div class="grid">
+            <p class="footer-copy">Copyright &copy;2016 bowtiecss.com All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
