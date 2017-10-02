@@ -1,11 +1,12 @@
 {
     "name": "me/bowtie",
+    "description": "CSS framework",
     "authors": [
         {
             "name": "Hermanik",
             "email": "hermann@webvalley.cz"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "require": {}
 }
